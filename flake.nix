@@ -20,6 +20,7 @@
           packages = flake-utils.lib.flattenTree (with pkgs; {
             # https://fontawesome.com/icons
             inherit font-awesome;
+            inherit i3status;
           });
         }
     );
