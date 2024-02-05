@@ -15,14 +15,16 @@
       let
         pkgs    = nixpkgs.legacyPackages.${system};
         my-pkgs = myPkgs.packages.${system};
+
+        i3status-rc = import ./src/i3status-rc.nix { inherit pkgs; };
       in
         rec {
           packages = flake-utils.lib.flattenTree (with pkgs; {
             # https://fontawesome.com/icons
             inherit font-awesome;
-            inherit i3status;
+            i3stat = import ./src/i3stat.nix { inherit pkgs i3status-rc; };
+            inherit i3status-rc;
           });
         }
     );
 }
-
