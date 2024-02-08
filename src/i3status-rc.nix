@@ -126,7 +126,7 @@ volume master {
 }
 
 read_file swap {
-  path   = "/run/user/1000/swap-summary"
+  path   = "__swap-summary-fifo__"
   format = "💿 <span color='#78da59'>%content</span>"
 }
 
