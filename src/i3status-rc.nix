@@ -30,7 +30,8 @@ order += "read_file swap"
 
 order += load
 order += cpu_usage
-order += "cpu_temperature 0"
+order += "read_file cpu_temp"
+# order += "cpu_temperature 0"
 order += memory
 
 order += "volume master"
@@ -77,10 +78,12 @@ cpu_usage {
   separator = false
 }
 
-cpu_temperature 0 {
-  format = "%degrees °C"
-  path  = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
-}
+# this doesn't work well because the location of a suitable temp1_input differs for each
+# host
+# cpu_temperature 0 {
+#   format = "%degrees °C"
+#   path  = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
+# }
 
 memory {
   memory_used_method = classical
@@ -128,6 +131,11 @@ volume master {
 read_file swap {
   path   = "__swap-summary-fifo__"
   format = "💿 <span color='#78da59'>%content</span>"
+}
+
+read_file cpu_temp {
+  path   = "__cpu-temp-fifo__"
+  format = "%content °C"
 }
 
 # ------------------------------------------------------------------------------
