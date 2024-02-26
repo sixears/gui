@@ -1,0 +1,93 @@
+# https://man.archlinux.org/man/extra/libx11/XCompose.3.en
+# ls /nix/store/*/share/man/man5/Compose.5.gz
+# see, e.g., /nix/store/zbmn0p07b31vqx7qf23mi8di3xjqrgia-keyd-2.4.2/share/keyd/keyd.compose
+# and /nix/store/x51ly05chwj47xgz5grn48rz5k2mvzlg-libX11-1.8.7/share/X11/locale/en_US.UTF-8/Compose
+
+# to install, run nyx install -c gui xcompose & restart affected apps
+
+<Multi_key> <1> <slash> <2> : "½"
+
+<Multi_key> <1> <slash> <3> : "⅓"
+<Multi_key> <2> <slash> <3> : "⅔"
+
+<Multi_key> <1> <slash> <4> : "¼"
+<Multi_key> <2> <slash> <4> : "¾"
+
+<Multi_key> <1> <slash> <5> : "⅕"
+<Multi_key> <2> <slash> <5> : "⅖"
+<Multi_key> <4> <slash> <5> : "⅘"
+<Multi_key> <3> <slash> <5> : "⅗"
+
+<Multi_key> <1> <slash> <6> : "⅙"
+<Multi_key> <5> <slash> <6> : "⅚"
+
+<Multi_key> <1> <slash> <8> : "⅛"
+<Multi_key> <3> <slash> <8> : "⅜"
+<Multi_key> <5> <slash> <8> : "⅝"
+<Multi_key> <7> <slash> <8> : "⅞"
+
+<Multi_key> <1> <slash> <7> : "⅐"
+<Multi_key> <1> <slash> <9> : "⅑"
+<Multi_key> <1> <slash> <0> : "⅒"
+
+# works in both emacs & alacritty (use dvorak 'g', not qwerty 'g'
+<Multi_key> <g> <a> : "α"
+# works in both emacs & alacritty
+# we need to use Compose-3-l because (e.g.,) Compose-3-5 is a key,
+# and so Compose-3 would be incomplete
+<Multi_key> <3> <l> : "£"
+<Multi_key> <4> <e> : "€"
+# works in alacritty, not emacs
+<Multi_key> <1> <5> : "⅕"
+# works in neither alacritty nor emacs
+<Multi_key> <1> <slash> <4> : "§"
+# works in alacritty, not emacs
+<Multi_key> <1> <4> : "§"
+# works in neither alacritty nor emacs
+<Multi_key> <1> <slash> <5> : "⅕"
+# works in both emacs & alacritty
+<Multi_key> <0> <4> : "§"
+
+# works in alacritty, not emacs
+<Multi_key> <0> <3> : "¶"
+# works in alacritty, in emacs gives "¶"!!
+<Multi_key> <0> <5> : "¥"
+# works in alacritty; not in emacs
+<Multi_key> <slash> <5> : "⅕"
+
+# this actually works, i.e., you don't need the prefix multi-key,
+# simply grave-followed-by-a works!
+# <grave> <a> : "Ñ"
+
+# works in both emacs & alacritty
+<Multi_key> <0> <0> <5> : "¡"
+
+# https://man.archlinux.org/man/extra/libx11/XCompose.3.en
+# suggests that modifiers should work... but it didn't work for me
+# <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
+
+# works in both emacs & alacritty; note no multi-key, just a dead grave
+<dead_grave> <A> : "À"
+
+# force newline at file-end: fileContents absorbs that...
+
+<Multi_key> <underscore> <0> : "₀"
+<Multi_key> <underscore> <1> : "₁"
+<Multi_key> <underscore> <2> : "₂"
+<Multi_key> <underscore> <3> : "₃"
+<Multi_key> <underscore> <4> : "₄"
+<Multi_key> <underscore> <5> : "₅"
+<Multi_key> <underscore> <6> : "₆"
+<Multi_key> <underscore> <7> : "₇"
+<Multi_key> <underscore> <8> : "₈"
+<Multi_key> <underscore> <9> : "₉"
+<Multi_key> <asciicircum> <0> : "⁰"
+<Multi_key> <asciicircum> <1> : "ⁱ"
+<Multi_key> <asciicircum> <2> : "²"
+<Multi_key> <asciicircum> <3> : "³"
+<Multi_key> <asciicircum> <4> : "⁴"
+<Multi_key> <asciicircum> <5> : "⁵"
+<Multi_key> <asciicircum> <6> : "⁶"
+<Multi_key> <asciicircum> <7> : "⁷"
+<Multi_key> <asciicircum> <8> : "⁸"
+<Multi_key> <asciicircum> <9> : "⁹"

@@ -31,6 +31,7 @@
               inherit (my-settings) swap-summary-fifo cpu-temp-fifo;
               inherit (my-pkgs) replace;
             };
+            xcompose = pkgs.writeTextDir "share/xcompose" (nixpkgs.lib.strings.fileContents ./src/xcompose);
           });
         }
     );
