@@ -30,6 +30,9 @@
 <Multi_key> <1> <slash> <9> : "⅑"
 <Multi_key> <1> <slash> <0> : "⅒"
 
+<Multi_key> <quotedbl> <less> : "«"
+<Multi_key> <quotedbl> <greater> : "»"
+
 # works in both emacs & alacritty (use dvorak 'g', not qwerty 'g'
 <Multi_key> <g> <a> : "α"
 # works in both emacs & alacritty
@@ -47,6 +50,10 @@
 <Multi_key> <1> <slash> <5> : "⅕"
 # works in both emacs & alacritty
 <Multi_key> <0> <4> : "§"
+
+# works in alacritty, not emacs
+<Multi_key> <c> <c> : "ç"
+<Multi_key> <c> <C> : "Ç"
 
 # works in alacritty, not emacs
 <Multi_key> <0> <3> : "¶"
@@ -68,6 +75,8 @@
 
 # works in both emacs & alacritty; note no multi-key, just a dead grave
 <dead_grave> <A> : "À"
+
+<dead_doubleacute> <o> : "ő"
 
 # force newline at file-end: fileContents absorbs that...
 
