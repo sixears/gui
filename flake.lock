@@ -105,7 +105,7 @@
       },
       "original": {
         "owner": "NixOS",
-        "ref": "354184a",
+        "ref": "354184a83",
         "repo": "nixpkgs",
         "type": "github"
       }

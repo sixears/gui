@@ -2,7 +2,7 @@
   description = "nix configuration for gui things; shared X / Wayland";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/354184a; # master 2023-12-13
+    nixpkgs.url = github:NixOS/nixpkgs/354184a83; # master 2023-12-13
     flake-utils.url = github:numtide/flake-utils/c0e246b9;
     myPkgs          = {
       url    = github:sixears/nix-pkgs/r0.0.10.2;
@@ -24,8 +24,8 @@
           settings = { inherit (my-settings) swap-summary-fifo cpu-temp-fifo; };
 
           packages = flake-utils.lib.flattenTree (with pkgs; {
-            # https://fontawesome.com/icons
-            inherit font-awesome;
+            # https://fontawesome.com/icons https://nixos.wiki/wiki/Fonts
+            inherit font-awesome fira-code fira-code-symbols nerdfonts;
             i3stat = import ./src/i3stat.nix {
               inherit pkgs i3status-rc;
               inherit (my-settings) swap-summary-fifo cpu-temp-fifo;

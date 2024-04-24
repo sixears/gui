@@ -14,12 +14,11 @@ general {
   markup        = pango
 }
 
-order += "battery 0"
-
 order += "disk /home"
-order += "disk /tmp"
 order += "disk /var"
+order += "disk /nix"
 order += "disk /local"
+order += "disk /tmp"
 
 order += "ethernet _first_"
 order += "wireless _first_"
@@ -35,6 +34,7 @@ order += "read_file cpu_temp"
 order += memory
 
 order += "volume master"
+order += "battery 0"
 order += "tztime gmt"
 
 ethernet _first_ {
@@ -54,7 +54,7 @@ battery 0 {
   last_full_capacity = true
   hide_seconds       = true
   status_chr         = "⚡"
-  status_bat         = "🔋"
+  status_bat         = "🔋"
   status_unk         = "⁈"
   status_full        = "🌝"
   path               = "/sys/class/power_supply/BAT%d/uevent"
@@ -99,22 +99,26 @@ disk "/home" {
   low_threshold  = 10
   threshold_type = percentage_free
 }
-
-disk "/tmp" {
-  format         = "/tmp %percentage_used"
-  prefix_type    = binary
-  low_threshold  = 10
-  threshold_type = percentage_free
-}
-
 disk "/var" {
   format         = "/var %percentage_used"
   prefix_type    = binary
   low_threshold  = 10
   threshold_type = percentage_free
 }
+disk "/nix" {
+  format         = "/nix %percentage_used"
+  prefix_type    = binary
+  low_threshold  = 10
+  threshold_type = percentage_free
+}
 disk "/local" {
   format         = "/local %percentage_used"
+  prefix_type    = binary
+  low_threshold  = 10
+  threshold_type = percentage_free
+}
+disk "/tmp" {
+  format         = "/tmp %percentage_used"
   prefix_type    = binary
   low_threshold  = 10
   threshold_type = percentage_free
