@@ -2,7 +2,7 @@
   description = "nix configuration for gui things; shared X / Wayland";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/354184a83; # master 2023-12-13
+    nixpkgs.url     = github:NixOS/nixpkgs/938aa157; # nixos-24.05 2024-06-20
     flake-utils.url = github:numtide/flake-utils/c0e246b9;
     myPkgs          = {
       url    = github:sixears/nix-pkgs/r0.0.10.2;
