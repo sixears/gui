@@ -1,9 +1,18 @@
 # https://man.archlinux.org/man/extra/libx11/XCompose.3.en
+# https://wiki.linuxquestions.org/wiki/List_of_Keysyms_Recognised_by_Xmodmap
+# https://www.cl.cam.ac.uk/~mgk25/ucs/keysymdef.h
 # ls /nix/store/*/share/man/man5/Compose.5.gz
 # see, e.g., /nix/store/zbmn0p07b31vqx7qf23mi8di3xjqrgia-keyd-2.4.2/share/keyd/keyd.compose
 # and /nix/store/x51ly05chwj47xgz5grn48rz5k2mvzlg-libX11-1.8.7/share/X11/locale/en_US.UTF-8/Compose
 
 # to install, run nyx install -c gui xcompose & restart affected apps
+
+## from https://wiki.debian.org/XCompose
+
+## Create a file named ~/.XCompose and make sure it has include "%L" at the top
+## of it, to bring in the default sequences. After that, you may put whatever
+## you like. For example,
+include "%L"
 
 <Multi_key> <1> <slash> <2> : "½"
 

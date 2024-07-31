@@ -14,7 +14,9 @@ cpu_temp_fifo=${cpu-temp-fifo}
 replace_cmd=( $replace __swap-summary-fifo__ "$swap_summary_fifo"
                        __cpu-temp-fifo__     "$cpu_temp_fifo"     )
 
-exec $i3status -c <( "''${replace_cmd[@]}" < ${i3status-rc}/share/i3status.rc )
+i3status_rc=${i3status-rc}/share/i3status.rc
+exec $i3status -c <( "''${replace_cmd[@]}" < $i3status_rc ) \
+                2> /run/user/$uid/i3stat.log
 ''
 
 # Local Variables:

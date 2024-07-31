@@ -26,12 +26,20 @@
           packages = flake-utils.lib.flattenTree (with pkgs; {
             # https://fontawesome.com/icons https://nixos.wiki/wiki/Fonts
             inherit font-awesome fira-code fira-code-symbols nerdfonts;
+
             i3stat = import ./src/i3stat.nix {
               inherit pkgs i3status-rc;
               inherit (my-settings) swap-summary-fifo cpu-temp-fifo;
               inherit (my-pkgs) replace;
             };
-            xcompose = pkgs.writeTextDir "share/xcompose" (nixpkgs.lib.strings.fileContents ./src/xcompose);
+
+            xcompose =
+              pkgs.writeTextDir "share/xcompose"
+                (nixpkgs.lib.strings.fileContents ./src/xcompose);
+
+            xkeysyms =
+              let src = import ./src/xkeysyms.nix { inherit pkgs; };
+              in  pkgs.writers.writePerlBin "xkeysyms" { libraries = [ ]; } src;
           });
         }
     );
