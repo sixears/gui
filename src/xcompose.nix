@@ -1,5 +1,7 @@
 { pkgs }: ''
 
+# dump out all the standard .XCompose symbols
+
 grep=${pkgs.gnugrep}/bin/grep
 sort=${pkgs.coreutils}/bin/sort
 

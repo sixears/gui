@@ -1,5 +1,7 @@
 { pkgs }: ''
 
+# dump out all the valid xkb keysyms
+
 # Pragma ------------------------------
 
 use 5.30.0;
