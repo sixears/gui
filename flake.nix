@@ -33,13 +33,17 @@
               inherit (my-pkgs) replace;
             };
 
-            xcompose =
-              pkgs.writeTextDir "share/xcompose"
-                (nixpkgs.lib.strings.fileContents ./src/xcompose);
+            XCompose =
+              pkgs.writeTextDir "share/XCompose"
+                (nixpkgs.lib.strings.fileContents ./src/XCompose);
 
             xkeysyms =
               let src = import ./src/xkeysyms.nix { inherit pkgs; };
               in  pkgs.writers.writePerlBin "xkeysyms" { libraries = [ ]; } src;
+
+            xcompose =
+              let src = import ./src/xcompose.nix { inherit pkgs; };
+              in  pkgs.writers.writeBashBin "xcompose"  src;
           });
         }
     );

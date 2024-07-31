@@ -60,29 +60,24 @@ include "%L"
 # works in both emacs & alacritty
 <Multi_key> <0> <4> : "§"
 
-# works in alacritty, not emacs
 <Multi_key> <c> <c> : "ç"
 <Multi_key> <c> <C> : "Ç"
 
-# works in alacritty, not emacs
 <Multi_key> <0> <3> : "¶"
-# works in alacritty, in emacs gives "¶"!!
 <Multi_key> <0> <5> : "¥"
-# works in alacritty; not in emacs
 <Multi_key> <slash> <5> : "⅕"
 
 # this actually works, i.e., you don't need the prefix multi-key,
 # simply grave-followed-by-a works!
 # <grave> <a> : "Ñ"
 
-# works in both emacs & alacritty
 <Multi_key> <0> <0> <5> : "¡"
 
 # https://man.archlinux.org/man/extra/libx11/XCompose.3.en
 # suggests that modifiers should work... but it didn't work for me
 # <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
 
-# works in both emacs & alacritty; note no multi-key, just a dead grave
+# note no multi-key, just a dead grave
 <dead_grave> <A> : "À"
 
 <dead_doubleacute> <o> : "ő"
@@ -109,3 +104,5 @@ include "%L"
 <Multi_key> <asciicircum> <7> : "⁷"
 <Multi_key> <asciicircum> <8> : "⁸"
 <Multi_key> <asciicircum> <9> : "⁹"
+
+<dead_grave> <a>                        : "\340"        agrave
