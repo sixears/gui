@@ -63,6 +63,14 @@ include "%L"
 <Multi_key> <c> <c> : "ç"
 <Multi_key> <c> <C> : "Ç"
 
+<Multi_key> <A> <E> : "Æ" # LATIN CAPITAL LETTER AE
+<Multi_key> <a> <e> : "æ" # LATIN SMALL LETTER AE
+<Multi_key> <O> <E> : "Œ" # LATIN CAPITAL LIGATURE OE
+<Multi_key> <o> <e> : "œ" # LATIN SMALL LIGATURE OE
+
+<dead_macron> <Multi_key> <Multi_key> <A> <E> : "Ǣ" # LATIN CAPITAL LETTER AE WITH MACRON
+<dead_macron> <Multi_key> <Multi_key> <a> <e> : "ǣ" # LATIN SMALL LETTER AE WITH MACRON
+
 <Multi_key> <0> <3> : "¶"
 <Multi_key> <0> <5> : "¥"
 <Multi_key> <slash> <5> : "⅕"
@@ -296,6 +304,25 @@ include "%L"
 <dead_stroke> <lessthanequal>    : "≰" U2270    # NEITHER LESS-THAN NOR EQUAL TO
 <dead_stroke> <less>             : "≮" U226E    # NOT LESS-THAN
 # <dead_stroke> <nobreakspace>     : "̸" U0338    # COMBINING LONG SOLIDUS OVERLAY
+
+# -- tilde -------------------------------------------------
+
+<dead_tilde> <A> : "Ã" Atilde # LATIN CAPITAL LETTER A WITH TILDE
+<dead_tilde> <N> : "Ñ" Ntilde # LATIN CAPITAL LETTER N WITH TILDE
+<dead_tilde> <O> : "Õ" Otilde # LATIN CAPITAL LETTER O WITH TILDE
+<dead_tilde> <a> : "ã" atilde # LATIN SMALL LETTER A WITH TILDE
+<dead_tilde> <n> : "ñ" ntilde # LATIN SMALL LETTER N WITH TILDE
+<dead_tilde> <o> : "õ" otilde # LATIN SMALL LETTER O WITH TILDE
+<dead_tilde> <I> : "Ĩ" U0128  # LATIN CAPITAL LETTER I WITH TILDE
+<dead_tilde> <i> : "ĩ" U0129  # LATIN SMALL LETTER I WITH TILDE
+<dead_tilde> <U> : "Ũ" U0168  # LATIN CAPITAL LETTER U WITH TILDE
+<dead_tilde> <u> : "ũ" U0169  # LATIN SMALL LETTER U WITH TILDE
+<dead_tilde> <V> : "Ṽ" U1E7C  # LATIN CAPITAL LETTER V WITH TILDE
+<dead_tilde> <v> : "ṽ" U1E7D  # LATIN SMALL LETTER V WITH TILDE
+<dead_tilde> <E> : "Ẽ" U1EBC  # LATIN CAPITAL LETTER E WITH TILDE
+<dead_tilde> <e> : "ẽ" U1EBD  # LATIN SMALL LETTER E WITH TILDE
+<dead_tilde> <Y> : "Ỹ" U1EF8  # LATIN CAPITAL LETTER Y WITH TILDE
+<dead_tilde> <y> : "ỹ" U1EF9  # LATIN SMALL LETTER Y WITH TILDE
 
 # -- doubleacute -------------------------------------------
 
