@@ -202,23 +202,23 @@
 <Multi_key> <grave> <Tab>   : "`" grave # grave accent
 
 <Multi_key> <grave> <A> : "À" Agrave # uppercase A with grave
-<Multi_key> <grave> <a> : "à" agrave # lowercase A with grave
+<Multi_key> <grave> <a> : "à" agrave # lowercase a with grave
 <Multi_key> <grave> <E> : "È" Egrave # uppercase E with grave
-<Multi_key> <grave> <e> : "è" egrave # lowercase E with grave
+<Multi_key> <grave> <e> : "è" egrave # lowercase e with grave
 <Multi_key> <grave> <I> : "Ì" Igrave # uppercase I with grave
-<Multi_key> <grave> <i> : "ì" igrave # lowercase I with grave
+<Multi_key> <grave> <i> : "ì" igrave # lowercase i with grave
 <Multi_key> <grave> <m> : "m̀"        # lowercase M plus combining grave
 <Multi_key> <grave> <M> : "M̀"        # uppercase m plus combining grave
 <Multi_key> <grave> <N> : "Ǹ" U01F8  # uppercase N with grave
-<Multi_key> <grave> <n> : "ǹ" U01F9  # lowercase N with grave
+<Multi_key> <grave> <n> : "ǹ" U01F9  # lowercase n with grave
 <Multi_key> <grave> <O> : "Ò" Ograve # uppercase O with grave
-<Multi_key> <grave> <o> : "ò" ograve # lowercase O with grave
+<Multi_key> <grave> <o> : "ò" ograve # lowercase o with grave
 <Multi_key> <grave> <U> : "Ù" Ugrave # uppercase U with grave
-<Multi_key> <grave> <u> : "ù" ugrave # lowercase U with grave
+<Multi_key> <grave> <u> : "ù" ugrave # lowercase u with grave
 <Multi_key> <grave> <W> : "Ẁ" U1E80  # uppercase W with grave
-<Multi_key> <grave> <w> : "ẁ" U1E81  # lowercase W with grave
+<Multi_key> <grave> <w> : "ẁ" U1E81  # lowercase w with grave
 <Multi_key> <grave> <Y> : "Ỳ" U1EF2  # uppercase Y with grave
-<Multi_key> <grave> <y> : "ỳ" U1EF3  # lowercase Y with grave
+<Multi_key> <grave> <y> : "ỳ" U1EF3  # lowercase y with grave
 
 # -- circumflex --------------------------------------------
 
@@ -287,8 +287,13 @@
 <Multi_key> <quotedbl> <i> : "ï" idiaeresis # lowercase i with diaeresis
 <Multi_key> <quotedbl> <O> : "Ö" Odiaeresis # uppercase O with diaeresis
 <Multi_key> <quotedbl> <o> : "ö" odiaeresis # lowercase o with diaeresis
+<Multi_key> <quotedbl> <t> : "ẗ" U1E97      # lowercase t with diaeresis
 <Multi_key> <quotedbl> <U> : "Ü" Udiaeresis # uppercase U with diaeresis
 <Multi_key> <quotedbl> <u> : "ü" udiaeresis # lowercase u with diaeresis
+<Multi_key> <quotedbl> <W> : "Ẅ" U1E84      # uppercase W with diaeresis
+<Multi_key> <quotedbl> <w> : "ẅ" U1E85      # lowercase w with diaeresis
+<Multi_key> <quotedbl> <X> : "Ẍ" U1E8C      # uppercase X with diaeresis
+<Multi_key> <quotedbl> <x> : "ẍ" U1E8D      # lowercase x with diaeresis
 <Multi_key> <quotedbl> <Y> : "Ÿ" Ydiaeresis # uppercase Y with diaeresis
 <Multi_key> <quotedbl> <y> : "ÿ" ydiaeresis # lowercase y with diaeresis
 
@@ -480,7 +485,7 @@
 <Multi_key> <period> <Y> : "Ỵ" U1EF4 # uppercase Y with dot below
 <Multi_key> <period> <y> : "ỵ" U1EF5 # lowercase y with dot below
 <Multi_key> <period> <Z> : "Ẓ" U1E92 # uppercase Z with dot below
-<Multi_key> <exclam> <z> : "ẓ" U1E93 # lowercase z with dot below
+<Multi_key> <period> <z> : "ẓ" U1E93 # lowercase z with dot below
 
 # -- double-acute ------------------------------------------
 
@@ -638,11 +643,6 @@
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
-# lowercase S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <s> : U1E65
-# uppercase S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <S> : U1E64
-
 <Multi_key> <slash> <Greek_rho>      : "ϼ" U03FC # GREEK RHO with stroke SYMBOL
 
 <Multi_key> <semicolon> <minus> <j> : "ɟ" U025F # lowercase DOTLESS J with stroke
@@ -656,110 +656,57 @@
 
 # -- hook --------------------------------------------------
 
-<Multi_key> <question> <space> : "̉" U0309 # COMBINING HOOK ABOVE
+<Multi_key> <question> <space> : "̉" U0309 # combining hook above
 
 <Multi_key> <question> <A> : "Ả" U1EA2    # uppercase A with HOOK ABOVE
-<Multi_key> <question> <a> : "ả" U1EA3    # lowercase A with HOOK ABOVE
-<Multi_key> <question> <E> : "Ẻ" U1EBA    # uppercase E with HOOK ABOVE
-<Multi_key> <question> <e> : "ẻ" U1EBB    # lowercase E with HOOK ABOVE
-<Multi_key> <question> <I> : "Ỉ" U1EC8    # uppercase I with HOOK ABOVE
-<Multi_key> <question> <i> : "ỉ" U1EC9    # lowercase I with HOOK ABOVE
-<Multi_key> <question> <O> : "Ỏ" U1ECE    # uppercase O with HOOK ABOVE
-<Multi_key> <question> <o> : "ỏ" U1ECF    # lowercase O with HOOK ABOVE
-<Multi_key> <question> <U> : "Ủ" U1EE6    # uppercase U with HOOK ABOVE
-<Multi_key> <question> <u> : "ủ" U1EE7    # lowercase U with HOOK ABOVE
-<Multi_key> <question> <Y> : "Ỷ" U1EF6    # uppercase Y with HOOK ABOVE
-<Multi_key> <question> <y> : "ỷ" U1EF7    # lowercase Y with HOOK ABOVE
+<Multi_key> <question> <a> : "ả" U1EA3    # lowercase a with HOOK ABOVE
 <Multi_key> <question> <B> : "Ɓ" U0181    # uppercase B with HOOK
-<Multi_key> <question> <b> : "ɓ" U0253    # lowercase B with HOOK
+<Multi_key> <question> <b> : "ɓ" U0253    # lowercase b with HOOK
 <Multi_key> <question> <C> : "Ƈ" U0187    # uppercase C with HOOK
-<Multi_key> <question> <c> : "ƈ" U0188    # lowercase C with HOOK
+<Multi_key> <question> <c> : "ƈ" U0188    # lowercase c with HOOK
 <Multi_key> <question> <D> : "Ɗ" U018A    # uppercase D with HOOK
-<Multi_key> <question> <d> : "ɗ" U0257    # lowercase D with HOOK
+<Multi_key> <question> <d> : "ɗ" U0257    # lowercase d with HOOK
+<Multi_key> <question> <E> : "Ẻ" U1EBA    # uppercase E with HOOK ABOVE
+<Multi_key> <question> <e> : "ẻ" U1EBB    # lowercase e with HOOK ABOVE
+<Multi_key> <question> <f> : "ƒ" function # lowercase f with HOOK
 <Multi_key> <question> <F> : "Ƒ" U0191    # uppercase F with HOOK
-<Multi_key> <question> <f> : "ƒ" function # lowercase F with HOOK
 <Multi_key> <question> <G> : "Ɠ" U0193    # uppercase G with HOOK
-<Multi_key> <question> <g> : "ɠ" U0260    # lowercase G with HOOK
-<Multi_key> <question> <h> : "ɦ" U0266    # lowercase H with HOOK
+<Multi_key> <question> <g> : "ɠ" U0260    # lowercase g with HOOK
+<Multi_key> <question> <h> : "ɦ" U0266    # lowercase h with HOOK
+<Multi_key> <question> <I> : "Ỉ" U1EC8    # uppercase I with HOOK ABOVE
+<Multi_key> <question> <i> : "ỉ" U1EC9    # lowercase i with HOOK ABOVE
 <Multi_key> <question> <K> : "Ƙ" U0198    # uppercase K with HOOK
-<Multi_key> <question> <k> : "ƙ" U0199    # lowercase K with HOOK
+<Multi_key> <question> <k> : "ƙ" U0199    # lowercase k with HOOK
+<Multi_key> <question> <m> : "ɱ" U0271    # lowercase m with HOOK
 <Multi_key> <question> <M> : "Ɱ" U2C6E    # uppercase M with HOOK
-<Multi_key> <question> <m> : "ɱ" U0271    # lowercase M with HOOK
 <Multi_key> <question> <N> : "Ɲ" U019D    # uppercase N with LEFT HOOK
-<Multi_key> <question> <n> : "ɲ" U0272    # lowercase N with LEFT HOOK
+<Multi_key> <question> <n> : "ɲ" U0272    # lowercase n with LEFT HOOK
+<Multi_key> <question> <O> : "Ỏ" U1ECE    # uppercase O with HOOK ABOVE
+<Multi_key> <question> <o> : "ỏ" U1ECF    # lowercase o with HOOK ABOVE
 <Multi_key> <question> <P> : "Ƥ" U01A4    # uppercase P with HOOK
-<Multi_key> <question> <p> : "ƥ" U01A5    # lowercase P with HOOK
+<Multi_key> <question> <p> : "ƥ" U01A5    # lowercase p with HOOK
 <Multi_key> <question> <q> : "ʠ" U02A0    # lowercase Q with HOOK
-<Multi_key> <question> <r> : "ɼ" U027C    # lowercase R with LONG LEG
-<Multi_key> <question> <s> : "ʂ" U0282    # lowercase S with HOOK
+<Multi_key> <question> <r> : "ɼ" U027C    # lowercase r with LONG LEG
+<Multi_key> <question> <s> : "ʂ" U0282    # lowercase s with HOOK
 <Multi_key> <question> <T> : "Ƭ" U01AC    # uppercase T with HOOK
-<Multi_key> <question> <t> : "ƭ" U01AD    # lowercase T with HOOK
+<Multi_key> <question> <t> : "ƭ" U01AD    # lowercase t with HOOK
+<Multi_key> <question> <U> : "Ủ" U1EE6    # uppercase U with HOOK ABOVE
+<Multi_key> <question> <u> : "ủ" U1EE7    # lowercase u with HOOK ABOVE
 <Multi_key> <question> <V> : "Ʋ" U01B2    # uppercase V with HOOK
-<Multi_key> <question> <v> : "ʋ" U028B    # lowercase V with HOOK
+<Multi_key> <question> <v> : "ʋ" U028B    # lowercase v with HOOK
 <Multi_key> <question> <W> : "Ⱳ" U2C72    # uppercase W with HOOK
-<Multi_key> <question> <w> : "ⱳ" U2C73    # lowercase W with HOOK
+<Multi_key> <question> <w> : "ⱳ" U2C73    # lowercase w with HOOK
+<Multi_key> <question> <Y> : "Ỷ" U1EF6    # uppercase Y with HOOK ABOVE
+<Multi_key> <question> <y> : "ỷ" U1EF7    # lowercase y with HOOK ABOVE
 <Multi_key> <question> <Z> : "Ȥ" U0224    # uppercase Z with HOOK
-<Multi_key> <question> <z> : "ȥ" U0225    # lowercase Z with HOOK
+<Multi_key> <question> <z> : "ȥ" U0225    # lowercase z with HOOK
 
 
-
-#--# <dead_abovedot> <dead_caron> <S>  : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <dead_caron> <S>  : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <dead_caron> <s>  : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <dead_caron> <s>  : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-
-
-<Multi_key> <grave> <quotedbl> <U>  : "Ǜ"   U01DB
-<Multi_key> <grave> <quotedbl> <u>  : "ǜ"   U01DC
-<Multi_key> <grave> <minus> <E>     : "Ḕ"   U1E14
-<Multi_key> <grave> <minus> <e>     : "ḕ"   U1E15
-<Multi_key> <grave> <minus> <O>     : "Ṑ"   U1E50
-<Multi_key> <grave> <minus> <o>     : "ṑ"   U1E51
-<Multi_key> <grave> <asciicircum> <A> : "Ầ"   U1EA6
-<Multi_key> <grave> <asciicircum> <a> : "ầ"   U1EA7
-<Multi_key> <grave> <asciicircum> <E> : "Ề"   U1EC0
-<Multi_key> <grave> <asciicircum> <e> : "ề"   U1EC1
-<Multi_key> <grave> <asciicircum> <O> : "Ồ"   U1ED2
-<Multi_key> <grave> <asciicircum> <o> : "ồ"   U1ED3
-
-<Multi_key> <apostrophe> <semicolon> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <colon> <semicolon> <S>      : "Ṩ" U1E68 # CAPITAL S with DOT BELOW AND DOT ABOVE
-<Multi_key> <colon> <semicolon> <s>      : "ṩ" U1E69 # SMALL S with DOT BELOW AND DOT ABOVE
-<Multi_key> <colon> <semicolon> <S>      : "Ṩ" U1E68 # CAPITAL S with DOT BELOW AND DOT ABOVE
-<Multi_key> <colon> <semicolon> <s>      : "ṩ" U1E69 # SMALL S with DOT BELOW AND DOT ABOVE
-
-<Multi_key> <slash> <semicolon> <j>      : "ɟ" U025F # SMALL DOTLESS J with stroke
-<Multi_key> <semicolon> <slash> <j>      : "ɟ" U025F # SMALL DOTLESS J with stroke
-
-
-<Multi_key> <semicolon> <apostrophe> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <colon> <S>      : "Ṩ" U1E68 # CAPITAL S with DOT BELOW AND DOT ABOVE
-<Multi_key> <semicolon> <colon> <s>      : "ṩ" U1E69 # SMALL S with DOT BELOW AND DOT ABOVE
-<Multi_key> <semicolon> <acute> <S>      : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <acute> <S>      : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <acute> <s>      : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <acute> <s>      : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <c> <S>          : "Ṧ" U1E66 # CAPITAL S with CARON AND DOT ABOVE
-<Multi_key> <semicolon> <c> <S>          : "Ṧ" U1E66 # CAPITAL S with CARON AND DOT ABOVE
-<Multi_key> <semicolon> <c> <s>          : "ṧ" U1E67 # SMALL S with CARON AND DOT ABOVE
-<Multi_key> <semicolon> <c> <s>          : "ṧ" U1E67 # SMALL S with CARON AND DOT ABOVE
+<Multi_key> <period> <semicolon> <S> : "Ṩ" U1E68 # uppercase S with dot below and dot above
+<Multi_key> <period> <semicolon> <s> : "ṩ" U1E69 # lowercase s with dot below and dot above
 
 <Multi_key> <Multi_key> <semicolon> <f> <s> : "ẛ" U1e9b # SMALL LONG S with DOT ABOVE
 
-<Multi_key> <semicolon> <apostrophe> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <S> : "Ṥ" U1E64 # CAPITAL S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-<Multi_key> <semicolon> <apostrophe> <s> : "ṥ" U1E65 # SMALL S with acute AND DOT ABOVE
-
-<Multi_key> <Multi_key> <semicolon> <semicolon> : "˙"   abovedot # DOT ABOVE°
 
 # ------------------------------ end dead keys ------------------------------- #
 
@@ -837,50 +784,6 @@
 #--# <dead_belowcircumflex> <l>   : "ḽ" U1E3D # lowercase L with circumflex BELOW
 #--# <dead_belowcircumflex> <N>   : "Ṋ" U1E4A # uppercase N with circumflex BELOW
 #--# <dead_belowcircumflex> <n>   : "ṋ" U1E4B # lowercase N with circumflex BELOW
-#--# <dead_abovedot> <Sacute>   : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <Sacute>   : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <dead_acute> <S>  : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <acute> <S>  : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <apostrophe> <S> : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <dead_acute> <S>  : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <acute> <S>  : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <apostrophe> <S>  : "Ṥ" U1E64 # uppercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <sacute>   : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <sacute>   : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <dead_acute> <s>  : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <acute> <s>  : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <apostrophe> <s> : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <dead_acute> <s>  : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <acute> <s>  : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <Multi_key> <period> <apostrophe> <s>  : "ṥ" U1E65 # lowercase S with acute AND DOT ABOVE
-#--# <dead_abovedot> <Scaron>   : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <Scaron>   : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <dead_caron> <S>  : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <c> <S>  : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <dead_caron> <S>  : "Ṧ" U1E66 # uppercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <scaron>   : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <scaron>   : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <dead_caron> <s>  : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <c> <s>  : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <Multi_key> <period> <dead_caron> <s>  : "ṧ" U1E67 # lowercase S with CARON AND DOT ABOVE
-#--# <dead_abovedot> <U1E62>    : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <U1E62>   : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <dead_belowdot> <S>  : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <exclam> <S> : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <dead_belowdot> <S> : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <exclam> <S>  : "Ṩ" U1E68 # uppercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <U1E63>    : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <U1E63>   : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <dead_belowdot> <s>  : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <Multi_key> <exclam> <s> : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <dead_belowdot> <s> : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <Multi_key> <period> <exclam> <s>  : "ṩ" U1E69 # lowercase S with DOT BELOW AND DOT ABOVE
-#--# <dead_abovedot> <T>    : "Ṫ" U1E6A # uppercase T with DOT ABOVE
-#--# <Multi_key> <period> <T>   : "Ṫ" U1E6A # uppercase T with DOT ABOVE
-#--# <Multi_key> <T> <period>   : "Ṫ" U1E6A # uppercase T with DOT ABOVE
-#--# <dead_abovedot> <t>    : "ṫ" U1E6B # lowercase T with DOT ABOVE
-#--# <Multi_key> <period> <t>   : "ṫ" U1E6B # lowercase T with DOT ABOVE
-#--# <Multi_key> <t> <period>   : "ṫ" U1E6B # lowercase T with DOT ABOVE
 #--# <dead_belowcircumflex> <T>   : "Ṱ" U1E70 # uppercase T with circumflex BELOW
 #--# <dead_belowcircumflex> <t>   : "ṱ" U1E71 # lowercase T with circumflex BELOW
 #--# <dead_belowdiaeresis> <U>   : "Ṳ" U1E72 # uppercase U with diaeresis BELOW
@@ -889,222 +792,12 @@
 #--# <dead_belowtilde> <u>    : "ṵ" U1E75 # lowercase U with TILDE BELOW
 #--# <dead_belowcircumflex> <U>   : "Ṷ" U1E76 # uppercase U with circumflex BELOW
 #--# <dead_belowcircumflex> <u>   : "ṷ" U1E77 # lowercase U with circumflex BELOW
-#--# <dead_tilde> <V>    : "Ṽ" U1E7C # uppercase V with TILDE
-#--# <Multi_key> <asciitilde> <V>   : "Ṽ" U1E7C # uppercase V with TILDE
-#--# <dead_tilde> <v>    : "ṽ" U1E7D # lowercase V with TILDE
-#--# <Multi_key> <asciitilde> <v>   : "ṽ" U1E7D # lowercase V with TILDE
-#--# <dead_grave> <W>    : "Ẁ" U1E80 # uppercase W with grave
-#--# <Multi_key> <grave> <W>    : "Ẁ" U1E80 # uppercase W with grave
-#--# <dead_grave> <w>    : "ẁ" U1E81 # lowercase W with grave
-#--# <Multi_key> <grave> <w>    : "ẁ" U1E81 # lowercase W with grave
-#--# <dead_acute> <W>    : "Ẃ" U1E82 # uppercase W with acute
-#--# <Multi_key> <acute> <W>    : "Ẃ" U1E82 # uppercase W with acute
-#--# <Multi_key> <apostrophe> <W>   : "Ẃ" U1E82 # uppercase W with acute
-#--# <dead_acute> <w>    : "ẃ" U1E83 # lowercase W with acute
-#--# <Multi_key> <acute> <w>    : "ẃ" U1E83 # lowercase W with acute
-#--# <Multi_key> <apostrophe> <w>   : "ẃ" U1E83 # lowercase W with acute
-#--# <dead_diaeresis> <W>    : "Ẅ" U1E84 # uppercase W with diaeresis
-#--# <Multi_key> <quotedbl> <W>   : "Ẅ" U1E84 # uppercase W with diaeresis
-#--# <dead_diaeresis> <w>    : "ẅ" U1E85 # lowercase W with diaeresis
-#--# <Multi_key> <quotedbl> <w>   : "ẅ" U1E85 # lowercase W with diaeresis
-#--# <dead_abovedot> <W>    : "Ẇ" U1E86 # uppercase W with DOT ABOVE
-#--# <Multi_key> <period> <W>   : "Ẇ" U1E86 # uppercase W with DOT ABOVE
-#--# <dead_abovedot> <w>    : "ẇ" U1E87 # lowercase W with DOT ABOVE
-#--# <Multi_key> <period> <w>   : "ẇ" U1E87 # lowercase W with DOT ABOVE
-#--# <dead_abovedot> <X>    : "Ẋ" U1E8A # uppercase X with DOT ABOVE
-#--# <Multi_key> <period> <X>   : "Ẋ" U1E8A # uppercase X with DOT ABOVE
-#--# <dead_abovedot> <x>    : "ẋ" U1E8B # lowercase X with DOT ABOVE
-#--# <Multi_key> <period> <x>   : "ẋ" U1E8B # lowercase X with DOT ABOVE
-#--# <dead_diaeresis> <X>    : "Ẍ" U1E8C # uppercase X with diaeresis
-#--# <Multi_key> <quotedbl> <X>   : "Ẍ" U1E8C # uppercase X with diaeresis
-#--# <dead_diaeresis> <x>    : "ẍ" U1E8D # lowercase X with diaeresis
-#--# <Multi_key> <quotedbl> <x>   : "ẍ" U1E8D # lowercase X with diaeresis
-#--# <dead_abovedot> <Y>    : "Ẏ" U1E8E # uppercase Y with DOT ABOVE
-#--# <Multi_key> <period> <Y>   : "Ẏ" U1E8E # uppercase Y with DOT ABOVE
-#--# <dead_abovedot> <y>    : "ẏ" U1E8F # lowercase Y with DOT ABOVE
-#--# <Multi_key> <period> <y>   : "ẏ" U1E8F # lowercase Y with DOT ABOVE
-#--# <dead_circumflex> <Z>    : "Ẑ" U1E90 # uppercase Z with circumflex
-#--# <Multi_key> <asciicircum> <Z>   : "Ẑ" U1E90 # uppercase Z with circumflex
-#--# <dead_circumflex> <z>    : "ẑ" U1E91 # lowercase Z with circumflex
-#--# <Multi_key> <asciicircum> <z>   : "ẑ" U1E91 # lowercase Z with circumflex
-#--# <dead_diaeresis> <t>    : "ẗ" U1E97 # lowercase T with diaeresis
-#--# <Multi_key> <quotedbl> <t>   : "ẗ" U1E97 # lowercase T with diaeresis
+
 #--# <dead_abovedot> <U017F>    : "ẛ" U1E9B # lowercase LONG S with DOT ABOVE
 #--# <Multi_key> <period> <U017F>   : "ẛ" U1E9B # lowercase LONG S with DOT ABOVE
 #--# <dead_abovedot> <Multi_key> <f> <s>  : "ẛ" U1E9B # lowercase LONG S with DOT ABOVE
 #--# <Multi_key> <dead_abovedot> <f> <s>  : "ẛ" U1E9B # lowercase LONG S with DOT ABOVE
-#--# <dead_hook> <A>     : "Ả" U1EA2 # uppercase A with HOOK ABOVE
-#--# <Multi_key> <question> <A>   : "Ả" U1EA2 # uppercase A with HOOK ABOVE
-#--# <dead_hook> <a>     : "ả" U1EA3 # lowercase A with HOOK ABOVE
-#--# <Multi_key> <question> <a>   : "ả" U1EA3 # lowercase A with HOOK ABOVE
-#--# <dead_hook> <Abreve>    : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <Abreve>   : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <dead_breve> <A>   : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <U> <A>   : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <b> <A>   : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_breve> <A>  : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <b> <A>   : "Ẳ" U1EB2 # uppercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <abreve>    : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <abreve>   : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <dead_breve> <a>   : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <U> <a>   : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <b> <a>   : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_breve> <a>  : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <Multi_key> <question> <b> <a>   : "ẳ" U1EB3 # lowercase A with BREVE AND HOOK ABOVE
-#--# <dead_tilde> <Abreve>    : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <Abreve>  : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <dead_tilde> <dead_breve> <A>   : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <dead_tilde> <Multi_key> <U> <A>  : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <dead_tilde> <Multi_key> <b> <A>  : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <dead_breve> <A> : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <b> <A>  : "Ẵ" U1EB4 # uppercase A with BREVE AND TILDE
-#--# <dead_tilde> <abreve>    : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <abreve>  : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <dead_tilde> <dead_breve> <a>   : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <dead_tilde> <Multi_key> <U> <a>  : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <dead_tilde> <Multi_key> <b> <a>  : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <dead_breve> <a> : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <Multi_key> <asciitilde> <b> <a>  : "ẵ" U1EB5 # lowercase A with BREVE AND TILDE
-#--# <dead_hook> <E>     : "Ẻ" U1EBA # uppercase E with HOOK ABOVE
-#--# <Multi_key> <question> <E>   : "Ẻ" U1EBA # uppercase E with HOOK ABOVE
-#--# <dead_hook> <e>     : "ẻ" U1EBB # lowercase E with HOOK ABOVE
-#--# <Multi_key> <question> <e>   : "ẻ" U1EBB # lowercase E with HOOK ABOVE
-#--# <dead_tilde> <E>    : "Ẽ" U1EBC # uppercase E with TILDE
-#--# <Multi_key> <asciitilde> <E>   : "Ẽ" U1EBC # uppercase E with TILDE
-#--# <dead_tilde> <e>    : "ẽ" U1EBD # lowercase E with TILDE
-#--# <Multi_key> <asciitilde> <e>   : "ẽ" U1EBD # lowercase E with TILDE
-#--# <dead_hook> <I>     : "Ỉ" U1EC8 # uppercase I with HOOK ABOVE
-#--# <Multi_key> <question> <I>   : "Ỉ" U1EC8 # uppercase I with HOOK ABOVE
-#--# <dead_hook> <i>     : "ỉ" U1EC9 # lowercase I with HOOK ABOVE
-#--# <Multi_key> <question> <i>   : "ỉ" U1EC9 # lowercase I with HOOK ABOVE
-#--# <dead_hook> <O>     : "Ỏ" U1ECE # uppercase O with HOOK ABOVE
-#--# <Multi_key> <question> <O>   : "Ỏ" U1ECE # uppercase O with HOOK ABOVE
-#--# <dead_hook> <o>     : "ỏ" U1ECF # lowercase O with HOOK ABOVE
-#--# <Multi_key> <question> <o>   : "ỏ" U1ECF # lowercase O with HOOK ABOVE
-#--# <dead_acute> <Ohorn>    : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <acute> <Ohorn>   : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <Ohorn>  : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <dead_acute> <dead_horn> <O>   : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <dead_acute> <Multi_key> <plus> <O>  : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <acute> <dead_horn> <O>  : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <acute> <plus> <O>   : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <dead_horn> <O> : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <plus> <O>  : "Ớ" U1EDA # uppercase O with HORN AND acute
-#--# <dead_acute> <ohorn>    : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <acute> <ohorn>   : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <ohorn>  : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <dead_acute> <dead_horn> <o>   : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <dead_acute> <Multi_key> <plus> <o>  : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <acute> <dead_horn> <o>  : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <acute> <plus> <o>   : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <dead_horn> <o> : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <Multi_key> <apostrophe> <plus> <o>  : "ớ" U1EDB # lowercase O with HORN AND acute
-#--# <dead_grave> <Ohorn>    : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <Multi_key> <grave> <Ohorn>   : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <dead_grave> <dead_horn> <O>   : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <dead_grave> <Multi_key> <plus> <O>  : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <Multi_key> <grave> <dead_horn> <O>  : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <Multi_key> <grave> <plus> <O>   : "Ờ" U1EDC # uppercase O with HORN AND grave
-#--# <dead_grave> <ohorn>    : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <Multi_key> <grave> <ohorn>   : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <dead_grave> <dead_horn> <o>   : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <dead_grave> <Multi_key> <plus> <o>  : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <Multi_key> <grave> <dead_horn> <o>  : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <Multi_key> <grave> <plus> <o>   : "ờ" U1EDD # lowercase O with HORN AND grave
-#--# <dead_hook> <Ohorn>    : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <Ohorn>   : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <dead_hook> <dead_horn> <O>   : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <plus> <O>  : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_horn> <O>  : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <plus> <O>  : "Ở" U1EDE # uppercase O with HORN AND HOOK ABOVE
-#--# <dead_hook> <ohorn>    : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <ohorn>   : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <dead_hook> <dead_horn> <o>   : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <plus> <o>  : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_horn> <o>  : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <plus> <o>  : "ở" U1EDF # lowercase O with HORN AND HOOK ABOVE
-#--# <dead_tilde> <Ohorn>    : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <Ohorn>  : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <dead_tilde> <dead_horn> <O>   : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <dead_tilde> <Multi_key> <plus> <O>  : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <dead_horn> <O> : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <plus> <O>  : "Ỡ" U1EE0 # uppercase O with HORN AND TILDE
-#--# <dead_tilde> <ohorn>    : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <ohorn>  : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <dead_tilde> <dead_horn> <o>   : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <dead_tilde> <Multi_key> <plus> <o>  : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <dead_horn> <o> : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <plus> <o>  : "ỡ" U1EE1 # lowercase O with HORN AND TILDE
-#--# <dead_hook> <U>     : "Ủ" U1EE6 # uppercase U with HOOK ABOVE
-#--# <Multi_key> <question> <U>   : "Ủ" U1EE6 # uppercase U with HOOK ABOVE
-#--# <dead_hook> <u>     : "ủ" U1EE7 # lowercase U with HOOK ABOVE
-#--# <Multi_key> <question> <u>   : "ủ" U1EE7 # lowercase U with HOOK ABOVE
-#--# <dead_acute> <Uhorn>    : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <acute> <Uhorn>   : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <Uhorn>  : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <dead_acute> <dead_horn> <U>   : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <dead_acute> <Multi_key> <plus> <U>  : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <acute> <dead_horn> <U>  : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <acute> <plus> <U>   : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <dead_horn> <U> : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <plus> <U>  : "Ứ" U1EE8 # uppercase U with HORN AND acute
-#--# <dead_acute> <uhorn>    : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <acute> <uhorn>   : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <uhorn>  : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <dead_acute> <dead_horn> <u>   : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <dead_acute> <Multi_key> <plus> <u>  : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <acute> <dead_horn> <u>  : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <acute> <plus> <u>   : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <dead_horn> <u> : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <Multi_key> <apostrophe> <plus> <u>  : "ứ" U1EE9 # lowercase U with HORN AND acute
-#--# <dead_grave> <Uhorn>    : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <Multi_key> <grave> <Uhorn>   : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <dead_grave> <dead_horn> <U>   : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <dead_grave> <Multi_key> <plus> <U>  : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <Multi_key> <grave> <dead_horn> <U>  : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <Multi_key> <grave> <plus> <U>   : "Ừ" U1EEA # uppercase U with HORN AND grave
-#--# <dead_grave> <uhorn>    : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <Multi_key> <grave> <uhorn>   : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <dead_grave> <dead_horn> <u>   : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <dead_grave> <Multi_key> <plus> <u>  : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <Multi_key> <grave> <dead_horn> <u>  : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <Multi_key> <grave> <plus> <u>   : "ừ" U1EEB # lowercase U with HORN AND grave
-#--# <dead_hook> <Uhorn>    : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <Uhorn>   : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <dead_hook> <dead_horn> <U>   : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <plus> <U>  : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_horn> <U>  : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <plus> <U>  : "Ử" U1EEC # uppercase U with HORN AND HOOK ABOVE
-#--# <dead_hook> <uhorn>    : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <uhorn>   : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <dead_hook> <dead_horn> <u>   : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <dead_hook> <Multi_key> <plus> <u>  : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <dead_horn> <u>  : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <Multi_key> <question> <plus> <u>  : "ử" U1EED # lowercase U with HORN AND HOOK ABOVE
-#--# <dead_tilde> <Uhorn>    : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <Uhorn>  : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <dead_tilde> <dead_horn> <U>   : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <dead_tilde> <Multi_key> <plus> <U>  : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <dead_horn> <U> : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <plus> <U>  : "Ữ" U1EEE # uppercase U with HORN AND TILDE
-#--# <dead_tilde> <uhorn>    : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <uhorn>  : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <dead_tilde> <dead_horn> <u>   : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <dead_tilde> <Multi_key> <plus> <u>  : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <dead_horn> <u> : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <Multi_key> <asciitilde> <plus> <u>  : "ữ" U1EEF # lowercase U with HORN AND TILDE
-#--# <dead_grave> <Y>    : "Ỳ" U1EF2 # uppercase Y with grave
-#--# <Multi_key> <grave> <Y>    : "Ỳ" U1EF2 # uppercase Y with grave
-#--# <dead_grave> <y>    : "ỳ" U1EF3 # lowercase Y with grave
-#--# <Multi_key> <grave> <y>    : "ỳ" U1EF3 # lowercase Y with grave
-#--# <dead_hook> <Y>     : "Ỷ" U1EF6 # uppercase Y with HOOK ABOVE
-#--# <Multi_key> <question> <Y>   : "Ỷ" U1EF6 # uppercase Y with HOOK ABOVE
-#--# <dead_hook> <y>     : "ỷ" U1EF7 # lowercase Y with HOOK ABOVE
-#--# <Multi_key> <question> <y>   : "ỷ" U1EF7 # lowercase Y with HOOK ABOVE
-#--# <dead_tilde> <Y>    : "Ỹ" U1EF8 # uppercase Y with TILDE
-#--# <Multi_key> <asciitilde> <Y>   : "Ỹ" U1EF8 # uppercase Y with TILDE
-#--# <dead_tilde> <y>    : "ỹ" U1EF9 # lowercase Y with TILDE
-#--# <Multi_key> <asciitilde> <y>   : "ỹ" U1EF9 # lowercase Y with TILDE
+
 #--# # Greek Extended
 #--# <dead_psili> <Greek_alpha>  : "ἀ" U1F00 # GREEK SMALL LETTER ALPHA with PSILI
 #--# <Multi_key> <parenright> <Greek_alpha> : "ἀ" U1F00 # GREEK SMALL LETTER ALPHA with PSILI
@@ -2555,14 +2248,6 @@
 #--# <dead_hook> <dead_hook>   : "̉" U0309 # COMBINING HOOK ABOVE
 #--# <dead_hook> <nobreakspace>  : "̉" U0309 # COMBINING HOOK ABOVE
 #--# <dead_hook> <space>   : "̉" U0309 # COMBINING HOOK ABOVE
-#--# <dead_horn> <Oacute>   : "Ớ" Ohornacute # uppercase O with HORN AND acute
-#--# <dead_horn> <oacute>   : "ớ" ohornacute # lowercase O with HORN AND acute
-#--# <dead_horn> <Ograve>   : "Ờ" Ohorngrave # uppercase O with HORN AND grave
-#--# <dead_horn> <ograve>   : "ờ" ohorngrave # lowercase O with HORN AND grave
-#--# <dead_horn> <Uacute>   : "Ứ" Uhornacute # uppercase U with HORN AND acute
-#--# <dead_horn> <uacute>   : "ứ" uhornacute # lowercase U with HORN AND acute
-#--# <dead_horn> <Ugrave>   : "Ừ" Uhorngrave # uppercase U with HORN AND grave
-#--# <dead_horn> <ugrave>   : "ừ" uhorngrave # lowercase U with HORN AND grave
 #--# <dead_macron> <nobreakspace>  : "̄" U0304 # COMBINING MACRON
 #--# <dead_ogonek> <nobreakspace>  : "̨" U0328 # COMBINING OGONEK
 #--# <dead_stroke> <2>   : "ƻ" U01BB # LATIN LETTER TWO with stroke
@@ -2575,8 +2260,6 @@
 #--# <dead_stroke> <e>   : "ɇ" U0247 # lowercase E with stroke
 #--# <dead_stroke> <greater>   : "≯" U226F # NOT GREATER-THAN
 #--# <dead_stroke> <greaterthanequal> : "≱" U2271 # NEITHER GREATER-THAN NOR EQUAL TO
-#--# <dead_stroke> <J>   : "Ɉ" U0248 # uppercase J with stroke
-#--# <dead_stroke> <j>   : "ɉ" U0249 # lowercase J with stroke
 #--# <dead_stroke> <U0269>   : "ᵼ" U1D7C # lowercase IOTA with stroke
 #--# <dead_stroke> <U0237>   : "ɟ" U025F # lowercase DOTLESS J with stroke
 #--# <dead_stroke> <less>   : "≮" U226E # NOT LESS-THAN
