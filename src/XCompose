@@ -14,6 +14,10 @@
 ## you like. For example,
 # include "%L"
 
+# https://man.archlinux.org/man/extra/libx11/XCompose.3.en
+# suggests that modifiers should work... but it didn't work for me
+# <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
+
 ## -- vulgar fractions -------------------------------------
 
 <Multi_key> <slash> <slash> : "⁄" U2044 # fraction slash
@@ -44,95 +48,17 @@
 <Multi_key> <1> <slash> <9> : "⅑"
 <Multi_key> <1> <slash> <0> : "⅒"
 
-<Multi_key> <greater> <less> : "≶"
-<Multi_key> <less> <greater> : "≷"
+# -- abovering/ringabove -----------------------------------
 
-# <Multi_key> <greater> <greater> : "⋙"
+<Multi_key> <0> <space> : "̊"  U030A # combining ring above
+<Multi_key> <0> <Tab>   : "˚" U030A # ring above
 
-<Multi_key> <greater> <h> : "ʰ" U02B0 # modifier letter small h
-<Multi_key> <greater> <j> : "ʲ" U02B2 # modifier letter small j
-<Multi_key> <greater> <r> : "ʳ" U02B3 # modifier letter small r
-<Multi_key> <greater> <w> : "ʷ" U02B7 # modifier letter small w
-<Multi_key> <greater> <y> : "ʸ" U02B8 # modifier letter small y
-<Multi_key> <greater> <l> : "ˡ" U02E1 # modifier letter small l
-<Multi_key> <greater> <s> : "ˢ" U02E2 # modifier letter small s
-<Multi_key> <greater> <x> : "ˣ" U02E3 # modifier letter small x
-
-## <Multi_key> <greater> <U0266>  : "ʱ" U02B1 # modifier letter small h with hook
-## <Multi_key> <greater> <U0279>  : "ʴ" U02B4 # modifier letter small turned r
-## <Multi_key> <greater> <U027B>  : "ʵ" U02B5 # modifier letter small turned r with hook
-## <Multi_key> <greater> <U0281>  : "ʶ" U02B6 # modifier letter small capital inverted r
-## <Multi_key> <greater> <U0263>  : "ˠ" U02E0 # modifier letter small gamma
-## <Multi_key> <greater> <U0295>  : "ˤ" U02E4 # modifier letter small reversed glottal stop
-
-<Multi_key> <parenleft> <C> <parenright>: "🄯" U1F12F # COPYLEFT SYMBOL
-
-<Multi_key> <less> <period>    : "‹" U2039 # single left  angle quotation mark
-<Multi_key> <greater> <period> : "›" U203a # single right angle quotation mark
-
-<Multi_key> <exclam> <question>  : "‽" U203D # interrobang
-<Multi_key> <question> <exclam>  : "⸘" U2E18 # inverted interrobang
-<Multi_key> <minus> <minus> <space> : "­" U00ad # SOFT HYPHEN
-
-<Multi_key> <question> <minus> : "ʡ" U02A1 #  glottal stop with stroke
-<Multi_key> <minus> <question> : "ʡ" U02A1 #  glottal stop with stroke
-
-<Multi_key> <question> <backslash> : "☭" U262D # hammer and sickle
-<Multi_key> <backslash> <question> : "☭" U262D # hammer and sickle
-
-# https://man.archlinux.org/man/extra/libx11/XCompose.3.en
-# suggests that modifiers should work... but it didn't work for me
-# <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
-
-# force newline at file-end: fileContents absorbs that...
-
-# -- currencies --------------------------------------------
-
-<Multi_key> <numbersign> <B> : "฿" U0e3f # thai baht
-<Multi_key> <numbersign> <C> : "₡" U20a1 # colon
-<Multi_key> <numbersign> <c> : "₵" U20b5 # cedi
-<Multi_key> <numbersign> <d> : "₫" U20ab # dong
-<Multi_key> <numbersign> <e> : "₠" U20a0 # euro-currency
-<Multi_key> <numbersign> <F> : "₣" U20a3 # French franc
-<Multi_key> <numbersign> <G> : "₲" U20b2 # guarani
-<Multi_key> <numbersign> <K> : "₭" U20ad # kip
-<Multi_key> <numbersign> <L> : "₤" U20a4 # lira
-<Multi_key> <numbersign> <m> : "₥" U20a5 # mill
-<Multi_key> <numbersign> <N> : "₦" U20a6 # naira
-<Multi_key> <numbersign> <p> : "₧" U20a7 # peseta
-<Multi_key> <numbersign> <P> : "₽" U20bd # rouble
-<Multi_key> <numbersign> <Q> : "₪" U20aa # new sheqel
-<Multi_key> <numbersign> <r> : "₨" U20a8 # rupee
-<Multi_key> <numbersign> <R> : "₹" U20b9 # Indian rupee
-<Multi_key> <numbersign> <S> : "₴" U20b4 # hryvnia
-<Multi_key> <numbersign> <s> : "₱" U20b1 # peso
-<Multi_key> <numbersign> <T> : "₮" U20ae # tugrik
-<Multi_key> <numbersign> <W> : "₩" U20a9 # won
-<Multi_key> <numbersign> <z> : "₢" U20a2 # cruzeiro
-
-# -- superscripts & subscripts -----------------------------
-
-<Multi_key> <asciicircum> <1> : "ⁱ" onesuperior # SUPERSCRIPT ONE
-<Multi_key> <asciicircum> <2> : "²" twosuperior # SUPERSCRIPT TWO
-<Multi_key> <asciicircum> <3> : "³" threesuperior # SUPERSCRIPT THREE
-<Multi_key> <asciicircum> <4> : "⁴"
-<Multi_key> <asciicircum> <5> : "⁵"
-<Multi_key> <asciicircum> <6> : "⁶"
-<Multi_key> <asciicircum> <7> : "⁷"
-<Multi_key> <asciicircum> <8> : "⁸"
-<Multi_key> <asciicircum> <9> : "⁹"
-<Multi_key> <asciicircum> <0> : "⁰"
-
-<Multi_key> <underscore> <1> : "₁"
-<Multi_key> <underscore> <2> : "₂"
-<Multi_key> <underscore> <3> : "₃"
-<Multi_key> <underscore> <4> : "₄"
-<Multi_key> <underscore> <5> : "₅"
-<Multi_key> <underscore> <6> : "₆"
-<Multi_key> <underscore> <7> : "₇"
-<Multi_key> <underscore> <8> : "₈"
-<Multi_key> <underscore> <9> : "₉"
-<Multi_key> <underscore> <0> : "₀"
+<Multi_key> <0> <A> : "Å" Aring # uppercase A with ring above
+<Multi_key> <0> <a> : "å" aring # lowercase a with ring above
+<Multi_key> <0> <U> : "Ů" U016E # uppercase U with ring above
+<Multi_key> <0> <u> : "ů" U016F # lowercase u with ring above
+<Multi_key> <0> <w> : "ẘ" U1E98 # lowercase w with ring above
+<Multi_key> <0> <y> : "ẙ" U1E99 # lowercase y with ring above
 
 # -- ligatures ---------------------------------------------
 
@@ -149,52 +75,7 @@
 <Multi_key> <i> <underscore> <j>                  : "ĳ" U0133  # lowercase ij
 <Multi_key> <I> <underscore> <J>                  : "Ĳ" U0132  # uppercase IJ
 
-# -------------------------------- diacritics -------------------------------- #
-
-# -- acute -------------------------------------------------
-
-<Multi_key> <apostrophe> <space> : "́" U0301 # COMBINING acute ACCENT
-<Multi_key> <apostrophe> <Tab>	 : "´"	acute # acute ACCENT
-
-<Multi_key> <apostrophe> <A> : "Á" Aacute # uppercase A with acute
-<Multi_key> <apostrophe> <a> : "á" aacute # lowercase a with acute
-<Multi_key> <apostrophe> <C> : "Ć" Cacute # uppercase C with acute
-<Multi_key> <apostrophe> <c> : "ć" cacute # lowercase c with acute
-<Multi_key> <apostrophe> <E> : "É" Eacute # uppercase E with acute
-<Multi_key> <apostrophe> <e> : "é" eacute # lowercase e with acute
-<Multi_key> <apostrophe> <G> : "Ǵ" U01F4  # uppercase G with acute
-<Multi_key> <apostrophe> <g> : "ǵ" U01F5  # lowercase g with acute
-<Multi_key> <apostrophe> <I> : "Í" Iacute # uppercase I with acute
-<Multi_key> <apostrophe> <i> : "í" iacute # lowercase i with acute
-<Multi_key> <apostrophe> <J> : "́J"        # uppercase J plus combining acute
-<Multi_key> <apostrophe> <j> : "́j"        # lowercase j plus combining acute
-<Multi_key> <apostrophe> <K> : "Ḱ" U1E30  # uppercase K with acute
-<Multi_key> <apostrophe> <k> : "ḱ" U1E31  # lowercase k with acute
-<Multi_key> <apostrophe> <L> : "Ĺ" Lacute # uppercase L with acute
-<Multi_key> <apostrophe> <l> : "ĺ" lacute # lowercase l with acute
-<Multi_key> <apostrophe> <M> : "Ḿ" U1E3E  # uppercase M with acute
-<Multi_key> <apostrophe> <m> : "ḿ" U1E3F  # lowercase m with acute
-<Multi_key> <apostrophe> <N> : "Ń" Nacute # uppercase N with acute
-<Multi_key> <apostrophe> <n> : "ń" nacute # lowercase n with acute
-<Multi_key> <apostrophe> <O> : "Ó" Oacute # uppercase O with acute
-<Multi_key> <apostrophe> <o> : "ó" oacute # lowercase o with acute
-<Multi_key> <apostrophe> <P> : "Ṕ" U1E54  # uppercase P with acute
-<Multi_key> <apostrophe> <p> : "ṕ" U1E55  # lowercase p with acute
-<Multi_key> <apostrophe> <R> : "Ŕ" Racute # uppercase R with acute
-<Multi_key> <apostrophe> <r> : "ŕ" racute # lowercase r with acute
-<Multi_key> <apostrophe> <S> : "Ś" Sacute # uppercase S with acute
-<Multi_key> <apostrophe> <s> : "ś" sacute # lowercase s with acute
-<Multi_key> <apostrophe> <U> : "Ú" Uacute # uppercase U with acute
-<Multi_key> <apostrophe> <u> : "ú" uacute # lowercase u with acute
-<Multi_key> <apostrophe> <W> : "Ẃ" Wacute # uppercase W with acute
-<Multi_key> <apostrophe> <w> : "ẃ" wacute # lowercase w with acute
-<Multi_key> <apostrophe> <Y> : "Ý" Yacute # uppercase Y with acute
-<Multi_key> <apostrophe> <y> : "ý" yacute # lowercase y with acute
-<Multi_key> <apostrophe> <Z> : "Ź" Zacute # uppercase Z with acute
-<Multi_key> <apostrophe> <z> : "ź" zacute # lowercase z with acute
-
-<Multi_key> <apostrophe> <A> <underscore> <E> : "Ǽ" U01FC # uppercase AE with acute
-<Multi_key> <apostrophe> <a> <underscore> <e> : "ǽ" U01FD # lowercase AE with acute
+## --------------------------------- GRAVE ---------------------------------- ##
 
 # -- grave -------------------------------------------------
 
@@ -219,6 +100,77 @@
 <Multi_key> <grave> <w> : "ẁ" U1E81  # lowercase w with grave
 <Multi_key> <grave> <Y> : "Ỳ" U1EF2  # uppercase Y with grave
 <Multi_key> <grave> <y> : "ỳ" U1EF3  # lowercase y with grave
+
+# -- double-grave ------------------------------------------
+
+<Multi_key> <grave> <grave> <space> : U030F # combining double grave
+<Multi_key> <grave> <grave> <Tab>   : "˵" U025F # double grave
+
+<Multi_key> <grave> <grave> <A> : "Ȁ" U0200 # uppercase A with double grave
+<Multi_key> <grave> <grave> <a> : "ȁ" U0201 # lowercase a with double grave
+<Multi_key> <grave> <grave> <E> : "Ȅ" U0204 # uppercase E with double grave
+<Multi_key> <grave> <grave> <e> : "ȅ" U0205 # lowercase e with double grave
+<Multi_key> <grave> <grave> <I> : "Ȉ" U0208 # uppercase I with double grave
+<Multi_key> <grave> <grave> <i> : "ȉ" U0209 # lowercase i with double grave
+<Multi_key> <grave> <grave> <O> : "Ȍ" U020C # uppercase O with double grave
+<Multi_key> <grave> <grave> <o> : "ȍ" U020D # lowercase o with double grave
+<Multi_key> <grave> <grave> <R> : "Ȑ" U0210 # uppercase R with double grave
+<Multi_key> <grave> <grave> <r> : "ȑ" U0211 # lowercase r with double grave
+<Multi_key> <grave> <grave> <U> : "Ȕ" U0214 # uppercase U with double grave
+<Multi_key> <grave> <grave> <u> : "ȕ" U0215 # lowercase u with double grave
+
+## --------------------------------- EXCLAM --------------------------------- ##
+
+# -- belowring/ringbelow -----------------------------------
+
+<Multi_key> <exclam> <A>    : "Ḁ" U1E00 # uppercase A with ring below
+<Multi_key> <exclam> <a>    : "ḁ" U1E01 # lowercase A with ring below
+
+# ----------------------------------------------------------
+
+<Multi_key> <exclam> <question>  : "‽" U203D # interrobang
+
+## ------------------------------ DOUBLEQUOTE ------------------------------- ##
+
+# -- diaeresis ---------------------------------------------
+
+<Multi_key> <quotedbl> <space> : "̈"  U0308     # combining diaeresis
+<Multi_key> <quotedbl> <Tab>   : "¨" diaeresis # diaeresis
+
+<Multi_key> <quotedbl> <A> : "Ä" Adiaeresis # uppercase A with diaeresis
+<Multi_key> <quotedbl> <a> : "ä" adiaeresis # lowercase a with diaeresis
+<Multi_key> <quotedbl> <E> : "Ë" Ediaeresis # uppercase E with diaeresis
+<Multi_key> <quotedbl> <e> : "ë" ediaeresis # lowercase e with diaeresis
+<Multi_key> <quotedbl> <H> : "Ḧ" U1E26      # uppercase H with diaeresis
+<Multi_key> <quotedbl> <h> : "ḧ" U1E27      # lowercase h with diaeresis
+<Multi_key> <quotedbl> <I> : "Ï" Idiaeresis # uppercase I with diaeresis
+<Multi_key> <quotedbl> <i> : "ï" idiaeresis # lowercase i with diaeresis
+<Multi_key> <quotedbl> <O> : "Ö" Odiaeresis # uppercase O with diaeresis
+<Multi_key> <quotedbl> <o> : "ö" odiaeresis # lowercase o with diaeresis
+<Multi_key> <quotedbl> <t> : "ẗ" U1E97      # lowercase t with diaeresis
+<Multi_key> <quotedbl> <U> : "Ü" Udiaeresis # uppercase U with diaeresis
+<Multi_key> <quotedbl> <u> : "ü" udiaeresis # lowercase u with diaeresis
+<Multi_key> <quotedbl> <W> : "Ẅ" U1E84      # uppercase W with diaeresis
+<Multi_key> <quotedbl> <w> : "ẅ" U1E85      # lowercase w with diaeresis
+<Multi_key> <quotedbl> <X> : "Ẍ" U1E8C      # uppercase X with diaeresis
+<Multi_key> <quotedbl> <x> : "ẍ" U1E8D      # lowercase x with diaeresis
+<Multi_key> <quotedbl> <Y> : "Ÿ" Ydiaeresis # uppercase Y with diaeresis
+<Multi_key> <quotedbl> <y> : "ÿ" ydiaeresis # lowercase y with diaeresis
+
+## ------------------------------ ASCIICIRCUM ------------------------------- ##
+
+# -- superscripts & subscripts -----------------------------
+
+<Multi_key> <asciicircum> <1> : "ⁱ" onesuperior # SUPERSCRIPT ONE
+<Multi_key> <asciicircum> <2> : "²" twosuperior # SUPERSCRIPT TWO
+<Multi_key> <asciicircum> <3> : "³" threesuperior # SUPERSCRIPT THREE
+<Multi_key> <asciicircum> <4> : "⁴"
+<Multi_key> <asciicircum> <5> : "⁵"
+<Multi_key> <asciicircum> <6> : "⁶"
+<Multi_key> <asciicircum> <7> : "⁷"
+<Multi_key> <asciicircum> <8> : "⁸"
+<Multi_key> <asciicircum> <9> : "⁹"
+<Multi_key> <asciicircum> <0> : "⁰"
 
 # -- circumflex --------------------------------------------
 
@@ -251,90 +203,62 @@
 <Multi_key> <asciicircum> <Z> : "Ẑ" U1E90       # uppercase Z with circumflex
 <Multi_key> <asciicircum> <z> : "ẑ" U1E91       # lowercase z with circumflex
 
-# -- tilde -------------------------------------------------
+## -------------------------------- ASTERISK -------------------------------- ##
 
-<Multi_key> <asciitilde> <space> : "̃" U0303 # combining tilde
+# -- horn --------------------------------------------------
 
-<Multi_key> <asciitilde> <A> : "Ã" Atilde # uppercase A with tilde
-<Multi_key> <asciitilde> <a> : "ã" atilde # lowercase a with tilde
-<Multi_key> <asciitilde> <E> : "Ẽ" U1EBC  # uppercase E with tilde
-<Multi_key> <asciitilde> <e> : "ẽ" U1EBD  # lowercase E with tilde
-<Multi_key> <asciitilde> <I> : "Ĩ" U0128  # uppercase I with tilde
-<Multi_key> <asciitilde> <i> : "ĩ" U0129  # lowercase I with tilde
-<Multi_key> <asciitilde> <N> : "Ñ" Ntilde # uppercase N with tilde
-<Multi_key> <asciitilde> <n> : "ñ" ntilde # lowercase n with tilde
-<Multi_key> <asciitilde> <O> : "Õ" Otilde # uppercase O with tilde
-<Multi_key> <asciitilde> <o> : "õ" otilde # lowercase o with tilde
-<Multi_key> <asciitilde> <U> : "Ũ" U0168  # uppercase U with tilde
-<Multi_key> <asciitilde> <u> : "ũ" U0169  # lowercase u with tilde
-<Multi_key> <asciitilde> <V> : "Ṽ" U1E7C  # uppercase V with tilde
-<Multi_key> <asciitilde> <v> : "ṽ" U1E7D  # lowercase v with tilde
-<Multi_key> <asciitilde> <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
-<Multi_key> <asciitilde> <y> : "ỹ" U1EF9  # lowercase y with tilde
+<Multi_key> <asterisk> <space> : "̛" U031B # COMBINING HORN
 
-# -- diaeresis ---------------------------------------------
+<Multi_key> <asterisk> <O> : "Ơ" U01A0 # uppercase O with HORN
+<Multi_key> <asterisk> <o> : "ơ" U01A1 # lowercase O with HORN
+<Multi_key> <asterisk> <U> : "Ư" U01AF # uppercase U with HORN
+<Multi_key> <asterisk> <u> : "ư" U01B0 # lowercase U with HORN
 
-<Multi_key> <quotedbl> <space> : "̈"  U0308     # combining diaeresis
-<Multi_key> <quotedbl> <Tab>   : "¨" diaeresis # diaeresis
+## ------------------------------- PARENLEFT -------------------------------- ##
 
-<Multi_key> <quotedbl> <A> : "Ä" Adiaeresis # uppercase A with diaeresis
-<Multi_key> <quotedbl> <a> : "ä" adiaeresis # lowercase a with diaeresis
-<Multi_key> <quotedbl> <E> : "Ë" Ediaeresis # uppercase E with diaeresis
-<Multi_key> <quotedbl> <e> : "ë" ediaeresis # lowercase e with diaeresis
-<Multi_key> <quotedbl> <H> : "Ḧ" U1E26      # uppercase H with diaeresis
-<Multi_key> <quotedbl> <h> : "ḧ" U1E27      # lowercase h with diaeresis
-<Multi_key> <quotedbl> <I> : "Ï" Idiaeresis # uppercase I with diaeresis
-<Multi_key> <quotedbl> <i> : "ï" idiaeresis # lowercase i with diaeresis
-<Multi_key> <quotedbl> <O> : "Ö" Odiaeresis # uppercase O with diaeresis
-<Multi_key> <quotedbl> <o> : "ö" odiaeresis # lowercase o with diaeresis
-<Multi_key> <quotedbl> <t> : "ẗ" U1E97      # lowercase t with diaeresis
-<Multi_key> <quotedbl> <U> : "Ü" Udiaeresis # uppercase U with diaeresis
-<Multi_key> <quotedbl> <u> : "ü" udiaeresis # lowercase u with diaeresis
-<Multi_key> <quotedbl> <W> : "Ẅ" U1E84      # uppercase W with diaeresis
-<Multi_key> <quotedbl> <w> : "ẅ" U1E85      # lowercase w with diaeresis
-<Multi_key> <quotedbl> <X> : "Ẍ" U1E8C      # uppercase X with diaeresis
-<Multi_key> <quotedbl> <x> : "ẍ" U1E8D      # lowercase x with diaeresis
-<Multi_key> <quotedbl> <Y> : "Ÿ" Ydiaeresis # uppercase Y with diaeresis
-<Multi_key> <quotedbl> <y> : "ÿ" ydiaeresis # lowercase y with diaeresis
+<Multi_key> <parenleft> <C> <parenright>: "🄯" U1F12F # COPYLEFT SYMBOL
 
-# -- cedilla/ogonek ----------------------------------------
+# -- inverted breve ----------------------------------------
 
-<Multi_key> <comma> <space> : "̧"  U0327   # combining cedilla
-<Multi_key> <comma> <Tab>   : "¸" cedilla # cedilla
-## <dead_ogonek> <nobreakspace> : "̨" U0328 # COMBINING OGONEK
+<Multi_key> <parenleft> <space> : "̆"  U0311 # combining inverted breve
 
-<Multi_key> <comma> <A> : "Ą" U0104    # uppercase A with ogonek
-<Multi_key> <comma> <a> : "ą" U0105    # lowercase a with ogonek
-<Multi_key> <comma> <C> : "Ç" Ccedilla # uppercase C with cedilla
-<Multi_key> <comma> <c> : "ç" ccedilla # lowercase c with cedilla
-<Multi_key> <comma> <D> : "Ḑ" U1E10    # uppercase D with cedilla
-<Multi_key> <comma> <d> : "ḑ" U1E11    # lowercase d with cedilla
-<Multi_key> <comma> <E> : "Ȩ" U0228    # uppercase E with cedilla
-<Multi_key> <comma> <e> : "ȩ" U0229    # lowercase e with cedilla
-<Multi_key> <comma> <E> : "Ę" U0118    # uppercase E with ogonek
-<Multi_key> <comma> <e> : "ę" U0119    # lowercase e with ogonek
-<Multi_key> <comma> <G> : "Ģ" U0122    # uppercase G with cedilla
-<Multi_key> <comma> <g> : "ģ" U0123    # lowercase g with cedilla
-<Multi_key> <comma> <H> : "Ḩ" U1E28    # uppercase H with cedilla
-<Multi_key> <comma> <h> : "ḩ" U1E29    # lowercase h with cedilla
-<Multi_key> <comma> <I> : "Į" U012E    # uppercase I with ogonek
-<Multi_key> <comma> <i> : "į" U012F    # lowercase i with ogonek
-<Multi_key> <comma> <K> : "Ķ" U0136    # uppercase K with cedilla
-<Multi_key> <comma> <k> : "ķ" U0137    # lowercase k with cedilla
-<Multi_key> <comma> <L> : "Ļ" U013B    # uppercase L with cedilla
-<Multi_key> <comma> <l> : "ļ" U013C    # lowercase l with cedilla
-<Multi_key> <comma> <N> : "Ņ" U0145    # uppercase N with cedilla
-<Multi_key> <comma> <n> : "ņ" U0146    # lowercase n with cedilla
-<Multi_key> <comma> <O> : "Ǫ" U01EA    # uppercase O with ogonek
-<Multi_key> <comma> <o> : "ǫ" U01EB    # lowercase o with ogonek
-<Multi_key> <comma> <R> : "Ŗ" U0156    # uppercase R with cedilla
-<Multi_key> <comma> <r> : "ŗ" U0157    # lowercase r with cedilla
-<Multi_key> <comma> <S> : "Ş" U015E    # uppercase S with cedilla
-<Multi_key> <comma> <s> : "ş" U015F    # lowercase S with cedilla
-<Multi_key> <comma> <T> : "Ţ" U0162    # uppercase T with cedilla
-<Multi_key> <comma> <t> : "ţ" U0163    # lowercase T with cedilla
-<Multi_key> <comma> <U> : "Ų" U0172    # uppercase U with ogonek
-<Multi_key> <comma> <u> : "ų" U0173    # lowercase U with ogonek
+<Multi_key> <parenleft> <A> : "Ȃ" U0202 # uppercase A with inverted breve
+<Multi_key> <parenleft> <a> : "ȃ" U0203 # lowercase a with inverted breve
+<Multi_key> <parenleft> <E> : "Ȇ" U0206 # uppercase E with inverted breve
+<Multi_key> <parenleft> <e> : "ȇ" U0207 # lowercase e with inverted breve
+<Multi_key> <parenleft> <I> : "Ȋ" U020A # uppercase I with inverted breve
+<Multi_key> <parenleft> <i> : "ȋ" U020B # lowercase i with inverted breve
+<Multi_key> <parenleft> <O> : "Ȏ" U020E # uppercase O with inverted breve
+<Multi_key> <parenleft> <o> : "ȏ" U020F # lowercase o with inverted breve
+<Multi_key> <parenleft> <R> : "Ȓ" U0212 # uppercase R with inverted breve
+<Multi_key> <parenleft> <r> : "ȓ" U0213 # lowercase r with inverted breve
+<Multi_key> <parenleft> <U> : "Ȗ" U0216 # uppercase U with inverted breve
+<Multi_key> <parenleft> <u> : "ȗ" U0217 # lowercase u with inverted breve
+
+## ------------------------------- PARENRIGHT ------------------------------- ##
+
+# -- breve -------------------------------------------------
+
+<Multi_key> <parenright> <space> : "̆"  U0306 # combining breve
+<Multi_key> <parenright> <Tab>   : "˘" breve # breve
+
+<Multi_key> <parenright> <A> : "Ă" U0102 # uppercase A with breve
+<Multi_key> <parenright> <a> : "ă" U0103 # lowercase a with breve
+<Multi_key> <parenright> <E> : "Ĕ" U0114 # uppercase E with breve
+<Multi_key> <parenright> <e> : "ĕ" U0115 # lowercase e with breve
+<Multi_key> <parenright> <G> : "Ğ" U011E # uppercase G with breve
+<Multi_key> <parenright> <g> : "ğ" U011F # lowercase g with breve
+<Multi_key> <parenright> <I> : "Ĭ" U012C # uppercase I with breve
+<Multi_key> <parenright> <i> : "ĭ" U012D # lowercase i with breve
+<Multi_key> <parenright> <O> : "Ŏ" U014E # uppercase O with breve
+<Multi_key> <parenright> <o> : "ŏ" U014F # lowercase o with breve
+<Multi_key> <parenright> <U> : "Ŭ" U016C # uppercase U with breve
+<Multi_key> <parenright> <u> : "ŭ" U016D # lowercase u with breve
+
+## --------------------------------- MINUS ---------------------------------- ##
+
+<Multi_key> <minus> <minus> <space> : "­" U00ad # SOFT HYPHEN
+<Multi_key> <minus> <question> : "ʡ" U02A1 #  glottal stop with stroke
 
 # -- macron ------------------------------------------------
 
@@ -359,40 +283,83 @@
 <Multi_key> <minus> <A> <underscore> <E> : "Ǣ" U01E2 # uppercase AE with macron
 <Multi_key> <minus> <a> <underscore> <e> : "ǣ" U01E3 # lowercase ae with macron
 
-# -- breve -------------------------------------------------
+## ------------------------------- UNDERSCORE ------------------------------- ##
 
-<Multi_key> <parenright> <space> : "̆"  U0306 # combining breve
-<Multi_key> <parenright> <Tab>   : "˘" breve # breve
+# -- subscript ---------------------------------------------
 
-<Multi_key> <parenright> <A> : "Ă" U0102 # uppercase A with breve
-<Multi_key> <parenright> <a> : "ă" U0103 # lowercase a with breve
-<Multi_key> <parenright> <E> : "Ĕ" U0114 # uppercase E with breve
-<Multi_key> <parenright> <e> : "ĕ" U0115 # lowercase e with breve
-<Multi_key> <parenright> <G> : "Ğ" U011E # uppercase G with breve
-<Multi_key> <parenright> <g> : "ğ" U011F # lowercase g with breve
-<Multi_key> <parenright> <I> : "Ĭ" U012C # uppercase I with breve
-<Multi_key> <parenright> <i> : "ĭ" U012D # lowercase i with breve
-<Multi_key> <parenright> <O> : "Ŏ" U014E # uppercase O with breve
-<Multi_key> <parenright> <o> : "ŏ" U014F # lowercase o with breve
-<Multi_key> <parenright> <U> : "Ŭ" U016C # uppercase U with breve
-<Multi_key> <parenright> <u> : "ŭ" U016D # lowercase u with breve
+<Multi_key> <underscore> <1> : "₁"
+<Multi_key> <underscore> <2> : "₂"
+<Multi_key> <underscore> <3> : "₃"
+<Multi_key> <underscore> <4> : "₄"
+<Multi_key> <underscore> <5> : "₅"
+<Multi_key> <underscore> <6> : "₆"
+<Multi_key> <underscore> <7> : "₇"
+<Multi_key> <underscore> <8> : "₈"
+<Multi_key> <underscore> <9> : "₉"
+<Multi_key> <underscore> <0> : "₀"
 
-# -- inverted breve ----------------------------------------
+# -- line below / below line -------------------------------
 
-<Multi_key> <parenleft> <space> : "̆"  U0311 # combining inverted breve
+<Multi_key> <underscore> <B> : "Ḇ" U1E06 # uppercase B with line below
+<Multi_key> <underscore> <b> : "ḇ" U1E07 # lowercase b with line below
+<Multi_key> <underscore> <D> : "Ḏ" U1E0E # uppercase D with line below
+<Multi_key> <underscore> <d> : "ḏ" U1E0F # lowercase d with line below
+<Multi_key> <underscore> <h> : "ẖ" U1E96 # lowercase h with line below
+<Multi_key> <underscore> <K> : "Ḵ" U1E34 # uppercase K with line below
+<Multi_key> <underscore> <k> : "ḵ" U1E35 # lowercase k with line below
+<Multi_key> <underscore> <L> : "Ḻ" U1E3A # uppercase L with line below
+<Multi_key> <underscore> <l> : "ḻ" U1E3B # lowercase l with line below
+<Multi_key> <underscore> <N> : "Ṉ" U1E48 # uppercase N with line below
+<Multi_key> <underscore> <n> : "ṉ" U1E49 # lowercase n with line below
+<Multi_key> <underscore> <R> : "Ṟ" U1E5E # uppercase R with line below
+<Multi_key> <underscore> <r> : "ṟ" U1E5F # lowercase r with line below
+<Multi_key> <underscore> <T> : "Ṯ" U1E6E # uppercase T with line below
+<Multi_key> <underscore> <t> : "ṯ" U1E6F # lowercase t with line below
+<Multi_key> <underscore> <Z> : "Ẕ" U1E94 # uppercase Z with line below
+<Multi_key> <underscore> <z> : "ẕ" U1E95 # lowercase z with line below
 
-<Multi_key> <parenleft> <A> : "Ȃ" U0202 # uppercase A with inverted breve
-<Multi_key> <parenleft> <a> : "ȃ" U0203 # lowercase a with inverted breve
-<Multi_key> <parenleft> <E> : "Ȇ" U0206 # uppercase E with inverted breve
-<Multi_key> <parenleft> <e> : "ȇ" U0207 # lowercase e with inverted breve
-<Multi_key> <parenleft> <I> : "Ȋ" U020A # uppercase I with inverted breve
-<Multi_key> <parenleft> <i> : "ȋ" U020B # lowercase i with inverted breve
-<Multi_key> <parenleft> <O> : "Ȏ" U020E # uppercase O with inverted breve
-<Multi_key> <parenleft> <o> : "ȏ" U020F # lowercase o with inverted breve
-<Multi_key> <parenleft> <R> : "Ȓ" U0212 # uppercase R with inverted breve
-<Multi_key> <parenleft> <r> : "ȓ" U0213 # lowercase r with inverted breve
-<Multi_key> <parenleft> <U> : "Ȗ" U0216 # uppercase U with inverted breve
-<Multi_key> <parenleft> <u> : "ȗ" U0217 # lowercase u with inverted breve
+## ------------------------------- BRACERIGHT ------------------------------- ##
+
+# -- caron -------------------------------------------------
+
+<Multi_key> <braceright> <space> : "̌"  U030C # combining caron
+<Multi_key> <braceright> <Tab>   : "ˇ" caron # caron
+
+<Multi_key> <braceright> <A> : "Ǎ" U01CD # uppercase A with caron
+<Multi_key> <braceright> <a> : "ǎ" U01CE # lowercase a with caron
+<Multi_key> <braceright> <C> : "Č" U010C # uppercase C with caron
+<Multi_key> <braceright> <c> : "č" U010D # lowercase c with caron
+<Multi_key> <braceright> <D> : "Ď" U010E # uppercase D with caron
+<Multi_key> <braceright> <d> : "ď" U010F # lowercase d with caron
+<Multi_key> <braceright> <E> : "Ě" U011A # uppercase E with caron
+<Multi_key> <braceright> <e> : "ě" U011B # lowercase e with caron
+<Multi_key> <braceright> <G> : "Ǧ" U01E6 # uppercase G with caron
+<Multi_key> <braceright> <g> : "ǧ" U01E7 # lowercase g with caron
+<Multi_key> <braceright> <H> : "Ȟ" U021E # uppercase H with caron
+<Multi_key> <braceright> <h> : "ȟ" U021F # lowercase h with caron
+<Multi_key> <braceright> <I> : "Ǐ" U01CF # uppercase I with caron
+<Multi_key> <braceright> <i> : "ǐ" U01D0 # lowercase i with caron
+<Multi_key> <braceright> <j> : "ǰ" U01F0 # lowercase j with caron
+<Multi_key> <braceright> <K> : "Ǩ" U01E8 # uppercase K with caron
+<Multi_key> <braceright> <k> : "ǩ" U01E9 # lowercase k with caron
+<Multi_key> <braceright> <L> : "Ľ" U013D # uppercase L with caron
+<Multi_key> <braceright> <l> : "ľ" U013E # lowercase l with caron
+<Multi_key> <braceright> <N> : "Ň" U0147 # uppercase N with caron
+<Multi_key> <braceright> <n> : "ň" U0148 # lowercase n with caron
+<Multi_key> <braceright> <O> : "Ǒ" U01D1 # uppercase O with caron
+<Multi_key> <braceright> <o> : "ǒ" U01D2 # lowercase o with caron
+<Multi_key> <braceright> <R> : "Ř" U0158 # uppercase R with caron
+<Multi_key> <braceright> <r> : "ř" U0159 # lowercase r with caron
+<Multi_key> <braceright> <S> : "Š" U0160 # uppercase S with caron
+<Multi_key> <braceright> <s> : "š" U0161 # lowercase s with caron
+<Multi_key> <braceright> <T> : "Ť" U0164 # uppercase T with caron
+<Multi_key> <braceright> <t> : "ť" U0165 # lowercase t with caron
+<Multi_key> <braceright> <U> : "Ǔ" U01D3 # uppercase U with caron
+<Multi_key> <braceright> <u> : "ǔ" U01D4 # lowercase u with caron
+<Multi_key> <braceright> <Z> : "Ž" U017D # uppercase Z with caron
+<Multi_key> <braceright> <z> : "ž" U017E # lowercase z with caron
+
+## ------------------------------- SEMICOLON -------------------------------- ##
 
 # -- abovedot / dotabove -----------------------------------
 
@@ -443,6 +410,160 @@
 <Multi_key> <semicolon> <Z> : "Ż" U017B # uppercase Z with dot above
 <Multi_key> <semicolon> <z> : "ż" U017C # lowercase z with dot above
 
+## ------------------------------- APOSTROPHE ------------------------------- ##
+
+# -- acute -------------------------------------------------
+
+<Multi_key> <apostrophe> <space> : "́" U0301 # COMBINING acute ACCENT
+<Multi_key> <apostrophe> <Tab>	 : "´"	acute # acute ACCENT
+
+<Multi_key> <apostrophe> <A> : "Á" Aacute # uppercase A with acute
+<Multi_key> <apostrophe> <a> : "á" aacute # lowercase a with acute
+<Multi_key> <apostrophe> <C> : "Ć" Cacute # uppercase C with acute
+<Multi_key> <apostrophe> <c> : "ć" cacute # lowercase c with acute
+<Multi_key> <apostrophe> <E> : "É" Eacute # uppercase E with acute
+<Multi_key> <apostrophe> <e> : "é" eacute # lowercase e with acute
+<Multi_key> <apostrophe> <G> : "Ǵ" U01F4  # uppercase G with acute
+<Multi_key> <apostrophe> <g> : "ǵ" U01F5  # lowercase g with acute
+<Multi_key> <apostrophe> <I> : "Í" Iacute # uppercase I with acute
+<Multi_key> <apostrophe> <i> : "í" iacute # lowercase i with acute
+<Multi_key> <apostrophe> <J> : "́J"        # uppercase J plus combining acute
+<Multi_key> <apostrophe> <j> : "́j"        # lowercase j plus combining acute
+<Multi_key> <apostrophe> <K> : "Ḱ" U1E30  # uppercase K with acute
+<Multi_key> <apostrophe> <k> : "ḱ" U1E31  # lowercase k with acute
+<Multi_key> <apostrophe> <L> : "Ĺ" Lacute # uppercase L with acute
+<Multi_key> <apostrophe> <l> : "ĺ" lacute # lowercase l with acute
+<Multi_key> <apostrophe> <M> : "Ḿ" U1E3E  # uppercase M with acute
+<Multi_key> <apostrophe> <m> : "ḿ" U1E3F  # lowercase m with acute
+<Multi_key> <apostrophe> <N> : "Ń" Nacute # uppercase N with acute
+<Multi_key> <apostrophe> <n> : "ń" nacute # lowercase n with acute
+<Multi_key> <apostrophe> <O> : "Ó" Oacute # uppercase O with acute
+<Multi_key> <apostrophe> <o> : "ó" oacute # lowercase o with acute
+<Multi_key> <apostrophe> <P> : "Ṕ" U1E54  # uppercase P with acute
+<Multi_key> <apostrophe> <p> : "ṕ" U1E55  # lowercase p with acute
+<Multi_key> <apostrophe> <R> : "Ŕ" Racute # uppercase R with acute
+<Multi_key> <apostrophe> <r> : "ŕ" racute # lowercase r with acute
+<Multi_key> <apostrophe> <S> : "Ś" Sacute # uppercase S with acute
+<Multi_key> <apostrophe> <s> : "ś" sacute # lowercase s with acute
+<Multi_key> <apostrophe> <U> : "Ú" Uacute # uppercase U with acute
+<Multi_key> <apostrophe> <u> : "ú" uacute # lowercase u with acute
+<Multi_key> <apostrophe> <W> : "Ẃ" Wacute # uppercase W with acute
+<Multi_key> <apostrophe> <w> : "ẃ" wacute # lowercase w with acute
+<Multi_key> <apostrophe> <Y> : "Ý" Yacute # uppercase Y with acute
+<Multi_key> <apostrophe> <y> : "ý" yacute # lowercase y with acute
+<Multi_key> <apostrophe> <Z> : "Ź" Zacute # uppercase Z with acute
+<Multi_key> <apostrophe> <z> : "ź" zacute # lowercase z with acute
+
+<Multi_key> <apostrophe> <A> <underscore> <E> : "Ǽ" U01FC # uppercase AE with acute
+<Multi_key> <apostrophe> <a> <underscore> <e> : "ǽ" U01FD # lowercase AE with acute
+
+# -- double-acute ------------------------------------------
+
+<Multi_key> <apostrophe> <apostrophe> <space> : "̋"  U030B # combining double acute accent
+<Multi_key> <apostrophe> <apostrophe> <Tab>   : "˝" U2dd  # double acute accent
+
+<Multi_key> <apostrophe> <apostrophe> <O> : "Ő" U0150 # uppercase O with double acute
+<Multi_key> <apostrophe> <apostrophe> <o> : "ő" U0151 # lowercase o with double acute
+<Multi_key> <apostrophe> <apostrophe> <U> : "Ű" U0170 # uppercase U with double acute
+<Multi_key> <apostrophe> <apostrophe> <u> : "ű" U0171 # lowercase u with double acute
+<Multi_key> <apostrophe> <apostrophe> <y> : "ӳ" U04F3 # cyrillic lowercase u with double acute
+<Multi_key> <apostrophe> <apostrophe> <Y> : "Ӳ" U04F2 # cyrillic uppercase U with double acute
+
+## ------------------------------- NUMBERSIGN ------------------------------- ##
+
+# -- currencies --------------------------------------------
+
+# <numbersign> is better known as hash / octathorpe / gate / pound
+<Multi_key> <numbersign> <B> : "฿" U0e3f # thai baht
+<Multi_key> <numbersign> <C> : "₡" U20a1 # colon
+<Multi_key> <numbersign> <c> : "₵" U20b5 # cedi
+<Multi_key> <numbersign> <d> : "₫" U20ab # dong
+<Multi_key> <numbersign> <e> : "₠" U20a0 # euro-currency
+<Multi_key> <numbersign> <F> : "₣" U20a3 # French franc
+<Multi_key> <numbersign> <G> : "₲" U20b2 # guarani
+<Multi_key> <numbersign> <K> : "₭" U20ad # kip
+<Multi_key> <numbersign> <L> : "₤" U20a4 # lira
+<Multi_key> <numbersign> <m> : "₥" U20a5 # mill
+<Multi_key> <numbersign> <N> : "₦" U20a6 # naira
+<Multi_key> <numbersign> <p> : "₧" U20a7 # peseta
+<Multi_key> <numbersign> <P> : "₽" U20bd # rouble
+<Multi_key> <numbersign> <Q> : "₪" U20aa # new sheqel
+<Multi_key> <numbersign> <r> : "₨" U20a8 # rupee
+<Multi_key> <numbersign> <R> : "₹" U20b9 # Indian rupee
+<Multi_key> <numbersign> <S> : "₴" U20b4 # hryvnia
+<Multi_key> <numbersign> <s> : "₱" U20b1 # peso
+<Multi_key> <numbersign> <T> : "₮" U20ae # tugrik
+<Multi_key> <numbersign> <W> : "₩" U20a9 # won
+<Multi_key> <numbersign> <z> : "₢" U20a2 # cruzeiro
+
+## --------------------------------- tilde ---------------------------------- ##
+
+# -- tilde -------------------------------------------------
+
+<Multi_key> <asciitilde> <space> : "̃" U0303 # combining tilde
+
+<Multi_key> <asciitilde> <A> : "Ã" Atilde # uppercase A with tilde
+<Multi_key> <asciitilde> <a> : "ã" atilde # lowercase a with tilde
+<Multi_key> <asciitilde> <E> : "Ẽ" U1EBC  # uppercase E with tilde
+<Multi_key> <asciitilde> <e> : "ẽ" U1EBD  # lowercase E with tilde
+<Multi_key> <asciitilde> <I> : "Ĩ" U0128  # uppercase I with tilde
+<Multi_key> <asciitilde> <i> : "ĩ" U0129  # lowercase I with tilde
+<Multi_key> <asciitilde> <N> : "Ñ" Ntilde # uppercase N with tilde
+<Multi_key> <asciitilde> <n> : "ñ" ntilde # lowercase n with tilde
+<Multi_key> <asciitilde> <O> : "Õ" Otilde # uppercase O with tilde
+<Multi_key> <asciitilde> <o> : "õ" otilde # lowercase o with tilde
+<Multi_key> <asciitilde> <U> : "Ũ" U0168  # uppercase U with tilde
+<Multi_key> <asciitilde> <u> : "ũ" U0169  # lowercase u with tilde
+<Multi_key> <asciitilde> <V> : "Ṽ" U1E7C  # uppercase V with tilde
+<Multi_key> <asciitilde> <v> : "ṽ" U1E7D  # lowercase v with tilde
+<Multi_key> <asciitilde> <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
+<Multi_key> <asciitilde> <y> : "ỹ" U1EF9  # lowercase y with tilde
+
+## ------------------------------- BACKSLASH -------------------------------- ##
+
+<Multi_key> <backslash> <question> : "☭" U262D # hammer and sickle
+
+## --------------------------------- COMMA ---------------------------------- ##
+
+# -- cedilla/ogonek ----------------------------------------
+
+<Multi_key> <comma> <space> : "̧"  U0327   # combining cedilla
+<Multi_key> <comma> <Tab>   : "¸" cedilla # cedilla
+## <dead_ogonek> <nobreakspace> : "̨" U0328 # COMBINING OGONEK
+
+<Multi_key> <comma> <A> : "Ą" U0104    # uppercase A with ogonek
+<Multi_key> <comma> <a> : "ą" U0105    # lowercase a with ogonek
+<Multi_key> <comma> <C> : "Ç" Ccedilla # uppercase C with cedilla
+<Multi_key> <comma> <c> : "ç" ccedilla # lowercase c with cedilla
+<Multi_key> <comma> <D> : "Ḑ" U1E10    # uppercase D with cedilla
+<Multi_key> <comma> <d> : "ḑ" U1E11    # lowercase d with cedilla
+<Multi_key> <comma> <E> : "Ȩ" U0228    # uppercase E with cedilla
+<Multi_key> <comma> <e> : "ȩ" U0229    # lowercase e with cedilla
+<Multi_key> <comma> <E> : "Ę" U0118    # uppercase E with ogonek
+<Multi_key> <comma> <e> : "ę" U0119    # lowercase e with ogonek
+<Multi_key> <comma> <G> : "Ģ" U0122    # uppercase G with cedilla
+<Multi_key> <comma> <g> : "ģ" U0123    # lowercase g with cedilla
+<Multi_key> <comma> <H> : "Ḩ" U1E28    # uppercase H with cedilla
+<Multi_key> <comma> <h> : "ḩ" U1E29    # lowercase h with cedilla
+<Multi_key> <comma> <I> : "Į" U012E    # uppercase I with ogonek
+<Multi_key> <comma> <i> : "į" U012F    # lowercase i with ogonek
+<Multi_key> <comma> <K> : "Ķ" U0136    # uppercase K with cedilla
+<Multi_key> <comma> <k> : "ķ" U0137    # lowercase k with cedilla
+<Multi_key> <comma> <L> : "Ļ" U013B    # uppercase L with cedilla
+<Multi_key> <comma> <l> : "ļ" U013C    # lowercase l with cedilla
+<Multi_key> <comma> <N> : "Ņ" U0145    # uppercase N with cedilla
+<Multi_key> <comma> <n> : "ņ" U0146    # lowercase n with cedilla
+<Multi_key> <comma> <O> : "Ǫ" U01EA    # uppercase O with ogonek
+<Multi_key> <comma> <o> : "ǫ" U01EB    # lowercase o with ogonek
+<Multi_key> <comma> <R> : "Ŗ" U0156    # uppercase R with cedilla
+<Multi_key> <comma> <r> : "ŗ" U0157    # lowercase r with cedilla
+<Multi_key> <comma> <S> : "Ş" U015E    # uppercase S with cedilla
+<Multi_key> <comma> <s> : "ş" U015F    # lowercase S with cedilla
+<Multi_key> <comma> <T> : "Ţ" U0162    # uppercase T with cedilla
+<Multi_key> <comma> <t> : "ţ" U0163    # lowercase T with cedilla
+<Multi_key> <comma> <U> : "Ų" U0172    # uppercase U with ogonek
+<Multi_key> <comma> <u> : "ų" U0173    # lowercase U with ogonek
+
 # -- belowdot / dotbelow -----------------------------------
 
 <Multi_key> <period> <space> : "̣"  U0323 # combining dot below
@@ -487,91 +608,82 @@
 <Multi_key> <period> <Z> : "Ẓ" U1E92 # uppercase Z with dot below
 <Multi_key> <period> <z> : "ẓ" U1E93 # lowercase z with dot below
 
-# -- double-acute ------------------------------------------
+## ---------------------------------- LESS ---------------------------------- ##
 
-<Multi_key> <apostrophe> <apostrophe> <space> : "̋"  U030B # combining double acute accent
-<Multi_key> <apostrophe> <apostrophe> <Tab>   : "˝" U2dd  # double acute accent
+<Multi_key> <less> <period> : "‹" U2039 # single left angle quotation mark
 
-<Multi_key> <apostrophe> <apostrophe> <O> : "Ő" U0150 # uppercase O with double acute
-<Multi_key> <apostrophe> <apostrophe> <o> : "ő" U0151 # lowercase o with double acute
-<Multi_key> <apostrophe> <apostrophe> <U> : "Ű" U0170 # uppercase U with double acute
-<Multi_key> <apostrophe> <apostrophe> <u> : "ű" U0171 # lowercase u with double acute
-<Multi_key> <apostrophe> <apostrophe> <y> : "ӳ" U04F3 # cyrillic lowercase u with double acute
-<Multi_key> <apostrophe> <apostrophe> <Y> : "Ӳ" U04F2 # cyrillic uppercase U with double acute
+## --------------------------------- PERIOD --------------------------------- ##
 
-# -- double-grave ------------------------------------------
+# -- belowdot / dotbelow -----------------------------------
 
-<Multi_key> <grave> <grave> <space> : U030F # combining double grave
-<Multi_key> <grave> <grave> <Tab>   : "˵" U025F # double grave
+<Multi_key> <period> <space> : "̣"  U0323 # combining dot below
+<Multi_key> <period> <Tab>   : "﮳" UFBB3 # arabic symbol dot below
 
-<Multi_key> <grave> <grave> <A> : "Ȁ" U0200 # uppercase A with double grave
-<Multi_key> <grave> <grave> <a> : "ȁ" U0201 # lowercase a with double grave
-<Multi_key> <grave> <grave> <E> : "Ȅ" U0204 # uppercase E with double grave
-<Multi_key> <grave> <grave> <e> : "ȅ" U0205 # lowercase e with double grave
-<Multi_key> <grave> <grave> <I> : "Ȉ" U0208 # uppercase I with double grave
-<Multi_key> <grave> <grave> <i> : "ȉ" U0209 # lowercase i with double grave
-<Multi_key> <grave> <grave> <O> : "Ȍ" U020C # uppercase O with double grave
-<Multi_key> <grave> <grave> <o> : "ȍ" U020D # lowercase o with double grave
-<Multi_key> <grave> <grave> <R> : "Ȑ" U0210 # uppercase R with double grave
-<Multi_key> <grave> <grave> <r> : "ȑ" U0211 # lowercase r with double grave
-<Multi_key> <grave> <grave> <U> : "Ȕ" U0214 # uppercase U with double grave
-<Multi_key> <grave> <grave> <u> : "ȕ" U0215 # lowercase u with double grave
+<Multi_key> <period> <A> : "Ạ" U1EA0 # uppercase A with dot below
+<Multi_key> <period> <a> : "ạ" U1EA1 # lowercase a with dot below
+<Multi_key> <period> <B> : "Ḅ" U1E04 # uppercase B with dot below
+<Multi_key> <period> <b> : "ḅ" U1E05 # lowercase b with dot below
+<Multi_key> <period> <D> : "Ḍ" U1E0C # uppercase D with dot below
+<Multi_key> <period> <d> : "ḍ" U1E0D # lowercase d with dot below
+<Multi_key> <period> <E> : "Ẹ" U1EB8 # uppercase E with dot below
+<Multi_key> <period> <e> : "ẹ" U1EB9 # lowercase e with dot below
+<Multi_key> <period> <H> : "Ḥ" U1E24 # uppercase H with dot below
+<Multi_key> <period> <h> : "ḥ" U1E25 # lowercase h with dot below
+<Multi_key> <period> <I> : "Ị" U1ECA # uppercase I with dot below
+<Multi_key> <period> <i> : "ị" U1ECB # lowercase i with dot below
+<Multi_key> <period> <K> : "Ḳ" U1E32 # uppercase K with dot below
+<Multi_key> <period> <k> : "ḳ" U1E33 # lowercase k with dot below
+<Multi_key> <period> <L> : "Ḷ" U1E36 # uppercase L with dot below
+<Multi_key> <period> <l> : "ḷ" U1E37 # lowercase l with dot below
+<Multi_key> <period> <M> : "Ṃ" U1E42 # uppercase M with dot below
+<Multi_key> <period> <m> : "ṃ" U1E43 # lowercase m with dot below
+<Multi_key> <period> <N> : "Ṇ" U1E46 # uppercase N with dot below
+<Multi_key> <period> <n> : "ṇ" U1E47 # lowercase n with dot below
+<Multi_key> <period> <O> : "Ọ" U1ECC # uppercase O with dot below
+<Multi_key> <period> <o> : "ọ" U1ECD # lowercase o with dot below
+<Multi_key> <period> <R> : "Ṛ" U1E5A # uppercase R with dot below
+<Multi_key> <period> <r> : "ṛ" U1E5B # lowercase r with dot below
+<Multi_key> <period> <S> : "Ṣ" U1E62 # uppercase S with dot below
+<Multi_key> <period> <s> : "ṣ" U1E63 # lowercase s with dot below
+<Multi_key> <period> <T> : "Ṭ" U1E6C # uppercase T with dot below
+<Multi_key> <period> <t> : "ṭ" U1E6D # lowercase t with dot below
+<Multi_key> <period> <U> : "Ụ" U1EE4 # uppercase U with dot below
+<Multi_key> <period> <u> : "ụ" U1EE5 # lowercase u with dot below
+<Multi_key> <period> <V> : "Ṿ" U1E7E # uppercase V with dot below
+<Multi_key> <period> <v> : "ṿ" U1E7F # lowercase v with dot below
+<Multi_key> <period> <W> : "Ẉ" U1E88 # uppercase W with dot below
+<Multi_key> <period> <w> : "ẉ" U1E89 # lowercase w with dot below
+<Multi_key> <period> <Y> : "Ỵ" U1EF4 # uppercase Y with dot below
+<Multi_key> <period> <y> : "ỵ" U1EF5 # lowercase y with dot below
+<Multi_key> <period> <Z> : "Ẓ" U1E92 # uppercase Z with dot below
+<Multi_key> <period> <z> : "ẓ" U1E93 # lowercase z with dot below
 
-# -- caron -------------------------------------------------
+## -------------------------------- GREATER  -------------------------------- ##
 
-<Multi_key> <braceright> <space> : "̌"  U030C # combining caron
-<Multi_key> <braceright> <Tab>   : "ˇ" caron # caron
+<Multi_key> <greater> <less> : "≶"
+<Multi_key> <less> <greater> : "≷"
 
-<Multi_key> <braceright> <A> : "Ǎ" U01CD # uppercase A with caron
-<Multi_key> <braceright> <a> : "ǎ" U01CE # lowercase a with caron
-<Multi_key> <braceright> <C> : "Č" U010C # uppercase C with caron
-<Multi_key> <braceright> <c> : "č" U010D # lowercase c with caron
-<Multi_key> <braceright> <D> : "Ď" U010E # uppercase D with caron
-<Multi_key> <braceright> <d> : "ď" U010F # lowercase d with caron
-<Multi_key> <braceright> <E> : "Ě" U011A # uppercase E with caron
-<Multi_key> <braceright> <e> : "ě" U011B # lowercase e with caron
-<Multi_key> <braceright> <G> : "Ǧ" U01E6 # uppercase G with caron
-<Multi_key> <braceright> <g> : "ǧ" U01E7 # lowercase g with caron
-<Multi_key> <braceright> <H> : "Ȟ" U021E # uppercase H with caron
-<Multi_key> <braceright> <h> : "ȟ" U021F # lowercase h with caron
-<Multi_key> <braceright> <I> : "Ǐ" U01CF # uppercase I with caron
-<Multi_key> <braceright> <i> : "ǐ" U01D0 # lowercase i with caron
-<Multi_key> <braceright> <j> : "ǰ" U01F0 # lowercase j with caron
-<Multi_key> <braceright> <K> : "Ǩ" U01E8 # uppercase K with caron
-<Multi_key> <braceright> <k> : "ǩ" U01E9 # lowercase k with caron
-<Multi_key> <braceright> <L> : "Ľ" U013D # uppercase L with caron
-<Multi_key> <braceright> <l> : "ľ" U013E # lowercase l with caron
-<Multi_key> <braceright> <N> : "Ň" U0147 # uppercase N with caron
-<Multi_key> <braceright> <n> : "ň" U0148 # lowercase n with caron
-<Multi_key> <braceright> <O> : "Ǒ" U01D1 # uppercase O with caron
-<Multi_key> <braceright> <o> : "ǒ" U01D2 # lowercase o with caron
-<Multi_key> <braceright> <R> : "Ř" U0158 # uppercase R with caron
-<Multi_key> <braceright> <r> : "ř" U0159 # lowercase r with caron
-<Multi_key> <braceright> <S> : "Š" U0160 # uppercase S with caron
-<Multi_key> <braceright> <s> : "š" U0161 # lowercase s with caron
-<Multi_key> <braceright> <T> : "Ť" U0164 # uppercase T with caron
-<Multi_key> <braceright> <t> : "ť" U0165 # lowercase t with caron
-<Multi_key> <braceright> <U> : "Ǔ" U01D3 # uppercase U with caron
-<Multi_key> <braceright> <u> : "ǔ" U01D4 # lowercase u with caron
-<Multi_key> <braceright> <Z> : "Ž" U017D # uppercase Z with caron
-<Multi_key> <braceright> <z> : "ž" U017E # lowercase z with caron
+# <Multi_key> <greater> <greater> : "⋙"
 
-# -- abovering/ringabove -----------------------------------
+<Multi_key> <greater> <h> : "ʰ" U02B0 # modifier letter small h
+<Multi_key> <greater> <j> : "ʲ" U02B2 # modifier letter small j
+<Multi_key> <greater> <r> : "ʳ" U02B3 # modifier letter small r
+<Multi_key> <greater> <w> : "ʷ" U02B7 # modifier letter small w
+<Multi_key> <greater> <y> : "ʸ" U02B8 # modifier letter small y
+<Multi_key> <greater> <l> : "ˡ" U02E1 # modifier letter small l
+<Multi_key> <greater> <s> : "ˢ" U02E2 # modifier letter small s
+<Multi_key> <greater> <x> : "ˣ" U02E3 # modifier letter small x
 
-<Multi_key> <0> <space> : "̊"  U030A # combining ring above
-<Multi_key> <0> <Tab>   : "˚" U030A # ring above
+<Multi_key> <greater> <period> : "›" U203a # single right angle quotation mark
 
-<Multi_key> <0> <A> : "Å" Aring # uppercase A with ring above
-<Multi_key> <0> <a> : "å" aring # lowercase a with ring above
-<Multi_key> <0> <U> : "Ů" U016E # uppercase U with ring above
-<Multi_key> <0> <u> : "ů" U016F # lowercase u with ring above
-<Multi_key> <0> <w> : "ẘ" U1E98 # lowercase w with ring above
-<Multi_key> <0> <y> : "ẙ" U1E99 # lowercase y with ring above
+## <Multi_key> <greater> <U0266>  : "ʱ" U02B1 # modifier letter small h with hook
+## <Multi_key> <greater> <U0279>  : "ʴ" U02B4 # modifier letter small turned r
+## <Multi_key> <greater> <U027B>  : "ʵ" U02B5 # modifier letter small turned r with hook
+## <Multi_key> <greater> <U0281>  : "ʶ" U02B6 # modifier letter small capital inverted r
+## <Multi_key> <greater> <U0263>  : "ˠ" U02E0 # modifier letter small gamma
+## <Multi_key> <greater> <U0295>  : "ˤ" U02E4 # modifier letter small reversed glottal stop
 
-# -- belowring/ringbelow -----------------------------------
-
-<Multi_key> <exclam> <A>    : "Ḁ" U1E00 # uppercase A with ring below
-<Multi_key> <exclam> <a>    : "ḁ" U1E01 # lowercase A with ring below
+## --------------------------------- SLASH ---------------------------------- ##
 
 # -- stroke(slash) -----------------------------------------
 
@@ -598,48 +710,28 @@
 <Multi_key> <slash> <L> : "Ł" U0141   # uppercase L with stroke
 <Multi_key> <slash> <l> : "ł" U0142   # lowercase l with stroke
 <Multi_key> <slash> <O> : "Ø" Oslash  # uppercase O with stroke
-<Multi_key> <slash> <o> : "ø" oslash  # lowercase O with stroke
+<Multi_key> <slash> <o> : "ø" oslash  # lowercase o with stroke
 <Multi_key> <slash> <P> : "Ᵽ" U2C63   # uppercase P with stroke
-<Multi_key> <slash> <p> : "ᵽ" U1D7D   # lowercase P with stroke
+<Multi_key> <slash> <p> : "ᵽ" U1D7D   # lowercase p with stroke
 <Multi_key> <slash> <R> : "Ɍ" U024C   # uppercase R with stroke
-<Multi_key> <slash> <r> : "ɍ" U024D   # lowercase R with stroke
+<Multi_key> <slash> <r> : "ɍ" U024D   # lowercase r with stroke
 <Multi_key> <slash> <T> : "Ŧ" U0166   # uppercase T with stroke
-<Multi_key> <slash> <t> : "ŧ" U0167   # lowercase T with stroke
+<Multi_key> <slash> <t> : "ŧ" U0167   # lowercase t with stroke
 <Multi_key> <slash> <U> : "Ʉ" U0244   # uppercase U BAR
-<Multi_key> <slash> <u> : "ʉ" U0289   # lowercase U BAR
+<Multi_key> <slash> <u> : "ʉ" U0289   # lowercase u BAR
 <Multi_key> <slash> <Y> : "Ɏ" U024E   # uppercase Y with stroke
-<Multi_key> <slash> <y> : "ɏ" U024F   # lowercase Y with stroke
+<Multi_key> <slash> <y> : "ɏ" U024F   # lowercase y with stroke
 <Multi_key> <slash> <Z> : "Ƶ" U01B5   # uppercase Z with stroke
-<Multi_key> <slash> <z> : "ƶ" U01B6   # lowercase Z with stroke
+<Multi_key> <slash> <z> : "ƶ" U01B6   # lowercase z with stroke
 
-# -- line below / below line -------------------------------
+## -------------------------------- QUESTION -------------------------------- ##
 
-<Multi_key> <underscore> <B> : "Ḇ" U1E06 # uppercase B with line below
-<Multi_key> <underscore> <b> : "ḇ" U1E07 # lowercase b with line below
-<Multi_key> <underscore> <D> : "Ḏ" U1E0E # uppercase D with line below
-<Multi_key> <underscore> <d> : "ḏ" U1E0F # lowercase d with line below
-<Multi_key> <underscore> <h> : "ẖ" U1E96 # lowercase h with line below
-<Multi_key> <underscore> <K> : "Ḵ" U1E34 # uppercase K with line below
-<Multi_key> <underscore> <k> : "ḵ" U1E35 # lowercase k with line below
-<Multi_key> <underscore> <L> : "Ḻ" U1E3A # uppercase L with line below
-<Multi_key> <underscore> <l> : "ḻ" U1E3B # lowercase l with line below
-<Multi_key> <underscore> <N> : "Ṉ" U1E48 # uppercase N with line below
-<Multi_key> <underscore> <n> : "ṉ" U1E49 # lowercase n with line below
-<Multi_key> <underscore> <R> : "Ṟ" U1E5E # uppercase R with line below
-<Multi_key> <underscore> <r> : "ṟ" U1E5F # lowercase r with line below
-<Multi_key> <underscore> <T> : "Ṯ" U1E6E # uppercase T with line below
-<Multi_key> <underscore> <t> : "ṯ" U1E6F # lowercase t with line below
-<Multi_key> <underscore> <Z> : "Ẕ" U1E94 # uppercase Z with line below
-<Multi_key> <underscore> <z> : "ẕ" U1E95 # lowercase z with line below
+<Multi_key> <question> <backslash> : "☭" U262D # hammer and sickle
+<Multi_key> <question> <exclam>  : "⸘" U2E18 # inverted interrobang
+<Multi_key> <question> <minus> : "ʡ" U02A1 #  glottal stop with stroke
 
-# -- horn --------------------------------------------------
+## -------------------------------------------------------------------------- ##
 
-<Multi_key> <asterisk> <space> : "̛" U031B # COMBINING HORN
-
-<Multi_key> <asterisk> <O> : "Ơ" U01A0 # uppercase O with HORN
-<Multi_key> <asterisk> <o> : "ơ" U01A1 # lowercase O with HORN
-<Multi_key> <asterisk> <U> : "Ư" U01AF # uppercase U with HORN
-<Multi_key> <asterisk> <u> : "ư" U01B0 # lowercase U with HORN
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
 
@@ -658,46 +750,46 @@
 
 <Multi_key> <question> <space> : "̉" U0309 # combining hook above
 
-<Multi_key> <question> <A> : "Ả" U1EA2    # uppercase A with HOOK ABOVE
-<Multi_key> <question> <a> : "ả" U1EA3    # lowercase a with HOOK ABOVE
-<Multi_key> <question> <B> : "Ɓ" U0181    # uppercase B with HOOK
-<Multi_key> <question> <b> : "ɓ" U0253    # lowercase b with HOOK
-<Multi_key> <question> <C> : "Ƈ" U0187    # uppercase C with HOOK
-<Multi_key> <question> <c> : "ƈ" U0188    # lowercase c with HOOK
-<Multi_key> <question> <D> : "Ɗ" U018A    # uppercase D with HOOK
-<Multi_key> <question> <d> : "ɗ" U0257    # lowercase d with HOOK
-<Multi_key> <question> <E> : "Ẻ" U1EBA    # uppercase E with HOOK ABOVE
-<Multi_key> <question> <e> : "ẻ" U1EBB    # lowercase e with HOOK ABOVE
-<Multi_key> <question> <f> : "ƒ" function # lowercase f with HOOK
-<Multi_key> <question> <F> : "Ƒ" U0191    # uppercase F with HOOK
-<Multi_key> <question> <G> : "Ɠ" U0193    # uppercase G with HOOK
-<Multi_key> <question> <g> : "ɠ" U0260    # lowercase g with HOOK
-<Multi_key> <question> <h> : "ɦ" U0266    # lowercase h with HOOK
-<Multi_key> <question> <I> : "Ỉ" U1EC8    # uppercase I with HOOK ABOVE
-<Multi_key> <question> <i> : "ỉ" U1EC9    # lowercase i with HOOK ABOVE
-<Multi_key> <question> <K> : "Ƙ" U0198    # uppercase K with HOOK
-<Multi_key> <question> <k> : "ƙ" U0199    # lowercase k with HOOK
-<Multi_key> <question> <m> : "ɱ" U0271    # lowercase m with HOOK
-<Multi_key> <question> <M> : "Ɱ" U2C6E    # uppercase M with HOOK
-<Multi_key> <question> <N> : "Ɲ" U019D    # uppercase N with LEFT HOOK
-<Multi_key> <question> <n> : "ɲ" U0272    # lowercase n with LEFT HOOK
-<Multi_key> <question> <O> : "Ỏ" U1ECE    # uppercase O with HOOK ABOVE
-<Multi_key> <question> <o> : "ỏ" U1ECF    # lowercase o with HOOK ABOVE
-<Multi_key> <question> <P> : "Ƥ" U01A4    # uppercase P with HOOK
-<Multi_key> <question> <p> : "ƥ" U01A5    # lowercase p with HOOK
-<Multi_key> <question> <q> : "ʠ" U02A0    # lowercase Q with HOOK
-<Multi_key> <question> <r> : "ɼ" U027C    # lowercase r with LONG LEG
-<Multi_key> <question> <s> : "ʂ" U0282    # lowercase s with HOOK
-<Multi_key> <question> <T> : "Ƭ" U01AC    # uppercase T with HOOK
-<Multi_key> <question> <t> : "ƭ" U01AD    # lowercase t with HOOK
-<Multi_key> <question> <U> : "Ủ" U1EE6    # uppercase U with HOOK ABOVE
-<Multi_key> <question> <u> : "ủ" U1EE7    # lowercase u with HOOK ABOVE
+<Multi_key> <question> <A> : "Ả" U1EA2    # uppercase A with hook above
+<Multi_key> <question> <a> : "ả" U1EA3    # lowercase a with hook above
+<Multi_key> <question> <B> : "Ɓ" U0181    # uppercase B with hook
+<Multi_key> <question> <b> : "ɓ" U0253    # lowercase b with hook
+<Multi_key> <question> <C> : "Ƈ" U0187    # uppercase C with hook
+<Multi_key> <question> <c> : "ƈ" U0188    # lowercase c with hook
+<Multi_key> <question> <D> : "Ɗ" U018A    # uppercase D with hook
+<Multi_key> <question> <d> : "ɗ" U0257    # lowercase d with hook
+<Multi_key> <question> <E> : "Ẻ" U1EBA    # uppercase E with hook above
+<Multi_key> <question> <e> : "ẻ" U1EBB    # lowercase e with hook above
+<Multi_key> <question> <f> : "ƒ" function # lowercase f with hook
+<Multi_key> <question> <F> : "Ƒ" U0191    # uppercase F with hook
+<Multi_key> <question> <G> : "Ɠ" U0193    # uppercase G with hook
+<Multi_key> <question> <g> : "ɠ" U0260    # lowercase g with hook
+<Multi_key> <question> <h> : "ɦ" U0266    # lowercase h with hook
+<Multi_key> <question> <I> : "Ỉ" U1EC8    # uppercase I with hook above
+<Multi_key> <question> <i> : "ỉ" U1EC9    # lowercase i with hook above
+<Multi_key> <question> <K> : "Ƙ" U0198    # uppercase K with hook
+<Multi_key> <question> <k> : "ƙ" U0199    # lowercase k with hook
+<Multi_key> <question> <m> : "ɱ" U0271    # lowercase m with hook
+<Multi_key> <question> <M> : "Ɱ" U2C6E    # uppercase M with hook
+<Multi_key> <question> <N> : "Ɲ" U019D    # uppercase N with left hook
+<Multi_key> <question> <n> : "ɲ" U0272    # lowercase n with left hook
+<Multi_key> <question> <O> : "Ỏ" U1ECE    # uppercase O with hook above
+<Multi_key> <question> <o> : "ỏ" U1ECF    # lowercase o with hook above
+<Multi_key> <question> <P> : "Ƥ" U01A4    # uppercase P with hook
+<Multi_key> <question> <p> : "ƥ" U01A5    # lowercase p with hook
+<Multi_key> <question> <q> : "ʠ" U02A0    # lowercase Q with hook
+<Multi_key> <question> <r> : "ɼ" U027C    # lowercase r with long leg
+<Multi_key> <question> <s> : "ʂ" U0282    # lowercase s with hook
+<Multi_key> <question> <T> : "Ƭ" U01AC    # uppercase T with hook
+<Multi_key> <question> <t> : "ƭ" U01AD    # lowercase t with hook
+<Multi_key> <question> <U> : "Ủ" U1EE6    # uppercase U with hook above
+<Multi_key> <question> <u> : "ủ" U1EE7    # lowercase u with hook above
 <Multi_key> <question> <V> : "Ʋ" U01B2    # uppercase V with HOOK
 <Multi_key> <question> <v> : "ʋ" U028B    # lowercase v with HOOK
 <Multi_key> <question> <W> : "Ⱳ" U2C72    # uppercase W with HOOK
 <Multi_key> <question> <w> : "ⱳ" U2C73    # lowercase w with HOOK
-<Multi_key> <question> <Y> : "Ỷ" U1EF6    # uppercase Y with HOOK ABOVE
-<Multi_key> <question> <y> : "ỷ" U1EF7    # lowercase y with HOOK ABOVE
+<Multi_key> <question> <Y> : "Ỷ" U1EF6    # uppercase Y with hook above
+<Multi_key> <question> <y> : "ỷ" U1EF7    # lowercase y with hook above
 <Multi_key> <question> <Z> : "Ȥ" U0224    # uppercase Z with HOOK
 <Multi_key> <question> <z> : "ȥ" U0225    # lowercase z with HOOK
 
@@ -1710,37 +1802,8 @@
 #--# <Multi_key> <grave> <Greek_OMEGA> : "Ὼ" U1FFA # GREEK CAPITAL LETTER OMEGA with VARIA
 #--# <dead_iota> <Greek_OMEGA>  : "ῼ" U1FFC # GREEK CAPITAL LETTER OMEGA with PROSGEGRAMMENI
 #--# <Multi_key> <Greek_iota> <Greek_OMEGA> : "ῼ" U1FFC # GREEK CAPITAL LETTER OMEGA with PROSGEGRAMMENI
+
 #--# # Superscripts and Subscripts
-#--# <dead_circumflex> <0>    : "⁰" U2070 # SUPERSCRIPT ZERO
-#--# <Multi_key> <asciicircum> <0>   : "⁰" U2070 # SUPERSCRIPT ZERO
-#--# <dead_circumflex> <KP_0>   : "⁰" U2070 # SUPERSCRIPT ZERO
-#--# <Multi_key> <asciicircum> <KP_0>  : "⁰" U2070 # SUPERSCRIPT ZERO
-#--# <dead_circumflex> <Multi_key> <underscore> <i> : "ⁱ" U2071 # SUPERSCRIPT lowercase I
-#--# <Multi_key> <asciicircum> <underscore> <i> : "ⁱ" U2071 # SUPERSCRIPT lowercase I
-#--# <dead_circumflex> <4>    : "⁴" U2074 # SUPERSCRIPT FOUR
-#--# <Multi_key> <asciicircum> <4>   : "⁴" U2074 # SUPERSCRIPT FOUR
-#--# <dead_circumflex> <KP_4>   : "⁴" U2074 # SUPERSCRIPT FOUR
-#--# <Multi_key> <asciicircum> <KP_4>  : "⁴" U2074 # SUPERSCRIPT FOUR
-#--# <dead_circumflex> <5>    : "⁵" U2075 # SUPERSCRIPT FIVE
-#--# <Multi_key> <asciicircum> <5>   : "⁵" U2075 # SUPERSCRIPT FIVE
-#--# <dead_circumflex> <KP_5>   : "⁵" U2075 # SUPERSCRIPT FIVE
-#--# <Multi_key> <asciicircum> <KP_5>  : "⁵" U2075 # SUPERSCRIPT FIVE
-#--# <dead_circumflex> <6>    : "⁶" U2076 # SUPERSCRIPT SIX
-#--# <Multi_key> <asciicircum> <6>   : "⁶" U2076 # SUPERSCRIPT SIX
-#--# <dead_circumflex> <KP_6>   : "⁶" U2076 # SUPERSCRIPT SIX
-#--# <Multi_key> <asciicircum> <KP_6>  : "⁶" U2076 # SUPERSCRIPT SIX
-#--# <dead_circumflex> <7>    : "⁷" U2077 # SUPERSCRIPT SEVEN
-#--# <Multi_key> <asciicircum> <7>   : "⁷" U2077 # SUPERSCRIPT SEVEN
-#--# <dead_circumflex> <KP_7>   : "⁷" U2077 # SUPERSCRIPT SEVEN
-#--# <Multi_key> <asciicircum> <KP_7>  : "⁷" U2077 # SUPERSCRIPT SEVEN
-#--# <dead_circumflex> <8>    : "⁸" U2078 # SUPERSCRIPT EIGHT
-#--# <Multi_key> <asciicircum> <8>   : "⁸" U2078 # SUPERSCRIPT EIGHT
-#--# <dead_circumflex> <KP_8>   : "⁸" U2078 # SUPERSCRIPT EIGHT
-#--# <Multi_key> <asciicircum> <KP_8>  : "⁸" U2078 # SUPERSCRIPT EIGHT
-#--# <dead_circumflex> <9>    : "⁹" U2079 # SUPERSCRIPT NINE
-#--# <Multi_key> <asciicircum> <9>   : "⁹" U2079 # SUPERSCRIPT NINE
-#--# <dead_circumflex> <KP_9>   : "⁹" U2079 # SUPERSCRIPT NINE
-#--# <Multi_key> <asciicircum> <KP_9>  : "⁹" U2079 # SUPERSCRIPT NINE
 #--# <dead_circumflex> <plus>   : "⁺" U207A # SUPERSCRIPT PLUS SIGN
 #--# <Multi_key> <asciicircum> <plus>  : "⁺" U207A # SUPERSCRIPT PLUS SIGN
 #--# <dead_circumflex> <KP_Add>   : "⁺" U207A # SUPERSCRIPT PLUS SIGN
@@ -1759,36 +1822,6 @@
 #--# <Multi_key> <asciicircum> <parenright>  : "⁾" U207E # SUPERSCRIPT RIGHT PARENTHESIS
 #--# <dead_circumflex> <Multi_key> <underscore> <n> : "ⁿ" U207F # SUPERSCRIPT lowercase N
 #--# <Multi_key> <asciicircum> <underscore> <n> : "ⁿ" U207F # SUPERSCRIPT lowercase N
-#--# <dead_caron> <0>    : "₀" U2080 # SUBSCRIPT ZERO
-#--# <Multi_key> <underscore> <0>   : "₀" U2080 # SUBSCRIPT ZERO
-#--# <Multi_key> <underscore> <KP_0>   : "₀" U2080 # SUBSCRIPT ZERO
-#--# <dead_caron> <1>    : "₁" U2081 # SUBSCRIPT ONE
-#--# <Multi_key> <underscore> <1>   : "₁" U2081 # SUBSCRIPT ONE
-#--# <Multi_key> <underscore> <KP_1>   : "₁" U2081 # SUBSCRIPT ONE
-#--# <dead_caron> <2>    : "₂" U2082 # SUBSCRIPT TWO
-#--# <Multi_key> <underscore> <2>   : "₂" U2082 # SUBSCRIPT TWO
-#--# <Multi_key> <underscore> <KP_2>   : "₂" U2082 # SUBSCRIPT TWO
-#--# <dead_caron> <3>    : "₃" U2083 # SUBSCRIPT THREE
-#--# <Multi_key> <underscore> <3>   : "₃" U2083 # SUBSCRIPT THREE
-#--# <Multi_key> <underscore> <KP_3>   : "₃" U2083 # SUBSCRIPT THREE
-#--# <dead_caron> <4>    : "₄" U2084 # SUBSCRIPT FOUR
-#--# <Multi_key> <underscore> <4>   : "₄" U2084 # SUBSCRIPT FOUR
-#--# <Multi_key> <underscore> <KP_4>   : "₄" U2084 # SUBSCRIPT FOUR
-#--# <dead_caron> <5>    : "₅" U2085 # SUBSCRIPT FIVE
-#--# <Multi_key> <underscore> <5>   : "₅" U2085 # SUBSCRIPT FIVE
-#--# <Multi_key> <underscore> <KP_5>   : "₅" U2085 # SUBSCRIPT FIVE
-#--# <dead_caron> <6>    : "₆" U2086 # SUBSCRIPT SIX
-#--# <Multi_key> <underscore> <6>   : "₆" U2086 # SUBSCRIPT SIX
-#--# <Multi_key> <underscore> <KP_6>   : "₆" U2086 # SUBSCRIPT SIX
-#--# <dead_caron> <7>    : "₇" U2087 # SUBSCRIPT SEVEN
-#--# <Multi_key> <underscore> <7>   : "₇" U2087 # SUBSCRIPT SEVEN
-#--# <Multi_key> <underscore> <KP_7>   : "₇" U2087 # SUBSCRIPT SEVEN
-#--# <dead_caron> <8>    : "₈" U2088 # SUBSCRIPT EIGHT
-#--# <Multi_key> <underscore> <8>   : "₈" U2088 # SUBSCRIPT EIGHT
-#--# <Multi_key> <underscore> <KP_8>   : "₈" U2088 # SUBSCRIPT EIGHT
-#--# <dead_caron> <9>    : "₉" U2089 # SUBSCRIPT NINE
-#--# <Multi_key> <underscore> <9>   : "₉" U2089 # SUBSCRIPT NINE
-#--# <Multi_key> <underscore> <KP_9>   : "₉" U2089 # SUBSCRIPT NINE
 #--# <dead_caron> <plus>    : "₊" U208A # SUBSCRIPT PLUS SIGN
 #--# <Multi_key> <underscore> <plus>   : "₊" U208A # SUBSCRIPT PLUS SIGN
 #--# <Multi_key> <underscore> <KP_Add>  : "₊" U208A # SUBSCRIPT PLUS SIGN
@@ -1802,36 +1835,13 @@
 #--# <Multi_key> <underscore> <parenleft>  : "₍" U208D # SUBSCRIPT LEFT PARENTHESIS
 #--# <dead_caron> <parenright>   : "₎" U208E # SUBSCRIPT RIGHT PARENTHESIS
 #--# <Multi_key> <underscore> <parenright>  : "₎" U208E # SUBSCRIPT RIGHT PARENTHESIS
+
 #--# # Letterlike Symbols
-#--# <Multi_key> <C> <C>   : "ℂ" U2102 # DOUBLE-STRUCK CAPITAL C
-#--# <Multi_key> <N> <N>   : "ℕ" U2115 # DOUBLE-STRUCK CAPITAL N
-#--# <Multi_key> <Q> <Q>   : "ℚ" U211A # DOUBLE-STRUCK CAPITAL Q
-#--# <Multi_key> <R> <R>   : "ℝ" U211D # DOUBLE-STRUCK CAPITAL R
-#--# <Multi_key> <Z> <Z>   : "ℤ" U2124 # DOUBLE-STRUCK CAPITAL Z
 #--# <dead_circumflex> <Multi_key> <S> <M> : "℠" U2120 # SERVICE MARK
 #--# <Multi_key> <S> <M>   : "℠" U2120 # SERVICE MARK
 #--# <dead_circumflex> <Multi_key> <s> <m> : "℠" U2120 # SERVICE MARK
 #--# <Multi_key> <s> <m>   : "℠" U2120 # SERVICE MARK
-#--# <dead_circumflex> <Multi_key> <T> <M> : "™" U2122 # TRADE MARK SIGN
-#--# <Multi_key> <T> <M>   : "™" U2122 # TRADE MARK SIGN
-#--# <dead_circumflex> <Multi_key> <t> <m> : "™" U2122 # TRADE MARK SIGN
-#--# <Multi_key> <t> <m>   : "™" U2122 # TRADE MARK SIGN
-#--# # Number Forms
-#--# <Multi_key> <1> <7>   : "⅐" U2150 # VULGAR FRACTION ONE SEVENTH
-#--# <Multi_key> <1> <9>   : "⅑" U2151 # VULGAR FRACTION ONE NINTH
-#--# <Multi_key> <1> <1> <0>   : "⅒" U2152 # VULGAR FRACTION ONE TENTH
-#--# <Multi_key> <1> <3>   : "⅓" U2153 # VULGAR FRACTION ONE THIRD
-#--# <Multi_key> <2> <3>   : "⅔" U2154 # VULGAR FRACTION TWO THIRDS
-#--# <Multi_key> <1> <5>   : "⅕" U2155 # VULGAR FRACTION ONE FIFTH
-#--# <Multi_key> <2> <5>   : "⅖" U2156 # VULGAR FRACTION TWO FIFTHS
-#--# <Multi_key> <3> <5>   : "⅗" U2157 # VULGAR FRACTION THREE FIFTHS
-#--# <Multi_key> <4> <5>   : "⅘" U2158 # VULGAR FRACTION FOUR FIFTHS
-#--# <Multi_key> <1> <6>   : "⅙" U2159 # VULGAR FRACTION ONE SIXTH
-#--# <Multi_key> <5> <6>   : "⅚" U215A # VULGAR FRACTION FIVE SIXTHS
-#--# <Multi_key> <1> <8>   : "⅛" U215B # VULGAR FRACTION ONE EIGHTH
-#--# <Multi_key> <3> <8>   : "⅜" U215C # VULGAR FRACTION THREE EIGHTHS
-#--# <Multi_key> <5> <8>   : "⅝" U215D # VULGAR FRACTION FIVE EIGHTHS
-#--# <Multi_key> <7> <8>   : "⅞" U215E # VULGAR FRACTION SEVEN EIGHTHS
+
 #--# # Arrows
 #--# <Multi_key> <slash> <leftarrow>  : "↚" U219A # LEFTWARDS ARROW with stroke
 #--# <Multi_key> <KP_Divide> <leftarrow> : "↚" U219A # LEFTWARDS ARROW with stroke
@@ -1897,6 +1907,7 @@
 #--# <Multi_key> <U22B4> <slash>  : "⋬" U22EC # NOT NORMAL SUBGROUP OF OR EQUAL TO
 #--# <Multi_key> <U22B5> <slash>  : "⋭" U22ED # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
 #--# <Multi_key> <d> <i>   : "⌀" U2300 # DIAMETER SIGN
+
 #--# # Enclosed Alphanumerics
 #--# <Multi_key> <parenleft> <1> <parenright>  : "①" U2460 # CIRCLED DIGIT ONE
 #--# <Multi_key> <parenleft> <KP_1> <parenright>  : "①" U2460 # CIRCLED DIGIT ONE
@@ -1992,6 +2003,7 @@
 #--# <Multi_key> <parenleft> <z> <parenright> : "ⓩ" U24E9 # CIRCLED lowercase Z
 #--# <Multi_key> <parenleft> <0> <parenright> : "⓪" U24EA # CIRCLED DIGIT ZERO
 #--# <Multi_key> <parenleft> <KP_0> <parenright> : "⓪" U24EA # CIRCLED DIGIT ZERO
+
 #--# # Supplemental Mathematical Operators
 #--# <dead_belowdot> <plus>    : "⨥" U2A25 # PLUS SIGN with DOT BELOW
 #--# <dead_belowtilde> <plus>   : "⨦" U2A26 # PLUS SIGN with TILDE BELOW
@@ -2001,95 +2013,7 @@
 #--# <dead_belowdiaeresis> <dead_diaeresis> <equal> : "⩷" U2A77 # EQUALS SIGN with TWO DOTS ABOVE AND TWO DOTS BELOW
 #--# <Multi_key> <U2ADD> <slash>   : "⫝̸" U2ADC # FORKING
 #--# <dead_belowring> <bar>    : "⫰" U2AF0 # VERTICAL LINE with CIRCLE BELOW
-#--# # Hiragana
-#--# <dead_voiced_sound> <U304B>  : "が" U304C # HIRAGANA LETTER GA
-#--# <dead_voiced_sound> <U304D>  : "ぎ" U304E # HIRAGANA LETTER GI
-#--# <dead_voiced_sound> <U304F>  : "ぐ" U3050 # HIRAGANA LETTER GU
-#--# <dead_voiced_sound> <U3051>  : "げ" U3052 # HIRAGANA LETTER GE
-#--# <dead_voiced_sound> <U3053>  : "ご" U3054 # HIRAGANA LETTER GO
-#--# <dead_voiced_sound> <U3055>  : "ざ" U3056 # HIRAGANA LETTER ZA
-#--# <dead_voiced_sound> <U3057>  : "じ" U3058 # HIRAGANA LETTER ZI
-#--# <dead_voiced_sound> <U3059>  : "ず" U305A # HIRAGANA LETTER ZU
-#--# <dead_voiced_sound> <U305B>  : "ぜ" U305C # HIRAGANA LETTER ZE
-#--# <dead_voiced_sound> <U305D>  : "ぞ" U305E # HIRAGANA LETTER ZO
-#--# <dead_voiced_sound> <U305F>  : "だ" U3060 # HIRAGANA LETTER DA
-#--# <dead_voiced_sound> <U3061>  : "ぢ" U3062 # HIRAGANA LETTER DI
-#--# <dead_voiced_sound> <U3064>  : "づ" U3065 # HIRAGANA LETTER DU
-#--# <dead_voiced_sound> <U3066>  : "で" U3067 # HIRAGANA LETTER DE
-#--# <dead_voiced_sound> <U3068>  : "ど" U3069 # HIRAGANA LETTER DO
-#--# <dead_voiced_sound> <U306F>  : "ば" U3070 # HIRAGANA LETTER BA
-#--# <dead_semivoiced_sound> <U306F>  : "ぱ" U3071 # HIRAGANA LETTER PA
-#--# <dead_voiced_sound> <U3072>  : "び" U3073 # HIRAGANA LETTER BI
-#--# <dead_semivoiced_sound> <U3072>  : "ぴ" U3074 # HIRAGANA LETTER PI
-#--# <dead_voiced_sound> <U3075>  : "ぶ" U3076 # HIRAGANA LETTER BU
-#--# <dead_semivoiced_sound> <U3075>  : "ぷ" U3077 # HIRAGANA LETTER PU
-#--# <dead_voiced_sound> <U3078>  : "べ" U3079 # HIRAGANA LETTER BE
-#--# <dead_semivoiced_sound> <U3078>  : "ぺ" U307A # HIRAGANA LETTER PE
-#--# <dead_voiced_sound> <U307B>  : "ぼ" U307C # HIRAGANA LETTER BO
-#--# <dead_semivoiced_sound> <U307B>  : "ぽ" U307D # HIRAGANA LETTER PO
-#--# <dead_voiced_sound> <U3046>  : "ゔ" U3094 # HIRAGANA LETTER VU
-#--# <dead_voiced_sound> <U309D>  : "ゞ" U309E # HIRAGANA VOICED ITERATION MARK
-#--# # Katakana
-#--# <dead_voiced_sound> <kana_KA>  : "ガ" U30AC # KATAKANA LETTER GA
-#--# <dead_voiced_sound> <kana_KI>  : "ギ" U30AE # KATAKANA LETTER GI
-#--# <dead_voiced_sound> <kana_KU>  : "グ" U30B0 # KATAKANA LETTER GU
-#--# <dead_voiced_sound> <kana_KE>  : "ゲ" U30B2 # KATAKANA LETTER GE
-#--# <dead_voiced_sound> <kana_KO>  : "ゴ" U30B4 # KATAKANA LETTER GO
-#--# <dead_voiced_sound> <kana_SA>  : "ザ" U30B6 # KATAKANA LETTER ZA
-#--# <dead_voiced_sound> <kana_SHI>  : "ジ" U30B8 # KATAKANA LETTER ZI
-#--# <dead_voiced_sound> <kana_SU>  : "ズ" U30BA # KATAKANA LETTER ZU
-#--# <dead_voiced_sound> <kana_SE>  : "ゼ" U30BC # KATAKANA LETTER ZE
-#--# <dead_voiced_sound> <kana_SO>  : "ゾ" U30BE # KATAKANA LETTER ZO
-#--# <dead_voiced_sound> <kana_TA>  : "ダ" U30C0 # KATAKANA LETTER DA
-#--# <dead_voiced_sound> <kana_CHI>  : "ヂ" U30C2 # KATAKANA LETTER DI
-#--# <dead_voiced_sound> <kana_TSU>  : "ヅ" U30C5 # KATAKANA LETTER DU
-#--# <dead_voiced_sound> <kana_TE>  : "デ" U30C7 # KATAKANA LETTER DE
-#--# <dead_voiced_sound> <kana_TO>  : "ド" U30C9 # KATAKANA LETTER DO
-#--# <dead_voiced_sound> <kana_HA>  : "バ" U30D0 # KATAKANA LETTER BA
-#--# <dead_semivoiced_sound> <kana_HA> : "パ" U30D1 # KATAKANA LETTER PA
-#--# <dead_voiced_sound> <kana_HI>  : "ビ" U30D3 # KATAKANA LETTER BI
-#--# <dead_semivoiced_sound> <kana_HI> : "ピ" U30D4 # KATAKANA LETTER PI
-#--# <dead_voiced_sound> <kana_FU>  : "ブ" U30D6 # KATAKANA LETTER BU
-#--# <dead_semivoiced_sound> <kana_FU> : "プ" U30D7 # KATAKANA LETTER PU
-#--# <dead_voiced_sound> <kana_HE>  : "ベ" U30D9 # KATAKANA LETTER BE
-#--# <dead_semivoiced_sound> <kana_HE> : "ペ" U30DA # KATAKANA LETTER PE
-#--# <dead_voiced_sound> <kana_HO>  : "ボ" U30DC # KATAKANA LETTER BO
-#--# <dead_semivoiced_sound> <kana_HO> : "ポ" U30DD # KATAKANA LETTER PO
-#--# <dead_voiced_sound> <kana_U>  : "ヴ" U30F4 # KATAKANA LETTER VU
-#--# <dead_voiced_sound> <kana_WA>  : "ヷ" U30F7 # KATAKANA LETTER VA
-#--# <dead_voiced_sound> <U30F0>  : "ヸ" U30F8 # KATAKANA LETTER VI
-#--# <dead_voiced_sound> <U30F1>  : "ヹ" U30F9 # KATAKANA LETTER VE
-#--# <dead_voiced_sound> <kana_WO>  : "ヺ" U30FA # KATAKANA LETTER VO
-#--# <dead_voiced_sound> <U30FD>  : "ヾ" U30FE # KATAKANA VOICED ITERATION MARK
-#--# # Kanbun
-#--# <dead_circumflex> <U4E00>  : "㆒" U3192 # IDEOGRAPHIC ANNOTATION ONE MARK
-#--# <Multi_key> <asciicircum> <U4E00> : "㆒" U3192 # IDEOGRAPHIC ANNOTATION ONE MARK
-#--# <dead_circumflex> <U4E8C>  : "㆓" U3193 # IDEOGRAPHIC ANNOTATION TWO MARK
-#--# <Multi_key> <asciicircum> <U4E8C> : "㆓" U3193 # IDEOGRAPHIC ANNOTATION TWO MARK
-#--# <dead_circumflex> <U4E09>  : "㆔" U3194 # IDEOGRAPHIC ANNOTATION THREE MARK
-#--# <Multi_key> <asciicircum> <U4E09> : "㆔" U3194 # IDEOGRAPHIC ANNOTATION THREE MARK
-#--# <dead_circumflex> <U56DB>  : "㆕" U3195 # IDEOGRAPHIC ANNOTATION FOUR MARK
-#--# <Multi_key> <asciicircum> <U56DB> : "㆕" U3195 # IDEOGRAPHIC ANNOTATION FOUR MARK
-#--# <dead_circumflex> <U4E0A>  : "㆖" U3196 # IDEOGRAPHIC ANNOTATION TOP MARK
-#--# <Multi_key> <asciicircum> <U4E0A> : "㆖" U3196 # IDEOGRAPHIC ANNOTATION TOP MARK
-#--# <dead_circumflex> <U4E2D>  : "㆗" U3197 # IDEOGRAPHIC ANNOTATION MIDDLE MARK
-#--# <Multi_key> <asciicircum> <U4E2D> : "㆗" U3197 # IDEOGRAPHIC ANNOTATION MIDDLE MARK
-#--# <dead_circumflex> <U4E0B>  : "㆘" U3198 # IDEOGRAPHIC ANNOTATION BOTTOM MARK
-#--# <Multi_key> <asciicircum> <U4E0B> : "㆘" U3198 # IDEOGRAPHIC ANNOTATION BOTTOM MARK
-#--# <dead_circumflex> <U7532>  : "㆙" U3199 # IDEOGRAPHIC ANNOTATION FIRST MARK
-#--# <Multi_key> <asciicircum> <U7532> : "㆙" U3199 # IDEOGRAPHIC ANNOTATION FIRST MARK
-#--# <dead_circumflex> <U4E59>  : "㆚" U319A # IDEOGRAPHIC ANNOTATION SECOND MARK
-#--# <Multi_key> <asciicircum> <U4E59> : "㆚" U319A # IDEOGRAPHIC ANNOTATION SECOND MARK
-#--# <dead_circumflex> <U4E19>  : "㆛" U319B # IDEOGRAPHIC ANNOTATION THIRD MARK
-#--# <Multi_key> <asciicircum> <U4E19> : "㆛" U319B # IDEOGRAPHIC ANNOTATION THIRD MARK
-#--# <dead_circumflex> <U4E01>  : "㆜" U319C # IDEOGRAPHIC ANNOTATION FOURTH MARK
-#--# <Multi_key> <asciicircum> <U4E01> : "㆜" U319C # IDEOGRAPHIC ANNOTATION FOURTH MARK
-#--# <dead_circumflex> <U5929>  : "㆝" U319D # IDEOGRAPHIC ANNOTATION HEAVEN MARK
-#--# <Multi_key> <asciicircum> <U5929> : "㆝" U319D # IDEOGRAPHIC ANNOTATION HEAVEN MARK
-#--# <dead_circumflex> <U5730>  : "㆞" U319E # IDEOGRAPHIC ANNOTATION EARTH MARK
-#--# <Multi_key> <asciicircum> <U5730> : "㆞" U319E # IDEOGRAPHIC ANNOTATION EARTH MARK
-#--# <dead_circumflex> <U4EBA>  : "㆟" U319F # IDEOGRAPHIC ANNOTATION MAN MARK
-#--# <Multi_key> <asciicircum> <U4EBA> : "㆟" U319F # IDEOGRAPHIC ANNOTATION MAN MARK
+
 #--# # Enclosed CJK Letters and Months
 #--# <Multi_key> <parenleft> <2> <1> <parenright>  : "㉑" U3251 # CIRCLED NUMBER TWENTY ONE
 #--# <Multi_key> <parenleft> <KP_2> <KP_1> <parenright> : "㉑" U3251 # CIRCLED NUMBER TWENTY ONE
@@ -2121,6 +2045,7 @@
 #--# <Multi_key> <parenleft> <KP_3> <KP_4> <parenright> : "㉞" U325E # CIRCLED NUMBER THIRTY FOUR
 #--# <Multi_key> <parenleft> <3> <5> <parenright>  : "㉟" U325F # CIRCLED NUMBER THIRTY FIVE
 #--# <Multi_key> <parenleft> <KP_3> <KP_5> <parenright> : "㉟" U325F # CIRCLED NUMBER THIRTY FIVE
+
 #--# # French-Dvorak Bépo compositions
 #--# <dead_abovedot> <j>   : "ȷ" U0237 # lowercase DOTLESS J
 #--# <dead_abovedot> <L>   : "Ŀ" U013F # uppercase L with MIDDLE DOT
@@ -2128,13 +2053,14 @@
 #--# <dead_abovedot> <nobreakspace>  : "̇" U0307 #  COMBINING DOT ABOVE
 #--# <dead_acute> <nobreakspace>  : "́" U0301 # COMBINING acute accent
 #--# <dead_breve> <nobreakspace>  : "̆" U0306 # COMBINING BREVE
+
 #--# <dead_caron> <U01F2>   : "ǅ" U01C5 # uppercase D with SMALL LETTER Z with CARON
+
 #--# <dead_caron> <nobreakspace>  : "̌" U030C # COMBINING CARON
 #--# <dead_cedilla> <nobreakspace>  : "̧" U0327 # COMBINING cedilla
 #--# <dead_circumflex> <nobreakspace> : "̂" U0302 # COMBINING circumflex accent
-#--# <dead_belowcomma> <dead_belowcomma> : "," comma # COMMA
 #--# <dead_belowcomma> <nobreakspace> : "̦" U0326 # COMBINING COMMA BELOW
-#--# <dead_belowcomma> <space>  : "," comma # COMMA
+
 #--# <dead_currency> <A>   : "₳" U20B3 # AUSTRAL SIGN
 #--# <dead_currency> <a>   : "؋" U060B # AFGHANI SIGN
 #--# <dead_currency> <D>   : "₯" U20AF # DRACHMA SIGN
@@ -2157,121 +2083,26 @@
 #--# <dead_currency> <u>   : "元" U5143 # YUAN / WEN
 #--# <dead_currency> <Y>   : "円" U5186 # YEN
 #--# <dead_currency> <y>   : "¥" yen # YEN SIGN
-#--# <dead_currency> <dead_currency>  : "¤" currency # CURRENCY SIGN
-#--# <dead_currency> <nobreakspace>  : "¤" currency # CURRENCY SIGN
-#--# <dead_currency> <space>   : "¤" currency # CURRENCY SIGN
+
 #--# <dead_diaeresis> <nobreakspace>  : "̈" U0308 # COMBINING diaeresis
 #--# <dead_doubleacute> <nobreakspace> : "̋" U030B # COMBINING DOUBLE acute accent
 #--# <dead_grave> <nobreakspace>  : "̀" U0300 # COMBINING grave accent
-#--# <dead_greek> <A>   : "Α" U0391 # GREEK CAPITAL LETTER ALPHA
-#--# <dead_greek> <a>   : "α" U03B1 # GREEK SMALL LETTER ALPHA
-#--# <dead_greek> <B>   : "Β" U0392 # GREEK CAPITAL LETTER BETA
-#--# <dead_greek> <b>   : "β" U03B2 # GREEK SMALL LETTER BETA
-#--# <dead_greek> <D>   : "Δ" U0394 # GREEK CAPITAL LETTER DELTA
-#--# <dead_greek> <d>   : "δ" U03B4 # GREEK SMALL LETTER DELTA
-#--# <dead_greek> <E>   : "Ε" U0395 # GREEK CAPITAL LETTER EPSILON
-#--# <dead_greek> <e>   : "ε" U03B5 # GREEK SMALL LETTER EPSILON
-#--# <dead_greek> <F>   : "Φ" U03A6 # GREEK CAPITAL LETTER PHI
-#--# <dead_greek> <f>   : "φ" U03C6 # GREEK SMALL LETTER PHI
-#--# <dead_greek> <G>   : "Γ" U0393 # GREEK CAPITAL LETTER GAMMA
-#--# <dead_greek> <g>   : "γ" U03B3 # GREEK SMALL LETTER GAMMA
-#--# <dead_greek> <H>   : "Η" U0397 # GREEK CAPITAL LETTER ETA
-#--# <dead_greek> <h>   : "η" U03B7 # GREEK SMALL LETTER ETA
-#--# <dead_greek> <I>   : "Ι" U0399 # GREEK CAPITAL LETTER IOTA
-#--# <dead_greek> <i>   : "ι" U03B9 # GREEK SMALL LETTER IOTA
-#--# <dead_greek> <J>   : "Θ" U0398 # GREEK CAPITAL LETTER THETA
-#--# <dead_greek> <j>   : "θ" U03B8 # GREEK SMALL LETTER THETA
-#--# <dead_greek> <K>   : "Κ" U039A # GREEK CAPITAL LETTER KAPPA
-#--# <dead_greek> <k>   : "κ" U03BA # GREEK SMALL LETTER KAPPA
-#--# <dead_greek> <L>   : "Λ" U039B # GREEK CAPITAL LETTER LAMDA
-#--# <dead_greek> <l>   : "λ" U03BB # GREEK SMALL LETTER LAMDA
-#--# <dead_greek> <M>   : "Μ" U039C # GREEK CAPITAL LETTER MU
-#--# <dead_greek> <m>   : "μ" U03BC # GREEK SMALL LETTER MU
-#--# <dead_greek> <N>   : "Ν" U039D # GREEK CAPITAL LETTER NU
-#--# <dead_greek> <n>   : "ν" U03BD # GREEK SMALL LETTER NU
-#--# <dead_greek> <O>   : "Ο" U039F # GREEK CAPITAL LETTER OMICRON
-#--# <dead_greek> <o>   : "ο" U03BF # GREEK SMALL LETTER OMICRON
-#--# <dead_greek> <P>   : "Π" U03A0 # GREEK CAPITAL LETTER PI
-#--# <dead_greek> <p>   : "π" U03C0 # GREEK SMALL LETTER PI
-#--# <dead_greek> <Q>   : "Χ" U03A7 # GREEK CAPITAL LETTER CHI
-#--# <dead_greek> <q>   : "χ" U03C7 # GREEK SMALL LETTER CHI
-#--# <dead_greek> <R>   : "Ρ" U03A1 # GREEK CAPITAL LETTER RHO
-#--# <dead_greek> <r>   : "ρ" U03C1 # GREEK SMALL LETTER RHO
-#--# <dead_greek> <S>   : "Σ" U03A3 # GREEK CAPITAL LETTER SIGMA
-#--# <dead_greek> <s>   : "σ" U03C3 # GREEK SMALL LETTER SIGMA
-#--# <dead_greek> <T>   : "Τ" U03A4 # GREEK CAPITAL LETTER TAU
-#--# <dead_greek> <t>   : "τ" U03C4 # GREEK SMALL LETTER TAU
-#--# <dead_greek> <U>   : "Υ" U03A5 # GREEK CAPITAL LETTER UPSILON
-#--# <dead_greek> <u>   : "υ" U03C5 # GREEK SMALL LETTER UPSILON
-#--# <dead_greek> <W>   : "Ω" U03A9 # GREEK CAPITAL LETTER OMEGA
-#--# <dead_greek> <w>   : "ω" U03C9 # GREEK SMALL LETTER OMEGA
-#--# <dead_greek> <X>   : "Ξ" U039E # GREEK CAPITAL LETTER XI
-#--# <dead_greek> <x>   : "ξ" U03BE # GREEK SMALL LETTER XI
-#--# <dead_greek> <Y>   : "Ψ" U03A8 # GREEK CAPITAL LETTER PSI
-#--# <dead_greek> <y>   : "ψ" U03C8 # GREEK SMALL LETTER PSI
-#--# <dead_greek> <Z>   : "Ζ" U0396 # GREEK CAPITAL LETTER ZETA
-#--# <dead_greek> <z>   : "ζ" U03B6 # GREEK SMALL LETTER ZETA
-#--# <dead_greek> <dead_greek>  : "µ" U00B5 # MICRO SIGN
-#--# <dead_greek> <nobreakspace>  : "µ" U00B5 # MICRO SIGN
-#--# <dead_greek> <space>   : "µ" U00B5 # MICRO SIGN
-#--# <dead_hook> <B>    : "Ɓ" U0181 # uppercase B with HOOK
-#--# <dead_hook> <b>    : "ɓ" U0253 # lowercase B with HOOK
-#--# <dead_hook> <C>    : "Ƈ" U0187 # uppercase C with HOOK
-#--# <dead_hook> <c>    : "ƈ" U0188 # lowercase C with HOOK
-#--# <dead_hook> <D>    : "Ɗ" U018A # uppercase D with HOOK
-#--# <dead_hook> <d>    : "ɗ" U0257 # lowercase D with HOOK
-#--# <dead_hook> <F>    : "Ƒ" U0191 # uppercase F with HOOK
-#--# <dead_hook> <f>    : "ƒ" function # lowercase F with HOOK
-#--# <dead_hook> <G>    : "Ɠ" U0193 # uppercase G with HOOK
-#--# <dead_hook> <g>    : "ɠ" U0260 # lowercase G with HOOK
-#--# <dead_hook> <h>    : "ɦ" U0266 # lowercase H with HOOK
-#--# <dead_hook> <K>    : "Ƙ" U0198 # uppercase K with HOOK
-#--# <dead_hook> <k>    : "ƙ" U0199 # lowercase K with HOOK
-#--# <dead_hook> <M>    : "Ɱ" U2C6E # uppercase M with HOOK
-#--# <dead_hook> <m>    : "ɱ" U0271 # lowercase M with HOOK
-#--# <dead_hook> <N>    : "Ɲ" U019D # uppercase N with LEFT HOOK
-#--# <dead_hook> <n>    : "ɲ" U0272 # lowercase N with LEFT HOOK
-#--# <dead_hook> <P>    : "Ƥ" U01A4 # uppercase P with HOOK
-#--# <dead_hook> <p>    : "ƥ" U01A5 # lowercase P with HOOK
-#--# <dead_hook> <q>    : "ʠ" U02A0 # lowercase Q with HOOK
-#--# <dead_hook> <r>    : "ɼ" U027C # lowercase R with LONG LEG
-#--# <dead_hook> <s>    : "ʂ" U0282 # lowercase S with HOOK
+
 #--# <dead_hook> <schwa>   : "ɚ" U025A # lowercase SCHWA with HOOK
-#--# <dead_hook> <T>    : "Ƭ" U01AC # uppercase T with HOOK
-#--# <dead_hook> <t>    : "ƭ" U01AD # lowercase T with HOOK
-#--# <dead_hook> <V>    : "Ʋ" U01B2 # uppercase V with HOOK
-#--# <dead_hook> <v>    : "ʋ" U028B # lowercase V with HOOK
-#--# <dead_hook> <W>    : "Ⱳ" U2C72 # uppercase W with HOOK
-#--# <dead_hook> <w>    : "ⱳ" U2C73 # lowercase W with HOOK
-#--# <dead_hook> <Z>    : "Ȥ" U0224 # uppercase Z with HOOK
-#--# <dead_hook> <z>    : "ȥ" U0225 # lowercase Z with HOOK
+
 #--# <dead_hook> <dead_hook>   : "̉" U0309 # COMBINING HOOK ABOVE
 #--# <dead_hook> <nobreakspace>  : "̉" U0309 # COMBINING HOOK ABOVE
 #--# <dead_hook> <space>   : "̉" U0309 # COMBINING HOOK ABOVE
 #--# <dead_macron> <nobreakspace>  : "̄" U0304 # COMBINING MACRON
 #--# <dead_ogonek> <nobreakspace>  : "̨" U0328 # COMBINING OGONEK
+
 #--# <dead_stroke> <2>   : "ƻ" U01BB # LATIN LETTER TWO with stroke
 #--# <dead_stroke> <equal>   : "≠" notequal # NOT EQUAL TO
-#--# <dead_stroke> <A>   : "Ⱥ" U023A # uppercase A with stroke
-#--# <dead_stroke> <a>   : "ⱥ" U2C65 # lowercase A with stroke
-#--# <dead_stroke> <C>   : "Ȼ" U023B # uppercase C with stroke
-#--# <dead_stroke> <c>   : "ȼ" U023C # lowercase C with stroke
-#--# <dead_stroke> <E>   : "Ɇ" U0246 # uppercase E with stroke
-#--# <dead_stroke> <e>   : "ɇ" U0247 # lowercase E with stroke
 #--# <dead_stroke> <greater>   : "≯" U226F # NOT GREATER-THAN
 #--# <dead_stroke> <greaterthanequal> : "≱" U2271 # NEITHER GREATER-THAN NOR EQUAL TO
 #--# <dead_stroke> <U0269>   : "ᵼ" U1D7C # lowercase IOTA with stroke
-#--# <dead_stroke> <U0237>   : "ɟ" U025F # lowercase DOTLESS J with stroke
 #--# <dead_stroke> <less>   : "≮" U226E # NOT LESS-THAN
 #--# <dead_stroke> <lessthanequal>  : "≰" U2270 # NEITHER LESS-THAN NOR EQUAL TO
-#--# <dead_stroke> <P>   : "Ᵽ" U2C63 # uppercase P with stroke
-#--# <dead_stroke> <p>   : "ᵽ" U1D7D # lowercase P with stroke
-#--# <dead_stroke> <R>   : "Ɍ" U024C # uppercase R with stroke
-#--# <dead_stroke> <r>   : "ɍ" U024D # lowercase R with stroke
-#--# <dead_stroke> <U>   : "Ʉ" U0244 # uppercase U BAR
-#--# <dead_stroke> <u>   : "ʉ" U0289 # lowercase U BAR
-#--# <dead_stroke> <Y>   : "Ɏ" U024E # uppercase Y with stroke
-#--# <dead_stroke> <y>   : "ɏ" U024F # lowercase Y with stroke
 
 #--# <dead_tilde> <equal>   : "≃" similarequal # ASYMPTOTICALLY EQUAL TO
 #--# <dead_tilde> <less>   : "≲" U2272 # LESS-THAN OR EQUIVALENT TO
@@ -2431,33 +2262,8 @@
 #--# <Multi_key> <underscore> <U2373> : "⍸" U2378 # _ ⍳ APL FUNCTIONAL SYMBOL IOTA UNDERBAR
 #--# <Multi_key> <U2375> <underscore> : "⍹" U2379 # ⍵ _ APL FUNCTIONAL SYMBOL OMEGA UNDERBAR
 #--# <Multi_key> <underscore> <U2375> : "⍹" U2379 # _ ⍵ APL FUNCTIONAL SYMBOL OMEGA UNDERBAR
+
 #--# # Diacritics used in African languages
-#--# <dead_acute> <U025B>   : "ɛ́" # lowercase EPSILON plus COMBINING acute
-#--# <dead_grave> <U025B>   : "ɛ̀" # lowercase EPSILON plus COMBINING grave
-#--# <dead_circumflex> <U025B>  : "ɛ̂" # lowercase EPSILON plus COMBINING circumflex
-#--# <dead_caron> <U025B>   : "ɛ̌" # lowercase EPSILON plus COMBINING CARON
-#--# <dead_macron> <U025B>   : "ɛ̄" # lowercase EPSILON plus COMBINING MACRON
-#--# <dead_tilde> <U025B>   : "ɛ̃" # lowercase EPSILON plus COMBINING TILDE
-#--# <dead_acute> <dead_tilde> <U025B> : "ɛ̃́" # lowercase EPSILON plus COMBINING TILDE and COMBINING acute
-#--# <dead_grave> <dead_tilde> <U025B> : "ɛ̃̀" # lowercase EPSILON plus COMBINING TILDE and COMBINING grave
-#--# <dead_acute> <U0190>   : "Ɛ́" # uppercase EPSILON plus COMBINING acute
-#--# <dead_grave> <U0190>   : "Ɛ̀" # uppercase EPSILON plus COMBINING grave
-#--# <dead_circumflex> <U0190>  : "Ɛ̂" # uppercase EPSILON plus COMBINING circumflex
-#--# <dead_caron> <U0190>   : "Ɛ̌" # uppercase EPSILON plus COMBINING CARON
-#--# <dead_macron> <U0190>   : "Ɛ̄" # uppercase EPSILON plus COMBINING MACRON
-#--# <dead_tilde> <U0190>   : "Ɛ̃" # uppercase EPSILON plus COMBINING TILDE
-#--# <dead_acute> <dead_tilde> <U0190> : "Ɛ̃́" # uppercase EPSILON plus COMBINING TILDE and COMBINING acute
-#--# <dead_grave> <dead_tilde> <U0190> : "Ɛ̃̀" # uppercase EPSILON plus COMBINING TILDE and COMBINING grave
-#--# <dead_acute> <U0269>   : "ɩ́" # lowercase IOTA plus COMBINING acute
-#--# <dead_grave> <U0269>   : "ɩ̀" # lowercase IOTA plus COMBINING grave
-#--# <dead_circumflex> <U0269>  : "ɩ̂" # lowercase IOTA plus COMBINING circumflex
-#--# <dead_caron> <U0269>   : "ɩ̌" # lowercase IOTA plus COMBINING CARON
-#--# <dead_macron> <U0269>   : "ɩ̄" # lowercase IOTA plus COMBINING MACRON
-#--# <dead_acute> <U0196>   : "Ɩ́" # uppercase IOTA plus COMBINING acute
-#--# <dead_grave> <U0196>   : "Ɩ̀" # uppercase IOTA plus COMBINING grave
-#--# <dead_circumflex> <U0196>  : "Ɩ̂" # uppercase IOTA plus COMBINING circumflex
-#--# <dead_caron> <U0196>   : "Ɩ̌" # uppercase IOTA plus COMBINING CARON
-#--# <dead_macron> <U0196>   : "Ɩ̄" # uppercase IOTA plus COMBINING MACRON
 #--# <dead_acute> <U0254>   : "ɔ́" # lowercase OPEN O plus COMBINING acute
 #--# <dead_grave> <U0254>   : "ɔ̀" # lowercase OPEN O plus COMBINING grave
 #--# <dead_circumflex> <U0254>  : "ɔ̂" # lowercase OPEN O plus COMBINING circumflex
@@ -2474,24 +2280,69 @@
 #--# <dead_tilde> <U0186>   : "Ɔ̃" # uppercase OPEN O plus COMBINING TILDE
 #--# <dead_acute> <dead_tilde> <U0186> : "Ɔ̃́" # uppercase OPEN O plus COMBINING TILDE and COMBINING acute
 #--# <dead_grave> <dead_tilde> <U0186> : "Ɔ̃̀" # uppercase OPEN O plus COMBINING TILDE and COMBINING grave
-#--# <dead_acute> <U01DD>   : "ǝ́" # lowercase TURNED E plus COMBINING acute
-#--# <dead_grave> <U01DD>   : "ǝ̀" # lowercase TURNED E plus COMBINING grave
-#--# <dead_circumflex> <U01DD>  : "ǝ̂" # lowercase TURNED E plus COMBINING circumflex
-#--# <dead_caron> <U01DD>   : "ǝ̌" # lowercase TURNED E plus COMBINING CARON
-#--# <dead_macron> <U01DD>   : "ǝ̄" # lowercase TURNED E plus COMBINING MACRON
-#--# <dead_tilde> <U01DD>   : "ǝ̃" # lowercase TURNED E plus COMBINING TILDE
-#--# <dead_acute> <dead_tilde> <U01DD> : "ǝ̃́" # lowercase TURNED E plus COMBINING TILDE and COMBINING acute
-#--# <dead_grave> <dead_tilde> <U01DD> : "ǝ̃̀" # lowercase TURNED E plus COMBINING TILDE and COMBINING grave
-#--# <dead_acute> <U018E>   : "Ǝ́" # uppercase TURNED E plus COMBINING acute
-#--# <dead_grave> <U018E>   : "Ǝ̀" # uppercase TURNED E plus COMBINING grave
-#--# <dead_circumflex> <U018E>  : "Ǝ̂" # uppercase TURNED E plus COMBINING circumflex
-#--# <dead_caron> <U018E>   : "Ǝ̌" # uppercase TURNED E plus COMBINING CARON
-#--# <dead_macron> <U018E>   : "Ǝ̄" # uppercase TURNED E plus COMBINING MACRON
-#--# <dead_tilde> <U018E>   : "Ǝ̃" # uppercase TURNED E plus COMBINING TILDE
-#--# <dead_acute> <dead_tilde> <U018E> : "Ǝ̃́" # uppercase TURNED E plus COMBINING TILDE and COMBINING acute
-#--# <dead_grave> <dead_tilde> <U018E> : "Ǝ̃̀" # uppercase TURNED E plus COMBINING TILDE and COMBINING grave
 
 #--# <dead_acute> <eng>   : "ŋ́" # lowercase ENG plus COMBINING acute
 #--# <dead_grave> <eng>   : "ŋ̀" # lowercase ENG plus COMBINING grave
 #--# <dead_acute> <ENG>   : "Ŋ́" # uppercase ENG plus COMBINING acute
 #--# <dead_grave> <ENG>   : "Ŋ̀" # uppercase ENG plus COMBINING grave
+# "ⱻ" U2C7B # uppercase turned E
+# "ǝ" U01DD # lowercase turned e
+# "Ɔ" U0186 # uppercase open O
+# "ɔ" U0254 # lowercase open o
+# "ᴐ" U1D10 # uppercase small open O
+# "ᴒ" U1D12 # lowercase sideways open o
+# "ᵓ" U1D53 # superscript lowercase open o
+# "ᶗ" U1D97 # lowercase open o with retroflex hook
+# "ꬿ" UAB3F # lowercase open o with with stroke
+# "ꭢ" UAB62 # lowercase open oe
+
+# "ɢ" U0262 # Latin Letter Small Capital G
+# "ɪ" U026A # Latin Letter Small Capital I
+# "ɴ" U0274 # Latin Letter Small Capital N
+# "ɶ" U0276 # Latin Letter Small Capital Oe
+# "ʀ" U0280 # Latin Letter Small Capital R
+# "ʁ" U0281 # Latin Letter Small Capital Inverted R
+# "ʏ" U028F # Latin Letter Small Capital Y
+# "ʙ" U0299 # Latin Letter Small Capital B
+# "ʛ" U029B # Latin Letter Small Capital G with Hook
+# "ʜ" U029C # Latin Letter Small Capital H
+# "ʟ" U029F # Latin Letter Small Capital L
+# "ᴀ" U1D00 # Latin Letter Small Capital A
+# "ᴁ" U1D01 # Latin Letter Small Capital Ae
+# "ᴃ" U1D03 # Latin Letter Small Capital Barred B
+# "ᴄ" U1D04 # Latin Letter Small Capital C
+# "ᴅ" U1D05 # Latin Letter Small Capital D
+# "ᴆ" U1D06 # Latin Letter Small Capital Eth
+# "ᴇ" U1D07 # Latin Letter Small Capital E
+# "ᴊ" U1D0A # Latin Letter Small Capital J
+# "ᴋ" U1D0B # Latin Letter Small Capital K
+# "ᴌ" U1D0C # Latin Letter Small Capital L with Stroke
+# "ᴍ" U1D0D # Latin Letter Small Capital M
+# "ᴎ" U1D0E # Latin Letter Small Capital Reversed N
+# "ᴏ" U1D0F # Latin Letter Small Capital O
+# "ᴐ" U1D10 # Latin Letter Small Capital Open O
+# "ᴕ" U1D15 # Latin Letter Small Capital Ou
+# "ᴘ" U1D18 # Latin Letter Small Capital P
+# "ᴙ" U1D19 # Latin Letter Small Capital Reversed R
+# "ᴚ" U1D1A # Latin Letter Small Capital Turned R
+# "ᴛ" U1D1B # Latin Letter Small Capital T
+# "ᴜ" U1D1C # Latin Letter Small Capital U
+# "ᴠ" U1D20 # Latin Letter Small Capital V
+# "ᴡ" U1D21 # Latin Letter Small Capital W
+# "ᴢ" U1D22 # Latin Letter Small Capital Z
+# "ᴣ" U1D23 # Latin Letter Small Capital Ezh
+# "◌ᷛ" U1DDB # Combining Latin Letter Small Capital G
+# "◌ᷞ" U1DDE # Combining Latin Letter Small Capital L
+# "◌ᷟ" U1DDF # Combining Latin Letter Small Capital M
+# "◌ᷡ" U1DE1 # Combining Latin Letter Small Capital N
+# "◌ᷢ" U1DE2 # Combining Latin Letter Small Capital R
+# "ⱻ" U2C7B # Latin Letter Small Capital Turned E
+# "ꜰ" UA730 # Latin Letter Small Capital F
+# "ꜱ" UA731 # Latin Letter Small Capital S
+# "ꝶ" UA776 # Latin Letter Small Capital Rum
+# "ꞯ" UA7AF # Latin Letter Small Capital Q
+# "ꟺ" UA7FA # Latin Letter Small Capital Turned M
+# "ꭆ" UAB46 # Latin Letter Small Capital R with Right Leg
+
+# force newline at file-end: fileContents absorbs that...
+
