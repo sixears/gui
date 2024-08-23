@@ -121,6 +121,27 @@
 
 ## --------------------------------- EXCLAM --------------------------------- ##
 
+# -- musical notes -----------------------------------------
+
+<Multi_key> <exclam> <1>           : "𝅗𝅥" U1D15E # musical ½ note
+<Multi_key> <exclam> <exclam>      : "♮" U266e  # music natural sign
+<Multi_key> <exclam> <2>           : "𝅘𝅥" U1D15F # musical ¼
+<Multi_key> <exclam> <at>          : "♩" U2669  # quarter note
+<Multi_key> <exclam> <3>           : "𝅘𝅥𝅮" U1D160 # musical ⅛ note
+<Multi_key> <exclam> <numbersign>  : "♪" U266a  # eighth note
+<Multi_key> <exclam> <4>           : "𝅘𝅥𝅯" U1D161 # musical 1/16 note
+<Multi_key> <exclam> <5>           : "𝅘𝅥𝅰" U1D162 # musical 1/32 note
+<Multi_key> <exclam> <percent>     : "♫" U266b  # beamed eighth notes
+<Multi_key> <exclam> <6>           : "𝅘𝅥𝅱" U1D163 # musical 1/64 note
+<Multi_key> <exclam> <asciicircum> : "♬" U266c  # beamed sixteenth notes
+<Multi_key> <exclam> <7>           : "𝅘𝅥𝅲" U1D164 # musical 1/128 note
+<Multi_key> <exclam> <8>           : "𝆺𝅥" U1D1BC # musical minima black
+<Multi_key> <exclam> <asterisk>    : "𝆹𝅥" U1D1BB # musical minima white
+<Multi_key> <exclam> <9>           : "𝆺𝅥𝅮" U1D1BE # musical semiminima black
+<Multi_key> <exclam> <parenleft>   : "𝆹𝅥𝅮" U1D1BD # musical semiminima white
+<Multi_key> <exclam> <0>           : "𝆺𝅥𝅯" U1D1C0 # musical fusa black
+<Multi_key> <exclam> <parenright>  : "𝆹𝅥𝅯" U1D1BF # musical fusa white
+
 # -- belowring/ringbelow -----------------------------------
 
 <Multi_key> <exclam> <A>    : "Ḁ" U1E00 # uppercase A with ring below
@@ -410,6 +431,8 @@
 <Multi_key> <semicolon> <Z> : "Ż" U017B # uppercase Z with dot above
 <Multi_key> <semicolon> <z> : "ż" U017C # lowercase z with dot above
 
+<Multi_key> <semicolon> <minus> <j> : "ɟ" U025F # lowercase DOTLESS J with stroke
+
 ## ------------------------------- APOSTROPHE ------------------------------- ##
 
 # -- acute -------------------------------------------------
@@ -658,6 +681,9 @@
 <Multi_key> <period> <Z> : "Ẓ" U1E92 # uppercase Z with dot below
 <Multi_key> <period> <z> : "ẓ" U1E93 # lowercase z with dot below
 
+<Multi_key> <period> <semicolon> <S> : "Ṩ" U1E68 # uppercase S with dot below and dot above
+<Multi_key> <period> <semicolon> <s> : "ṩ" U1E69 # lowercase s with dot below and dot above
+
 ## -------------------------------- GREATER  -------------------------------- ##
 
 <Multi_key> <greater> <less> : "≶"
@@ -726,26 +752,6 @@
 
 ## -------------------------------- QUESTION -------------------------------- ##
 
-<Multi_key> <question> <backslash> : "☭" U262D # hammer and sickle
-<Multi_key> <question> <exclam>  : "⸘" U2E18 # inverted interrobang
-<Multi_key> <question> <minus> : "ʡ" U02A1 #  glottal stop with stroke
-
-## -------------------------------------------------------------------------- ##
-
-
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-
-<Multi_key> <slash> <Greek_rho>      : "ϼ" U03FC # GREEK RHO with stroke SYMBOL
-
-<Multi_key> <semicolon> <minus> <j> : "ɟ" U025F # lowercase DOTLESS J with stroke
-# <dead_stroke> <U0269>          : "ᵼ" U1D7C # lowercase IOTA with stroke
-
-<Multi_key> <slash> <greaterthanequal> : "≱" U2271    # NEITHER GREATER-THAN NOR EQUAL TO
-<Multi_key> <slash> <greater>          : "≯" U226F    # NOT GREATER-THAN
-<Multi_key> <slash> <equal>            : "≠" notequal # NOT EQUAL TO
-<Multi_key> <slash> <lessthanequal>    : "≰" U2270    # NEITHER LESS-THAN NOR EQUAL TO
-<Multi_key> <slash> <less>             : "≮" U226E    # NOT LESS-THAN
-
 # -- hook --------------------------------------------------
 
 <Multi_key> <question> <space> : "̉" U0309 # combining hook above
@@ -793,35 +799,29 @@
 <Multi_key> <question> <Z> : "Ȥ" U0224    # uppercase Z with HOOK
 <Multi_key> <question> <z> : "ȥ" U0225    # lowercase z with HOOK
 
+# ----------------------------------------------------------
 
-<Multi_key> <period> <semicolon> <S> : "Ṩ" U1E68 # uppercase S with dot below and dot above
-<Multi_key> <period> <semicolon> <s> : "ṩ" U1E69 # lowercase s with dot below and dot above
+<Multi_key> <question> <backslash> : "☭" U262D # hammer and sickle
+<Multi_key> <question> <exclam>    : "⸘" U2E18 # inverted interrobang
+<Multi_key> <question> <minus>     : "ʡ" U02A1 #  glottal stop with stroke
+
+## -------------------------------------------------------------------------- ##
+
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+<Multi_key> <slash> <Greek_rho>      : "ϼ" U03FC # GREEK RHO with stroke SYMBOL
+
+# <dead_stroke> <U0269>          : "ᵼ" U1D7C # lowercase IOTA with stroke
+
+<Multi_key> <slash> <greaterthanequal> : "≱" U2271    # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <slash> <greater>          : "≯" U226F    # NOT GREATER-THAN
+<Multi_key> <slash> <equal>            : "≠" notequal # NOT EQUAL TO
+<Multi_key> <slash> <lessthanequal>    : "≰" U2270    # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <less>             : "≮" U226E    # NOT LESS-THAN
 
 <Multi_key> <Multi_key> <semicolon> <f> <s> : "ẛ" U1e9b # SMALL LONG S with DOT ABOVE
 
-
-# ------------------------------ end dead keys ------------------------------- #
-
-# Musical notes
-
-<Multi_key> <exclam> <1>           : "𝅗𝅥" U1D15E # musical ½ note
-<Multi_key> <exclam> <exclam>      : "♮" U266e  # music natural sign
-<Multi_key> <exclam> <2>           : "𝅘𝅥" U1D15F # musical ¼
-<Multi_key> <exclam> <at>          : "♩" U2669  # quarter note
-<Multi_key> <exclam> <3>           : "𝅘𝅥𝅮" U1D160 # musical ⅛ note
-<Multi_key> <exclam> <numbersign>  : "♪" U266a  # eighth note
-<Multi_key> <exclam> <4>           : "𝅘𝅥𝅯" U1D161 # musical 1/16 note
-<Multi_key> <exclam> <5>           : "𝅘𝅥𝅰" U1D162 # musical 1/32 note
-<Multi_key> <exclam> <percent>     : "♫" U266b  # beamed eighth notes
-<Multi_key> <exclam> <6>           : "𝅘𝅥𝅱" U1D163 # musical 1/64 note
-<Multi_key> <exclam> <asciicircum> : "♬" U266c  # beamed sixteenth notes
-<Multi_key> <exclam> <7>           : "𝅘𝅥𝅲" U1D164 # musical 1/128 note
-<Multi_key> <exclam> <8>           : "𝆺𝅥" U1D1BC # musical minima black
-<Multi_key> <exclam> <asterisk>    : "𝆹𝅥" U1D1BB # musical minima white
-<Multi_key> <exclam> <9>           : "𝆺𝅥𝅮" U1D1BE # musical semiminima black
-<Multi_key> <exclam> <parenleft>   : "𝆹𝅥𝅮" U1D1BD # musical semiminima white
-<Multi_key> <exclam> <0>           : "𝆺𝅥𝅯" U1D1C0 # musical fusa black
-<Multi_key> <exclam> <parenright>  : "𝆹𝅥𝅯" U1D1BF # musical fusa white
 
 ################################################################################
 
