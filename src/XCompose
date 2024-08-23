@@ -49,6 +49,22 @@
 
 # <Multi_key> <greater> <greater> : "⋙"
 
+<Multi_key> <greater> <h> : "ʰ" U02B0 # modifier letter small h
+<Multi_key> <greater> <j> : "ʲ" U02B2 # modifier letter small j
+<Multi_key> <greater> <r> : "ʳ" U02B3 # modifier letter small r
+<Multi_key> <greater> <w> : "ʷ" U02B7 # modifier letter small w
+<Multi_key> <greater> <y> : "ʸ" U02B8 # modifier letter small y
+<Multi_key> <greater> <l> : "ˡ" U02E1 # modifier letter small l
+<Multi_key> <greater> <s> : "ˢ" U02E2 # modifier letter small s
+<Multi_key> <greater> <x> : "ˣ" U02E3 # modifier letter small x
+
+## <Multi_key> <greater> <U0266>  : "ʱ" U02B1 # modifier letter small h with hook
+## <Multi_key> <greater> <U0279>  : "ʴ" U02B4 # modifier letter small turned r
+## <Multi_key> <greater> <U027B>  : "ʵ" U02B5 # modifier letter small turned r with hook
+## <Multi_key> <greater> <U0281>  : "ʶ" U02B6 # modifier letter small capital inverted r
+## <Multi_key> <greater> <U0263>  : "ˠ" U02E0 # modifier letter small gamma
+## <Multi_key> <greater> <U0295>  : "ˤ" U02E4 # modifier letter small reversed glottal stop
+
 <Multi_key> <parenleft> <C> <parenright>: "🄯" U1F12F # COPYLEFT SYMBOL
 
 <Multi_key> <less> <period>    : "‹" U2039 # single left  angle quotation mark
@@ -58,6 +74,8 @@
 <Multi_key> <question> <exclam>  : "⸘" U2E18 # inverted interrobang
 <Multi_key> <minus> <minus> <space> : "­" U00ad # SOFT HYPHEN
 
+<Multi_key> <question> <minus> : "ʡ" U02A1 #  glottal stop with stroke
+<Multi_key> <minus> <question> : "ʡ" U02A1 #  glottal stop with stroke
 
 <Multi_key> <question> <backslash> : "☭" U262D # hammer and sickle
 <Multi_key> <backslash> <question> : "☭" U262D # hammer and sickle
@@ -175,10 +193,8 @@
 <Multi_key> <apostrophe> <Z> : "Ź" Zacute # uppercase Z with acute
 <Multi_key> <apostrophe> <z> : "ź" zacute # lowercase z with acute
 
-# lowercase S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <s> : U1E65
-# uppercase S with acute AND DOT ABOVE
-<Multi_key> <apostrophe> <semicolon> <S> : U1E64
+<Multi_key> <apostrophe> <A> <underscore> <E> : "Ǽ" U01FC # uppercase AE with acute
+<Multi_key> <apostrophe> <a> <underscore> <e> : "ǽ" U01FD # lowercase AE with acute
 
 # -- grave -------------------------------------------------
 
@@ -283,6 +299,8 @@
 <Multi_key> <comma> <c> : "ç" ccedilla # lowercase c with cedilla
 <Multi_key> <comma> <D> : "Ḑ" U1E10    # uppercase D with cedilla
 <Multi_key> <comma> <d> : "ḑ" U1E11    # lowercase d with cedilla
+<Multi_key> <comma> <E> : "Ȩ" U0228    # uppercase E with cedilla
+<Multi_key> <comma> <e> : "ȩ" U0229    # lowercase e with cedilla
 <Multi_key> <comma> <E> : "Ę" U0118    # uppercase E with ogonek
 <Multi_key> <comma> <e> : "ę" U0119    # lowercase e with ogonek
 <Multi_key> <comma> <G> : "Ģ" U0122    # uppercase G with cedilla
@@ -323,9 +341,11 @@
 <Multi_key> <minus> <o> : "ō" U014D # lowercase o with macron
 <Multi_key> <minus> <U> : "Ū" U016A # uppercase U with macron
 <Multi_key> <minus> <u> : "ū" U016B # lowercase u with macron
+<Multi_key> <minus> <Y> : "Ȳ" U0232 # uppercase Y with macron
+<Multi_key> <minus> <y> : "ȳ" U0233 # lowercase y with macron
 
-<Multi_key> <minus> <A> <underscore> <E> : "Ǣ" # uppercase AE with macron
-<Multi_key> <minus> <a> <underscore> <e> : "ǣ" # lowercase ae with macron
+<Multi_key> <minus> <A> <underscore> <E> : "Ǣ" U01E2 # uppercase AE with macron
+<Multi_key> <minus> <a> <underscore> <e> : "ǣ" U01E3 # lowercase ae with macron
 
 # -- breve -------------------------------------------------
 
@@ -344,6 +364,23 @@
 <Multi_key> <parenright> <o> : "ŏ" U014F # lowercase o with breve
 <Multi_key> <parenright> <U> : "Ŭ" U016C # uppercase U with breve
 <Multi_key> <parenright> <u> : "ŭ" U016D # lowercase u with breve
+
+# -- inverted breve ----------------------------------------
+
+<Multi_key> <parenleft> <space> : "̆"  U0311 # combining inverted breve
+
+<Multi_key> <parenleft> <A> : "Ȃ" U0202 # uppercase A with inverted breve
+<Multi_key> <parenleft> <a> : "ȃ" U0203 # lowercase a with inverted breve
+<Multi_key> <parenleft> <E> : "Ȇ" U0206 # uppercase E with inverted breve
+<Multi_key> <parenleft> <e> : "ȇ" U0207 # lowercase e with inverted breve
+<Multi_key> <parenleft> <I> : "Ȋ" U020A # uppercase I with inverted breve
+<Multi_key> <parenleft> <i> : "ȋ" U020B # lowercase i with inverted breve
+<Multi_key> <parenleft> <O> : "Ȏ" U020E # uppercase O with inverted breve
+<Multi_key> <parenleft> <o> : "ȏ" U020F # lowercase o with inverted breve
+<Multi_key> <parenleft> <R> : "Ȓ" U0212 # uppercase R with inverted breve
+<Multi_key> <parenleft> <r> : "ȓ" U0213 # lowercase r with inverted breve
+<Multi_key> <parenleft> <U> : "Ȗ" U0216 # uppercase U with inverted breve
+<Multi_key> <parenleft> <u> : "ȗ" U0217 # lowercase u with inverted breve
 
 # -- abovedot / dotabove -----------------------------------
 
@@ -405,6 +442,24 @@
 <Multi_key> <apostrophe> <apostrophe> <u> : "ű" U0171 # lowercase u with double acute
 <Multi_key> <apostrophe> <apostrophe> <y> : "ӳ" U04F3 # cyrillic lowercase u with double acute
 <Multi_key> <apostrophe> <apostrophe> <Y> : "Ӳ" U04F2 # cyrillic uppercase U with double acute
+
+# -- double-grave ------------------------------------------
+
+<Multi_key> <grave> <grave> <space> : U030F # combining double grave
+<Multi_key> <grave> <grave> <Tab>   : "˵" U025F # double grave
+
+<Multi_key> <grave> <grave> <A> : "Ȁ" U0200 # uppercase A with double grave
+<Multi_key> <grave> <grave> <a> : "ȁ" U0201 # lowercase a with double grave
+<Multi_key> <grave> <grave> <E> : "Ȅ" U0204 # uppercase E with double grave
+<Multi_key> <grave> <grave> <e> : "ȅ" U0205 # lowercase e with double grave
+<Multi_key> <grave> <grave> <I> : "Ȉ" U0208 # uppercase I with double grave
+<Multi_key> <grave> <grave> <i> : "ȉ" U0209 # lowercase i with double grave
+<Multi_key> <grave> <grave> <O> : "Ȍ" U020C # uppercase O with double grave
+<Multi_key> <grave> <grave> <o> : "ȍ" U020D # lowercase o with double grave
+<Multi_key> <grave> <grave> <R> : "Ȑ" U0210 # uppercase R with double grave
+<Multi_key> <grave> <grave> <r> : "ȑ" U0211 # lowercase r with double grave
+<Multi_key> <grave> <grave> <U> : "Ȕ" U0214 # uppercase U with double grave
+<Multi_key> <grave> <grave> <u> : "ȕ" U0215 # lowercase u with double grave
 
 # -- caron -------------------------------------------------
 
@@ -496,6 +551,22 @@
 <Multi_key> <slash> <Z> : "Ƶ" U01B5   # uppercase Z with stroke
 <Multi_key> <slash> <z> : "ƶ" U01B6   # lowercase Z with stroke
 
+# -- horn --------------------------------------------------
+
+<Multi_key> <asterisk> <space> : "̛" U031B # COMBINING HORN
+
+<Multi_key> <asterisk> <O> : "Ơ" U01A0 # uppercase O with HORN
+<Multi_key> <asterisk> <o> : "ơ" U01A1 # lowercase O with HORN
+<Multi_key> <asterisk> <U> : "Ư" U01AF # uppercase U with HORN
+<Multi_key> <asterisk> <u> : "ư" U01B0 # lowercase U with HORN
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+# lowercase S with acute AND DOT ABOVE
+<Multi_key> <apostrophe> <semicolon> <s> : U1E65
+# uppercase S with acute AND DOT ABOVE
+<Multi_key> <apostrophe> <semicolon> <S> : U1E64
+
 <Multi_key> <slash> <apostrophe> <O> : "Ǿ" U01FE # uppercase O with stroke AND acute
 <Multi_key> <slash> <apostrophe> <o> : "ǿ" U01FF # lowercase O with stroke AND acute
 <Multi_key> <apostrophe> <slash> <O> : "Ǿ" U01FE # uppercase O with stroke AND acute
@@ -512,6 +583,8 @@
 <Multi_key> <slash> <less>             : "≮" U226E    # NOT LESS-THAN
 
 # -- hook --------------------------------------------------
+
+<Multi_key> <question> <space> : "̉" U0309 # COMBINING HOOK ABOVE
 
 <Multi_key> <question> <A> : "Ả" U1EA2    # uppercase A with HOOK ABOVE
 <Multi_key> <question> <a> : "ả" U1EA3    # lowercase A with HOOK ABOVE
@@ -555,13 +628,6 @@
 <Multi_key> <question> <w> : "ⱳ" U2C73    # lowercase W with HOOK
 <Multi_key> <question> <Z> : "Ȥ" U0224    # uppercase Z with HOOK
 <Multi_key> <question> <z> : "ȥ" U0225    # lowercase Z with HOOK
-
-# -- horn --------------------------------------------------
-
-<Multi_key> <asterisk> <O> : "Ơ" U01A0 # uppercase O with HORN
-<Multi_key> <asterisk> <o> : "ơ" U01A1 # lowercase O with HORN
-<Multi_key> <asterisk> <U> : "Ư" U01AF # uppercase U with HORN
-<Multi_key> <asterisk> <u> : "ư" U01B0 # lowercase U with HORN
 
 #--# <dead_macron> <Multi_key> <period> <A>  : "Ǡ" U01E0 # uppercase A with DOT ABOVE AND MACRON
 #--# <dead_macron> <Multi_key> <period> <a>  : "ǡ" U01E1 # lowercase A with DOT ABOVE AND MACRON
@@ -698,9 +764,6 @@
 <dead_belowcomma>   <nobreakspace> : "̦" U0326 # COMBINING COMMA BELOW
 <dead_ogonek>       <nobreakspace> : "̨" U0328 # COMBINING OGONEK
 <Multi_key> <slash>      <space> : "̸" U0338 # COMBINING LONG SOLIDUS OVERLAY
-<Multi_key> <question>   <space> : "̉" U0309 # COMBINING HOOK ABOVE
-<Multi_key> <asterisk>   <space> : "̛" U031B # COMBINING HORN
-<Multi_key> <minus>      <space> : "̄" U0304 # COMBINING MACRON
 <Multi_key> <apostrophe> <apostrophe> <space> : "̋" U030B # COMBINING DOUBLE acute accent
 
 # ------------------------------ end dead keys ------------------------------- #
@@ -751,53 +814,8 @@
 
 #--# <Multi_key> <f> <s>   : "ſ" U017F # lowercase LONG S
 #--# <Multi_key> <f> <S>   : "ſ" U017F # lowercase LONG S
-
-#--# # Latin Extended-B
-#--# <dead_stroke> <b>    : "ƀ" U0180 # lowercase B with stroke
-#--# <Multi_key> <slash> <b>    : "ƀ" U0180 # lowercase B with stroke
-#--# <Multi_key> <KP_Divide> <b>   : "ƀ" U0180 # lowercase B with stroke
 #--# <Multi_key> <E> <E>    : "Ə" U018F # uppercase SCHWA
-#--# <dead_stroke> <I>    : "Ɨ" U0197 # uppercase I with stroke
-#--# <Multi_key> <slash> <I>    : "Ɨ" U0197 # uppercase I with stroke
-#--# <Multi_key> <KP_Divide> <I>   : "Ɨ" U0197 # uppercase I with stroke
-#--# <dead_horn> <O>     : "Ơ" U01A0 # uppercase O with HORN
-#--# <Multi_key> <plus> <O>    : "Ơ" U01A0 # uppercase O with HORN
-#--# <dead_horn> <o>     : "ơ" U01A1 # lowercase O with HORN
-#--# <Multi_key> <plus> <o>    : "ơ" U01A1 # lowercase O with HORN
-#--# <dead_horn> <U>     : "Ư" U01AF # uppercase U with HORN
-#--# <Multi_key> <plus> <U>    : "Ư" U01AF # uppercase U with HORN
-#--# <dead_horn> <u>     : "ư" U01B0 # lowercase U with HORN
-#--# <Multi_key> <plus> <u>    : "ư" U01B0 # lowercase U with HORN
-#--# <dead_stroke> <Z>    : "Ƶ" U01B5 # uppercase Z with stroke
-#--# <Multi_key> <slash> <Z>    : "Ƶ" U01B5 # uppercase Z with stroke
-#--# <Multi_key> <KP_Divide> <Z>   : "Ƶ" U01B5 # uppercase Z with stroke
-#--# <dead_stroke> <z>    : "ƶ" U01B6 # lowercase Z with stroke
-#--# <Multi_key> <slash> <z>    : "ƶ" U01B6 # lowercase Z with stroke
-#--# <Multi_key> <KP_Divide> <z>   : "ƶ" U01B6 # lowercase Z with stroke
-#--# <dead_caron> <A>    : "Ǎ" U01CD # uppercase A with CARON
-#--# <Multi_key> <c> <A>    : "Ǎ" U01CD # uppercase A with CARON
-#--# <Multi_key> <v> <A>    : "Ǎ" U01CD # uppercase A with CARON
-#--# <dead_caron> <a>    : "ǎ" U01CE # lowercase A with CARON
-#--# <Multi_key> <c> <a>    : "ǎ" U01CE # lowercase A with CARON
-#--# <Multi_key> <v> <a>    : "ǎ" U01CE # lowercase A with CARON
-#--# <dead_caron> <I>    : "Ǐ" U01CF # uppercase I with CARON
-#--# <Multi_key> <c> <I>    : "Ǐ" U01CF # uppercase I with CARON
-#--# <Multi_key> <v> <I>    : "Ǐ" U01CF # uppercase I with CARON
-#--# <dead_caron> <i>    : "ǐ" U01D0 # lowercase I with CARON
-#--# <Multi_key> <c> <i>    : "ǐ" U01D0 # lowercase I with CARON
-#--# <Multi_key> <v> <i>    : "ǐ" U01D0 # lowercase I with CARON
-#--# <dead_caron> <O>    : "Ǒ" U01D1 # uppercase O with CARON
-#--# <Multi_key> <c> <O>    : "Ǒ" U01D1 # uppercase O with CARON
-#--# <Multi_key> <v> <O>    : "Ǒ" U01D1 # uppercase O with CARON
-#--# <dead_caron> <o>    : "ǒ" U01D2 # lowercase O with CARON
-#--# <Multi_key> <c> <o>    : "ǒ" U01D2 # lowercase O with CARON
-#--# <Multi_key> <v> <o>    : "ǒ" U01D2 # lowercase O with CARON
-#--# <dead_caron> <U>    : "Ǔ" U01D3 # uppercase U with CARON
-#--# <Multi_key> <c> <U>    : "Ǔ" U01D3 # uppercase U with CARON
-#--# <Multi_key> <v> <U>    : "Ǔ" U01D3 # uppercase U with CARON
-#--# <dead_caron> <u>    : "ǔ" U01D4 # lowercase U with CARON
-#--# <Multi_key> <c> <u>    : "ǔ" U01D4 # lowercase U with CARON
-#--# <Multi_key> <v> <u>    : "ǔ" U01D4 # lowercase U with CARON
+
 #--# <dead_macron> <Udiaeresis>   : "Ǖ" U01D5 # uppercase U with diaeresis AND MACRON
 #--# <Multi_key> <macron> <Udiaeresis>  : "Ǖ" U01D5 # uppercase U with diaeresis AND MACRON
 #--# <Multi_key> <underscore> <Udiaeresis>  : "Ǖ" U01D5 # uppercase U with diaeresis AND MACRON
@@ -894,40 +912,7 @@
 #--# <Multi_key> <macron> <period> <a>  : "ǡ" U01E1 # lowercase A with DOT ABOVE AND MACRON
 #--# <Multi_key> <underscore> <dead_abovedot> <a> : "ǡ" U01E1 # lowercase A with DOT ABOVE AND MACRON
 #--# <Multi_key> <underscore> <period> <a>  : "ǡ" U01E1 # lowercase A with DOT ABOVE AND MACRON
-#--# <dead_macron> <AE>    : "Ǣ" U01E2 # uppercase AE with MACRON
-#--# <Multi_key> <macron> <AE>   : "Ǣ" U01E2 # uppercase AE with MACRON
-#--# <Multi_key> <underscore> <AE>   : "Ǣ" U01E2 # uppercase AE with MACRON
-#--# <dead_macron> <ae>    : "ǣ" U01E3 # lowercase AE with MACRON
-#--# <Multi_key> <macron> <ae>   : "ǣ" U01E3 # lowercase AE with MACRON
-#--# <Multi_key> <underscore> <ae>   : "ǣ" U01E3 # lowercase AE with MACRON
-#--# <dead_stroke> <G>    : "Ǥ" U01E4 # uppercase G with stroke
-#--# <Multi_key> <slash> <G>    : "Ǥ" U01E4 # uppercase G with stroke
-#--# <Multi_key> <KP_Divide> <G>   : "Ǥ" U01E4 # uppercase G with stroke
-#--# <dead_stroke> <g>    : "ǥ" U01E5 # lowercase G with stroke
-#--# <Multi_key> <slash> <g>    : "ǥ" U01E5 # lowercase G with stroke
-#--# <Multi_key> <KP_Divide> <g>   : "ǥ" U01E5 # lowercase G with stroke
-#--# <dead_caron> <G>    : "Ǧ" U01E6 # uppercase G with CARON
-#--# <Multi_key> <c> <G>    : "Ǧ" U01E6 # uppercase G with CARON
-#--# <Multi_key> <v> <G>    : "Ǧ" U01E6 # uppercase G with CARON
-#--# <dead_caron> <g>    : "ǧ" U01E7 # lowercase G with CARON
-#--# <Multi_key> <c> <g>    : "ǧ" U01E7 # lowercase G with CARON
-#--# <Multi_key> <v> <g>    : "ǧ" U01E7 # lowercase G with CARON
-#--# <dead_caron> <K>    : "Ǩ" U01E8 # uppercase K with CARON
-#--# <Multi_key> <c> <K>    : "Ǩ" U01E8 # uppercase K with CARON
-#--# <Multi_key> <v> <K>    : "Ǩ" U01E8 # uppercase K with CARON
-#--# <dead_caron> <k>    : "ǩ" U01E9 # lowercase K with CARON
-#--# <Multi_key> <c> <k>    : "ǩ" U01E9 # lowercase K with CARON
-#--# <Multi_key> <v> <k>    : "ǩ" U01E9 # lowercase K with CARON
-#--# <dead_ogonek> <O>    : "Ǫ" U01EA # uppercase O with OGONEK
-#--# <Multi_key> <semicolon> <O>   : "Ǫ" U01EA # uppercase O with OGONEK
-#--# <Multi_key> <O> <semicolon>   : "Ǫ" U01EA # uppercase O with OGONEK
-#--# <Multi_key> <comma> <O>    : "Ǫ" U01EA # uppercase O with OGONEK
-#--# <Multi_key> <O> <comma>    : "Ǫ" U01EA # uppercase O with OGONEK
-#--# <dead_ogonek> <o>    : "ǫ" U01EB # lowercase O with OGONEK
-#--# <Multi_key> <semicolon> <o>   : "ǫ" U01EB # lowercase O with OGONEK
-#--# <Multi_key> <o> <semicolon>   : "ǫ" U01EB # lowercase O with OGONEK
-#--# <Multi_key> <comma> <o>    : "ǫ" U01EB # lowercase O with OGONEK
-#--# <Multi_key> <o> <comma>    : "ǫ" U01EB # lowercase O with OGONEK
+
 #--# <dead_macron> <dead_ogonek> <O>   : "Ǭ" U01EC # uppercase O with OGONEK AND MACRON
 #--# <dead_macron> <Multi_key> <semicolon> <O> : "Ǭ" U01EC # uppercase O with OGONEK AND MACRON
 #--# <Multi_key> <macron> <dead_ogonek> <O>  : "Ǭ" U01EC # uppercase O with OGONEK AND MACRON
@@ -940,25 +925,14 @@
 #--# <Multi_key> <macron> <semicolon> <o>  : "ǭ" U01ED # lowercase O with OGONEK AND MACRON
 #--# <Multi_key> <underscore> <dead_ogonek> <o> : "ǭ" U01ED # lowercase O with OGONEK AND MACRON
 #--# <Multi_key> <underscore> <semicolon> <o> : "ǭ" U01ED # lowercase O with OGONEK AND MACRON
+
 #--# <dead_caron> <EZH>    : "Ǯ" U01EE # uppercase EZH with CARON
 #--# <Multi_key> <c> <EZH>    : "Ǯ" U01EE # uppercase EZH with CARON
 #--# <Multi_key> <v> <EZH>    : "Ǯ" U01EE # uppercase EZH with CARON
 #--# <dead_caron> <ezh>    : "ǯ" U01EF # lowercase EZH with CARON
 #--# <Multi_key> <c> <ezh>    : "ǯ" U01EF # lowercase EZH with CARON
 #--# <Multi_key> <v> <ezh>    : "ǯ" U01EF # lowercase EZH with CARON
-#--# <dead_caron> <j>    : "ǰ" U01F0 # lowercase J with CARON
-#--# <Multi_key> <c> <j>    : "ǰ" U01F0 # lowercase J with CARON
-#--# <Multi_key> <v> <j>    : "ǰ" U01F0 # lowercase J with CARON
-#--# <dead_acute> <G>    : "Ǵ" U01F4 # uppercase G with acute
-#--# <Multi_key> <acute> <G>    : "Ǵ" U01F4 # uppercase G with acute
-#--# <Multi_key> <apostrophe> <G>   : "Ǵ" U01F4 # uppercase G with acute
-#--# <dead_acute> <g>    : "ǵ" U01F5 # lowercase G with acute
-#--# <Multi_key> <acute> <g>    : "ǵ" U01F5 # lowercase G with acute
-#--# <Multi_key> <apostrophe> <g>   : "ǵ" U01F5 # lowercase G with acute
-#--# <dead_grave> <N>    : "Ǹ" U01F8 # uppercase N with grave
-#--# <Multi_key> <grave> <N>    : "Ǹ" U01F8 # uppercase N with grave
-#--# <dead_grave> <n>    : "ǹ" U01F9 # lowercase N with grave
-#--# <Multi_key> <grave> <n>    : "ǹ" U01F9 # lowercase N with grave
+
 #--# <dead_acute> <Aring>    : "Ǻ" U01FA # uppercase A with RING ABOVE AND acute
 #--# <Multi_key> <acute> <Aring>   : "Ǻ" U01FA # uppercase A with RING ABOVE AND acute
 #--# <Multi_key> <apostrophe> <Aring>  : "Ǻ" U01FA # uppercase A with RING ABOVE AND acute
@@ -975,12 +949,7 @@
 #--# <Multi_key> <acute> <dead_abovering> <a> : "ǻ" U01FB # lowercase A with RING ABOVE AND acute
 #--# <Multi_key> <apostrophe> <dead_abovering> <a> : "ǻ" U01FB # lowercase A with RING ABOVE AND acute
 #--# <Multi_key> <asterisk> <apostrophe> <a>  : "ǻ" U01FB # lowercase A with RING ABOVE AND acute
-#--# <dead_acute> <AE>    : "Ǽ" U01FC # uppercase AE with acute
-#--# <Multi_key> <acute> <AE>   : "Ǽ" U01FC # uppercase AE with acute
-#--# <Multi_key> <apostrophe> <AE>   : "Ǽ" U01FC # uppercase AE with acute
-#--# <dead_acute> <ae>    : "ǽ" U01FD # lowercase AE with acute
-#--# <Multi_key> <acute> <ae>   : "ǽ" U01FD # lowercase AE with acute
-#--# <Multi_key> <apostrophe> <ae>   : "ǽ" U01FD # lowercase AE with acute
+
 #--# <dead_acute> <Ooblique>    : "Ǿ" U01FE # uppercase O with stroke AND acute
 #--# <Multi_key> <acute> <Ooblique>   : "Ǿ" U01FE # uppercase O with stroke AND acute
 #--# <Multi_key> <apostrophe> <Ooblique>  : "Ǿ" U01FE # uppercase O with stroke AND acute
@@ -1003,56 +972,7 @@
 #--# <Multi_key> <acute> <KP_Divide> <o>  : "ǿ" U01FF # lowercase O with stroke AND acute
 #--# <Multi_key> <apostrophe> <KP_Divide> <o> : "ǿ" U01FF # lowercase O with stroke AND acute
 #--# <dead_stroke> <dead_acute> <o>   : "ǿ" U01FF # lowercase O with stroke AND acute
-#--# <dead_doublegrave> <A>    : "Ȁ" U0200 # uppercase A with DOUBLE grave
-#--# <dead_doublegrave> <a>    : "ȁ" U0201 # lowercase A with DOUBLE grave
-#--# <dead_invertedbreve> <A>   : "Ȃ" U0202 # uppercase A with INVERTED BREVE
-#--# <dead_invertedbreve> <a>   : "ȃ" U0203 # lowercase A with INVERTED BREVE
-#--# <dead_doublegrave> <E>    : "Ȅ" U0204 # uppercase E with DOUBLE grave
-#--# <dead_doublegrave> <e>    : "ȅ" U0205 # lowercase E with DOUBLE grave
-#--# <dead_invertedbreve> <E>   : "Ȇ" U0206 # uppercase E with INVERTED BREVE
-#--# <dead_invertedbreve> <e>   : "ȇ" U0207 # lowercase E with INVERTED BREVE
-#--# <dead_doublegrave> <I>    : "Ȉ" U0208 # uppercase I with DOUBLE grave
-#--# <dead_doublegrave> <i>    : "ȉ" U0209 # lowercase I with DOUBLE grave
-#--# <dead_invertedbreve> <I>   : "Ȋ" U020A # uppercase I with INVERTED BREVE
-#--# <dead_invertedbreve> <i>   : "ȋ" U020B # lowercase I with INVERTED BREVE
-#--# <dead_doublegrave> <O>    : "Ȍ" U020C # uppercase O with DOUBLE grave
-#--# <dead_doublegrave> <o>    : "ȍ" U020D # lowercase O with DOUBLE grave
-#--# <dead_invertedbreve> <O>   : "Ȏ" U020E # uppercase O with INVERTED BREVE
-#--# <dead_invertedbreve> <o>   : "ȏ" U020F # lowercase O with INVERTED BREVE
-#--# <dead_doublegrave> <R>    : "Ȑ" U0210 # uppercase R with DOUBLE grave
-#--# <dead_doublegrave> <r>    : "ȑ" U0211 # lowercase R with DOUBLE grave
-#--# <dead_invertedbreve> <R>   : "Ȓ" U0212 # uppercase R with INVERTED BREVE
-#--# <dead_invertedbreve> <r>   : "ȓ" U0213 # lowercase R with INVERTED BREVE
-#--# <dead_doublegrave> <U>    : "Ȕ" U0214 # uppercase U with DOUBLE grave
-#--# <dead_doublegrave> <u>    : "ȕ" U0215 # lowercase U with DOUBLE grave
-#--# <dead_invertedbreve> <U>   : "Ȗ" U0216 # uppercase U with INVERTED BREVE
-#--# <dead_invertedbreve> <u>   : "ȗ" U0217 # lowercase U with INVERTED BREVE
-#--# <dead_belowcomma> <S>    : "Ș" U0218 # uppercase S with COMMA BELOW
-#--# <Multi_key> <semicolon> <S>   : "Ș" U0218 # uppercase S with COMMA BELOW
-#--# <Multi_key> <S> <semicolon>   : "Ș" U0218 # uppercase S with COMMA BELOW
-#--# <dead_belowcomma> <s>    : "ș" U0219 # lowercase S with COMMA BELOW
-#--# <Multi_key> <semicolon> <s>   : "ș" U0219 # lowercase S with COMMA BELOW
-#--# <Multi_key> <s> <semicolon>   : "ș" U0219 # lowercase S with COMMA BELOW
-#--# <dead_belowcomma> <T>    : "Ț" U021A # uppercase T with COMMA BELOW
-#--# <Multi_key> <semicolon> <T>   : "Ț" U021A # uppercase T with COMMA BELOW
-#--# <Multi_key> <T> <semicolon>   : "Ț" U021A # uppercase T with COMMA BELOW
-#--# <dead_belowcomma> <t>    : "ț" U021B # lowercase T with COMMA BELOW
-#--# <Multi_key> <semicolon> <t>   : "ț" U021B # lowercase T with COMMA BELOW
-#--# <Multi_key> <t> <semicolon>   : "ț" U021B # lowercase T with COMMA BELOW
-#--# <dead_caron> <H>    : "Ȟ" U021E # uppercase H with CARON
-#--# <Multi_key> <c> <H>    : "Ȟ" U021E # uppercase H with CARON
-#--# <Multi_key> <v> <H>    : "Ȟ" U021E # uppercase H with CARON
-#--# <dead_caron> <h>    : "ȟ" U021F # lowercase H with CARON
-#--# <Multi_key> <c> <h>    : "ȟ" U021F # lowercase H with CARON
-#--# <Multi_key> <v> <h>    : "ȟ" U021F # lowercase H with CARON
-#--# <dead_abovedot> <A>    : "Ȧ" U0226 # uppercase A with DOT ABOVE
-#--# <Multi_key> <period> <A>   : "Ȧ" U0226 # uppercase A with DOT ABOVE
-#--# <dead_abovedot> <a>    : "ȧ" U0227 # lowercase A with DOT ABOVE
-#--# <Multi_key> <period> <a>   : "ȧ" U0227 # lowercase A with DOT ABOVE
-#--# <dead_cedilla> <E>    : "Ȩ" U0228 # uppercase E with cedilla
-#--# <Multi_key> <cedilla> <E>   : "Ȩ" U0228 # uppercase E with cedilla
-#--# <dead_cedilla> <e>    : "ȩ" U0229 # lowercase E with cedilla
-#--# <Multi_key> <cedilla> <e>   : "ȩ" U0229 # lowercase E with cedilla
+
 #--# <dead_macron> <Odiaeresis>   : "Ȫ" U022A # uppercase O with diaeresis AND MACRON
 #--# <Multi_key> <macron> <Odiaeresis>  : "Ȫ" U022A # uppercase O with diaeresis AND MACRON
 #--# <Multi_key> <underscore> <Odiaeresis>  : "Ȫ" U022A # uppercase O with diaeresis AND MACRON
@@ -1071,6 +991,7 @@
 #--# <Multi_key> <macron> <quotedbl> <o>  : "ȫ" U022B # lowercase O with diaeresis AND MACRON
 #--# <Multi_key> <underscore> <dead_diaeresis> <o> : "ȫ" U022B # lowercase O with diaeresis AND MACRON
 #--# <Multi_key> <underscore> <quotedbl> <o>  : "ȫ" U022B # lowercase O with diaeresis AND MACRON
+
 #--# <dead_macron> <Otilde>    : "Ȭ" U022C # uppercase O with TILDE AND MACRON
 #--# <Multi_key> <macron> <Otilde>   : "Ȭ" U022C # uppercase O with TILDE AND MACRON
 #--# <Multi_key> <underscore> <Otilde>  : "Ȭ" U022C # uppercase O with TILDE AND MACRON
@@ -1089,10 +1010,7 @@
 #--# <Multi_key> <macron> <asciitilde> <o>  : "ȭ" U022D # lowercase O with TILDE AND MACRON
 #--# <Multi_key> <underscore> <dead_tilde> <o> : "ȭ" U022D # lowercase O with TILDE AND MACRON
 #--# <Multi_key> <underscore> <asciitilde> <o> : "ȭ" U022D # lowercase O with TILDE AND MACRON
-#--# <dead_abovedot> <O>    : "Ȯ" U022E # uppercase O with DOT ABOVE
-#--# <Multi_key> <period> <O>   : "Ȯ" U022E # uppercase O with DOT ABOVE
-#--# <dead_abovedot> <o>    : "ȯ" U022F # lowercase O with DOT ABOVE
-#--# <Multi_key> <period> <o>   : "ȯ" U022F # lowercase O with DOT ABOVE
+
 #--# <dead_macron> <dead_abovedot> <O>  : "Ȱ" U0230 # uppercase O with DOT ABOVE AND MACRON
 #--# <dead_macron> <Multi_key> <period> <O>  : "Ȱ" U0230 # uppercase O with DOT ABOVE AND MACRON
 #--# <Multi_key> <macron> <dead_abovedot> <O> : "Ȱ" U0230 # uppercase O with DOT ABOVE AND MACRON
@@ -1105,562 +1023,14 @@
 #--# <Multi_key> <macron> <period> <o>  : "ȱ" U0231 # lowercase O with DOT ABOVE AND MACRON
 #--# <Multi_key> <underscore> <dead_abovedot> <o> : "ȱ" U0231 # lowercase O with DOT ABOVE AND MACRON
 #--# <Multi_key> <underscore> <period> <o>  : "ȱ" U0231 # lowercase O with DOT ABOVE AND MACRON
-#--# <dead_macron> <Y>    : "Ȳ" U0232 # uppercase Y with MACRON
-#--# <Multi_key> <macron> <Y>   : "Ȳ" U0232 # uppercase Y with MACRON
-#--# <Multi_key> <underscore> <Y>   : "Ȳ" U0232 # uppercase Y with MACRON
-#--# <dead_macron> <y>    : "ȳ" U0233 # lowercase Y with MACRON
-#--# <Multi_key> <macron> <y>   : "ȳ" U0233 # lowercase Y with MACRON
-#--# <Multi_key> <underscore> <y>   : "ȳ" U0233 # lowercase Y with MACRON
-#--# <dead_stroke> <B>    : "Ƀ" U0243 # uppercase B with stroke
-#--# <Multi_key> <slash> <B>    : "Ƀ" U0243 # uppercase B with stroke
-#--# <Multi_key> <KP_Divide> <B>   : "Ƀ" U0243 # uppercase B with stroke
+
 #--# <Multi_key> <minus> <period> <E>  : "Ė̄" # uppercase E with DOT ABOVE plus combining macron
 #--# <Multi_key> <underscore> <period> <E>  : "Ė̄" # uppercase E with DOT ABOVE plus combining macron
 #--# <Multi_key> <minus> <period> <e>  : "ė̄" # lowercase E with DOT ABOVE plus combining macron
 #--# <Multi_key> <underscore> <period> <e>  : "ė̄" # lowercase E with DOT ABOVE plus combining macron
-#--# # IPA Extensions
+
 #--# <Multi_key> <e> <e>    : "ə" U0259 # lowercase SCHWA
-#--# <dead_stroke> <i>    : "ɨ" U0268 # lowercase I with stroke
-#--# <Multi_key> <slash> <i>    : "ɨ" U0268 # lowercase I with stroke
-#--# <Multi_key> <KP_Divide> <i>   : "ɨ" U0268 # lowercase I with stroke
-#--# # Spacing Modifier Letters
-#--# <Multi_key> <slash> <U0294>    : "ʡ" U02A1 # LATIN LETTER GLOTTAL STOP with stroke
-#--# <Multi_key> <KP_Divide> <U0294>    : "ʡ" U02A1 # LATIN LETTER GLOTTAL STOP with stroke
-#--# <dead_circumflex> <Multi_key> <underscore> <h>  : "ʰ" U02B0 # MODIFIER LETTER SMALL H
-#--# <Multi_key> <asciicircum> <underscore> <h>  : "ʰ" U02B0 # MODIFIER LETTER SMALL H
-#--# <dead_circumflex> <Multi_key> <underscore> <U0266> : "ʱ" U02B1 # MODIFIER LETTER SMALL H with HOOK
-#--# <Multi_key> <asciicircum> <underscore> <U0266>  : "ʱ" U02B1 # MODIFIER LETTER SMALL H with HOOK
-#--# <dead_circumflex> <Multi_key> <underscore> <j>  : "ʲ" U02B2 # MODIFIER LETTER SMALL J
-#--# <Multi_key> <asciicircum> <underscore> <j>  : "ʲ" U02B2 # MODIFIER LETTER SMALL J
-#--# <dead_circumflex> <Multi_key> <underscore> <r>  : "ʳ" U02B3 # MODIFIER LETTER SMALL R
-#--# <Multi_key> <asciicircum> <underscore> <r>  : "ʳ" U02B3 # MODIFIER LETTER SMALL R
-#--# <dead_circumflex> <Multi_key> <underscore> <U0279> : "ʴ" U02B4 # MODIFIER LETTER SMALL TURNED R
-#--# <Multi_key> <asciicircum> <underscore> <U0279>  : "ʴ" U02B4 # MODIFIER LETTER SMALL TURNED R
-#--# <dead_circumflex> <Multi_key> <underscore> <U027B> : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R with HOOK
-#--# <Multi_key> <asciicircum> <underscore> <U027B>  : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R with HOOK
-#--# <dead_circumflex> <Multi_key> <underscore> <U0281> : "ʶ" U02B6 # MODIFIER LETTER SMALL CAPITAL INVERTED R
-#--# <Multi_key> <asciicircum> <underscore> <U0281>  : "ʶ" U02B6 # MODIFIER LETTER SMALL CAPITAL INVERTED R
-#--# <dead_circumflex> <Multi_key> <underscore> <w>  : "ʷ" U02B7 # MODIFIER LETTER SMALL W
-#--# <Multi_key> <asciicircum> <underscore> <w>  : "ʷ" U02B7 # MODIFIER LETTER SMALL W
-#--# <dead_circumflex> <Multi_key> <underscore> <y>  : "ʸ" U02B8 # MODIFIER LETTER SMALL Y
-#--# <Multi_key> <asciicircum> <underscore> <y>  : "ʸ" U02B8 # MODIFIER LETTER SMALL Y
-#--# <dead_circumflex> <Multi_key> <underscore> <U0263> : "ˠ" U02E0 # MODIFIER LETTER SMALL GAMMA
-#--# <Multi_key> <asciicircum> <underscore> <U0263>  : "ˠ" U02E0 # MODIFIER LETTER SMALL GAMMA
-#--# <dead_circumflex> <Multi_key> <underscore> <l>  : "ˡ" U02E1 # MODIFIER LETTER SMALL L
-#--# <Multi_key> <asciicircum> <underscore> <l>  : "ˡ" U02E1 # MODIFIER LETTER SMALL L
-#--# <dead_circumflex> <Multi_key> <underscore> <s>  : "ˢ" U02E2 # MODIFIER LETTER SMALL S
-#--# <Multi_key> <asciicircum> <underscore> <s>  : "ˢ" U02E2 # MODIFIER LETTER SMALL S
-#--# <dead_circumflex> <Multi_key> <underscore> <x>  : "ˣ" U02E3 # MODIFIER LETTER SMALL X
-#--# <Multi_key> <asciicircum> <underscore> <x>  : "ˣ" U02E3 # MODIFIER LETTER SMALL X
-#--# <dead_circumflex> <Multi_key> <underscore> <U0295> : "ˤ" U02E4 # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
-#--# <Multi_key> <asciicircum> <underscore> <U0295>  : "ˤ" U02E4 # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
-#--# # Greek
-#--# <dead_diaeresis> <acute>    : "̈́" U0344 # COMBINING GREEK DIALYTIKA TONOS
-#--# <dead_diaeresis> <apostrophe>    : "̈́" U0344 # COMBINING GREEK DIALYTIKA TONOS
-#--# <Multi_key> <quotedbl> <dead_acute>   : "̈́" U0344 # COMBINING GREEK DIALYTIKA TONOS
-#--# <Multi_key> <quotedbl> <acute>    : "̈́" U0344 # COMBINING GREEK DIALYTIKA TONOS
-#--# <Multi_key> <quotedbl> <apostrophe>   : "̈́" U0344 # COMBINING GREEK DIALYTIKA TONOS
-#--# <dead_acute> <dead_diaeresis> <space>   : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <dead_diaeresis> <dead_acute> <space>   : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <Multi_key> <diaeresis> <dead_acute>   : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <Multi_key> <diaeresis> <acute>    : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <Multi_key> <diaeresis> <apostrophe>   : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <Multi_key> <apostrophe> <quotedbl> <space>  : "΅" U0385 # GREEK DIALYTIKA TONOS
-#--# <dead_acute> <Greek_ALPHA>    : "Ά" U0386 # GREEK CAPITAL LETTER ALPHA with TONOS
-#--# <Multi_key> <acute> <Greek_ALPHA>   : "Ά" U0386 # GREEK CAPITAL LETTER ALPHA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_ALPHA>   : "Ά" U0386 # GREEK CAPITAL LETTER ALPHA with TONOS
-#--# <Multi_key> <Greek_ALPHA> <apostrophe>   : "Ά" U0386 # GREEK CAPITAL LETTER ALPHA with TONOS
-#--# <dead_acute> <Greek_EPSILON>    : "Έ" U0388 # GREEK CAPITAL LETTER EPSILON with TONOS
-#--# <Multi_key> <acute> <Greek_EPSILON>   : "Έ" U0388 # GREEK CAPITAL LETTER EPSILON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_EPSILON>  : "Έ" U0388 # GREEK CAPITAL LETTER EPSILON with TONOS
-#--# <Multi_key> <Greek_EPSILON> <apostrophe>  : "Έ" U0388 # GREEK CAPITAL LETTER EPSILON with TONOS
-#--# <dead_acute> <Greek_ETA>    : "Ή" U0389 # GREEK CAPITAL LETTER ETA with TONOS
-#--# <Multi_key> <acute> <Greek_ETA>    : "Ή" U0389 # GREEK CAPITAL LETTER ETA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_ETA>   : "Ή" U0389 # GREEK CAPITAL LETTER ETA with TONOS
-#--# <Multi_key> <Greek_ETA> <apostrophe>   : "Ή" U0389 # GREEK CAPITAL LETTER ETA with TONOS
-#--# <dead_acute> <Greek_IOTA>    : "Ί" U038A # GREEK CAPITAL LETTER IOTA with TONOS
-#--# <Multi_key> <acute> <Greek_IOTA>   : "Ί" U038A # GREEK CAPITAL LETTER IOTA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_IOTA>   : "Ί" U038A # GREEK CAPITAL LETTER IOTA with TONOS
-#--# <Multi_key> <Greek_IOTA> <apostrophe>   : "Ί" U038A # GREEK CAPITAL LETTER IOTA with TONOS
-#--# <dead_acute> <Greek_OMICRON>    : "Ό" U038C # GREEK CAPITAL LETTER OMICRON with TONOS
-#--# <Multi_key> <acute> <Greek_OMICRON>   : "Ό" U038C # GREEK CAPITAL LETTER OMICRON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_OMICRON>  : "Ό" U038C # GREEK CAPITAL LETTER OMICRON with TONOS
-#--# <Multi_key> <Greek_OMICRON> <apostrophe>  : "Ό" U038C # GREEK CAPITAL LETTER OMICRON with TONOS
-#--# <dead_acute> <Greek_UPSILON>    : "Ύ" U038E # GREEK CAPITAL LETTER UPSILON with TONOS
-#--# <Multi_key> <acute> <Greek_UPSILON>   : "Ύ" U038E # GREEK CAPITAL LETTER UPSILON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_UPSILON>  : "Ύ" U038E # GREEK CAPITAL LETTER UPSILON with TONOS
-#--# <Multi_key> <Greek_UPSILON> <apostrophe>  : "Ύ" U038E # GREEK CAPITAL LETTER UPSILON with TONOS
-#--# <dead_acute> <Greek_OMEGA>    : "Ώ" U038F # GREEK CAPITAL LETTER OMEGA with TONOS
-#--# <Multi_key> <acute> <Greek_OMEGA>   : "Ώ" U038F # GREEK CAPITAL LETTER OMEGA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_OMEGA>   : "Ώ" U038F # GREEK CAPITAL LETTER OMEGA with TONOS
-#--# <Multi_key> <Greek_OMEGA> <apostrophe>   : "Ώ" U038F # GREEK CAPITAL LETTER OMEGA with TONOS
-#--# <dead_acute> <dead_diaeresis> <Greek_iota>  : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <dead_diaeresis> <dead_acute> <Greek_iota>  : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <dead_acute> <Multi_key> <quotedbl> <Greek_iota> : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <Multi_key> <acute> <dead_diaeresis> <Greek_iota> : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <Multi_key> <acute> <quotedbl> <Greek_iota>  : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <Multi_key> <apostrophe> <dead_diaeresis> <Greek_iota> : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <Multi_key> <apostrophe> <quotedbl> <Greek_iota> : "ΐ" U0390 # GREEK SMALL LETTER IOTA with DIALYTIKA AND TONOS
-#--# <dead_diaeresis> <Greek_IOTA>    : "Ϊ" U03AA # GREEK CAPITAL LETTER IOTA with DIALYTIKA
-#--# <Multi_key> <quotedbl> <Greek_IOTA>   : "Ϊ" U03AA # GREEK CAPITAL LETTER IOTA with DIALYTIKA
-#--# <Multi_key> <Greek_IOTA> <quotedbl>   : "Ϊ" U03AA # GREEK CAPITAL LETTER IOTA with DIALYTIKA
-#--# <dead_diaeresis> <Greek_UPSILON>   : "Ϋ" U03AB # GREEK CAPITAL LETTER UPSILON with DIALYTIKA
-#--# <Multi_key> <quotedbl> <Greek_UPSILON>   : "Ϋ" U03AB # GREEK CAPITAL LETTER UPSILON with DIALYTIKA
-#--# <Multi_key> <Greek_UPSILON> <quotedbl>   : "Ϋ" U03AB # GREEK CAPITAL LETTER UPSILON with DIALYTIKA
-#--# <dead_acute> <Greek_alpha>    : "ά" U03AC # GREEK SMALL LETTER ALPHA with TONOS
-#--# <Multi_key> <acute> <Greek_alpha>   : "ά" U03AC # GREEK SMALL LETTER ALPHA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_alpha>   : "ά" U03AC # GREEK SMALL LETTER ALPHA with TONOS
-#--# <Multi_key> <Greek_alpha> <apostrophe>   : "ά" U03AC # GREEK SMALL LETTER ALPHA with TONOS
-#--# <dead_acute> <Greek_epsilon>    : "έ" U03AD # GREEK SMALL LETTER EPSILON with TONOS
-#--# <Multi_key> <acute> <Greek_epsilon>   : "έ" U03AD # GREEK SMALL LETTER EPSILON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_epsilon>  : "έ" U03AD # GREEK SMALL LETTER EPSILON with TONOS
-#--# <Multi_key> <Greek_epsilon> <apostrophe>  : "έ" U03AD # GREEK SMALL LETTER EPSILON with TONOS
-#--# <dead_acute> <Greek_eta>    : "ή" U03AE # GREEK SMALL LETTER ETA with TONOS
-#--# <Multi_key> <acute> <Greek_eta>    : "ή" U03AE # GREEK SMALL LETTER ETA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_eta>   : "ή" U03AE # GREEK SMALL LETTER ETA with TONOS
-#--# <Multi_key> <Greek_eta> <apostrophe>   : "ή" U03AE # GREEK SMALL LETTER ETA with TONOS
-#--# <dead_acute> <Greek_iota>    : "ί" U03AF # GREEK SMALL LETTER IOTA with TONOS
-#--# <Multi_key> <acute> <Greek_iota>   : "ί" U03AF # GREEK SMALL LETTER IOTA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_iota>   : "ί" U03AF # GREEK SMALL LETTER IOTA with TONOS
-#--# <dead_acute> <dead_diaeresis> <Greek_upsilon>  : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <dead_acute> <Multi_key> <quotedbl> <Greek_upsilon> : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <Multi_key> <acute> <dead_diaeresis> <Greek_upsilon> : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <Multi_key> <acute> <quotedbl> <Greek_upsilon>  : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <Multi_key> <apostrophe><dead_diaeresis> <Greek_upsilon>: "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <Multi_key> <apostrophe> <quotedbl> <Greek_upsilon> : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <dead_diaeresis> <dead_acute> <Greek_upsilon>  : "ΰ" U03B0 # GREEK SMALL LETTER UPSILON with DIALYTIKA AND TONOS
-#--# <dead_diaeresis> <Greek_iota>    : "ϊ" U03CA # GREEK SMALL LETTER IOTA with DIALYTIKA
-#--# <Multi_key> <quotedbl> <Greek_iota>   : "ϊ" U03CA # GREEK SMALL LETTER IOTA with DIALYTIKA
-#--# <Multi_key> <Greek_iota> <quotedbl>   : "ϊ" U03CA # GREEK SMALL LETTER IOTA with DIALYTIKA
-#--# <dead_diaeresis> <Greek_upsilon>   : "ϋ" U03CB # GREEK SMALL LETTER UPSILON with DIALYTIKA
-#--# <Multi_key> <quotedbl> <Greek_upsilon>   : "ϋ" U03CB # GREEK SMALL LETTER UPSILON with DIALYTIKA
-#--# <Multi_key> <Greek_upsilon> <quotedbl>   : "ϋ" U03CB # GREEK SMALL LETTER UPSILON with DIALYTIKA
-#--# <dead_acute> <Greek_omicron>    : "ό" U03CC # GREEK SMALL LETTER OMICRON with TONOS
-#--# <Multi_key> <acute> <Greek_omicron>   : "ό" U03CC # GREEK SMALL LETTER OMICRON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_omicron>  : "ό" U03CC # GREEK SMALL LETTER OMICRON with TONOS
-#--# <Multi_key> <Greek_omicron> <apostrophe>  : "ό" U03CC # GREEK SMALL LETTER OMICRON with TONOS
-#--# <dead_acute> <Greek_upsilon>    : "ύ" U03CD # GREEK SMALL LETTER UPSILON with TONOS
-#--# <Multi_key> <acute> <Greek_upsilon>   : "ύ" U03CD # GREEK SMALL LETTER UPSILON with TONOS
-#--# <Multi_key> <apostrophe> <Greek_upsilon>  : "ύ" U03CD # GREEK SMALL LETTER UPSILON with TONOS
-#--# <Multi_key> <Greek_upsilon> <apostrophe>  : "ύ" U03CD # GREEK SMALL LETTER UPSILON with TONOS
-#--# <dead_acute> <Greek_omega>    : "ώ" U03CE # GREEK SMALL LETTER OMEGA with TONOS
-#--# <Multi_key> <acute> <Greek_omega>   : "ώ" U03CE # GREEK SMALL LETTER OMEGA with TONOS
-#--# <Multi_key> <apostrophe> <Greek_omega>   : "ώ" U03CE # GREEK SMALL LETTER OMEGA with TONOS
-#--# <Multi_key> <Greek_omega> <apostrophe>   : "ώ" U03CE # GREEK SMALL LETTER OMEGA with TONOS
-#--# <Multi_key> <quotedbl> <U03D2>    : "ϔ" U03D4 # GREEK UPSILON with diaeresis AND HOOK SYMBOL
-#--# # Cyrillic
-#--# <dead_grave> <Cyrillic_IE>  : "Ѐ" U0400 # CYRILLIC CAPITAL LETTER IE with grave
-#--# <Multi_key> <grave> <Cyrillic_IE> : "Ѐ" U0400 # CYRILLIC CAPITAL LETTER IE with grave
-#--# <dead_diaeresis> <Cyrillic_IE>  : "Ё" U0401 # CYRILLIC CAPITAL LETTER IO
-#--# <Multi_key> <quotedbl> <Cyrillic_IE> : "Ё" U0401 # CYRILLIC CAPITAL LETTER IO
-#--# <dead_acute> <Cyrillic_GHE>  : "Ѓ" U0403 # CYRILLIC CAPITAL LETTER GJE
-#--# <Multi_key> <acute> <Cyrillic_GHE> : "Ѓ" U0403 # CYRILLIC CAPITAL LETTER GJE
-#--# <Multi_key> <apostrophe> <Cyrillic_GHE> : "Ѓ" U0403 # CYRILLIC CAPITAL LETTER GJE
-#--# <dead_diaeresis> <Ukrainian_I>  : "Ї" U0407 # CYRILLIC CAPITAL LETTER YI
-#--# <Multi_key> <quotedbl> <Ukrainian_I> : "Ї" U0407 # CYRILLIC CAPITAL LETTER YI
-#--# <dead_acute> <Cyrillic_KA>  : "Ќ" U040C # CYRILLIC CAPITAL LETTER KJE
-#--# <Multi_key> <acute> <Cyrillic_KA> : "Ќ" U040C # CYRILLIC CAPITAL LETTER KJE
-#--# <Multi_key> <apostrophe> <Cyrillic_KA> : "Ќ" U040C # CYRILLIC CAPITAL LETTER KJE
-#--# <dead_grave> <Cyrillic_I>  : "Ѝ" U040D # CYRILLIC CAPITAL LETTER I with grave
-#--# <Multi_key> <grave> <Cyrillic_I> : "Ѝ" U040D # CYRILLIC CAPITAL LETTER I with grave
-#--# <dead_breve> <Cyrillic_U>  : "Ў" U040E # CYRILLIC CAPITAL LETTER SHORT U
-#--# <Multi_key> <U> <Cyrillic_U>  : "Ў" U040E # CYRILLIC CAPITAL LETTER SHORT U
-#--# <Multi_key> <b> <Cyrillic_U>  : "Ў" U040E # CYRILLIC CAPITAL LETTER SHORT U
-#--# <dead_breve> <Cyrillic_I>  : "Й" U0419 # CYRILLIC CAPITAL LETTER SHORT I
-#--# <Multi_key> <U> <Cyrillic_I>  : "Й" U0419 # CYRILLIC CAPITAL LETTER SHORT I
-#--# <Multi_key> <b> <Cyrillic_I>  : "Й" U0419 # CYRILLIC CAPITAL LETTER SHORT I
-#--# <dead_breve> <Cyrillic_i>  : "й" U0439 # CYRILLIC SMALL LETTER SHORT I
-#--# <Multi_key> <U> <Cyrillic_i>  : "й" U0439 # CYRILLIC SMALL LETTER SHORT I
-#--# <Multi_key> <b> <Cyrillic_i>  : "й" U0439 # CYRILLIC SMALL LETTER SHORT I
-#--# <dead_grave> <Cyrillic_ie>  : "ѐ" U0450 # CYRILLIC SMALL LETTER IE with grave
-#--# <Multi_key> <grave> <Cyrillic_ie> : "ѐ" U0450 # CYRILLIC SMALL LETTER IE with grave
-#--# <dead_diaeresis> <Cyrillic_ie>  : "ё" U0451 # CYRILLIC SMALL LETTER IO
-#--# <Multi_key> <quotedbl> <Cyrillic_ie> : "ё" U0451 # CYRILLIC SMALL LETTER IO
-#--# <dead_acute> <Cyrillic_ghe>  : "ѓ" U0453 # CYRILLIC SMALL LETTER GJE
-#--# <Multi_key> <acute> <Cyrillic_ghe> : "ѓ" U0453 # CYRILLIC SMALL LETTER GJE
-#--# <Multi_key> <apostrophe> <Cyrillic_ghe> : "ѓ" U0453 # CYRILLIC SMALL LETTER GJE
-#--# <dead_diaeresis> <Ukrainian_i>  : "ї" U0457 # CYRILLIC SMALL LETTER YI
-#--# <Multi_key> <quotedbl> <Ukrainian_i> : "ї" U0457 # CYRILLIC SMALL LETTER YI
-#--# <dead_acute> <Cyrillic_ka>  : "ќ" U045C # CYRILLIC SMALL LETTER KJE
-#--# <Multi_key> <acute> <Cyrillic_ka> : "ќ" U045C # CYRILLIC SMALL LETTER KJE
-#--# <Multi_key> <apostrophe> <Cyrillic_ka> : "ќ" U045C # CYRILLIC SMALL LETTER KJE
-#--# <dead_grave> <Cyrillic_i>  : "ѝ" U045D # CYRILLIC SMALL LETTER I with grave
-#--# <Multi_key> <grave> <Cyrillic_i> : "ѝ" U045D # CYRILLIC SMALL LETTER I with grave
-#--# <dead_breve> <Cyrillic_u>  : "ў" U045E # CYRILLIC SMALL LETTER SHORT U
-#--# <Multi_key> <U> <Cyrillic_u>  : "ў" U045E # CYRILLIC SMALL LETTER SHORT U
-#--# <Multi_key> <b> <Cyrillic_u>  : "ў" U045E # CYRILLIC SMALL LETTER SHORT U
-#--# <dead_doublegrave> <U0474>  : "Ѷ" U0476 # CYRILLIC CAPITAL LETTER IZHITSA with DOUBLE grave accent
-#--# <dead_doublegrave> <U0475>  : "ѷ" U0477 # CYRILLIC SMALL LETTER IZHITSA with DOUBLE grave accent
-#--# <Multi_key> <slash> <Cyrillic_GHE> : "Ғ" U0492 # CYRILLIC CAPITAL LETTER GHE with stroke
-#--# <Multi_key> <KP_Divide> <Cyrillic_GHE> : "Ғ" U0492 # CYRILLIC CAPITAL LETTER GHE with stroke
-#--# <Multi_key> <slash> <Cyrillic_ghe> : "ғ" U0493 # CYRILLIC SMALL LETTER GHE with stroke
-#--# <Multi_key> <KP_Divide> <Cyrillic_ghe> : "ғ" U0493 # CYRILLIC SMALL LETTER GHE with stroke
-#--# <Multi_key> <slash> <Cyrillic_KA> : "Ҟ" U049E # CYRILLIC CAPITAL LETTER KA with stroke
-#--# <Multi_key> <KP_Divide> <Cyrillic_KA> : "Ҟ" U049E # CYRILLIC CAPITAL LETTER KA with stroke
-#--# <Multi_key> <slash> <Cyrillic_ka> : "ҟ" U049F # CYRILLIC SMALL LETTER KA with stroke
-#--# <Multi_key> <KP_Divide> <Cyrillic_ka> : "ҟ" U049F # CYRILLIC SMALL LETTER KA with stroke
-#--# <Multi_key> <slash> <U04AE>  : "Ұ" U04B0 # CYRILLIC CAPITAL LETTER STRAIGHT U with stroke
-#--# <Multi_key> <KP_Divide> <U04AE>  : "Ұ" U04B0 # CYRILLIC CAPITAL LETTER STRAIGHT U with stroke
-#--# <Multi_key> <slash> <U04AF>  : "ұ" U04B1 # CYRILLIC SMALL LETTER STRAIGHT U with stroke
-#--# <Multi_key> <KP_Divide> <U04AF>  : "ұ" U04B1 # CYRILLIC SMALL LETTER STRAIGHT U with stroke
-#--# <dead_breve> <Cyrillic_ZHE>  : "Ӂ" U04C1 # CYRILLIC CAPITAL LETTER ZHE with BREVE
-#--# <Multi_key> <U> <Cyrillic_ZHE>  : "Ӂ" U04C1 # CYRILLIC CAPITAL LETTER ZHE with BREVE
-#--# <Multi_key> <b> <Cyrillic_ZHE>  : "Ӂ" U04C1 # CYRILLIC CAPITAL LETTER ZHE with BREVE
-#--# <dead_breve> <Cyrillic_zhe>  : "ӂ" U04C2 # CYRILLIC SMALL LETTER ZHE with BREVE
-#--# <Multi_key> <U> <Cyrillic_zhe>  : "ӂ" U04C2 # CYRILLIC SMALL LETTER ZHE with BREVE
-#--# <Multi_key> <b> <Cyrillic_zhe>  : "ӂ" U04C2 # CYRILLIC SMALL LETTER ZHE with BREVE
-#--# <dead_breve> <Cyrillic_A>  : "Ӑ" U04D0 # CYRILLIC CAPITAL LETTER A with BREVE
-#--# <Multi_key> <U> <Cyrillic_A>  : "Ӑ" U04D0 # CYRILLIC CAPITAL LETTER A with BREVE
-#--# <Multi_key> <b> <Cyrillic_A>  : "Ӑ" U04D0 # CYRILLIC CAPITAL LETTER A with BREVE
-#--# <dead_breve> <Cyrillic_a>  : "ӑ" U04D1 # CYRILLIC SMALL LETTER A with BREVE
-#--# <Multi_key> <U> <Cyrillic_a>  : "ӑ" U04D1 # CYRILLIC SMALL LETTER A with BREVE
-#--# <Multi_key> <b> <Cyrillic_a>  : "ӑ" U04D1 # CYRILLIC SMALL LETTER A with BREVE
-#--# <dead_diaeresis> <Cyrillic_A>  : "Ӓ" U04D2 # CYRILLIC CAPITAL LETTER A with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_A> : "Ӓ" U04D2 # CYRILLIC CAPITAL LETTER A with diaeresis
-#--# <dead_diaeresis> <Cyrillic_a>  : "ӓ" U04D3 # CYRILLIC SMALL LETTER A with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_a> : "ӓ" U04D3 # CYRILLIC SMALL LETTER A with diaeresis
-#--# <dead_breve> <Cyrillic_IE>  : "Ӗ" U04D6 # CYRILLIC CAPITAL LETTER IE with BREVE
-#--# <Multi_key> <U> <Cyrillic_IE>  : "Ӗ" U04D6 # CYRILLIC CAPITAL LETTER IE with BREVE
-#--# <Multi_key> <b> <Cyrillic_IE>  : "Ӗ" U04D6 # CYRILLIC CAPITAL LETTER IE with BREVE
-#--# <dead_breve> <Cyrillic_ie>  : "ӗ" U04D7 # CYRILLIC SMALL LETTER IE with BREVE
-#--# <Multi_key> <U> <Cyrillic_ie>  : "ӗ" U04D7 # CYRILLIC SMALL LETTER IE with BREVE
-#--# <Multi_key> <b> <Cyrillic_ie>  : "ӗ" U04D7 # CYRILLIC SMALL LETTER IE with BREVE
-#--# <dead_diaeresis> <U04D8>  : "Ӛ" U04DA # CYRILLIC CAPITAL LETTER SCHWA with diaeresis
-#--# <Multi_key> <quotedbl> <U04D8>  : "Ӛ" U04DA # CYRILLIC CAPITAL LETTER SCHWA with diaeresis
-#--# <dead_diaeresis> <U04D9>  : "ӛ" U04DB # CYRILLIC SMALL LETTER SCHWA with diaeresis
-#--# <Multi_key> <quotedbl> <U04D9>  : "ӛ" U04DB # CYRILLIC SMALL LETTER SCHWA with diaeresis
-#--# <dead_diaeresis> <Cyrillic_ZHE>  : "Ӝ" U04DC # CYRILLIC CAPITAL LETTER ZHE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_ZHE> : "Ӝ" U04DC # CYRILLIC CAPITAL LETTER ZHE with diaeresis
-#--# <dead_diaeresis> <Cyrillic_zhe>  : "ӝ" U04DD # CYRILLIC SMALL LETTER ZHE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_zhe> : "ӝ" U04DD # CYRILLIC SMALL LETTER ZHE with diaeresis
-#--# <dead_diaeresis> <Cyrillic_ZE>  : "Ӟ" U04DE # CYRILLIC CAPITAL LETTER ZE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_ZE> : "Ӟ" U04DE # CYRILLIC CAPITAL LETTER ZE with diaeresis
-#--# <dead_diaeresis> <Cyrillic_ze>  : "ӟ" U04DF # CYRILLIC SMALL LETTER ZE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_ze> : "ӟ" U04DF # CYRILLIC SMALL LETTER ZE with diaeresis
-#--# <dead_macron> <Cyrillic_I>  : "Ӣ" U04E2 # CYRILLIC CAPITAL LETTER I with MACRON
-#--# <Multi_key> <macron> <Cyrillic_I> : "Ӣ" U04E2 # CYRILLIC CAPITAL LETTER I with MACRON
-#--# <Multi_key> <underscore> <Cyrillic_I> : "Ӣ" U04E2 # CYRILLIC CAPITAL LETTER I with MACRON
-#--# <dead_macron> <Cyrillic_i>  : "ӣ" U04E3 # CYRILLIC SMALL LETTER I with MACRON
-#--# <Multi_key> <macron> <Cyrillic_i> : "ӣ" U04E3 # CYRILLIC SMALL LETTER I with MACRON
-#--# <Multi_key> <underscore> <Cyrillic_i> : "ӣ" U04E3 # CYRILLIC SMALL LETTER I with MACRON
-#--# <dead_diaeresis> <Cyrillic_I>  : "Ӥ" U04E4 # CYRILLIC CAPITAL LETTER I with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_I> : "Ӥ" U04E4 # CYRILLIC CAPITAL LETTER I with diaeresis
-#--# <dead_diaeresis> <Cyrillic_i>  : "ӥ" U04E5 # CYRILLIC SMALL LETTER I with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_i> : "ӥ" U04E5 # CYRILLIC SMALL LETTER I with diaeresis
-#--# <dead_diaeresis> <Cyrillic_O>  : "Ӧ" U04E6 # CYRILLIC CAPITAL LETTER O with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_O> : "Ӧ" U04E6 # CYRILLIC CAPITAL LETTER O with diaeresis
-#--# <dead_diaeresis> <Cyrillic_o>  : "ӧ" U04E7 # CYRILLIC SMALL LETTER O with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_o> : "ӧ" U04E7 # CYRILLIC SMALL LETTER O with diaeresis
-#--# <dead_diaeresis> <U04E8>  : "Ӫ" U04EA # CYRILLIC CAPITAL LETTER BARRED O with diaeresis
-#--# <Multi_key> <quotedbl> <U04E8>  : "Ӫ" U04EA # CYRILLIC CAPITAL LETTER BARRED O with diaeresis
-#--# <dead_diaeresis> <U04E9>  : "ӫ" U04EB # CYRILLIC SMALL LETTER BARRED O with diaeresis
-#--# <Multi_key> <quotedbl> <U04E9>  : "ӫ" U04EB # CYRILLIC SMALL LETTER BARRED O with diaeresis
-#--# <dead_diaeresis> <Cyrillic_E>  : "Ӭ" U04EC # CYRILLIC CAPITAL LETTER E with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_E> : "Ӭ" U04EC # CYRILLIC CAPITAL LETTER E with diaeresis
-#--# <dead_diaeresis> <Cyrillic_e>  : "ӭ" U04ED # CYRILLIC SMALL LETTER E with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_e> : "ӭ" U04ED # CYRILLIC SMALL LETTER E with diaeresis
-#--# <dead_macron> <Cyrillic_U>  : "Ӯ" U04EE # CYRILLIC CAPITAL LETTER U with MACRON
-#--# <Multi_key> <macron> <Cyrillic_U> : "Ӯ" U04EE # CYRILLIC CAPITAL LETTER U with MACRON
-#--# <Multi_key> <underscore> <Cyrillic_U> : "Ӯ" U04EE # CYRILLIC CAPITAL LETTER U with MACRON
-#--# <dead_macron> <Cyrillic_u>  : "ӯ" U04EF # CYRILLIC SMALL LETTER U with MACRON
-#--# <Multi_key> <macron> <Cyrillic_u> : "ӯ" U04EF # CYRILLIC SMALL LETTER U with MACRON
-#--# <Multi_key> <underscore> <Cyrillic_u> : "ӯ" U04EF # CYRILLIC SMALL LETTER U with MACRON
-#--# <dead_diaeresis> <Cyrillic_U>  : "Ӱ" U04F0 # CYRILLIC CAPITAL LETTER U with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_U> : "Ӱ" U04F0 # CYRILLIC CAPITAL LETTER U with diaeresis
-#--# <dead_diaeresis> <Cyrillic_u>  : "ӱ" U04F1 # CYRILLIC SMALL LETTER U with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_u> : "ӱ" U04F1 # CYRILLIC SMALL LETTER U with diaeresis
-#--# <dead_doubleacute> <Cyrillic_U>  : "Ӳ" U04F2 # CYRILLIC CAPITAL LETTER U with DOUBLE acute
-#--# <Multi_key> <equal> <Cyrillic_U> : "Ӳ" U04F2 # CYRILLIC CAPITAL LETTER U with DOUBLE acute
-#--# <dead_doubleacute> <Cyrillic_u>  : "ӳ" U04F3 # CYRILLIC SMALL LETTER U with DOUBLE acute
-#--# <Multi_key> <equal> <Cyrillic_u> : "ӳ" U04F3 # CYRILLIC SMALL LETTER U with DOUBLE acute
-#--# <dead_diaeresis> <Cyrillic_CHE>  : "Ӵ" U04F4 # CYRILLIC CAPITAL LETTER CHE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_CHE> : "Ӵ" U04F4 # CYRILLIC CAPITAL LETTER CHE with diaeresis
-#--# <dead_diaeresis> <Cyrillic_che>  : "ӵ" U04F5 # CYRILLIC SMALL LETTER CHE with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_che> : "ӵ" U04F5 # CYRILLIC SMALL LETTER CHE with diaeresis
-#--# <dead_diaeresis> <Cyrillic_YERU> : "Ӹ" U04F8 # CYRILLIC CAPITAL LETTER YERU with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_YERU> : "Ӹ" U04F8 # CYRILLIC CAPITAL LETTER YERU with diaeresis
-#--# <dead_diaeresis> <Cyrillic_yeru> : "ӹ" U04F9 # CYRILLIC SMALL LETTER YERU with diaeresis
-#--# <Multi_key> <quotedbl> <Cyrillic_yeru> : "ӹ" U04F9 # CYRILLIC SMALL LETTER YERU with diaeresis
-#--# # Several other scripts
-#--# <Multi_key> <U0653> <Arabic_alef> : "آ" U0622 # ARABIC LETTER ALEF with MADDA ABOVE
-#--# <Multi_key> <U0654> <Arabic_alef> : "أ" U0623 # ARABIC LETTER ALEF with HAMZA ABOVE
-#--# <Multi_key> <U0654> <Arabic_waw> : "ؤ" U0624 # ARABIC LETTER WAW with HAMZA ABOVE
-#--# <Multi_key> <U0655> <Arabic_alef> : "إ" U0625 # ARABIC LETTER ALEF with HAMZA BELOW
-#--# <Multi_key> <U0654> <Arabic_yeh> : "ئ" U0626 # ARABIC LETTER YEH with HAMZA ABOVE
-#--# <Multi_key> <U0654> <U06D5>  : "ۀ" U06C0 # ARABIC LETTER HEH with YEH ABOVE
-#--# <Multi_key> <U0654> <U06C1>  : "ۂ" U06C2 # ARABIC LETTER HEH GOAL with HAMZA ABOVE
-#--# <Multi_key> <U0654> <U06D2>  : "ۓ" U06D3 # ARABIC LETTER YEH BARREE with HAMZA ABOVE
-#--# <Multi_key> <U093C> <U0928>  : "ऩ" U0929 # DEVANAGARI LETTER NNNA
-#--# <Multi_key> <U093C> <U0930>  : "ऱ" U0931 # DEVANAGARI LETTER RRA
-#--# <Multi_key> <U093C> <U0933>  : "ऴ" U0934 # DEVANAGARI LETTER LLLA
-#--# <Multi_key> <U093C> <U0915>  : "क़" U0958 # DEVANAGARI LETTER QA
-#--# <Multi_key> <U093C> <U0916>  : "ख़" U0959 # DEVANAGARI LETTER KHHA
-#--# <Multi_key> <U093C> <U0917>  : "ग़" U095A # DEVANAGARI LETTER GHHA
-#--# <Multi_key> <U093C> <U091C>  : "ज़" U095B # DEVANAGARI LETTER ZA
-#--# <Multi_key> <U093C> <U0921>  : "ड़" U095C # DEVANAGARI LETTER DDDHA
-#--# <Multi_key> <U093C> <U0922>  : "ढ़" U095D # DEVANAGARI LETTER RHA
-#--# <Multi_key> <U093C> <U092B>  : "फ़" U095E # DEVANAGARI LETTER FA
-#--# <Multi_key> <U093C> <U092F>  : "य़" U095F # DEVANAGARI LETTER YYA
-#--# <Multi_key> <U09C7> <U09BE>  : "ো" U09CB # BENGALI VOWEL SIGN O
-#--# <Multi_key> <U09C7> <U09D7>  : "ৌ" U09CC # BENGALI VOWEL SIGN AU
-#--# <Multi_key> <U09BC> <U09A1>  : "ড়" U09DC # BENGALI LETTER RRA
-#--# <Multi_key> <U09BC> <U09A2>  : "ঢ়" U09DD # BENGALI LETTER RHA
-#--# <Multi_key> <U09BC> <U09AF>  : "য়" U09DF # BENGALI LETTER YYA
-#--# <Multi_key> <U0A3C> <U0A32>  : "ਲ਼" U0A33 # GURMUKHI LETTER LLA
-#--# <Multi_key> <U0A3C> <U0A38>  : "ਸ਼" U0A36 # GURMUKHI LETTER SHA
-#--# <Multi_key> <U0A3C> <U0A16>  : "ਖ਼" U0A59 # GURMUKHI LETTER KHHA
-#--# <Multi_key> <U0A3C> <U0A17>  : "ਗ਼" U0A5A # GURMUKHI LETTER GHHA
-#--# <Multi_key> <U0A3C> <U0A1C>  : "ਜ਼" U0A5B # GURMUKHI LETTER ZA
-#--# <Multi_key> <U0A3C> <U0A2B>  : "ਫ਼" U0A5E # GURMUKHI LETTER FA
-#--# <Multi_key> <U0B47> <U0B56>  : "ୈ" U0B48 # ORIYA VOWEL SIGN AI
-#--# <Multi_key> <U0B47> <U0B3E>  : "ୋ" U0B4B # ORIYA VOWEL SIGN O
-#--# <Multi_key> <U0B47> <U0B57>  : "ୌ" U0B4C # ORIYA VOWEL SIGN AU
-#--# <Multi_key> <U0B3C> <U0B21>  : "ଡ଼" U0B5C # ORIYA LETTER RRA
-#--# <Multi_key> <U0B3C> <U0B22>  : "ଢ଼" U0B5D # ORIYA LETTER RHA
-#--# <Multi_key> <U0BD7> <U0B92>  : "ஔ" U0B94 # TAMIL LETTER AU
-#--# <Multi_key> <U0BC6> <U0BBE>  : "ொ" U0BCA # TAMIL VOWEL SIGN O
-#--# <Multi_key> <U0BC7> <U0BBE>  : "ோ" U0BCB # TAMIL VOWEL SIGN OO
-#--# <Multi_key> <U0BC6> <U0BD7>  : "ௌ" U0BCC # TAMIL VOWEL SIGN AU
-#--# <Multi_key> <U0C46> <U0C56>  : "ై" U0C48 # TELUGU VOWEL SIGN AI
-#--# <Multi_key> <U0CBF> <U0CD5>  : "ೀ" U0CC0 # KANNADA VOWEL SIGN II
-#--# <Multi_key> <U0CC6> <U0CD5>  : "ೇ" U0CC7 # KANNADA VOWEL SIGN EE
-#--# <Multi_key> <U0CC6> <U0CD6>  : "ೈ" U0CC8 # KANNADA VOWEL SIGN AI
-#--# <Multi_key> <U0CC6> <U0CC2>  : "ೊ" U0CCA # KANNADA VOWEL SIGN O
-#--# <Multi_key> <U0CCA> <U0CD5>  : "ೋ" U0CCB # KANNADA VOWEL SIGN OO
-#--# <Multi_key> <U0D46> <U0D3E>  : "ൊ" U0D4A # MALAYALAM VOWEL SIGN O
-#--# <Multi_key> <U0D47> <U0D3E>  : "ോ" U0D4B # MALAYALAM VOWEL SIGN OO
-#--# <Multi_key> <U0D46> <U0D57>  : "ൌ" U0D4C # MALAYALAM VOWEL SIGN AU
-#--# <Multi_key> <U0DD9> <U0DCA>  : "ේ" U0DDA # SINHALA VOWEL SIGN DIGA KOMBUVA
-#--# <Multi_key> <U0DD9> <U0DCF>  : "ො" U0DDC # SINHALA VOWEL SIGN KOMBUVA HAA AELA-PILLA
-#--# <Multi_key> <U0DDC> <U0DCA>  : "ෝ" U0DDD # SINHALA VOWEL SIGN KOMBUVA HAA DIGA AELA-PILLA
-#--# <Multi_key> <U0DD9> <U0DDF>  : "ෞ" U0DDE # SINHALA VOWEL SIGN KOMBUVA HAA GAYANUKITTA
-#--# <Multi_key> <U0FB7> <U0F42>  : "གྷ" U0F43 # TIBETAN LETTER GHA
-#--# <Multi_key> <U0FB7> <U0F4C>  : "ཌྷ" U0F4D # TIBETAN LETTER DDHA
-#--# <Multi_key> <U0FB7> <U0F51>  : "དྷ" U0F52 # TIBETAN LETTER DHA
-#--# <Multi_key> <U0FB7> <U0F56>  : "བྷ" U0F57 # TIBETAN LETTER BHA
-#--# <Multi_key> <U0FB7> <U0F5B>  : "ཛྷ" U0F5C # TIBETAN LETTER DZHA
-#--# <Multi_key> <U0FB5> <U0F40>  : "ཀྵ" U0F69 # TIBETAN LETTER KSSA
-#--# <Multi_key> <U0F71> <U0F72>  : "ཱི" U0F73 # TIBETAN VOWEL SIGN II
-#--# <Multi_key> <U0F71> <U0F74>  : "ཱུ" U0F75 # TIBETAN VOWEL SIGN UU
-#--# <Multi_key> <U0FB2> <U0F80>  : "ྲྀ" U0F76 # TIBETAN VOWEL SIGN VOCALIC R
-#--# <Multi_key> <U0FB3> <U0F80>  : "ླྀ" U0F78 # TIBETAN VOWEL SIGN VOCALIC L
-#--# <Multi_key> <U0F71> <U0F80>  : "ཱྀ" U0F81 # TIBETAN VOWEL SIGN REVERSED II
-#--# <Multi_key> <U0F92> <U0FB7>  : "ྒྷ" U0F93 # TIBETAN SUBJOINED LETTER GHA
-#--# <Multi_key> <U0F9C> <U0FB7>  : "ྜྷ" U0F9D # TIBETAN SUBJOINED LETTER DDHA
-#--# <Multi_key> <U0FA1> <U0FB7>  : "ྡྷ" U0FA2 # TIBETAN SUBJOINED LETTER DHA
-#--# <Multi_key> <U0FA6> <U0FB7>  : "ྦྷ" U0FA7 # TIBETAN SUBJOINED LETTER BHA
-#--# <Multi_key> <U0FAB> <U0FB7>  : "ྫྷ" U0FAC # TIBETAN SUBJOINED LETTER DZHA
-#--# <Multi_key> <U0F90> <U0FB5>  : "ྐྵ" U0FB9 # TIBETAN SUBJOINED LETTER KSSA
-#--# <Multi_key> <U102E> <U1025>  : "ဦ" U1026 # MYANMAR LETTER UU
-#--# # Conjoining Jamo for Korean Hangul
-#--# <Multi_key> <U1100> <U1100>  : "ᄁ" U1101 # HANGUL CHOSEONG SSANGKIYEOK
-#--# <Multi_key> <U1103> <U1103>  : "ᄄ" U1104 # HANGUL CHOSEONG SSANGTIKEUT
-#--# <Multi_key> <U1107> <U1107>  : "ᄈ" U1108 # HANGUL CHOSEONG SSANGPIEUP
-#--# <Multi_key> <U1109> <U1109>  : "ᄊ" U110a # HANGUL CHOSEONG SSANGSIOS
-#--# <Multi_key> <U110C> <U110C>  : "ᄍ" U110d # HANGUL CHOSEONG SSANGCIEUC
-#--# <Multi_key> <U1102> <U1100>  : "ᄓ" U1113 # HANGUL CHOSEONG NIEUN-KIYEOK
-#--# <Multi_key> <U1102> <U1102>  : "ᄔ" U1114 # HANGUL CHOSEONG SSANGNIEUN
-#--# <Multi_key> <U1102> <U1103>  : "ᄕ" U1115 # HANGUL CHOSEONG NIEUN-TIKEUT
-#--# <Multi_key> <U1102> <U1107>  : "ᄖ" U1116 # HANGUL CHOSEONG NIEUN-PIEUP
-#--# <Multi_key> <U1103> <U1100>  : "ᄗ" U1117 # HANGUL CHOSEONG TIKEUT-KIYEOK
-#--# <Multi_key> <U1105> <U1102>  : "ᄘ" U1118 # HANGUL CHOSEONG RIEUL-NIEUN
-#--# <Multi_key> <U1105> <U1105>  : "ᄙ" U1119 # HANGUL CHOSEONG SSANGRIEUL
-#--# <Multi_key> <U1105> <U1112>  : "ᄚ" U111a # HANGUL CHOSEONG RIEUL-HIEUH
-#--# <Multi_key> <U1105> <U110B>  : "ᄛ" U111b # HANGUL CHOSEONG KAPYEOUNRIEUL
-#--# <Multi_key> <U1106> <U1107>  : "ᄜ" U111c # HANGUL CHOSEONG MIEUM-PIEUP
-#--# <Multi_key> <U1106> <U110B>  : "ᄝ" U111d # HANGUL CHOSEONG KAPYEOUNMIEUM
-#--# <Multi_key> <U1107> <U1100>  : "ᄞ" U111e # HANGUL CHOSEONG PIEUP-KIYEOK
-#--# <Multi_key> <U1107> <U1102>  : "ᄟ" U111f # HANGUL CHOSEONG PIEUP-NIEUN
-#--# <Multi_key> <U1107> <U1103>  : "ᄠ" U1120 # HANGUL CHOSEONG PIEUP-TIKEUT
-#--# <Multi_key> <U1107> <U1109>  : "ᄡ" U1121 # HANGUL CHOSEONG PIEUP-SIOS
-#--# <Multi_key> <U1107> <U110C>  : "ᄧ" U1127 # HANGUL CHOSEONG PIEUP-CIEUC
-#--# <Multi_key> <U1107> <U110E>  : "ᄨ" U1128 # HANGUL CHOSEONG PIEUP-CHIEUCH
-#--# <Multi_key> <U1107> <U1110>  : "ᄩ" U1129 # HANGUL CHOSEONG PIEUP-THIEUTH
-#--# <Multi_key> <U1107> <U1111>  : "ᄪ" U112a # HANGUL CHOSEONG PIEUP-PHIEUPH
-#--# <Multi_key> <U1107> <U110B>  : "ᄫ" U112b # HANGUL CHOSEONG KAPYEOUNPIEUP
-#--# <Multi_key> <U1109> <U1100>  : "ᄭ" U112d # HANGUL CHOSEONG SIOS-KIYEOK
-#--# <Multi_key> <U1109> <U1102>  : "ᄮ" U112e # HANGUL CHOSEONG SIOS-NIEUN
-#--# <Multi_key> <U1109> <U1103>  : "ᄯ" U112f # HANGUL CHOSEONG SIOS-TIKEUT
-#--# <Multi_key> <U1109> <U1105>  : "ᄰ" U1130 # HANGUL CHOSEONG SIOS-RIEUL
-#--# <Multi_key> <U1109> <U1106>  : "ᄱ" U1131 # HANGUL CHOSEONG SIOS-MIEUM
-#--# <Multi_key> <U1109> <U1107>  : "ᄲ" U1132 # HANGUL CHOSEONG SIOS-PIEUP
-#--# <Multi_key> <U1109> <U110B>  : "ᄵ" U1135 # HANGUL CHOSEONG SIOS-IEUNG
-#--# <Multi_key> <U1109> <U110C>  : "ᄶ" U1136 # HANGUL CHOSEONG SIOS-CIEUC
-#--# <Multi_key> <U1109> <U110E>  : "ᄷ" U1137 # HANGUL CHOSEONG SIOS-CHIEUCH
-#--# <Multi_key> <U1109> <U110F>  : "ᄸ" U1138 # HANGUL CHOSEONG SIOS-KHIEUKH
-#--# <Multi_key> <U1109> <U1110>  : "ᄹ" U1139 # HANGUL CHOSEONG SIOS-THIEUTH
-#--# <Multi_key> <U1109> <U1111>  : "ᄺ" U113a # HANGUL CHOSEONG SIOS-PHIEUPH
-#--# <Multi_key> <U1109> <U1112>  : "ᄻ" U113b # HANGUL CHOSEONG SIOS-HIEUH
-#--# <Multi_key> <U113C> <U113C>  : "ᄽ" U113d # HANGUL CHOSEONG CHITUEUMSSANGSIOS
-#--# <Multi_key> <U113E> <U113E>  : "ᄿ" U113f # HANGUL CHOSEONG CEONGCHIEUMSSANGSIOS
-#--# <Multi_key> <U110B> <U1100>  : "ᅁ" U1141 # HANGUL CHOSEONG IEUNG-KIYEOK
-#--# <Multi_key> <U110B> <U1103>  : "ᅂ" U1142 # HANGUL CHOSEONG IEUNG-TIKEUT
-#--# <Multi_key> <U110B> <U1106>  : "ᅃ" U1143 # HANGUL CHOSEONG IEUNG-MIEUM
-#--# <Multi_key> <U110B> <U1107>  : "ᅄ" U1144 # HANGUL CHOSEONG IEUNG-PIEUP
-#--# <Multi_key> <U110B> <U1109>  : "ᅅ" U1145 # HANGUL CHOSEONG IEUNG-SIOS
-#--# <Multi_key> <U110B> <U1140>  : "ᅆ" U1146 # HANGUL CHOSEONG IEUNG-PANSIOS
-#--# <Multi_key> <U110B> <U110B>  : "ᅇ" U1147 # HANGUL CHOSEONG SSANGIEUNG
-#--# <Multi_key> <U110B> <U110C>  : "ᅈ" U1148 # HANGUL CHOSEONG IEUNG-CIEUC
-#--# <Multi_key> <U110B> <U110E>  : "ᅉ" U1149 # HANGUL CHOSEONG IEUNG-CHIEUCH
-#--# <Multi_key> <U110B> <U1110>  : "ᅊ" U114a # HANGUL CHOSEONG IEUNG-THIEUTH
-#--# <Multi_key> <U110B> <U1111>  : "ᅋ" U114b # HANGUL CHOSEONG IEUNG-PHIEUPH
-#--# <Multi_key> <U110C> <U110B>  : "ᅍ" U114d # HANGUL CHOSEONG CIEUC-IEUNG
-#--# <Multi_key> <U114E> <U114E>  : "ᅏ" U114f # HANGUL CHOSEONG CHITUEUMSSANGCIEUC
-#--# <Multi_key> <U1150> <U1150>  : "ᅑ" U1151 # HANGUL CHOSEONG CEONGCHIEUMSSANGCIEUC
-#--# <Multi_key> <U110E> <U110F>  : "ᅒ" U1152 # HANGUL CHOSEONG CHIEUCH-KHIEUKH
-#--# <Multi_key> <U110E> <U1112>  : "ᅓ" U1153 # HANGUL CHOSEONG CHIEUCH-HIEUH
-#--# <Multi_key> <U1111> <U1107>  : "ᅖ" U1156 # HANGUL CHOSEONG PHIEUPH-PIEUP
-#--# <Multi_key> <U1111> <U110B>  : "ᅗ" U1157 # HANGUL CHOSEONG KAPYEOUNPHIEUPH
-#--# <Multi_key> <U1112> <U1112>  : "ᅘ" U1158 # HANGUL CHOSEONG SSANGHIEUH
-#--# <Multi_key> <U1161> <U1175>  : "ᅢ" U1162 # HANGUL JUNGSEONG AE
-#--# <Multi_key> <U1163> <U1175>  : "ᅤ" U1164 # HANGUL JUNGSEONG YAE
-#--# <Multi_key> <U1165> <U1175>  : "ᅦ" U1166 # HANGUL JUNGSEONG E
-#--# <Multi_key> <U1167> <U1175>  : "ᅨ" U1168 # HANGUL JUNGSEONG YE
-#--# <Multi_key> <U1169> <U1161>  : "ᅪ" U116a # HANGUL JUNGSEONG WA
-#--# <Multi_key> <U1169> <U1175>  : "ᅬ" U116c # HANGUL JUNGSEONG OE
-#--# <Multi_key> <U116E> <U1165>  : "ᅯ" U116f # HANGUL JUNGSEONG WEO
-#--# <Multi_key> <U116E> <U1175>  : "ᅱ" U1171 # HANGUL JUNGSEONG WI
-#--# <Multi_key> <U1173> <U1175>  : "ᅴ" U1174 # HANGUL JUNGSEONG YI
-#--# <Multi_key> <U1161> <U1169>  : "ᅶ" U1176 # HANGUL JUNGSEONG A-O
-#--# <Multi_key> <U1161> <U116E>  : "ᅷ" U1177 # HANGUL JUNGSEONG A-U
-#--# <Multi_key> <U1163> <U1169>  : "ᅸ" U1178 # HANGUL JUNGSEONG YA-O
-#--# <Multi_key> <U1163> <U116D>  : "ᅹ" U1179 # HANGUL JUNGSEONG YA-YO
-#--# <Multi_key> <U1165> <U1169>  : "ᅺ" U117a # HANGUL JUNGSEONG EO-O
-#--# <Multi_key> <U1165> <U116E>  : "ᅻ" U117b # HANGUL JUNGSEONG EO-U
-#--# <Multi_key> <U1165> <U1173>  : "ᅼ" U117c # HANGUL JUNGSEONG EO-EU
-#--# <Multi_key> <U1167> <U1169>  : "ᅽ" U117d # HANGUL JUNGSEONG YEO-O
-#--# <Multi_key> <U1167> <U116E>  : "ᅾ" U117e # HANGUL JUNGSEONG YEO-U
-#--# <Multi_key> <U1169> <U1165>  : "ᅿ" U117f # HANGUL JUNGSEONG O-EO
-#--# <Multi_key> <U1169> <U1166>  : "ᆀ" U1180 # HANGUL JUNGSEONG O-E
-#--# <Multi_key> <U1169> <U1168>  : "ᆁ" U1181 # HANGUL JUNGSEONG O-YE
-#--# <Multi_key> <U1169> <U1169>  : "ᆂ" U1182 # HANGUL JUNGSEONG O-O
-#--# <Multi_key> <U1169> <U116E>  : "ᆃ" U1183 # HANGUL JUNGSEONG O-U
-#--# <Multi_key> <U116D> <U1163>  : "ᆄ" U1184 # HANGUL JUNGSEONG YO-YA
-#--# <Multi_key> <U116D> <U1164>  : "ᆅ" U1185 # HANGUL JUNGSEONG YO-YAE
-#--# <Multi_key> <U116D> <U1167>  : "ᆆ" U1186 # HANGUL JUNGSEONG YO-YEO
-#--# <Multi_key> <U116D> <U1169>  : "ᆇ" U1187 # HANGUL JUNGSEONG YO-O
-#--# <Multi_key> <U116D> <U1175>  : "ᆈ" U1188 # HANGUL JUNGSEONG YO-I
-#--# <Multi_key> <U116E> <U1161>  : "ᆉ" U1189 # HANGUL JUNGSEONG U-A
-#--# <Multi_key> <U116E> <U1162>  : "ᆊ" U118a # HANGUL JUNGSEONG U-AE
-#--# <Multi_key> <U116E> <U1168>  : "ᆌ" U118c # HANGUL JUNGSEONG U-YE
-#--# <Multi_key> <U116E> <U116E>  : "ᆍ" U118d # HANGUL JUNGSEONG U-U
-#--# <Multi_key> <U1172> <U1161>  : "ᆎ" U118e # HANGUL JUNGSEONG YU-A
-#--# <Multi_key> <U1172> <U1165>  : "ᆏ" U118f # HANGUL JUNGSEONG YU-EO
-#--# <Multi_key> <U1172> <U1166>  : "ᆐ" U1190 # HANGUL JUNGSEONG YU-E
-#--# <Multi_key> <U1172> <U1167>  : "ᆑ" U1191 # HANGUL JUNGSEONG YU-YEO
-#--# <Multi_key> <U1172> <U1168>  : "ᆒ" U1192 # HANGUL JUNGSEONG YU-YE
-#--# <Multi_key> <U1172> <U116E>  : "ᆓ" U1193 # HANGUL JUNGSEONG YU-U
-#--# <Multi_key> <U1172> <U1175>  : "ᆔ" U1194 # HANGUL JUNGSEONG YU-I
-#--# <Multi_key> <U1173> <U116E>  : "ᆕ" U1195 # HANGUL JUNGSEONG EU-U
-#--# <Multi_key> <U1173> <U1173>  : "ᆖ" U1196 # HANGUL JUNGSEONG EU-EU
-#--# <Multi_key> <U1174> <U116E>  : "ᆗ" U1197 # HANGUL JUNGSEONG YI-U
-#--# <Multi_key> <U1175> <U1161>  : "ᆘ" U1198 # HANGUL JUNGSEONG I-A
-#--# <Multi_key> <U1175> <U1163>  : "ᆙ" U1199 # HANGUL JUNGSEONG I-YA
-#--# <Multi_key> <U1175> <U1169>  : "ᆚ" U119a # HANGUL JUNGSEONG I-O
-#--# <Multi_key> <U1175> <U116E>  : "ᆛ" U119b # HANGUL JUNGSEONG I-U
-#--# <Multi_key> <U1175> <U1173>  : "ᆜ" U119c # HANGUL JUNGSEONG I-EU
-#--# <Multi_key> <U1175> <U119E>  : "ᆝ" U119d # HANGUL JUNGSEONG I-ARAEA
-#--# <Multi_key> <U119E> <U1165>  : "ᆟ" U119f # HANGUL JUNGSEONG ARAEA-EO
-#--# <Multi_key> <U119E> <U116E>  : "ᆠ" U11a0 # HANGUL JUNGSEONG ARAEA-U
-#--# <Multi_key> <U119E> <U1175>  : "ᆡ" U11a1 # HANGUL JUNGSEONG ARAEA-I
-#--# <Multi_key> <U119E> <U119E>  : "ᆢ" U11a2 # HANGUL JUNGSEONG SSANGARAEA
-#--# <Multi_key> <U11A8> <U11A8>  : "ᆩ" U11a9 # HANGUL JONGSEONG SSANGKIYEOK
-#--# <Multi_key> <U11A8> <U11BA>  : "ᆪ" U11aa # HANGUL JONGSEONG KIYEOK-SIOS
-#--# <Multi_key> <U11AB> <U11BD>  : "ᆬ" U11ac # HANGUL JONGSEONG NIEUN-CIEUC
-#--# <Multi_key> <U11AB> <U11C2>  : "ᆭ" U11ad # HANGUL JONGSEONG NIEUN-HIEUH
-#--# <Multi_key> <U11AF> <U11A8>  : "ᆰ" U11b0 # HANGUL JONGSEONG RIEUL-KIYEOK
-#--# <Multi_key> <U11AF> <U11B7>  : "ᆱ" U11b1 # HANGUL JONGSEONG RIEUL-MIEUM
-#--# <Multi_key> <U11AF> <U11B8>  : "ᆲ" U11b2 # HANGUL JONGSEONG RIEUL-PIEUP
-#--# <Multi_key> <U11AF> <U11BA>  : "ᆳ" U11b3 # HANGUL JONGSEONG RIEUL-SIOS
-#--# <Multi_key> <U11AF> <U11C0>  : "ᆴ" U11b4 # HANGUL JONGSEONG RIEUL-THIEUTH
-#--# <Multi_key> <U11AF> <U11C1>  : "ᆵ" U11b5 # HANGUL JONGSEONG RIEUL-PHIEUPH
-#--# <Multi_key> <U11AF> <U11C2>  : "ᆶ" U11b6 # HANGUL JONGSEONG RIEUL-HIEUH
-#--# <Multi_key> <U11B8> <U11BA>  : "ᆹ" U11b9 # HANGUL JONGSEONG PIEUP-SIOS
-#--# <Multi_key> <U11BA> <U11BA>  : "ᆻ" U11bb # HANGUL JONGSEONG SSANGSIOS
-#--# <Multi_key> <U11A8> <U11AF>  : "ᇃ" U11c3 # HANGUL JONGSEONG KIYEOK-RIEUL
-#--# <Multi_key> <U11AB> <U11A8>  : "ᇅ" U11c5 # HANGUL JONGSEONG NIEUN-KIYEOK
-#--# <Multi_key> <U11AB> <U11AE>  : "ᇆ" U11c6 # HANGUL JONGSEONG NIEUN-TIKEUT
-#--# <Multi_key> <U11AB> <U11BA>  : "ᇇ" U11c7 # HANGUL JONGSEONG NIEUN-SIOS
-#--# <Multi_key> <U11AB> <U11EB>  : "ᇈ" U11c8 # HANGUL JONGSEONG NIEUN-PANSIOS
-#--# <Multi_key> <U11AB> <U11C0>  : "ᇉ" U11c9 # HANGUL JONGSEONG NIEUN-THIEUTH
-#--# <Multi_key> <U11AE> <U11A8>  : "ᇊ" U11ca # HANGUL JONGSEONG TIKEUT-KIYEOK
-#--# <Multi_key> <U11AE> <U11AF>  : "ᇋ" U11cb # HANGUL JONGSEONG TIKEUT-RIEUL
-#--# <Multi_key> <U11AF> <U11AB>  : "ᇍ" U11cd # HANGUL JONGSEONG RIEUL-NIEUN
-#--# <Multi_key> <U11AF> <U11AE>  : "ᇎ" U11ce # HANGUL JONGSEONG RIEUL-TIKEUT
-#--# <Multi_key> <U11AF> <U11AF>  : "ᇐ" U11d0 # HANGUL JONGSEONG SSANGRIEUL
-#--# <Multi_key> <U11AF> <U11EB>  : "ᇗ" U11d7 # HANGUL JONGSEONG RIEUL-PANSIOS
-#--# <Multi_key> <U11AF> <U11BF>  : "ᇘ" U11d8 # HANGUL JONGSEONG RIEUL-KHIEUKH
-#--# <Multi_key> <U11AF> <U11F9>  : "ᇙ" U11d9 # HANGUL JONGSEONG RIEUL-YEORINHIEUH
-#--# <Multi_key> <U11B7> <U11A8>  : "ᇚ" U11da # HANGUL JONGSEONG MIEUM-KIYEOK
-#--# <Multi_key> <U11B7> <U11AF>  : "ᇛ" U11db # HANGUL JONGSEONG MIEUM-RIEUL
-#--# <Multi_key> <U11B7> <U11B8>  : "ᇜ" U11dc # HANGUL JONGSEONG MIEUM-PIEUP
-#--# <Multi_key> <U11B7> <U11BA>  : "ᇝ" U11dd # HANGUL JONGSEONG MIEUM-SIOS
-#--# <Multi_key> <U11B7> <U11EB>  : "ᇟ" U11df # HANGUL JONGSEONG MIEUM-PANSIOS
-#--# <Multi_key> <U11B7> <U11BE>  : "ᇠ" U11e0 # HANGUL JONGSEONG MIEUM-CHIEUCH
-#--# <Multi_key> <U11B7> <U11C2>  : "ᇡ" U11e1 # HANGUL JONGSEONG MIEUM-HIEUH
-#--# <Multi_key> <U11B7> <U11BC>  : "ᇢ" U11e2 # HANGUL JONGSEONG KAPYEOUNMIEUM
-#--# <Multi_key> <U11B8> <U11AF>  : "ᇣ" U11e3 # HANGUL JONGSEONG PIEUP-RIEUL
-#--# <Multi_key> <U11B8> <U11C1>  : "ᇤ" U11e4 # HANGUL JONGSEONG PIEUP-PHIEUPH
-#--# <Multi_key> <U11B8> <U11C2>  : "ᇥ" U11e5 # HANGUL JONGSEONG PIEUP-HIEUH
-#--# <Multi_key> <U11B8> <U11BC>  : "ᇦ" U11e6 # HANGUL JONGSEONG KAPYEOUNPIEUP
-#--# <Multi_key> <U11BA> <U11A8>  : "ᇧ" U11e7 # HANGUL JONGSEONG SIOS-KIYEOK
-#--# <Multi_key> <U11BA> <U11AE>  : "ᇨ" U11e8 # HANGUL JONGSEONG SIOS-TIKEUT
-#--# <Multi_key> <U11BA> <U11AF>  : "ᇩ" U11e9 # HANGUL JONGSEONG SIOS-RIEUL
-#--# <Multi_key> <U11BA> <U11B8>  : "ᇪ" U11ea # HANGUL JONGSEONG SIOS-PIEUP
-#--# <Multi_key> <U11BC> <U11A8>  : "ᇬ" U11ec # HANGUL JONGSEONG IEUNG-KIYEOK
-#--# <Multi_key> <U11BC> <U11BC>  : "ᇮ" U11ee # HANGUL JONGSEONG SSANGIEUNG
-#--# <Multi_key> <U11BC> <U11BF>  : "ᇯ" U11ef # HANGUL JONGSEONG IEUNG-KHIEUKH
-#--# <Multi_key> <U11F0> <U11BA>  : "ᇱ" U11f1 # HANGUL JONGSEONG YESIEUNG-SIOS
-#--# <Multi_key> <U11F0> <U11EB>  : "ᇲ" U11f2 # HANGUL JONGSEONG YESIEUNG-PANSIOS
-#--# <Multi_key> <U11C1> <U11B8>  : "ᇳ" U11f3 # HANGUL JONGSEONG PHIEUPH-PIEUP
-#--# <Multi_key> <U11C1> <U11BC>  : "ᇴ" U11f4 # HANGUL JONGSEONG KAPYEOUNPHIEUPH
-#--# <Multi_key> <U11C2> <U11AB>  : "ᇵ" U11f5 # HANGUL JONGSEONG HIEUH-NIEUN
-#--# <Multi_key> <U11C2> <U11AF>  : "ᇶ" U11f6 # HANGUL JONGSEONG HIEUH-RIEUL
-#--# <Multi_key> <U11C2> <U11B7>  : "ᇷ" U11f7 # HANGUL JONGSEONG HIEUH-MIEUM
-#--# <Multi_key> <U11C2> <U11B8>  : "ᇸ" U11f8 # HANGUL JONGSEONG HIEUH-PIEUP
-#--# <Multi_key> <U1121> <U1100>  : "ᄢ" U1122 # HANGUL CHOSEONG PIEUP-SIOS-KIYEOK
-#--# <Multi_key> <U1121> <U1103>  : "ᄣ" U1123 # HANGUL CHOSEONG PIEUP-SIOS-TIKEUT
-#--# <Multi_key> <U1121> <U1107>  : "ᄤ" U1124 # HANGUL CHOSEONG PIEUP-SIOS-PIEUP
-#--# <Multi_key> <U1121> <U1109>  : "ᄥ" U1125 # HANGUL CHOSEONG PIEUP-SSANGSIOS
-#--# <Multi_key> <U1121> <U110C>  : "ᄦ" U1126 # HANGUL CHOSEONG PIEUP-SIOS-CIEUC
-#--# <Multi_key> <U1108> <U110B>  : "ᄬ" U112c # HANGUL CHOSEONG KAPYEOUNSSANGPIEUP
-#--# <Multi_key> <U1132> <U1100>  : "ᄳ" U1133 # HANGUL CHOSEONG SIOS-PIEUP-KIYEOK
-#--# <Multi_key> <U110A> <U1109>  : "ᄴ" U1134 # HANGUL CHOSEONG SIOS-SSANGSIOS
-#--# <Multi_key> <U116A> <U1175>  : "ᅫ" U116b # HANGUL JUNGSEONG WAE
-#--# <Multi_key> <U116F> <U1175>  : "ᅰ" U1170 # HANGUL JUNGSEONG WE
-#--# <Multi_key> <U116F> <U1173>  : "ᆋ" U118b # HANGUL JUNGSEONG U-EO-EU
-#--# <Multi_key> <U11AA> <U11A8>  : "ᇄ" U11c4 # HANGUL JONGSEONG KIYEOK-SIOS-KIYEOK
-#--# <Multi_key> <U11B0> <U11BA>  : "ᇌ" U11cc # HANGUL JONGSEONG RIEUL-KIYEOK-SIOS
-#--# <Multi_key> <U11CE> <U11C2>  : "ᇏ" U11cf # HANGUL JONGSEONG RIEUL-TIKEUT-HIEUH
-#--# <Multi_key> <U11B1> <U11A8>  : "ᇑ" U11d1 # HANGUL JONGSEONG RIEUL-MIEUM-KIYEOK
-#--# <Multi_key> <U11B1> <U11BA>  : "ᇒ" U11d2 # HANGUL JONGSEONG RIEUL-MIEUM-SIOS
-#--# <Multi_key> <U11B2> <U11BA>  : "ᇓ" U11d3 # HANGUL JONGSEONG RIEUL-PIEUP-SIOS
-#--# <Multi_key> <U11B2> <U11C2>  : "ᇔ" U11d4 # HANGUL JONGSEONG RIEUL-PIEUP-HIEUH
-#--# <Multi_key> <U11B2> <U11BC>  : "ᇕ" U11d5 # HANGUL JONGSEONG RIEUL-KAPYEOUNPIEUP
-#--# <Multi_key> <U11B3> <U11BA>  : "ᇖ" U11d6 # HANGUL JONGSEONG RIEUL-SSANGSIOS
-#--# <Multi_key> <U11DD> <U11BA>  : "ᇞ" U11de # HANGUL JONGSEONG MIEUM-SSANGSIOS
-#--# <Multi_key> <U11EC> <U11A8>  : "ᇭ" U11ed # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
-#--# <Multi_key> <U1107> <U112D>  : "ᄢ" U1122 # HANGUL CHOSEONG PIEUP-SIOS-KIYEOK
-#--# <Multi_key> <U1107> <U112F>  : "ᄣ" U1123 # HANGUL CHOSEONG PIEUP-SIOS-TIKEUT
-#--# <Multi_key> <U1107> <U1132>  : "ᄤ" U1124 # HANGUL CHOSEONG PIEUP-SIOS-PIEUP
-#--# <Multi_key> <U1107> <U110A>  : "ᄥ" U1125 # HANGUL CHOSEONG PIEUP-SSANGSIOS
-#--# <Multi_key> <U1107> <U1136>  : "ᄦ" U1126 # HANGUL CHOSEONG PIEUP-SIOS-CIEUC
-#--# <Multi_key> <U1107> <U112B>  : "ᄬ" U112c # HANGUL CHOSEONG KAPYEOUNSSANGPIEUP
-#--# <Multi_key> <U1109> <U111E>  : "ᄳ" U1133 # HANGUL CHOSEONG SIOS-PIEUP-KIYEOK
-#--# <Multi_key> <U1109> <U110A>  : "ᄴ" U1134 # HANGUL CHOSEONG SIOS-SSANGSIOS
-#--# <Multi_key> <U1169> <U1162>  : "ᅫ" U116b # HANGUL JUNGSEONG WAE
-#--# <Multi_key> <U116E> <U1166>  : "ᅰ" U1170 # HANGUL JUNGSEONG WE
-#--# <Multi_key> <U116E> <U117C>  : "ᆋ" U118b # HANGUL JUNGSEONG U-EO-EU
-#--# <Multi_key> <U11A8> <U11E7>  : "ᇄ" U11c4 # HANGUL JONGSEONG KIYEOK-SIOS-KIYEOK
-#--# <Multi_key> <U11AF> <U11AA>  : "ᇌ" U11cc # HANGUL JONGSEONG RIEUL-KIYEOK-SIOS
-#--# <Multi_key> <U11AF> <U11DA>  : "ᇑ" U11d1 # HANGUL JONGSEONG RIEUL-MIEUM-KIYEOK
-#--# <Multi_key> <U11AF> <U11DD>  : "ᇒ" U11d2 # HANGUL JONGSEONG RIEUL-MIEUM-SIOS
-#--# <Multi_key> <U11AF> <U11B9>  : "ᇓ" U11d3 # HANGUL JONGSEONG RIEUL-PIEUP-SIOS
-#--# <Multi_key> <U11AF> <U11E5>  : "ᇔ" U11d4 # HANGUL JONGSEONG RIEUL-PIEUP-HIEUH
-#--# <Multi_key> <U11AF> <U11E6>  : "ᇕ" U11d5 # HANGUL JONGSEONG RIEUL-KAPYEOUNPIEUP
-#--# <Multi_key> <U11AF> <U11BB>  : "ᇖ" U11d6 # HANGUL JONGSEONG RIEUL-SSANGSIOS
-#--# <Multi_key> <U11B7> <U11BB>  : "ᇞ" U11de # HANGUL JONGSEONG MIEUM-SSANGSIOS
-#--# <Multi_key> <U11BC> <U11A9>  : "ᇭ" U11ed # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
+
 #--# # Latin Extended Additional
 #--# <dead_belowring> <A>    : "Ḁ" U1E00 # uppercase A with RING BELOW
 #--# <dead_belowring> <a>    : "ḁ" U1E01 # lowercase A with RING BELOW
@@ -4397,9 +3767,6 @@
 #--# <dead_horn> <uacute>   : "ứ" uhornacute # lowercase U with HORN AND acute
 #--# <dead_horn> <Ugrave>   : "Ừ" Uhorngrave # uppercase U with HORN AND grave
 #--# <dead_horn> <ugrave>   : "ừ" uhorngrave # lowercase U with HORN AND grave
-#--# <dead_horn> <dead_horn>   : "̛" U031B # COMBINING HORN
-#--# <dead_horn> <nobreakspace>  : "̛" U031B # COMBINING HORN
-#--# <dead_horn> <space>   : "̛" U031B # COMBINING HORN
 #--# <dead_macron> <Eacute>   : "Ḗ" U1E16 # uppercase E with MACRON AND acute
 #--# <dead_macron> <eacute>   : "ḗ" U1E17 # lowercase E with MACRON AND acute
 #--# <dead_macron> <Egrave>   : "Ḕ" U1E14 # uppercase E with MACRON AND grave
@@ -4492,8 +3859,6 @@
 #--# <dead_greek> <dead_stroke> <r>  : "ϼ" U03FC # GREEK RHO with stroke SYMBOL
 #--# <dead_stroke> <dead_greek> <r>  : "ϼ" U03FC # GREEK RHO with stroke SYMBOL
 #--# # Cyrillic (NFDs -- Normalized Form Canonical Decomposition)
-#--# <dead_doublegrave> <Cyrillic_a>  : "а̏" # CYRILLIC SMALL LETTER A plus COMBINING DOUBLE grave
-#--# <Multi_key> <grave><grave> <Cyrillic_a> : "а̏" # CYRILLIC SMALL LETTER A plus COMBINING DOUBLE grave
 #--# <dead_invertedbreve> <Cyrillic_a> : "а̑" # CYRILLIC SMALL LETTER A plus COMBINING INVERTED BREVE
 #--# <dead_grave> <Cyrillic_a>  : "а̀" # CYRILLIC SMALL LETTER A plus COMBINING grave
 #--# <Multi_key> <grave> <Cyrillic_a> : "а̀" # CYRILLIC SMALL LETTER A plus COMBINING grave
@@ -4505,8 +3870,6 @@
 #--# <Multi_key> <underscore> <Cyrillic_a> : "а̄" # CYRILLIC SMALL LETTER A plus COMBINING MACRON
 #--# <dead_circumflex> <Cyrillic_a>  : "а̂" # CYRILLIC SMALL LETTER A plus COMBINING circumflex
 #--# <Multi_key> <asciicircum> <Cyrillic_a> : "а̂" # CYRILLIC SMALL LETTER A plus COMBINING circumflex
-#--# <dead_doublegrave> <Cyrillic_A>  : "А̏" # CYRILLIC CAPITAL LETTER A plus COMBINING DOUBLE grave
-#--# <Multi_key> <grave><grave> <Cyrillic_A> : "А̏" # CYRILLIC CAPITAL LETTER A plus COMBINING DOUBLE grave
 #--# <dead_invertedbreve> <Cyrillic_A> : "А̑" # CYRILLIC CAPITAL LETTER A plus COMBINING INVERTED BREVE
 #--# <dead_grave> <Cyrillic_A>  : "А̀" # CYRILLIC CAPITAL LETTER A plus COMBINING grave
 #--# <Multi_key> <grave> <Cyrillic_A> : "А̀" # CYRILLIC CAPITAL LETTER A plus COMBINING grave
@@ -4518,8 +3881,6 @@
 #--# <Multi_key> <underscore> <Cyrillic_A> : "А̄" # CYRILLIC CAPITAL LETTER A plus COMBINING MACRON
 #--# <dead_circumflex> <Cyrillic_A>  : "А̂" # CYRILLIC CAPITAL LETTER A plus COMBINING circumflex
 #--# <Multi_key> <asciicircum> <Cyrillic_A> : "А̂" # CYRILLIC CAPITAL LETTER A plus COMBINING circumflex
-#--# <dead_doublegrave> <Cyrillic_ie> : "е̏" # CYRILLIC SMALL LETTER IE plus COMBINING DOUBLE grave
-#--# <Multi_key> <grave><grave> <Cyrillic_ie>: "е̏" # CYRILLIC SMALL LETTER IE plus COMBINING DOUBLE grave
 #--# <dead_invertedbreve> <Cyrillic_ie> : "е̑" # CYRILLIC SMALL LETTER IE plus COMBINING INVERTED BREVE
 #--# <dead_acute> <Cyrillic_ie>  : "е́" # CYRILLIC SMALL LETTER IE plus COMBINING acute
 #--# <Multi_key> <acute> <Cyrillic_ie> : "е́" # CYRILLIC SMALL LETTER IE plus COMBINING acute
@@ -4529,8 +3890,6 @@
 #--# <Multi_key> <underscore> <Cyrillic_ie> : "е̄" # CYRILLIC SMALL LETTER IE plus COMBINING MACRON
 #--# <dead_circumflex> <Cyrillic_ie>  : "е̂" # CYRILLIC SMALL LETTER IE plus COMBINING circumflex
 #--# <Multi_key> <asciicircum> <Cyrillic_ie> : "е̂" # CYRILLIC SMALL LETTER IE plus COMBINING circumflex
-#--# <dead_doublegrave> <Cyrillic_IE> : "Е̏" # CYRILLIC CAPITAL LETTER IE plus COMBINING DOUBLE grave
-#--# <Multi_key> <grave><grave> <Cyrillic_IE>: "Е̏" # CYRILLIC CAPITAL LETTER IE plus COMBINING DOUBLE grave
 #--# <dead_invertedbreve> <Cyrillic_IE> : "Е̑" # CYRILLIC CAPITAL LETTER IE plus COMBINING INVERTED BREVE
 #--# <dead_acute> <Cyrillic_IE>  : "Е́" # CYRILLIC CAPITAL LETTER IE plus COMBINING acute
 #--# <Multi_key> <acute> <Cyrillic_IE> : "Е́" # CYRILLIC CAPITAL LETTER IE plus COMBINING acute
