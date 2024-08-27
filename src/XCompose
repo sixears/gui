@@ -75,6 +75,12 @@
 <Multi_key> <i> <underscore> <j>                  : "ĳ" U0133  # lowercase ij
 <Multi_key> <I> <underscore> <J>                  : "Ĳ" U0132  # uppercase IJ
 
+# -- cyrillic ----------------------------------------------
+
+<Multi_key> <i> <e> : "ѥ" U0465 # Cyrillic lowercase iotified-e
+<Multi_key> <i> <o> : "ю" U044E # Cyrillic lowercase yu
+
+
 ## --------------------------------- GRAVE ---------------------------------- ##
 
 # -- grave -------------------------------------------------
@@ -118,6 +124,11 @@
 <Multi_key> <grave> <grave> <r> : "ȑ" U0211 # lowercase r with double grave
 <Multi_key> <grave> <grave> <U> : "Ȕ" U0214 # uppercase U with double grave
 <Multi_key> <grave> <grave> <u> : "ȕ" U0215 # lowercase u with double grave
+
+## ---------------------------------- BAR ----------------------------------- ##
+
+<Multi_key> <bar> <slash>  : "∤" U2224 # DOES NOT DIVIDE
+<Multi_key> <bar> <bar> <slash>  : "∦" U2226 # NOT PARALLEL TO
 
 ## --------------------------------- EXCLAM --------------------------------- ##
 
@@ -180,11 +191,11 @@
 
 ## ------------------------------ ASCIICIRCUM ------------------------------- ##
 
-# -- superscripts & subscripts -----------------------------
+# -- superscript -------------------------------------------
 
-<Multi_key> <asciicircum> <1> : "ⁱ" onesuperior # SUPERSCRIPT ONE
-<Multi_key> <asciicircum> <2> : "²" twosuperior # SUPERSCRIPT TWO
-<Multi_key> <asciicircum> <3> : "³" threesuperior # SUPERSCRIPT THREE
+<Multi_key> <asciicircum> <1> : "ⁱ" onesuperior   # superscript one
+<Multi_key> <asciicircum> <2> : "²" twosuperior   # superscript two
+<Multi_key> <asciicircum> <3> : "³" threesuperior # superscript three
 <Multi_key> <asciicircum> <4> : "⁴"
 <Multi_key> <asciicircum> <5> : "⁵"
 <Multi_key> <asciicircum> <6> : "⁶"
@@ -192,6 +203,13 @@
 <Multi_key> <asciicircum> <8> : "⁸"
 <Multi_key> <asciicircum> <9> : "⁹"
 <Multi_key> <asciicircum> <0> : "⁰"
+
+<Multi_key> <asciicircum> <plus>           : "⁺" U207A # superscript plus sign
+<Multi_key> <asciicircum> <minus>          : "⁻" U207B # superscript minus
+<Multi_key> <asciicircum> <equal>          : "⁼" U207C # superscript equals sign
+<Multi_key> <asciicircum> <parenleft>      : "⁽" U207D # superscript left paren
+<Multi_key> <asciicircum> <parenright>     : "⁾" U207E # superscript right paren
+<Multi_key> <asciicircum> <underscore> <n> : "ⁿ" U207F # superscript lowercase n
 
 # -- circumflex --------------------------------------------
 
@@ -318,6 +336,12 @@
 <Multi_key> <underscore> <8> : "₈"
 <Multi_key> <underscore> <9> : "₉"
 <Multi_key> <underscore> <0> : "₀"
+
+<Multi_key> <underscore> <plus>       : "₊" U208A # subscript plus sign
+<Multi_key> <underscore> <minus>      : "₋" U208B # subscript minus
+<Multi_key> <underscore> <equal>      : "₌" U208C # subscript equals sign
+<Multi_key> <underscore> <parenleft>  : "₍" U208D # subscript left parenthesis
+<Multi_key> <underscore> <parenright> : "₎" U208E # subscript right parenthesis
 
 # -- line below / below line -------------------------------
 
@@ -542,6 +566,14 @@
 <Multi_key> <asciitilde> <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
 <Multi_key> <asciitilde> <y> : "ỹ" U1EF9  # lowercase y with tilde
 
+# ----------------------------------------------------------
+
+<Multi_key> <tilde>    <slash> : "≁" U2241 # NOT TILDE
+
+## -------------------------------- APPROXEQ -------------------------------- ##
+
+<Multi_key> <approxeq> <slash> : "≄" U2244 # NOT ASYMPTOTICALLY EQUAL TO
+
 ## ------------------------------- BACKSLASH -------------------------------- ##
 
 <Multi_key> <backslash> <question> : "☭" U262D # hammer and sickle
@@ -634,6 +666,7 @@
 ## ---------------------------------- LESS ---------------------------------- ##
 
 <Multi_key> <less> <period> : "‹" U2039 # single left angle quotation mark
+<Multi_key> <less> <greater> : "≷"
 
 ## --------------------------------- PERIOD --------------------------------- ##
 
@@ -687,7 +720,6 @@
 ## -------------------------------- GREATER  -------------------------------- ##
 
 <Multi_key> <greater> <less> : "≶"
-<Multi_key> <less> <greater> : "≷"
 
 # <Multi_key> <greater> <greater> : "⋙"
 
@@ -749,6 +781,16 @@
 <Multi_key> <slash> <y> : "ɏ" U024F   # lowercase y with stroke
 <Multi_key> <slash> <Z> : "Ƶ" U01B5   # uppercase Z with stroke
 <Multi_key> <slash> <z> : "ƶ" U01B6   # lowercase z with stroke
+
+<Multi_key> <slash> <greaterthanequal> : "≱" U2271    # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <slash> <greater>          : "≯" U226F    # NOT GREATER-THAN
+<Multi_key> <slash> <equal>            : "≠" notequal # NOT EQUAL TO
+<Multi_key> <slash> <lessthanequal>    : "≰" U2270    # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <less>             : "≮" U226E    # NOT LESS-THAN
+
+# ----------------------------------------------------------
+
+
 
 ## -------------------------------- QUESTION -------------------------------- ##
 
@@ -814,11 +856,6 @@
 
 # <dead_stroke> <U0269>          : "ᵼ" U1D7C # lowercase IOTA with stroke
 
-<Multi_key> <slash> <greaterthanequal> : "≱" U2271    # NEITHER GREATER-THAN NOR EQUAL TO
-<Multi_key> <slash> <greater>          : "≯" U226F    # NOT GREATER-THAN
-<Multi_key> <slash> <equal>            : "≠" notequal # NOT EQUAL TO
-<Multi_key> <slash> <lessthanequal>    : "≰" U2270    # NEITHER LESS-THAN NOR EQUAL TO
-<Multi_key> <slash> <less>             : "≮" U226E    # NOT LESS-THAN
 
 <Multi_key> <Multi_key> <semicolon> <f> <s> : "ẛ" U1e9b # SMALL LONG S with DOT ABOVE
 
@@ -1682,7 +1719,7 @@
 #--# <Multi_key> <Greek_iota> <dead_acute> <Greek_alpha> : "ᾴ" U1FB4 # GREEK SMALL LETTER ALPHA with OXIA AND YPOGEGRAMMENI
 #--# <Multi_key> <Greek_iota> <acute> <Greek_alpha> : "ᾴ" U1FB4 # GREEK SMALL LETTER ALPHA with OXIA AND YPOGEGRAMMENI
 #--# <Multi_key> <Greek_iota> <apostrophe> <Greek_alpha> : "ᾴ" U1FB4 # GREEK SMALL LETTER ALPHA with OXIA AND YPOGEGRAMMENI
-#--# <dead_tilde> <Greek_alpha>  : "ᾶ" U1FB6 # GREEK SMALL LETTER ALPHA with PERISPOMENI
+<Multi_key> <tilde> <Greek_alpha>  : "ᾶ" U1FB6 # GREEK SMALL LETTER ALPHA with PERISPOMENI
 #--# <Multi_key> <asciitilde> <Greek_alpha> : "ᾶ" U1FB6 # GREEK SMALL LETTER ALPHA with PERISPOMENI
 #--# <dead_iota> <dead_tilde> <Greek_alpha> : "ᾷ" U1FB7 # GREEK SMALL LETTER ALPHA with PERISPOMENI AND YPOGEGRAMMENI
 #--# <dead_iota> <Multi_key> <asciitilde> <Greek_alpha> : "ᾷ" U1FB7 # GREEK SMALL LETTER ALPHA with PERISPOMENI AND YPOGEGRAMMENI
@@ -1803,39 +1840,6 @@
 #--# <dead_iota> <Greek_OMEGA>  : "ῼ" U1FFC # GREEK CAPITAL LETTER OMEGA with PROSGEGRAMMENI
 #--# <Multi_key> <Greek_iota> <Greek_OMEGA> : "ῼ" U1FFC # GREEK CAPITAL LETTER OMEGA with PROSGEGRAMMENI
 
-#--# # Superscripts and Subscripts
-#--# <dead_circumflex> <plus>   : "⁺" U207A # SUPERSCRIPT PLUS SIGN
-#--# <Multi_key> <asciicircum> <plus>  : "⁺" U207A # SUPERSCRIPT PLUS SIGN
-#--# <dead_circumflex> <KP_Add>   : "⁺" U207A # SUPERSCRIPT PLUS SIGN
-#--# <Multi_key> <asciicircum> <KP_Add>  : "⁺" U207A # SUPERSCRIPT PLUS SIGN
-#--# <dead_circumflex> <minus>   : "⁻" U207B # SUPERSCRIPT MINUS
-#--# <Multi_key> <asciicircum> <minus>  : "⁻" U207B # SUPERSCRIPT MINUS
-#--# <dead_circumflex> <U2212>   : "⁻" U207B # SUPERSCRIPT MINUS
-#--# <Multi_key> <asciicircum> <U2212>  : "⁻" U207B # SUPERSCRIPT MINUS
-#--# <dead_circumflex> <equal>   : "⁼" U207C # SUPERSCRIPT EQUALS SIGN
-#--# <Multi_key> <asciicircum> <equal>  : "⁼" U207C # SUPERSCRIPT EQUALS SIGN
-#--# <dead_circumflex> <KP_Equal>   : "⁼" U207C # SUPERSCRIPT EQUALS SIGN
-#--# <Multi_key> <asciicircum> <KP_Equal>  : "⁼" U207C # SUPERSCRIPT EQUALS SIGN
-#--# <dead_circumflex> <parenleft>   : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
-#--# <Multi_key> <asciicircum> <parenleft>  : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
-#--# <dead_circumflex> <parenright>   : "⁾" U207E # SUPERSCRIPT RIGHT PARENTHESIS
-#--# <Multi_key> <asciicircum> <parenright>  : "⁾" U207E # SUPERSCRIPT RIGHT PARENTHESIS
-#--# <dead_circumflex> <Multi_key> <underscore> <n> : "ⁿ" U207F # SUPERSCRIPT lowercase N
-#--# <Multi_key> <asciicircum> <underscore> <n> : "ⁿ" U207F # SUPERSCRIPT lowercase N
-#--# <dead_caron> <plus>    : "₊" U208A # SUBSCRIPT PLUS SIGN
-#--# <Multi_key> <underscore> <plus>   : "₊" U208A # SUBSCRIPT PLUS SIGN
-#--# <Multi_key> <underscore> <KP_Add>  : "₊" U208A # SUBSCRIPT PLUS SIGN
-#--# <dead_caron> <minus>    : "₋" U208B # SUBSCRIPT MINUS
-#--# <Multi_key> <underscore> <minus>  : "₋" U208B # SUBSCRIPT MINUS
-#--# <Multi_key> <underscore> <U2212>  : "₋" U208B # SUBSCRIPT MINUS
-#--# <dead_caron> <equal>    : "₌" U208C # SUBSCRIPT EQUALS SIGN
-#--# <Multi_key> <underscore> <equal>  : "₌" U208C # SUBSCRIPT EQUALS SIGN
-#--# <Multi_key> <underscore> <KP_Equal>  : "₌" U208C # SUBSCRIPT EQUALS SIGN
-#--# <dead_caron> <parenleft>   : "₍" U208D # SUBSCRIPT LEFT PARENTHESIS
-#--# <Multi_key> <underscore> <parenleft>  : "₍" U208D # SUBSCRIPT LEFT PARENTHESIS
-#--# <dead_caron> <parenright>   : "₎" U208E # SUBSCRIPT RIGHT PARENTHESIS
-#--# <Multi_key> <underscore> <parenright>  : "₎" U208E # SUBSCRIPT RIGHT PARENTHESIS
-
 #--# # Letterlike Symbols
 #--# <dead_circumflex> <Multi_key> <S> <M> : "℠" U2120 # SERVICE MARK
 #--# <Multi_key> <S> <M>   : "℠" U2120 # SERVICE MARK
@@ -1849,49 +1853,45 @@
 #--# <Multi_key> <KP_Divide> <rightarrow> : "↛" U219B # RIGHTWARDS ARROW with stroke
 #--# <Multi_key> <slash> <U2194>  : "↮" U21AE # LEFT RIGHT ARROW with stroke
 #--# <Multi_key> <KP_Divide> <U2194>  : "↮" U21AE # LEFT RIGHT ARROW with stroke
-#--# <Multi_key> <less> <minus>  : "←" U2190 # LEFTWARDS ARROW
-#--# <Multi_key> <bar> <dead_circumflex> : "↑" U2191 # UPWARDS ARROW
-#--# <Multi_key> <dead_circumflex> <bar> : "↑" U2191 # UPWARDS ARROW
-#--# <Multi_key> <bar> <asciicircum>  : "↑" U2191 # UPWARDS ARROW
-#--# <Multi_key> <asciicircum> <bar>  : "↑" U2191 # UPWARDS ARROW
-#--# <Multi_key> <minus> <greater>  : "→" U2192 # RIGHTWARDS ARROW
-#--# <Multi_key> <bar> <v>   : "↓" U2193 # DOWNWARDS ARROW
-#--# <Multi_key> <v> <bar>   : "↓" U2193 # DOWNWARDS ARROW
-#--# <Multi_key> <equal> <less>  : "⇐" U21D0 # LEFTWARDS DOUBLE ARROW
-#--# <Multi_key> <equal> <asciicircum> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
-#--# <Multi_key> <equal> <greater>  : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
-#--# <Multi_key> <equal> <v>   : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+
 #--# # Mathematical Operators
-#--# <Multi_key> <U2203> <slash>  : "∄" U2204 # THERE DOES NOT EXIST
-#--# <Multi_key> <braceleft> <braceright> : "∅" U2205 # EMPTY SET
-#--# <Multi_key> <U2208> <slash>  : "∉" U2209 # NOT AN ELEMENT OF
-#--# <Multi_key> <U220B> <slash>  : "∌" U220C # DOES NOT CONTAIN AS MEMBER
-#--# <Multi_key> <minus> <underscore> : "−" U2212 # MINUS SIGN
-#--# <Multi_key> <U2223> <slash>  : "∤" U2224 # DOES NOT DIVIDE
-#--# <Multi_key> <U2225> <slash>  : "∦" U2226 # NOT PARALLEL TO
-#--# <Multi_key> <U223C> <slash>  : "≁" U2241 # NOT TILDE
-#--# <Multi_key> <U2243> <slash>  : "≄" U2244 # NOT ASYMPTOTICALLY EQUAL TO
-#--# <Multi_key> <approximate> <slash> : "≇" U2247 # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
-#--# <Multi_key> <U2248> <slash>  : "≉" U2249 # NOT ALMOST EQUAL TO
-#--# <Multi_key> <slash> <equal>  : "≠" U2260 # NOT EQUAL TO
-#--# <Multi_key> <equal> <slash>  : "≠" U2260 # NOT EQUAL TO
-#--# <Multi_key> <KP_Equal> <slash>  : "≠" U2260 # NOT EQUAL TO
-#--# <Multi_key> <identical> <slash>  : "≢" U2262 # NOT IDENTICAL TO
-#--# <Multi_key> <less> <equal>  : "≤" U2264 # LESS-THAN OR EQUAL TO
-#--# <Multi_key> <greater> <equal>  : "≥" U2265 # GREATER-THAN OR EQUAL TO
-#--# <Multi_key> <U224D> <slash>  : "≭" U226D # NOT EQUIVALENT TO
-#--# <Multi_key> <less> <slash>  : "≮" U226E # NOT LESS-THAN
-#--# <Multi_key> <greater> <slash>  : "≯" U226F # NOT GREATER-THAN
-#--# <Multi_key> <lessthanequal> <slash> : "≰" U2270 # NEITHER LESS-THAN NOR EQUAL TO
-#--# <Multi_key> <greaterthanequal> <slash> : "≱" U2271 # NEITHER GREATER-THAN NOR EQUAL TO
-#--# <Multi_key> <U2272> <slash>  : "≴" U2274 # NEITHER LESS-THAN NOR EQUIVALENT TO
-#--# <Multi_key> <U2273> <slash>  : "≵" U2275 # NEITHER GREATER-THAN NOR EQUIVALENT TO
-#--# <Multi_key> <U2276> <slash>  : "≸" U2278 # NEITHER LESS-THAN NOR GREATER-THAN
-#--# <Multi_key> <U2277> <slash>  : "≹" U2279 # NEITHER GREATER-THAN NOR LESS-THAN
-#--# <Multi_key> <U227A> <slash>  : "⊀" U2280 # DOES NOT PRECEDE
-#--# <Multi_key> <U227B> <slash>  : "⊁" U2281 # DOES NOT SUCCEED
-#--# <Multi_key> <includedin> <slash> : "⊄" U2284 # NOT A SUBSET OF
-#--# <Multi_key> <includes> <slash>  : "⊅" U2285 # NOT A SUPERSET OF
+<Multi_key> <slash>      <bracketright> <E> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key> <slash>      U018E          <E> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key> <parenleft>  <slash>        <E> : "∉" U2209 # NOT AN ELEMENT OF
+<Multi_key> <parenright> <slash>        <E> : "∌" U220C # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <minus> <minus> : "−" U2212 # MINUS SIGN
+<Multi_key> <slash> <approxeq>  : "≉" U2249 # NOT ALMOST EQUAL TO
+<Multi_key> <minus> <equal> : "≡" U2261 # = _ IDENTICAL TO
+<Multi_key> <minus> <slash> <equal>  : "≢" U2262 # NOT IDENTICAL TO
+<Multi_key> <slash> <less> <space>  : "≮" U226E # NOT LESS-THAN
+<Multi_key> <slash> <greater> <space>  : "≯" U226F # NOT GREATER-THAN
+<Multi_key> <slash> <asciicircum>  : "≭" U226D # NOT EQUIVALENT TO
+<Multi_key> <slash> <equal> <less> : "≰" U2270 # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <equal> <greater> : "≱" U2271 # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <equal> <greater>  : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <equal> <less>  : "⇐" U21D0 # LEFTWARDS DOUBLE ARROW
+<Multi_key> <equal> <asciicircum> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<Multi_key> <equal> <greater>  : "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <equal> <v>   : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<Multi_key> <less> <minus>  : "←" U2190 # LEFTWARDS ARROW
+<Multi_key> <bar> <asciicircum>  : "↑" U2191 # UPWARDS ARROW
+<Multi_key> <minus> <greater>  : "→" U2192 # RIGHTWARDS ARROW
+<Multi_key> <bar> <v>   : "↓" U2193 # DOWNWARDS ARROW
+
+<Multi_key> <slash> <tilde> <less>  : "≴" U2274 # NEITHER LESS-THAN NOR EQUIVALENT TO
+<Multi_key> <slash> <tilde> <greater>  : "≵" U2275 # NEITHER GREATER-THAN NOR EQUIVALENT TO
+<Multi_key> <slash> <greater> <less>  : "≸" U2278 # NEITHER LESS-THAN NOR GREATER-THAN
+<Multi_key> <slash> <less> <greater>  : "≹" U2279 # NEITHER GREATER-THAN NOR LESS-THAN
+<Multi_key> <Multi_key> <slash> <less>  : "⊀" U2280 # DOES NOT PRECEDE
+<Multi_key> <Multi_key> <slash> <greater>  : "⊁" U2281 # DOES NOT SUCCEED
+<Multi_key> <Multi_key> <slash> <c> : "⊂" U2282 # SUBSET OF
+<Multi_key> <Multi_key> <slash> <C> : "⊃" U2283 # SUPERSET OF
+
+<Multi_key> <bar> <greater> : "⊳" U22B3 # contains as normal subgroup
+<Multi_key> <colon> <colon> : "∷" U2237 # proportion
+
+<Multi_key> <Multi_key> <slash> <c> : "⊄" U2284 # NOT A SUBSET OF
+<Multi_key> <Multi_key> <slash> <C>  : "⊅" U2285 # NOT A SUPERSET OF
 #--# <Multi_key> <U2286> <slash>  : "⊈" U2288 # NEITHER A SUBSET OF NOR EQUAL TO
 #--# <Multi_key> <U2287> <slash>  : "⊉" U2289 # NEITHER A SUPERSET OF NOR EQUAL TO
 #--# <Multi_key> <righttack> <slash>  : "⊬" U22AC # DOES NOT PROVE
@@ -2117,7 +2117,6 @@
 #--# <Multi_key> <period> <colon>  : "∵" U2235 # . : BECAUSE
 #--# <Multi_key> <asciitilde> <asciitilde> : "≈" U2248 # ~ ~ ALMOST EQUAL TO
 #--# <Multi_key> <dead_tilde> <dead_tilde> : "≈" U2248 # ~ ~ ALMOST EQUAL TO
-#--# <Multi_key> <equal> <underscore> : "≡" U2261 # = _ IDENTICAL TO
 #--# <Multi_key> <underscore> <U2260> : "≢" U2262 # _ ≠ NOT IDENTICAL TO
 #--# <Multi_key> <U2260> <underscore> : "≢" U2262 # ≠ _ NOT IDENTICAL TO
 #--# <Multi_key> <less> <underscore>  : "≤" U2264 # < _ LESS-THAN OR EQUAL TO
@@ -2285,6 +2284,9 @@
 #--# <dead_grave> <eng>   : "ŋ̀" # lowercase ENG plus COMBINING grave
 #--# <dead_acute> <ENG>   : "Ŋ́" # uppercase ENG plus COMBINING acute
 #--# <dead_grave> <ENG>   : "Ŋ̀" # uppercase ENG plus COMBINING grave
+# "Ǝ" U018E # uppercase reversed E
+# "ɘ" U0258 # lowercase reversed e
+# "ᴲ" U1D32 # superset uppercase reversed E
 # "ⱻ" U2C7B # uppercase turned E
 # "ǝ" U01DD # lowercase turned e
 # "Ɔ" U0186 # uppercase open O
