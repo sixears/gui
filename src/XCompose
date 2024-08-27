@@ -77,9 +77,9 @@
 
 # -- cyrillic ----------------------------------------------
 
-<Multi_key> <i> <e> : "ѥ" U0465 # Cyrillic lowercase iotified-e
-<Multi_key> <i> <o> : "ю" U044E # Cyrillic lowercase yu
-
+<Multi_key> <i> <e>   : "ѥ" U0465 # Cyrillic lowercase iotified-e
+<Multi_key> <i> <o>   : "ю" U044E # Cyrillic lowercase yu
+<Multi_key> <o> <bar> : "ф" U0444 # Cyrillic lowercase ef
 
 ## --------------------------------- GRAVE ---------------------------------- ##
 
