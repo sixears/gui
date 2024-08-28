@@ -1877,6 +1877,7 @@
 <Multi_key> <bar> <asciicircum>  : "↑" U2191 # UPWARDS ARROW
 <Multi_key> <minus> <greater>  : "→" U2192 # RIGHTWARDS ARROW
 <Multi_key> <bar> <v>   : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key> <minus> <V> : ∀ U2200 # for all
 
 <Multi_key> <slash> <tilde> <less>  : "≴" U2274 # NEITHER LESS-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <tilde> <greater>  : "≵" U2275 # NEITHER GREATER-THAN NOR EQUIVALENT TO
