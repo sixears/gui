@@ -22,6 +22,7 @@
 
 <Multi_key> <slash> <slash> : "⁄" U2044 # fraction slash
 
+<Multi_key> <1> <slash> <space> : "⅟"
 <Multi_key> <1> <slash> <2> : "½"
 
 <Multi_key> <0> <slash> <3> : "↉" U2189 # vulgar fraction zero thirds
