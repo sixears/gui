@@ -3,7 +3,7 @@
 # https://www.cl.cam.ac.uk/~mgk25/ucs/keysymdef.h
 # ls /nix/store/*/share/man/man5/Compose.5.gz
 # see, e.g., /nix/store/zbmn0p07b31vqx7qf23mi8di3xjqrgia-keyd-2.4.2/share/keyd/keyd.compose
-# and /nix/store/x51ly05chwj47xgz5grn48rz5k2mvzlg-libX11-1.8.7/share/X11/locale/en_US.UTF-8/Compose
+# and /nix/store/*-libX11-*/share/X11/locale/en_US.UTF-8/Compose
 
 # to install, run nyx install -c gui XCompose & restart affected apps
 
@@ -1856,6 +1856,8 @@
 #--# <Multi_key> <KP_Divide> <U2194>  : "↮" U21AE # LEFT RIGHT ARROW with stroke
 
 #--# # Mathematical Operators
+<Multi_key> <period> <period>  : "∘" U2218 # ring operator
+<Multi_key> <period> <greater> : "⊚" U229A # circled ring operator
 <Multi_key> <slash>      <bracketright> <E> : "∄" U2204 # THERE DOES NOT EXIST
 <Multi_key> <slash>      U018E          <E> : "∄" U2204 # THERE DOES NOT EXIST
 <Multi_key> <parenleft>  <slash>        <E> : "∉" U2209 # NOT AN ELEMENT OF
@@ -1878,7 +1880,20 @@
 <Multi_key> <bar> <asciicircum>  : "↑" U2191 # UPWARDS ARROW
 <Multi_key> <minus> <greater>  : "→" U2192 # RIGHTWARDS ARROW
 <Multi_key> <bar> <v>   : "↓" U2193 # DOWNWARDS ARROW
-<Multi_key> <minus> <V> : ∀ U2200 # for all
+<Multi_key> <minus> <V> : "∀" U2200 # forall
+<Multi_key> <bar> <bar> <space> : "∨" U2228 # logical or
+# cannot get the ampersand to be recognized by .XCompose at all!
+<Multi_key> <bar> <asterisk> <bar> : "∧" : U2227 # logical and
+<Multi_key> <exclam> <dollar> : "∧" : U2227 # logical and
+# <Multi_key> <slash> <slash> : "±" : U2227 # plus-minus sign
+#-x-# ±  +00B1  Plus-Minus Sign
+
+
+<Multi_key> <tilde> <bar> <bar> : "⍱" U2371 # ∨ ~ APL FUNCTIONAL SYMBOL DOWN CARET TILDE
+<Multi_key> <bar> <tilde> <bar> : "⍱" U2371 # ∨ ~ APL FUNCTIONAL SYMBOL DOWN CARET TILDE
+#--# <Multi_key> <U2227> <asciitilde> : "⍲" U2372 # ∧ ~ APL FUNCTIONAL SYMBOL UP CARET TILDE
+#--# <Multi_key> <asciitilde> <U2227> : "⍲" U2372 # ~ ∧ APL FUNCTIONAL SYMBOL UP CARET TILDE
+
 
 <Multi_key> <slash> <tilde> <less>  : "≴" U2274 # NEITHER LESS-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <tilde> <greater>  : "≵" U2275 # NEITHER GREATER-THAN NOR EQUIVALENT TO
@@ -2251,10 +2266,6 @@
 #--# <Multi_key> <U2395> <U2260>  : "⍯" U236f # ⎕ ≠ APL FUNCTIONAL SYMBOL QUAD NOT EQUAL
 #--# <Multi_key> <question> <U2395>  : "⍰" U2370 # ? ⎕ APL FUNCTIONAL SYMBOL QUAD QUESTION
 #--# <Multi_key> <U2395> <question>  : "⍰" U2370 # ⎕ ? APL FUNCTIONAL SYMBOL QUAD QUESTION
-#--# <Multi_key> <U2228> <asciitilde> : "⍱" U2371 # ∨ ~ APL FUNCTIONAL SYMBOL DOWN CARET TILDE
-#--# <Multi_key> <asciitilde> <U2228> : "⍱" U2371 # ~ ∨ APL FUNCTIONAL SYMBOL DOWN CARET TILDE
-#--# <Multi_key> <U2227> <asciitilde> : "⍲" U2372 # ∧ ~ APL FUNCTIONAL SYMBOL UP CARET TILDE
-#--# <Multi_key> <asciitilde> <U2227> : "⍲" U2372 # ~ ∧ APL FUNCTIONAL SYMBOL UP CARET TILDE
 #--# <Multi_key> <U237a> <underscore> : "⍶" U2376 # ⍺ _ APL FUNCTIONAL SYMBOL ALPHA UNDERBAR
 #--# <Multi_key> <underscore> <U237a> : "⍶" U2376 # _ ⍺ APL FUNCTIONAL SYMBOL ALPHA UNDERBAR
 #--# <Multi_key> <U220a> <underscore> : "⍷" U2377 # ∊ _ APL FUNCTIONAL SYMBOL EPSILON UNDERBAR
@@ -2347,6 +2358,266 @@
 # "ꞯ" UA7AF # Latin Letter Small Capital Q
 # "ꟺ" UA7FA # Latin Letter Small Capital Turned M
 # "ꭆ" UAB46 # Latin Letter Small Capital R with Right Leg
+
+
+
+
+#-x-# List of Unicode Characters of Category “Math Symbol”
+#-x-# Key:	Sm [1]
+#-x-# Name:	Math Symbol
+#-x-# Number of Entries:	948 [2]
+#-x-# Character List
+#-x-#
+#-x-# +  +002B  Plus Sign
+#-x-# <  +003C  Less-Than Sign
+#-x-# =  +003D  Equals Sign
+#-x-# >  +003E  Greater-Than Sign
+#-x-# |  +007C  Vertical Line
+#-x-# ~  +007E  Tilde
+#-x-# ¬  +00AC  Not Sign
+#-x-# ±  +00B1  Plus-Minus Sign
+#-x-# ×  +00D7  Multiplication Sign
+#-x-# ÷  +00F7  Division Sign
+#-x-# ϶  +03F6  Greek Reversed Lunate Epsilon Symbol
+#-x-# ؆  +0606  Arabic-Indic Cube Root
+#-x-# ؇  +0607  Arabic-Indic Fourth Root
+#-x-# ؈  +0608  Arabic Ray
+#-x-# ⁄  +2044  Fraction Slash
+#-x-# ⁒  +2052  Commercial Minus Sign
+#-x-# ⁺  +207A  Superscript Plus Sign
+#-x-# ⁻  +207B  Superscript Minus
+#-x-# ⁼  +207C  Superscript Equals Sign
+#-x-# ₊  +208A  Subscript Plus Sign
+#-x-# ₋  +208B  Subscript Minus
+#-x-# ₌  +208C  Subscript Equals Sign
+#-x-# ℘  +2118  Script Capital P
+#-x-# ⅀  +2140  Double-Struck N-Ary Summation
+#-x-# ⅁  +2141  Turned Sans-Serif Capital G
+#-x-# ⅂  +2142  Turned Sans-Serif Capital L
+#-x-# ⅃  +2143  Reversed Sans-Serif Capital L
+#-x-# ⅄  +2144  Turned Sans-Serif Capital Y
+#-x-# ⅋  +214B  Turned Ampersand
+#-x-# ←  +2190  Leftwards Arrow
+#-x-# ↑  +2191  Upwards Arrow
+#-x-# →  +2192  Rightwards Arrow
+#-x-# ↓  +2193  Downwards Arrow
+#-x-# ↔  +2194  Left Right Arrow
+#-x-# ↚  +219A  Leftwards Arrow with Stroke
+#-x-# ↛  +219B  Rightwards Arrow with Stroke
+#-x-# ↠  +21A0  Rightwards Two Headed Arrow
+#-x-# ↣  +21A3  Rightwards Arrow with Tail
+#-x-# ↦  +21A6  Rightwards Arrow from Bar
+#-x-# ↮  +21AE  Left Right Arrow with Stroke
+#-x-# ⇎  +21CE  Left Right Double Arrow with Stroke
+#-x-# ⇏  +21CF  Rightwards Double Arrow with Stroke
+#-x-# ⇒  +21D2  Rightwards Double Arrow
+#-x-# ⇔  +21D4  Left Right Double Arrow
+#-x-# ⇴  +21F4  Right Arrow with Small Circle
+#-x-# ⇵  +21F5  Downwards Arrow Leftwards of Upwards Arrow
+#-x-# ⇶  +21F6  Three Rightwards Arrows
+#-x-# ⇷  +21F7  Leftwards Arrow with Vertical Stroke
+#-x-# ⇸  +21F8  Rightwards Arrow with Vertical Stroke
+#-x-# ⇹  +21F9  Left Right Arrow with Vertical Stroke
+#-x-# ⇺  +21FA  Leftwards Arrow with Double Vertical Stroke
+#-x-# ⇻  +21FB  Rightwards Arrow with Double Vertical Stroke
+#-x-# ⇼  +21FC  Left Right Arrow with Double Vertical Stroke
+#-x-# ⇽  +21FD  Leftwards Open-Headed Arrow
+#-x-# ⇾  +21FE  Rightwards Open-Headed Arrow
+#-x-# ⇿  +21FF  Left Right Open-Headed Arrow
+#-x-# ∀  +2200  For All
+#-x-# ∁  +2201  Complement
+#-x-# ∂  +2202  Partial Differential
+#-x-# ∃  +2203  There Exists
+#-x-# ∄  +2204  There Does Not Exist
+#-x-# ∅  +2205  Empty Set
+#-x-# ∆  +2206  Increment
+#-x-# ∇  +2207  Nabla
+#-x-# ∈  +2208  Element Of
+#-x-# ∉  +2209  Not An Element Of
+#-x-# ∊  +220A  Small Element Of
+#-x-# ∋  +220B  Contains as Member
+#-x-# ∌  +220C  Does Not Contain as Member
+#-x-# ∍  +220D  Small Contains as Member
+#-x-# ∎  +220E  End of Proof
+#-x-# ∏  +220F  N-Ary Product
+#-x-# ∐  +2210  N-Ary Coproduct
+#-x-# ∑  +2211  N-Ary Summation
+#-x-# −  +2212  Minus Sign
+#-x-# ∓  +2213  Minus-or-Plus Sign
+#-x-# ∔  +2214  Dot Plus
+#-x-# ∕  +2215  Division Slash
+#-x-# ∖  +2216  Set Minus
+#-x-# ∗  +2217  Asterisk Operator
+#-x-# ∘  +2218  Ring Operator
+#-x-# ∙  +2219  Bullet Operator
+#-x-# √  +221A  Square Root
+#-x-# ∛  +221B  Cube Root
+#-x-# ∜  +221C  Fourth Root
+#-x-# ∝  +221D  Proportional To
+#-x-# ∞  +221E  Infinity
+#-x-# ∟  +221F  Right Angle
+#-x-# ∠  +2220  Angle
+#-x-# ∡  +2221  Measured Angle
+#-x-# ∢  +2222  Spherical Angle
+#-x-# ∣  +2223  Divides
+#-x-# ∤  +2224  Does Not Divide
+#-x-# ∥  +2225  Parallel To
+#-x-# ∦  +2226  Not Parallel To
+#-x-# ∩  +2229  Intersection
+#-x-# ∪  +222A  Union
+#-x-# ∫  +222B  Integral
+#-x-# ∬  +222C  Double Integral
+#-x-# ∭  +222D  Triple Integral
+#-x-# ∮  +222E  Contour Integral
+#-x-# ∯  +222F  Surface Integral
+#-x-# ∰  +2230  Volume Integral
+#-x-# ∱  +2231  Clockwise Integral
+#-x-# ∲  +2232  Clockwise Contour Integral
+#-x-# ∳  +2233  Anticlockwise Contour Integral
+#-x-# ∴  +2234  Therefore
+#-x-# ∵  +2235  Because
+#-x-# ∶  +2236  Ratio
+#-x-# ∷  +2237  Proportion
+#-x-# ∸  +2238  Dot Minus
+#-x-# ∹  +2239  Excess
+#-x-# ∺  +223A  Geometric Proportion
+#-x-# ∻  +223B  Homothetic
+#-x-# ∼  +223C  Tilde Operator
+#-x-# ∽  +223D  Reversed Tilde
+#-x-# ∾  +223E  Inverted Lazy S
+#-x-# ∿  +223F  Sine Wave
+#-x-# ≀  +2240  Wreath Product
+#-x-# ≁  +2241  Not Tilde
+#-x-# ≂  +2242  Minus Tilde
+#-x-# ≃  +2243  Asymptotically Equal To
+#-x-# ≄  +2244  Not Asymptotically Equal To
+#-x-# ≅  +2245  Approximately Equal To
+#-x-# ≆  +2246  Approximately But Not Actually Equal To
+#-x-# ≇  +2247  Neither Approximately Nor Actually Equal To
+#-x-# ≈  +2248  Almost Equal To
+#-x-# ≉  +2249  Not Almost Equal To
+#-x-# ≊  +224A  Almost Equal or Equal To
+#-x-# ≋  +224B  Triple Tilde
+#-x-# ≌  +224C  All Equal To
+#-x-# ≍  +224D  Equivalent To
+#-x-# ≎  +224E  Geometrically Equivalent To
+#-x-# ≏  +224F  Difference Between
+#-x-# ≐  +2250  Approaches the Limit
+#-x-# ≑  +2251  Geometrically Equal To
+#-x-# ≒  +2252  Approximately Equal to or the Image Of
+#-x-# ≓  +2253  Image of or Approximately Equal To
+#-x-# ≔  +2254  Colon Equals
+#-x-# ≕  +2255  Equals Colon
+#-x-# ≖  +2256  Ring In Equal To
+#-x-# ≗  +2257  Ring Equal To
+#-x-# ≘  +2258  Corresponds To
+#-x-# ≙  +2259  Estimates
+#-x-# ≚  +225A  Equiangular To
+#-x-# ≛  +225B  Star Equals
+#-x-# ≜  +225C  Delta Equal To
+#-x-# ≝  +225D  Equal to By Definition
+#-x-# ≞  +225E  Measured By
+#-x-# ≟  +225F  Questioned Equal To
+#-x-# ≠  +2260  Not Equal To
+#-x-# ≡  +2261  Identical To
+#-x-# ≢  +2262  Not Identical To
+#-x-# ≣  +2263  Strictly Equivalent To
+#-x-# ≤  +2264  Less-Than or Equal To
+#-x-# ≥  +2265  Greater-Than or Equal To
+#-x-# ≦  +2266  Less-Than Over Equal To
+#-x-# ≧  +2267  Greater-Than Over Equal To
+#-x-# ≨  +2268  Less-Than But Not Equal To
+#-x-# ≩  +2269  Greater-Than But Not Equal To
+#-x-# ≪  +226A  Much Less-Than
+#-x-# ≫  +226B  Much Greater-Than
+#-x-# ≬  +226C  Between
+#-x-# ≭  +226D  Not Equivalent To
+#-x-# ≮  +226E  Not Less-Than
+#-x-# ≯  +226F  Not Greater-Than
+#-x-# ≰  +2270  Neither Less-Than Nor Equal To
+#-x-# ≱  +2271  Neither Greater-Than Nor Equal To
+#-x-# ≲  +2272  Less-Than or Equivalent To
+#-x-# ≳  +2273  Greater-Than or Equivalent To
+#-x-# ≴  +2274  Neither Less-Than Nor Equivalent To
+#-x-# ≵  +2275  Neither Greater-Than Nor Equivalent To
+#-x-# ≶  +2276  Less-Than or Greater-Than
+#-x-# ≷  +2277  Greater-Than or Less-Than
+#-x-# ≸  +2278  Neither Less-Than Nor Greater-Than
+#-x-# ≹  +2279  Neither Greater-Than Nor Less-Than
+#-x-# ≺  +227A  Precedes
+#-x-# ≻  +227B  Succeeds
+#-x-# ≼  +227C  Precedes or Equal To
+#-x-# ≽  +227D  Succeeds or Equal To
+#-x-# ≾  +227E  Precedes or Equivalent To
+#-x-# ≿  +227F  Succeeds or Equivalent To
+#-x-# ⊀  +2280  Does Not Precede
+#-x-# ⊁  +2281  Does Not Succeed
+#-x-# ⊂  +2282  Subset Of
+#-x-# ⊃  +2283  Superset Of
+#-x-# ⊄  +2284  Not A Subset Of
+#-x-# ⊅  +2285  Not A Superset Of
+#-x-# ⊆  +2286  Subset of or Equal To
+#-x-# ⊇  +2287  Superset of or Equal To
+#-x-# ⊈  +2288  Neither A Subset of Nor Equal To
+#-x-# ⊉  +2289  Neither A Superset of Nor Equal To
+#-x-# ⊊  +228A  Subset of with Not Equal To
+#-x-# ⊋  +228B  Superset of with Not Equal To
+#-x-# ⊌  +228C  Multiset
+#-x-# ⊍  +228D  Multiset Multiplication
+#-x-# ⊎  +228E  Multiset Union
+#-x-# ⊏  +228F  Square Image Of
+#-x-# ⊐  +2290  Square Original Of
+#-x-# ⊑  +2291  Square Image of or Equal To
+#-x-# ⊒  +2292  Square Original of or Equal To
+#-x-# ⊓  +2293  Square Cap
+#-x-# ⊔  +2294  Square Cup
+#-x-# ⊕  +2295  Circled Plus
+#-x-# ⊖  +2296  Circled Minus
+#-x-# ⊗  +2297  Circled Times
+#-x-# ⊘  +2298  Circled Division Slash
+#-x-# ⊙  +2299  Circled Dot Operator
+#-x-# ⊚  +229A  Circled Ring Operator
+#-x-# ⊛  +229B  Circled Asterisk Operator
+#-x-# ⊜  +229C  Circled Equals
+#-x-# ⊝  +229D  Circled Dash
+#-x-# ⊞  +229E  Squared Plus
+#-x-# ⊟  +229F  Squared Minus
+#-x-# ⊠  +22A0  Squared Times
+#-x-# ⊡  +22A1  Squared Dot Operator
+#-x-# ⊢  +22A2  Right Tack
+#-x-# ⊣  +22A3  Left Tack
+#-x-# ⊤  +22A4  Down Tack
+#-x-# ⊥  +22A5  Up Tack
+#-x-# ⊦  +22A6  Assertion
+#-x-# ⊧  +22A7  Models
+#-x-# ⊨  +22A8  True
+#-x-# ⊩  +22A9  Forces
+#-x-# ⊪  +22AA  Triple Vertical Bar Right Turnstile
+#-x-# ⊫  +22AB  Double Vertical Bar Double Right Turnstile
+#-x-# ⊬  +22AC  Does Not Prove
+#-x-# ⊭  +22AD  Not True
+#-x-# ⊮  +22AE  Does Not Force
+#-x-# ⊯  +22AF  Negated Double Vertical Bar Double Right Turnstile
+#-x-# ⊰  +22B0  Precedes Under Relation
+#-x-# ⊱  +22B1  Succeeds Under Relation
+#-x-# ⊲  +22B2  Normal Subgroup Of
+#-x-# ⊳  +22B3  Contains as Normal Subgroup
+#-x-# ⊴  +22B4  Normal Subgroup of or Equal To
+#-x-# ⊵  +22B5  Contains as Normal Subgroup or Equal To
+#-x-# ⊶  +22B6  Original Of
+#-x-# ⊷  +22B7  Image Of
+#-x-# ⊸  +22B8  Multimap
+#-x-# ⊹  +22B9  Hermitian Conjugate Matrix
+#-x-# ⊺  +22BA  Intercalate
+#-x-# ⊻  +22BB  Xor
+#-x-# ⊼  +22BC  Nand
+#-x-# ⊽  +22BD  Nor
+#-x-# ⊾  +22BE  Right Angle with Arc
+#-x-# ⊿  +22BF  Right Triangle
+#-x-# ⋀  +22C0  N-Ary Logical And
+#-x-# ⋁  +22C1  N-Ary Logical Or
+#-x-# ⋂  +22C2  N-Ary Intersection
+
 
 # force newline at file-end: fileContents absorbs that...
 
