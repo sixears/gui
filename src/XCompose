@@ -76,11 +76,12 @@
 <Multi_key> <i> <underscore> <j>                  : "ĳ" U0133  # lowercase ij
 <Multi_key> <I> <underscore> <J>                  : "Ĳ" U0132  # uppercase IJ
 
-# -- cyrillic ----------------------------------------------
+# -- Cyrillic ----------------------------------------------
 
 <Multi_key> <i> <e>   : "ѥ" U0465 # Cyrillic lowercase iotified-e
 <Multi_key> <i> <o>   : "ю" U044E # Cyrillic lowercase yu
 <Multi_key> <o> <bar> : "ф" U0444 # Cyrillic lowercase ef
+<Multi_key> <o> <i>   : "ꙕ" UA655 # Cyrillic reversed lowercase yu
 
 ## --------------------------------- GRAVE ---------------------------------- ##
 
@@ -456,14 +457,14 @@
 <Multi_key> <semicolon> <Z> : "Ż" U017B # uppercase Z with dot above
 <Multi_key> <semicolon> <z> : "ż" U017C # lowercase z with dot above
 
-<Multi_key> <semicolon> <minus> <j> : "ɟ" U025F # lowercase DOTLESS J with stroke
+<Multi_key> <semicolon> <minus> <j> : "ɟ" U025F # lowercase dotless J with stroke
 
 ## ------------------------------- APOSTROPHE ------------------------------- ##
 
 # -- acute -------------------------------------------------
 
-<Multi_key> <apostrophe> <space> : "́" U0301 # COMBINING acute ACCENT
-<Multi_key> <apostrophe> <Tab>	 : "´"	acute # acute ACCENT
+<Multi_key> <apostrophe> <space> : "́"  U0301 # combining acute
+<Multi_key> <apostrophe> <Tab>   : "´" acute # acute
 
 <Multi_key> <apostrophe> <A> : "Á" Aacute # uppercase A with acute
 <Multi_key> <apostrophe> <a> : "á" aacute # lowercase a with acute
@@ -514,8 +515,8 @@
 <Multi_key> <apostrophe> <apostrophe> <o> : "ő" U0151 # lowercase o with double acute
 <Multi_key> <apostrophe> <apostrophe> <U> : "Ű" U0170 # uppercase U with double acute
 <Multi_key> <apostrophe> <apostrophe> <u> : "ű" U0171 # lowercase u with double acute
-<Multi_key> <apostrophe> <apostrophe> <y> : "ӳ" U04F3 # cyrillic lowercase u with double acute
-<Multi_key> <apostrophe> <apostrophe> <Y> : "Ӳ" U04F2 # cyrillic uppercase U with double acute
+<Multi_key> <apostrophe> <apostrophe> <y> : "ӳ" U04F3 # Cyrillic lowercase u with double acute
+<Multi_key> <apostrophe> <apostrophe> <Y> : "Ӳ" U04F2 # Cyrillic uppercase U with double acute
 
 ## ------------------------------- NUMBERSIGN ------------------------------- ##
 
@@ -585,7 +586,7 @@
 
 <Multi_key> <comma> <space> : "̧"  U0327   # combining cedilla
 <Multi_key> <comma> <Tab>   : "¸" cedilla # cedilla
-## <dead_ogonek> <nobreakspace> : "̨" U0328 # COMBINING OGONEK
+## <dead_ogonek> <nobreakspace> : "̨" U0328 # combining ogonek
 
 <Multi_key> <comma> <A> : "Ą" U0104    # uppercase A with ogonek
 <Multi_key> <comma> <a> : "ą" U0105    # lowercase a with ogonek
@@ -1858,10 +1859,12 @@
 #--# # Mathematical Operators
 <Multi_key> <period> <period>  : "∘" U2218 # ring operator
 <Multi_key> <period> <greater> : "⊚" U229A # circled ring operator
-<Multi_key> <slash>      <bracketright> <E> : "∄" U2204 # THERE DOES NOT EXIST
-<Multi_key> <slash>      U018E          <E> : "∄" U2204 # THERE DOES NOT EXIST
-<Multi_key> <parenleft>  <slash>        <E> : "∉" U2209 # NOT AN ELEMENT OF
-<Multi_key> <parenright> <slash>        <E> : "∌" U220C # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <slash> <bracketright> <E> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key> <slash> U018E          <E> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key> <equal>                <e> : "∈" U2208 # ELEMENT OF
+<Multi_key> <equal> <slash>        <e> : "∉" U2209 # NOT AN ELEMENT OF
+<Multi_key> <equal>                <E> : "∋" U220B # CONTAINS AS MEMBER
+<Multi_key> <equal> <slash>        <E> : "∌" U220C # DOES NOT CONTAIN AS MEMBER
 <Multi_key> <minus> <minus> : "−" U2212 # MINUS SIGN
 <Multi_key> <slash> <approxeq>  : "≉" U2249 # NOT ALMOST EQUAL TO
 <Multi_key> <minus> <equal> : "≡" U2261 # = _ IDENTICAL TO
@@ -1883,9 +1886,10 @@
 <Multi_key> <minus> <V> : "∀" U2200 # forall
 <Multi_key> <bar> <bar> <space> : "∨" U2228 # logical or
 # cannot get the ampersand to be recognized by .XCompose at all!
-<Multi_key> <bar> <asterisk> <bar> : "∧" : U2227 # logical and
-<Multi_key> <exclam> <dollar> : "∧" : U2227 # logical and
-# <Multi_key> <slash> <slash> : "±" : U2227 # plus-minus sign
+<Multi_key> <bar> <asterisk> <bar> : "∧" U2227 # logical and
+<Multi_key> <exclam>  <dollar> : "∧" U2227 # logical and
+<Multi_key> <greater> <period> : "⩺" U2A7A # greater-than with circle inside
+# <Multi_key> <slash> <slash>  : "±" U2227 # plus-minus sign
 #-x-# ±  +00B1  Plus-Minus Sign
 
 
@@ -1904,8 +1908,9 @@
 <Multi_key> <Multi_key> <slash> <c> : "⊂" U2282 # SUBSET OF
 <Multi_key> <Multi_key> <slash> <C> : "⊃" U2283 # SUPERSET OF
 
-<Multi_key> <bar> <greater> : "⊳" U22B3 # contains as normal subgroup
-<Multi_key> <colon> <colon> : "∷" U2237 # proportion
+<Multi_key> <colon> <colon>              : "∷" U2237 # proportion
+<Multi_key> <bar> <greater>              : "⊳" U22B3 # contains as normal subgroup
+<Multi_key> <underscore> <bar> <greater> : "⊵" U22B5 # contains as normal subgroup or equal to
 
 <Multi_key> <Multi_key> <slash> <c> : "⊄" U2284 # NOT A SUBSET OF
 <Multi_key> <Multi_key> <slash> <C>  : "⊅" U2285 # NOT A SUPERSET OF
