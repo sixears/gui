@@ -568,6 +568,8 @@
 <Multi_key> <asciitilde> <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
 <Multi_key> <asciitilde> <y> : "ỹ" U1EF9  # lowercase y with tilde
 
+<Multi_key> <asciitilde> <asciitilde> : "≈" U2248 # almost equal to
+
 # ----------------------------------------------------------
 
 <Multi_key> <tilde>    <slash> : "≁" U2241 # NOT TILDE
@@ -667,7 +669,8 @@
 
 ## ---------------------------------- LESS ---------------------------------- ##
 
-<Multi_key> <less> <period> : "‹" U2039 # single left angle quotation mark
+#-# see <Multi_key> <greater> <period> which is used for ⩺
+#-# <Multi_key> <less> <period> : "‹" U2039 # single left angle quotation mark
 <Multi_key> <less> <greater> : "≷"
 
 ## --------------------------------- PERIOD --------------------------------- ##
@@ -734,7 +737,8 @@
 <Multi_key> <greater> <s> : "ˢ" U02E2 # modifier letter small s
 <Multi_key> <greater> <x> : "ˣ" U02E3 # modifier letter small x
 
-<Multi_key> <greater> <period> : "›" U203a # single right angle quotation mark
+#-# No!  This is used for ⩺
+#-# <Multi_key> <greater> <period> : "›" U203a # single right angle quotation mark
 
 ## <Multi_key> <greater> <U0266>  : "ʱ" U02B1 # modifier letter small h with hook
 ## <Multi_key> <greater> <U0279>  : "ʴ" U02B4 # modifier letter small turned r
@@ -1889,6 +1893,10 @@
 <Multi_key> <bar> <asterisk> <bar> : "∧" U2227 # logical and
 <Multi_key> <exclam>  <dollar> : "∧" U2227 # logical and
 <Multi_key> <greater> <period> : "⩺" U2A7A # greater-than with circle inside
+
+<Multi_key> <slash> <backslash> : "⋀" U22C0 # n-ary logical and
+<Multi_key> <backslash> <slash> : "⋁" U22C1 # n-ary logical or
+
 # <Multi_key> <slash> <slash>  : "±" U2227 # plus-minus sign
 #-x-# ±  +00B1  Plus-Minus Sign
 
@@ -1911,6 +1919,8 @@
 <Multi_key> <colon> <colon>              : "∷" U2237 # proportion
 <Multi_key> <bar> <greater>              : "⊳" U22B3 # contains as normal subgroup
 <Multi_key> <underscore> <bar> <greater> : "⊵" U22B5 # contains as normal subgroup or equal to
+#--# <Multi_key> <bar> <slash>  : "⋪" U22EA # NOT NORMAL SUBGROUP OF
+<Multi_key> <slash> <bar> <greater>  : "⋫" U22EB # does not contain as normal subgroup
 
 <Multi_key> <Multi_key> <slash> <c> : "⊄" U2284 # NOT A SUBSET OF
 <Multi_key> <Multi_key> <slash> <C>  : "⊅" U2285 # NOT A SUPERSET OF
@@ -2619,8 +2629,6 @@
 #-x-# ⊽  +22BD  Nor
 #-x-# ⊾  +22BE  Right Angle with Arc
 #-x-# ⊿  +22BF  Right Triangle
-#-x-# ⋀  +22C0  N-Ary Logical And
-#-x-# ⋁  +22C1  N-Ary Logical Or
 #-x-# ⋂  +22C2  N-Ary Intersection
 
 
