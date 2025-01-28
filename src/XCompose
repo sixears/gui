@@ -18,6 +18,8 @@
 # suggests that modifiers should work... but it didn't work for me
 # <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
 
+<Codeinput> <1> : "½"
+
 ## -- vulgar fractions -------------------------------------
 
 <Multi_key> <slash> <slash> : "⁄" U2044 # fraction slash
@@ -193,26 +195,6 @@
 
 ## ------------------------------ ASCIICIRCUM ------------------------------- ##
 
-# -- superscript -------------------------------------------
-
-<Multi_key> <asciicircum> <1> : "ⁱ" onesuperior   # superscript one
-<Multi_key> <asciicircum> <2> : "²" twosuperior   # superscript two
-<Multi_key> <asciicircum> <3> : "³" threesuperior # superscript three
-<Multi_key> <asciicircum> <4> : "⁴"
-<Multi_key> <asciicircum> <5> : "⁵"
-<Multi_key> <asciicircum> <6> : "⁶"
-<Multi_key> <asciicircum> <7> : "⁷"
-<Multi_key> <asciicircum> <8> : "⁸"
-<Multi_key> <asciicircum> <9> : "⁹"
-<Multi_key> <asciicircum> <0> : "⁰"
-
-<Multi_key> <asciicircum> <plus>           : "⁺" U207A # superscript plus sign
-<Multi_key> <asciicircum> <minus>          : "⁻" U207B # superscript minus
-<Multi_key> <asciicircum> <equal>          : "⁼" U207C # superscript equals sign
-<Multi_key> <asciicircum> <parenleft>      : "⁽" U207D # superscript left paren
-<Multi_key> <asciicircum> <parenright>     : "⁾" U207E # superscript right paren
-<Multi_key> <asciicircum> <underscore> <n> : "ⁿ" U207F # superscript lowercase n
-
 # -- circumflex --------------------------------------------
 
 <Multi_key> <asciicircum> <space> : "̂" U0302 # COMBINING circumflex accent
@@ -303,11 +285,13 @@
 
 # -- macron ------------------------------------------------
 
-<Multi_key> <minus> <space> : "̄"  U0304  # combining macron
+<Multi_key> <minus> <asciicircum> <space> : "̄"  U0304  # combining macron
+<Multi_key> <minus> <space> : "̶" U0336 # combining long stroke overlay
 <Multi_key> <minus> <Tab>   : "¯" macron # macron
 
-<Multi_key> <minus> <A> : "Ā" U0100 # uppercase A with macron
-<Multi_key> <minus> <a> : "ā" U0101 # lowercase a with macron
+#xx# These don't work in practice :-(
+#xx# <Multi_key> <minus> <A> : "Ā" U0100 # uppercase A with macron
+#xx# <Multi_key> <minus> <a> : "ā" U0101 # lowercase a with macron
 <Multi_key> <minus> <E> : "Ē" U0112 # uppercase E with macron
 <Multi_key> <minus> <e> : "ē" U0113 # lowercase e with macron
 <Multi_key> <minus> <G> : "Ḡ" U1E20 # uppercase G with MACRON
@@ -324,26 +308,65 @@
 <Multi_key> <minus> <A> <underscore> <E> : "Ǣ" U01E2 # uppercase AE with macron
 <Multi_key> <minus> <a> <underscore> <e> : "ǣ" U01E3 # lowercase ae with macron
 
-## ------------------------------- UNDERSCORE ------------------------------- ##
+## ----------------------------------- UP ----------------------------------- ##
+
+# -- superscript -------------------------------------------
+
+<Multi_key> <Up> <0> : "⁰" U2070 # superscript number 0
+<Multi_key> <Up> <1> : "¹" U00B9 # superscript number 1
+<Multi_key> <Up> <2> : "²" U00B2 # superscript number 2
+<Multi_key> <Up> <3> : "³" U00B3 # superscript number 3
+<Multi_key> <Up> <4> : "⁴" U2074 # superscript number 4
+<Multi_key> <Up> <5> : "⁵" U2075 # superscript number 5
+<Multi_key> <Up> <6> : "⁶" U2075 # superscript number 6
+<Multi_key> <Up> <7> : "⁷" U2077 # superscript number 7
+<Multi_key> <Up> <8> : "⁸" U2078 # superscript number 8
+<Multi_key> <Up> <9> : "⁹" U2079 # superscript number 9
+
+<Multi_key> <Up> <i> : "ⁱ" U2071 # superscript lowercase i
+<Multi_key> <Up> <n> : "ⁿ" U207F # superscript lowercase n
+
+<Multi_key> <Up> <plus>           : "⁺" U207A # superscript plus sign
+<Multi_key> <Up> <minus>          : "⁻" U207B # superscript minus
+<Multi_key> <Up> <equal>          : "⁼" U207C # superscript equals sign
+<Multi_key> <Up> <parenleft>      : "⁽" U207D # superscript left paren
+<Multi_key> <Up> <parenright>     : "⁾" U207E # superscript right paren
+
+## ---------------------------------- DOWN ---------------------------------- ##
 
 # -- subscript ---------------------------------------------
 
-<Multi_key> <underscore> <1> : "₁"
-<Multi_key> <underscore> <2> : "₂"
-<Multi_key> <underscore> <3> : "₃"
-<Multi_key> <underscore> <4> : "₄"
-<Multi_key> <underscore> <5> : "₅"
-<Multi_key> <underscore> <6> : "₆"
-<Multi_key> <underscore> <7> : "₇"
-<Multi_key> <underscore> <8> : "₈"
-<Multi_key> <underscore> <9> : "₉"
-<Multi_key> <underscore> <0> : "₀"
+<Multi_key> <Down> <a> : "ₐ" U2090 # subscript lowercase a
+<Multi_key> <Down> <e> : "ₑ" U2091 # subscript lowercase e
+<Multi_key> <Down> <E> : "ₔ" U1D26 # subscript lowercase schwa (ǝ)
+<Multi_key> <Down> <h> : "ₕ" U2095 # subscript lowercase h
+<Multi_key> <Down> <i> : "ᵢ" U1D26 # subscript lowercase i
+<Multi_key> <Down> <k> : "ₖ" U2096 # subscript lowercase k
+<Multi_key> <Down> <l> : "ₗ" U2097 # subscript lowercase l
+<Multi_key> <Down> <m> : "m" U2098 # subscript lowercase m
+<Multi_key> <Down> <n> : "ₙ" U2099 # subscript lowercase n
+<Multi_key> <Down> <o> : "ₒ" U2092 # subscript lowercase o
+<Multi_key> <Down> <p> : "ₚ" U209A # subscript lowercase p
+<Multi_key> <Down> <s> : "ₛ" U209B # subscript lowercase s
+<Multi_key> <Down> <t> : "ₜ" U209C # subscript lowercase t
+<Multi_key> <Down> <x> : "ₓ" U2093 # subscript lowercase x
 
-<Multi_key> <underscore> <plus>       : "₊" U208A # subscript plus sign
-<Multi_key> <underscore> <minus>      : "₋" U208B # subscript minus
-<Multi_key> <underscore> <equal>      : "₌" U208C # subscript equals sign
-<Multi_key> <underscore> <parenleft>  : "₍" U208D # subscript left parenthesis
-<Multi_key> <underscore> <parenright> : "₎" U208E # subscript right parenthesis
+<Multi_key> <Down> <0> : "₀" U2080 # subscript number 0
+<Multi_key> <Down> <1> : "₁" U2081 # subscript number 1
+<Multi_key> <Down> <2> : "₂" U2082 # subscript number 2
+<Multi_key> <Down> <3> : "₃" U2083 # subscript number 3
+<Multi_key> <Down> <4> : "₄" U2084 # subscript number 4
+<Multi_key> <Down> <5> : "₅" U2085 # subscript number 5
+<Multi_key> <Down> <6> : "₆" U2086 # subscript number 6
+<Multi_key> <Down> <7> : "₇" U2087 # subscript number 7
+<Multi_key> <Down> <8> : "₈" U2088 # subscript number 8
+<Multi_key> <Down> <9> : "₉" U2089 # subscript number 9
+
+<Multi_key> <Down> <plus>       : "₊" U208A # subscript plus sign
+<Multi_key> <Down> <minus>      : "₋" U208B # subscript minus
+<Multi_key> <Down> <equal>      : "₌" U208C # subscript equals sign
+<Multi_key> <Down> <parenleft>  : "₍" U208D # subscript left parenthesis
+<Multi_key> <Down> <parenright> : "₎" U208E # subscript right parenthesis
 
 # -- line below / below line -------------------------------
 
@@ -549,24 +572,38 @@
 
 # -- tilde -------------------------------------------------
 
-<Multi_key> <asciitilde> <space> : "̃" U0303 # combining tilde
+<Multi_key> <asciitilde>        <space> : "̃" U0303 # combining tilde
+<Multi_key> <asciitilde> <Down> <space> : "̰" U0330 # combining tilde below
+<Multi_key> <Down> <asciitilde> <space> : "̰" U0330 # combining tilde below
 
-<Multi_key> <asciitilde> <A> : "Ã" Atilde # uppercase A with tilde
-<Multi_key> <asciitilde> <a> : "ã" atilde # lowercase a with tilde
-<Multi_key> <asciitilde> <E> : "Ẽ" U1EBC  # uppercase E with tilde
-<Multi_key> <asciitilde> <e> : "ẽ" U1EBD  # lowercase E with tilde
-<Multi_key> <asciitilde> <I> : "Ĩ" U0128  # uppercase I with tilde
-<Multi_key> <asciitilde> <i> : "ĩ" U0129  # lowercase I with tilde
-<Multi_key> <asciitilde> <N> : "Ñ" Ntilde # uppercase N with tilde
-<Multi_key> <asciitilde> <n> : "ñ" ntilde # lowercase n with tilde
-<Multi_key> <asciitilde> <O> : "Õ" Otilde # uppercase O with tilde
-<Multi_key> <asciitilde> <o> : "õ" otilde # lowercase o with tilde
-<Multi_key> <asciitilde> <U> : "Ũ" U0168  # uppercase U with tilde
-<Multi_key> <asciitilde> <u> : "ũ" U0169  # lowercase u with tilde
-<Multi_key> <asciitilde> <V> : "Ṽ" U1E7C  # uppercase V with tilde
-<Multi_key> <asciitilde> <v> : "ṽ" U1E7D  # lowercase v with tilde
-<Multi_key> <asciitilde> <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
-<Multi_key> <asciitilde> <y> : "ỹ" U1EF9  # lowercase y with tilde
+<Multi_key> <asciitilde>        <A> : "Ã" Atilde # uppercase A with tilde
+<Multi_key> <asciitilde>        <a> : "ã" atilde # lowercase a with tilde
+<Multi_key> <asciitilde>        <E> : "Ẽ" U1EBC  # uppercase E with tilde
+<Multi_key> <Down> <asciitilde> <E> : "Ḛ" U1E1A  # uppercase E with tilde below
+<Multi_key> <asciitilde> <Down> <E> : "Ḛ" U1E1A  # uppercase E with tilde below
+<Multi_key> <asciitilde>        <e> : "ẽ" U1EBD  # lowercase e with tilde
+<Multi_key> <Down> <asciitilde> <e> : "ḛ" U1EBD # lowercase e with tilde below
+<Multi_key> <asciitilde> <Down> <e> : "ḛ" U1EBD #  lowercase e with tilde below
+<Multi_key> <asciitilde>        <I> : "Ĩ" U0128  # uppercase I with tilde
+<Multi_key> <Down> <asciitilde> <I> : "Ḭ" U1E2C # uppercase i with tilde below
+<Multi_key> <asciitilde> <Down> <I> : "Ḭ" U1E2C # uppercase i with tilde below
+<Multi_key> <asciitilde>        <i> : "ĩ" U0129  # lowercase i with tilde
+<Multi_key> <Down> <asciitilde> <i> : "ḭ" U1E2D # lowercase i with tilde below
+<Multi_key> <asciitilde> <Down> <i> : "ḭ" U1E2D # lowercase i with tilde below
+<Multi_key> <asciitilde>        <N> : "Ñ" Ntilde # uppercase N with tilde
+<Multi_key> <asciitilde>        <n> : "ñ" ntilde # lowercase n with tilde
+<Multi_key> <asciitilde>        <O> : "Õ" Otilde # uppercase O with tilde
+<Multi_key> <asciitilde>        <o> : "õ" otilde # lowercase o with tilde
+<Multi_key> <asciitilde>        <U> : "Ũ" U0168  # uppercase U with tilde
+<Multi_key> <Down> <asciitilde> <U> : "Ṵ" U01E74 # uppercase U with tilde below
+<Multi_key> <asciitilde> <Down> <U> : "Ṵ" U01E74 # uppercase U with tilde below
+<Multi_key> <asciitilde>        <u> : "ũ" U0169  # lowercase u with tilde
+<Multi_key> <Down> <asciitilde> <u> : "ṵ" U01E75 # lowercase u with tilde below
+<Multi_key> <asciitilde> <Down> <u> : "ṵ" U01E75 # lowercase u with tilde below
+<Multi_key> <asciitilde>        <V> : "Ṽ" U1E7C  # uppercase V with tilde
+<Multi_key> <asciitilde>        <v> : "ṽ" U1E7D  # lowercase v with tilde
+<Multi_key> <asciitilde>        <Y> : "Ỹ" U1EF8  # uppercase Y with tilde
+<Multi_key> <asciitilde>        <y> : "ỹ" U1EF9  # lowercase y with tilde
 
 <Multi_key> <asciitilde> <asciitilde> : "≈" U2248 # almost equal to
 
