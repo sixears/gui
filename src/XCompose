@@ -18,7 +18,7 @@
 # suggests that modifiers should work... but it didn't work for me
 # <Multi_key> ! Ctrl <0> <0> <5> : "Æ"
 
-<Codeinput> <1> : "½"
+## <Codeinput> <1> : "½"
 
 ## -- vulgar fractions -------------------------------------
 
@@ -50,6 +50,29 @@
 <Multi_key> <1> <slash> <7> : "⅐"
 <Multi_key> <1> <slash> <9> : "⅑"
 <Multi_key> <1> <slash> <0> : "⅒"
+
+# -- dotted numbers ----------------------------------------
+
+<Codeinput> <parenright>     <1> <period> : "⒈" U2488 # number  1 full stop
+<Codeinput> <parenright>     <2> <period> : "⒉" U2489 # number  2 full stop
+<Codeinput> <parenright>     <3> <period> : "⒊" U248A # number  3 full stop
+<Codeinput> <parenright>     <4> <period> : "⒋" U248B # number  4 full stop
+<Codeinput> <parenright>     <5> <period> : "⒌" U248C # number  5 full stop
+<Codeinput> <parenright>     <6> <period> : "⒍" U248D # number  6 full stop
+<Codeinput> <parenright>     <7> <period> : "⒎" U248E # number  7 full stop
+<Codeinput> <parenright>     <8> <period> : "⒏" U248F # number  8 full stop
+<Codeinput> <parenright>     <9> <period> : "⒐" U2490 # number  9 full stop
+<Codeinput> <parenright> <1> <0> <period> : "⒑" U2491 # number 10 full stop
+<Codeinput> <parenright> <1> <1> <period> : "⒒" U2492 # number 11 full stop
+<Codeinput> <parenright> <1> <2> <period> : "⒓" U2493 # number 12 full stop
+<Codeinput> <parenright> <1> <3> <period> : "⒔" U2494 # number 13 full stop
+<Codeinput> <parenright> <1> <4> <period> : "⒕" U2495 # number 14 full stop
+<Codeinput> <parenright> <1> <5> <period> : "⒖" U2496 # number 15 full stop
+<Codeinput> <parenright> <1> <6> <period> : "⒗" U2497 # number 16 full stop
+<Codeinput> <parenright> <1> <7> <period> : "⒘" U2498 # number 17 full stop
+<Codeinput> <parenright> <1> <8> <period> : "⒙" U2499 # number 18 full stop
+<Codeinput> <parenright> <1> <9> <period> : "⒚" U249A # number 19 full stop
+<Codeinput> <parenright> <2> <0> <period> : "⒛" U249B # number 20 full stop
 
 # -- abovering/ringabove -----------------------------------
 
@@ -92,24 +115,27 @@
 <Multi_key> <grave> <space> : "̀"  U0300 # COMBINING grave accent
 <Multi_key> <grave> <Tab>   : "`" grave # grave accent
 
-<Multi_key> <grave> <A> : "À" Agrave # uppercase A with grave
-<Multi_key> <grave> <a> : "à" agrave # lowercase a with grave
-<Multi_key> <grave> <E> : "È" Egrave # uppercase E with grave
-<Multi_key> <grave> <e> : "è" egrave # lowercase e with grave
-<Multi_key> <grave> <I> : "Ì" Igrave # uppercase I with grave
-<Multi_key> <grave> <i> : "ì" igrave # lowercase i with grave
-<Multi_key> <grave> <m> : "m̀"        # lowercase M plus combining grave
-<Multi_key> <grave> <M> : "M̀"        # uppercase m plus combining grave
-<Multi_key> <grave> <N> : "Ǹ" U01F8  # uppercase N with grave
-<Multi_key> <grave> <n> : "ǹ" U01F9  # lowercase n with grave
-<Multi_key> <grave> <O> : "Ò" Ograve # uppercase O with grave
-<Multi_key> <grave> <o> : "ò" ograve # lowercase o with grave
-<Multi_key> <grave> <U> : "Ù" Ugrave # uppercase U with grave
-<Multi_key> <grave> <u> : "ù" ugrave # lowercase u with grave
-<Multi_key> <grave> <W> : "Ẁ" U1E80  # uppercase W with grave
-<Multi_key> <grave> <w> : "ẁ" U1E81  # lowercase w with grave
-<Multi_key> <grave> <Y> : "Ỳ" U1EF2  # uppercase Y with grave
-<Multi_key> <grave> <y> : "ỳ" U1EF3  # lowercase y with grave
+<Multi_key> <grave> <A> : "À" U00C0 # uppercase A with grave
+<Multi_key> <grave> <a> : "à" U00E0 # lowercase a with grave
+<Multi_key> <grave> <E> : "È" U00C8 # uppercase E with grave
+<Multi_key> <grave> <e> : "è" U00E8 # lowercase e with grave
+<Multi_key> <grave> <I> : "Ì" U00CC # uppercase I with grave
+<Multi_key> <grave> <i> : "ì" U00EC # lowercase i with grave
+<Multi_key> <grave> <m> : "m̀"       # lowercase M plus combining grave
+<Multi_key> <grave> <M> : "M̀"       # uppercase m plus combining grave
+<Multi_key> <grave> <N> : "Ǹ" U01F8 # uppercase N with grave
+<Multi_key> <grave> <n> : "ǹ" U01F9 # lowercase n with grave
+<Multi_key> <grave> <O> : "Ò" U00D2 # uppercase O with grave
+<Multi_key> <grave> <o> : "ò" U00F2 # lowercase o with grave
+<Multi_key> <grave> <U> : "Ù" U00D9 # uppercase U with grave
+<Multi_key> <grave> <u> : "ù" U00F9 # lowercase u with grave
+<Multi_key> <grave> <W> : "Ẁ" U1E80 # uppercase W with grave
+<Multi_key> <grave> <w> : "ẁ" U1E81 # lowercase w with grave
+<Multi_key> <grave> <Y> : "Ỳ" U1EF2 # uppercase Y with grave
+<Multi_key> <grave> <y> : "ỳ" U1EF3 # lowercase y with grave
+
+<Multi_key> <grave> <quotedbl> <U> : "Ǜ" U01DB # uppercase U with diaeresis and grave
+<Multi_key> <grave> <quotedbl> <u> : "ǜ" U01DC # lowercase u with diaeresis and grave
 
 # -- double-grave ------------------------------------------
 
@@ -193,6 +219,9 @@
 <Multi_key> <quotedbl> <Y> : "Ÿ" Ydiaeresis # uppercase Y with diaeresis
 <Multi_key> <quotedbl> <y> : "ÿ" ydiaeresis # lowercase y with diaeresis
 
+<Multi_key> <quotedbl> <grave> <U> : "Ǜ" U01DB # uppercase U with diaeresis and grave
+<Multi_key> <quotedbl> <grave> <u> : "ǜ" U01DC # lowercase u with diaeresis and grave
+
 ## ------------------------------ ASCIICIRCUM ------------------------------- ##
 
 # -- circumflex --------------------------------------------
@@ -258,6 +287,128 @@
 <Multi_key> <parenleft> <U> : "Ȗ" U0216 # uppercase U with inverted breve
 <Multi_key> <parenleft> <u> : "ȗ" U0217 # lowercase u with inverted breve
 
+# -- circled characters ------------------------------------
+
+<Codeinput> <parenleft>     <0> <space> : "⓪" U24EA # circled number 0
+<Codeinput> <parenleft>     <1> <space> : "①" U2460 # circled number 1
+<Codeinput> <parenleft>     <2> <space> : "②" U2461 # circled number 2
+<Codeinput> <parenleft>     <3> <space> : "③" U2462 # circled number 3
+<Codeinput> <parenleft>     <4> <space> : "④" U2463 # circled number 4
+<Codeinput> <parenleft>     <5> <space> : "⑤" U2464 # circled number 5
+<Codeinput> <parenleft>     <6> <space> : "⑥" U2465 # circled number 6
+<Codeinput> <parenleft>     <7> <space> : "⑦" U2466 # circled number 7
+<Codeinput> <parenleft>     <8> <space> : "⑧" U2467 # circled number 8
+<Codeinput> <parenleft>     <9> <space> : "⑨" U2468 # circled number 9
+<Codeinput> <parenleft> <1> <0> <space> : "⑩" U2469 # circled number 10
+<Codeinput> <parenleft> <1> <1> <space> : "⑪" U246A # circled number 11
+<Codeinput> <parenleft> <1> <2> <space> : "⑫" U246B # circled number 12
+<Codeinput> <parenleft> <1> <3> <space> : "⑬" U246C # circled number 13
+<Codeinput> <parenleft> <1> <4> <space> : "⑭" U246D # circled number 14
+<Codeinput> <parenleft> <1> <5> <space> : "⑮" U246E # circled number 15
+<Codeinput> <parenleft> <1> <6> <space> : "⑯" U246F # circled number 16
+<Codeinput> <parenleft> <1> <7> <space> : "⑰" U2470 # circled number 17
+<Codeinput> <parenleft> <1> <8> <space> : "⑱" U2471 # circled number 18
+<Codeinput> <parenleft> <1> <9> <space> : "⑲" U2472 # circled number 19
+<Codeinput> <parenleft> <2> <0> <space> : "⑳" U2473 # circled number 20
+
+<Codeinput> <parenleft> <A> : "Ⓐ" U24B6 # circled uppercase A
+<Codeinput> <parenleft> <B> : "Ⓑ" U24B7 # circled uppercase B
+<Codeinput> <parenleft> <C> : "Ⓒ" U24B8 # circled uppercase C
+<Codeinput> <parenleft> <D> : "Ⓓ" U24B9 # circled uppercase D
+<Codeinput> <parenleft> <E> : "Ⓔ" U24BA # circled uppercase E
+<Codeinput> <parenleft> <F> : "Ⓕ" U24BB # circled uppercase F
+<Codeinput> <parenleft> <G> : "Ⓖ" U24BC # circled uppercase G
+<Codeinput> <parenleft> <H> : "Ⓗ" U24BD # circled uppercase H
+<Codeinput> <parenleft> <I> : "Ⓘ" U24BE # circled uppercase I
+<Codeinput> <parenleft> <J> : "Ⓙ" U24BF # circled uppercase J
+<Codeinput> <parenleft> <K> : "Ⓚ" U24C0 # circled uppercase K
+<Codeinput> <parenleft> <L> : "Ⓛ" U24C1 # circled uppercase L
+<Codeinput> <parenleft> <M> : "Ⓜ" U24C2 # circled uppercase M
+<Codeinput> <parenleft> <N> : "Ⓝ" U24C3 # circled uppercase N
+<Codeinput> <parenleft> <O> : "Ⓞ" U24C4 # circled uppercase O
+<Codeinput> <parenleft> <P> : "Ⓟ" U24C5 # circled uppercase P
+<Codeinput> <parenleft> <Q> : "Ⓠ" U24C6 # circled uppercase Q
+<Codeinput> <parenleft> <R> : "Ⓡ" U24C7 # circled uppercase R
+<Codeinput> <parenleft> <S> : "Ⓢ" U24C8 # circled uppercase S
+<Codeinput> <parenleft> <T> : "Ⓣ" U24C9 # circled uppercase T
+<Codeinput> <parenleft> <U> : "Ⓤ" U24CA # circled uppercase U
+<Codeinput> <parenleft> <V> : "Ⓥ" U24CB # circled uppercase V
+<Codeinput> <parenleft> <W> : "Ⓦ" U24CC # circled uppercase W
+<Codeinput> <parenleft> <X> : "Ⓧ" U24CD # circled uppercase X
+<Codeinput> <parenleft> <Y> : "Ⓨ" U24CE # circled uppercase Y
+<Codeinput> <parenleft> <Z> : "Ⓩ" U24CF # circled uppercase Z
+
+<Codeinput> <parenleft> <a> : "ⓐ" U24D0 # circled lowercase a
+<Codeinput> <parenleft> <b> : "ⓑ" U24D1 # circled lowercase b
+<Codeinput> <parenleft> <c> : "ⓒ" U24D2 # circled lowercase c
+<Codeinput> <parenleft> <d> : "ⓓ" U24D3 # circled lowercase d
+<Codeinput> <parenleft> <e> : "ⓔ" U24D4 # circled lowercase e
+<Codeinput> <parenleft> <f> : "ⓕ" U24D5 # circled lowercase f
+<Codeinput> <parenleft> <g> : "ⓖ" U24D6 # circled lowercase g
+<Codeinput> <parenleft> <h> : "ⓗ" U24D7 # circled lowercase h
+<Codeinput> <parenleft> <i> : "ⓘ" U24D8 # circled lowercase i
+<Codeinput> <parenleft> <j> : "ⓙ" U24D9 # circled lowercase j
+<Codeinput> <parenleft> <k> : "ⓚ" U24DA # circled lowercase k
+<Codeinput> <parenleft> <l> : "ⓛ" U24DB # circled lowercase l
+<Codeinput> <parenleft> <m> : "ⓜ" U24DC # circled lowercase m
+<Codeinput> <parenleft> <n> : "ⓝ" U24DD # circled lowercase n
+<Codeinput> <parenleft> <o> : "ⓞ" U24DE # circled lowercase o
+<Codeinput> <parenleft> <p> : "ⓟ" U24DF # circled lowercase p
+<Codeinput> <parenleft> <q> : "ⓠ" U24E0 # circled lowercase q
+<Codeinput> <parenleft> <r> : "ⓡ" U24E1 # circled lowercase r
+<Codeinput> <parenleft> <s> : "ⓢ" U24E2 # circled lowercase s
+<Codeinput> <parenleft> <t> : "ⓣ" U24E3 # circled lowercase t
+<Codeinput> <parenleft> <u> : "ⓤ" U24E4 # circled lowercase u
+<Codeinput> <parenleft> <v> : "ⓥ" U24E5 # circled lowercase v
+<Codeinput> <parenleft> <w> : "ⓦ" U24E6 # circled lowercase w
+<Codeinput> <parenleft> <x> : "ⓧ" U24E7 # circled lowercase x
+<Codeinput> <parenleft> <y> : "ⓨ" U24E8 # circled lowercase y
+<Codeinput> <parenleft> <z> : "ⓩ" U24E9 # circled lowercase z
+
+<Codeinput> <bracketleft>     <0> <space> : "⓿" U24FF # negative circled number  0
+<Codeinput> <bracketleft> <1> <1> <space> : "⓫" U24EB # negative circled number 11
+<Codeinput> <bracketleft> <1> <2> <space> : "⓬" U24EC # negative circled number 12
+<Codeinput> <bracketleft> <1> <3> <space> : "⓭" U24ED # negative circled number 13
+<Codeinput> <bracketleft> <1> <4> <space> : "⓮" U24EE # negative circled number 14
+<Codeinput> <bracketleft> <1> <5> <space> : "⓯" U24EF # negative circled number 15
+<Codeinput> <bracketleft> <1> <6> <space> : "⓰" U24F0 # negative circled number 16
+<Codeinput> <bracketleft> <1> <7> <space> : "⓱" U24F1 # negative circled number 17
+<Codeinput> <bracketleft> <1> <8> <space> : "⓲" U24F2 # negative circled number 18
+<Codeinput> <bracketleft> <1> <9> <space> : "⓳" U24F3 # negative circled number 19
+<Codeinput> <bracketleft> <2> <0> <space> : "⓴" U24F4 # negative circled number 20
+
+<Codeinput> <bracketright>     <1> <space> : "⓵" U24F5 # double circled number 1
+<Codeinput> <bracketright>     <2> <space> : "⓶" U24F6 # double circled number 2
+<Codeinput> <bracketright>     <3> <space> : "⓷" U24F7 # double circled number 3
+<Codeinput> <bracketright>     <4> <space> : "⓸" U24F8 # double circled number 4
+<Codeinput> <bracketright>     <5> <space> : "⓹" U24F9 # double circled number 5
+<Codeinput> <bracketright>     <6> <space> : "⓺" U24FA # double circled number 6
+<Codeinput> <bracketright>     <7> <space> : "⓻" U24FB # double circled number 7
+<Codeinput> <bracketright>     <8> <space> : "⓼" U24FC # double circled number 8
+<Codeinput> <bracketright>     <9> <space> : "⓽" U24FD # double circled number 9
+<Codeinput> <bracketright> <1> <0> <space> : "⓾" U24FE # double circled number 10
+
+<Codeinput> <parenleft> <plus>        : "⊕" U2295 # circled plus
+<Codeinput> <parenleft> <minus>       : "⊖" U2296 # circled minus
+# <multiply>, <division> no workee
+<Codeinput> <parenleft> <backslash>   : "⊗" U2297 # circled times
+<Codeinput> <parenleft> <slash>       : "⊘" U2298 # circled division slash
+<Codeinput> <parenleft> <numbersign>  : "⨸" U2A38 # circled division sign
+<Codeinput> <parenleft> <period>      : "⊙" U2299 # circled dot operator
+# see alt+alt+shift+Q
+# <Codeinput> <parenleft> <>            : "⊚" U229A # circled ring
+<Codeinput> <parenleft> <asterisk>    : "⊛" U229B # circled asterisk
+<Codeinput> <parenleft> <equal>       : "⊜" U229C # circled equals
+# <Codeinput> <parenleft> <>            : "⊝" U229D # circled dash
+<Codeinput> <bracketleft> <plus>      : "⊞" U229E # squared plus
+<Codeinput> <bracketleft> <minus>     : "⊟" U229F # squared minus
+<Codeinput> <bracketleft> <backslash> : "⊠" U22A0 # squared times
+<Codeinput> <bracketleft> <period>    : "⊡" U22A1 # squared dot operator
+
+<Codeinput> <bracketright> <plus>      : "⨹" U2A39 # plus sign in triangle
+<Codeinput> <bracketright> <minus>     : "⨺" U2A3A # minus sign in triangle
+<Codeinput> <bracketright> <backslash> : "⨻" U2A39 # times sign in triangle
+
 ## ------------------------------- PARENRIGHT ------------------------------- ##
 
 # -- breve -------------------------------------------------
@@ -277,6 +428,56 @@
 <Multi_key> <parenright> <o> : "ŏ" U014F # lowercase o with breve
 <Multi_key> <parenright> <U> : "Ŭ" U016C # uppercase U with breve
 <Multi_key> <parenright> <u> : "ŭ" U016D # lowercase u with breve
+
+# -- parenthesized characters ------------------------------
+
+<Codeinput> <parenright>     <1> <space> : "⑴" U2474 # parenthesized number 1
+<Codeinput> <parenright>     <2> <space> : "⑵" U2475 # parenthesized number 2
+<Codeinput> <parenright>     <3> <space> : "⑶"  U2476 # parenthesized number 3
+<Codeinput> <parenright>     <4> <space> : "⑷"  U2477 # parenthesized number 4
+<Codeinput> <parenright>     <5> <space> : "⑸"  U2478 # parenthesized number 5
+<Codeinput> <parenright>     <6> <space> : "⑹"  U2479 # parenthesized number 6
+<Codeinput> <parenright>     <7> <space> : "⑺"  U247A # parenthesized number 7
+<Codeinput> <parenright>     <8> <space> : "⑻"  U247B # parenthesized number 8
+<Codeinput> <parenright>     <9> <space> : "⑼"  U247C # parenthesized number 9
+<Codeinput> <parenright> <1> <0> <space> : "⑽"  U247D # parenthesized number 10
+<Codeinput> <parenright> <1> <1> <space> : "⑾"  U247E # parenthesized number 11
+<Codeinput> <parenright> <1> <2> <space> : "⑿"  U247F # parenthesized number 12
+<Codeinput> <parenright> <1> <3> <space> : "⒀"  U2480 # parenthesized number 13
+<Codeinput> <parenright> <1> <4> <space> : "⒁"  U2481 # parenthesized number 14
+<Codeinput> <parenright> <1> <5> <space> : "⒂"  U2482 # parenthesized number 15
+<Codeinput> <parenright> <1> <6> <space> : "⒃"  U2483 # parenthesized number 16
+<Codeinput> <parenright> <1> <7> <space> : "⒄"  U2484 # parenthesized number 17
+<Codeinput> <parenright> <1> <8> <space> : "⒅"  U2485 # parenthesized number 18
+<Codeinput> <parenright> <1> <9> <space> : "⒆"  U2486 # parenthesized number 19
+<Codeinput> <parenright> <2> <0> <space> : "⒇"  U2487 # parenthesized number 20
+
+<Codeinput> <parenright> <a> : "⒜" U249C # parenthesized lowercase a
+<Codeinput> <parenright> <b> : "⒝" U249D # parenthesized lowercase b
+<Codeinput> <parenright> <c> : "⒞" U249E # parenthesized lowercase c
+<Codeinput> <parenright> <d> : "⒟" U249F # parenthesized lowercase d
+<Codeinput> <parenright> <e> : "⒠" U24A0 # parenthesized lowercase e
+<Codeinput> <parenright> <f> : "⒡" U24A1 # parenthesized lowercase f
+<Codeinput> <parenright> <g> : "⒢" U24A2 # parenthesized lowercase g
+<Codeinput> <parenright> <h> : "⒣" U24A3 # parenthesized lowercase h
+<Codeinput> <parenright> <i> : "⒤" U24A4 # parenthesized lowercase i
+<Codeinput> <parenright> <j> : "⒥" U24A5 # parenthesized lowercase j
+<Codeinput> <parenright> <k> : "⒦" U24A6 # parenthesized lowercase k
+<Codeinput> <parenright> <l> : "⒧" U24A7 # parenthesized lowercase l
+<Codeinput> <parenright> <m> : "⒨" U24A8 # parenthesized lowercase m
+<Codeinput> <parenright> <n> : "⒩" U24A9 # parenthesized lowercase n
+<Codeinput> <parenright> <o> : "⒪" U24AA # parenthesized lowercase o
+<Codeinput> <parenright> <p> : "⒫" U24AB # parenthesized lowercase p
+<Codeinput> <parenright> <q> : "⒬" U24AC # parenthesized lowercase q
+<Codeinput> <parenright> <r> : "⒭" U24AD # parenthesized lowercase r
+<Codeinput> <parenright> <s> : "⒮" U24AE # parenthesized lowercase s
+<Codeinput> <parenright> <t> : "⒯" U24AF # parenthesized lowercase t
+<Codeinput> <parenright> <u> : "⒰" U24B0 # parenthesized lowercase u
+<Codeinput> <parenright> <v> : "⒱" U24B1 # parenthesized lowercase v
+<Codeinput> <parenright> <w> : "⒲" U24B2 # parenthesized lowercase w
+<Codeinput> <parenright> <x> : "⒳" U24B3 # parenthesized lowercase x
+<Codeinput> <parenright> <y> : "⒴" U24B4 # parenthesized lowercase y
+<Codeinput> <parenright> <z> : "⒵" U24B5 # parenthesized lowercase z
 
 ## --------------------------------- MINUS ---------------------------------- ##
 
@@ -660,50 +861,6 @@
 <Multi_key> <comma> <U> : "Ų" U0172    # uppercase U with ogonek
 <Multi_key> <comma> <u> : "ų" U0173    # lowercase U with ogonek
 
-# -- belowdot / dotbelow -----------------------------------
-
-<Multi_key> <period> <space> : "̣"  U0323 # combining dot below
-<Multi_key> <period> <Tab>   : "﮳" UFBB3 # arabic symbol dot below
-
-<Multi_key> <period> <A> : "Ạ" U1EA0 # uppercase A with dot below
-<Multi_key> <period> <a> : "ạ" U1EA1 # lowercase a with dot below
-<Multi_key> <period> <B> : "Ḅ" U1E04 # uppercase B with dot below
-<Multi_key> <period> <b> : "ḅ" U1E05 # lowercase b with dot below
-<Multi_key> <period> <D> : "Ḍ" U1E0C # uppercase D with dot below
-<Multi_key> <period> <d> : "ḍ" U1E0D # lowercase d with dot below
-<Multi_key> <period> <E> : "Ẹ" U1EB8 # uppercase E with dot below
-<Multi_key> <period> <e> : "ẹ" U1EB9 # lowercase e with dot below
-<Multi_key> <period> <H> : "Ḥ" U1E24 # uppercase H with dot below
-<Multi_key> <period> <h> : "ḥ" U1E25 # lowercase h with dot below
-<Multi_key> <period> <I> : "Ị" U1ECA # uppercase I with dot below
-<Multi_key> <period> <i> : "ị" U1ECB # lowercase i with dot below
-<Multi_key> <period> <K> : "Ḳ" U1E32 # uppercase K with dot below
-<Multi_key> <period> <k> : "ḳ" U1E33 # lowercase k with dot below
-<Multi_key> <period> <L> : "Ḷ" U1E36 # uppercase L with dot below
-<Multi_key> <period> <l> : "ḷ" U1E37 # lowercase l with dot below
-<Multi_key> <period> <M> : "Ṃ" U1E42 # uppercase M with dot below
-<Multi_key> <period> <m> : "ṃ" U1E43 # lowercase m with dot below
-<Multi_key> <period> <N> : "Ṇ" U1E46 # uppercase N with dot below
-<Multi_key> <period> <n> : "ṇ" U1E47 # lowercase n with dot below
-<Multi_key> <period> <O> : "Ọ" U1ECC # uppercase O with dot below
-<Multi_key> <period> <o> : "ọ" U1ECD # lowercase o with dot below
-<Multi_key> <period> <R> : "Ṛ" U1E5A # uppercase R with dot below
-<Multi_key> <period> <r> : "ṛ" U1E5B # lowercase r with dot below
-<Multi_key> <period> <S> : "Ṣ" U1E62 # uppercase S with dot below
-<Multi_key> <period> <s> : "ṣ" U1E63 # lowercase s with dot below
-<Multi_key> <period> <T> : "Ṭ" U1E6C # uppercase T with dot below
-<Multi_key> <period> <t> : "ṭ" U1E6D # lowercase t with dot below
-<Multi_key> <period> <U> : "Ụ" U1EE4 # uppercase U with dot below
-<Multi_key> <period> <u> : "ụ" U1EE5 # lowercase u with dot below
-<Multi_key> <period> <V> : "Ṿ" U1E7E # uppercase V with dot below
-<Multi_key> <period> <v> : "ṿ" U1E7F # lowercase v with dot below
-<Multi_key> <period> <W> : "Ẉ" U1E88 # uppercase W with dot below
-<Multi_key> <period> <w> : "ẉ" U1E89 # lowercase w with dot below
-<Multi_key> <period> <Y> : "Ỵ" U1EF4 # uppercase Y with dot below
-<Multi_key> <period> <y> : "ỵ" U1EF5 # lowercase y with dot below
-<Multi_key> <period> <Z> : "Ẓ" U1E92 # uppercase Z with dot below
-<Multi_key> <period> <z> : "ẓ" U1E93 # lowercase z with dot below
-
 ## ---------------------------------- LESS ---------------------------------- ##
 
 #-# see <Multi_key> <greater> <period> which is used for ⩺
@@ -906,7 +1063,6 @@
 ################################################################################
 
 #--# <Multi_key> <O> <Y>   : "☮" U262E # PEACE SYMBOL
-#--# <Multi_key> <O> <A>   : "Ⓐ" U24B6 # CIRCLED uppercase A
 #--# <Multi_key> <less> <3>   : "♥" U2665 # BLACK HEART SUIT
 #--# <Multi_key> <colon> <parenright> : "☺" U263A # WHITE SMILING FACE
 #--# <Multi_key> <colon> <parenleft>  : "☹" U2639 # WHITE FROWNING FACE
@@ -1978,101 +2134,6 @@
 #--# <Multi_key> <d> <i>   : "⌀" U2300 # DIAMETER SIGN
 
 #--# # Enclosed Alphanumerics
-#--# <Multi_key> <parenleft> <1> <parenright>  : "①" U2460 # CIRCLED DIGIT ONE
-#--# <Multi_key> <parenleft> <KP_1> <parenright>  : "①" U2460 # CIRCLED DIGIT ONE
-#--# <Multi_key> <parenleft> <2> <parenright>  : "②" U2461 # CIRCLED DIGIT TWO
-#--# <Multi_key> <parenleft> <KP_2> <parenright>  : "②" U2461 # CIRCLED DIGIT TWO
-#--# <Multi_key> <parenleft> <3> <parenright>  : "③" U2462 # CIRCLED DIGIT THREE
-#--# <Multi_key> <parenleft> <KP_3> <parenright>  : "③" U2462 # CIRCLED DIGIT THREE
-#--# <Multi_key> <parenleft> <4> <parenright>  : "④" U2463 # CIRCLED DIGIT FOUR
-#--# <Multi_key> <parenleft> <KP_4> <parenright>  : "④" U2463 # CIRCLED DIGIT FOUR
-#--# <Multi_key> <parenleft> <5> <parenright>  : "⑤" U2464 # CIRCLED DIGIT FIVE
-#--# <Multi_key> <parenleft> <KP_5> <parenright>  : "⑤" U2464 # CIRCLED DIGIT FIVE
-#--# <Multi_key> <parenleft> <6> <parenright>  : "⑥" U2465 # CIRCLED DIGIT SIX
-#--# <Multi_key> <parenleft> <KP_6> <parenright>  : "⑥" U2465 # CIRCLED DIGIT SIX
-#--# <Multi_key> <parenleft> <7> <parenright>  : "⑦" U2466 # CIRCLED DIGIT SEVEN
-#--# <Multi_key> <parenleft> <KP_7> <parenright>  : "⑦" U2466 # CIRCLED DIGIT SEVEN
-#--# <Multi_key> <parenleft> <8> <parenright>  : "⑧" U2467 # CIRCLED DIGIT EIGHT
-#--# <Multi_key> <parenleft> <KP_8> <parenright>  : "⑧" U2467 # CIRCLED DIGIT EIGHT
-#--# <Multi_key> <parenleft> <9> <parenright>  : "⑨" U2468 # CIRCLED DIGIT NINE
-#--# <Multi_key> <parenleft> <KP_9> <parenright>  : "⑨" U2468 # CIRCLED DIGIT NINE
-#--# <Multi_key> <parenleft> <1> <0> <parenright>  : "⑩" U2469 # CIRCLED NUMBER TEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_0> <parenright> : "⑩" U2469 # CIRCLED NUMBER TEN
-#--# <Multi_key> <parenleft> <1> <1> <parenright>  : "⑪" U246A # CIRCLED NUMBER ELEVEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_1> <parenright> : "⑪" U246A # CIRCLED NUMBER ELEVEN
-#--# <Multi_key> <parenleft> <1> <2> <parenright>  : "⑫" U246B # CIRCLED NUMBER TWELVE
-#--# <Multi_key> <parenleft> <KP_1> <KP_2> <parenright> : "⑫" U246B # CIRCLED NUMBER TWELVE
-#--# <Multi_key> <parenleft> <1> <3> <parenright>  : "⑬" U246C # CIRCLED NUMBER THIRTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_3> <parenright> : "⑬" U246C # CIRCLED NUMBER THIRTEEN
-#--# <Multi_key> <parenleft> <1> <4> <parenright>  : "⑭" U246D # CIRCLED NUMBER FOURTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_4> <parenright> : "⑭" U246D # CIRCLED NUMBER FOURTEEN
-#--# <Multi_key> <parenleft> <1> <5> <parenright>  : "⑮" U246E # CIRCLED NUMBER FIFTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_5> <parenright> : "⑮" U246E # CIRCLED NUMBER FIFTEEN
-#--# <Multi_key> <parenleft> <1> <6> <parenright>  : "⑯" U246F # CIRCLED NUMBER SIXTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_6> <parenright> : "⑯" U246F # CIRCLED NUMBER SIXTEEN
-#--# <Multi_key> <parenleft> <1> <7> <parenright>  : "⑰" U2470 # CIRCLED NUMBER SEVENTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_7> <parenright> : "⑰" U2470 # CIRCLED NUMBER SEVENTEEN
-#--# <Multi_key> <parenleft> <1> <8> <parenright>  : "⑱" U2471 # CIRCLED NUMBER EIGHTEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_8> <parenright> : "⑱" U2471 # CIRCLED NUMBER EIGHTEEN
-#--# <Multi_key> <parenleft> <1> <9> <parenright>  : "⑲" U2472 # CIRCLED NUMBER NINETEEN
-#--# <Multi_key> <parenleft> <KP_1> <KP_9> <parenright> : "⑲" U2472 # CIRCLED NUMBER NINETEEN
-#--# <Multi_key> <parenleft> <2> <0> <parenright>  : "⑳" U2473 # CIRCLED NUMBER TWENTY
-#--# <Multi_key> <parenleft> <KP_2> <KP_0> <parenright> : "⑳" U2473 # CIRCLED NUMBER TWENTY
-#--# <Multi_key> <parenleft> <A> <parenright> : "Ⓐ" U24B6 # CIRCLED uppercase A
-#--# <Multi_key> <parenleft> <B> <parenright> : "Ⓑ" U24B7 # CIRCLED uppercase B
-#--# <Multi_key> <parenleft> <C> <parenright> : "Ⓒ" U24B8 # CIRCLED uppercase C
-#--# <Multi_key> <parenleft> <D> <parenright> : "Ⓓ" U24B9 # CIRCLED uppercase D
-#--# <Multi_key> <parenleft> <E> <parenright> : "Ⓔ" U24BA # CIRCLED uppercase E
-#--# <Multi_key> <parenleft> <F> <parenright> : "Ⓕ" U24BB # CIRCLED uppercase F
-#--# <Multi_key> <parenleft> <G> <parenright> : "Ⓖ" U24BC # CIRCLED uppercase G
-#--# <Multi_key> <parenleft> <H> <parenright> : "Ⓗ" U24BD # CIRCLED uppercase H
-#--# <Multi_key> <parenleft> <I> <parenright> : "Ⓘ" U24BE # CIRCLED uppercase I
-#--# <Multi_key> <parenleft> <J> <parenright> : "Ⓙ" U24BF # CIRCLED uppercase J
-#--# <Multi_key> <parenleft> <K> <parenright> : "Ⓚ" U24C0 # CIRCLED uppercase K
-#--# <Multi_key> <parenleft> <L> <parenright> : "Ⓛ" U24C1 # CIRCLED uppercase L
-#--# <Multi_key> <parenleft> <M> <parenright> : "Ⓜ" U24C2 # CIRCLED uppercase M
-#--# <Multi_key> <parenleft> <N> <parenright> : "Ⓝ" U24C3 # CIRCLED uppercase N
-#--# <Multi_key> <parenleft> <O> <parenright> : "Ⓞ" U24C4 # CIRCLED uppercase O
-#--# <Multi_key> <parenleft> <P> <parenright> : "Ⓟ" U24C5 # CIRCLED uppercase P
-#--# <Multi_key> <parenleft> <Q> <parenright> : "Ⓠ" U24C6 # CIRCLED uppercase Q
-#--# <Multi_key> <parenleft> <R> <parenright> : "Ⓡ" U24C7 # CIRCLED uppercase R
-#--# <Multi_key> <parenleft> <S> <parenright> : "Ⓢ" U24C8 # CIRCLED uppercase S
-#--# <Multi_key> <parenleft> <T> <parenright> : "Ⓣ" U24C9 # CIRCLED uppercase T
-#--# <Multi_key> <parenleft> <U> <parenright> : "Ⓤ" U24CA # CIRCLED uppercase U
-#--# <Multi_key> <parenleft> <V> <parenright> : "Ⓥ" U24CB # CIRCLED uppercase V
-#--# <Multi_key> <parenleft> <W> <parenright> : "Ⓦ" U24CC # CIRCLED uppercase W
-#--# <Multi_key> <parenleft> <X> <parenright> : "Ⓧ" U24CD # CIRCLED uppercase X
-#--# <Multi_key> <parenleft> <Y> <parenright> : "Ⓨ" U24CE # CIRCLED uppercase Y
-#--# <Multi_key> <parenleft> <Z> <parenright> : "Ⓩ" U24CF # CIRCLED uppercase Z
-#--# <Multi_key> <parenleft> <a> <parenright> : "ⓐ" U24D0 # CIRCLED lowercase A
-#--# <Multi_key> <parenleft> <b> <parenright> : "ⓑ" U24D1 # CIRCLED lowercase B
-#--# <Multi_key> <parenleft> <c> <parenright> : "ⓒ" U24D2 # CIRCLED lowercase C
-#--# <Multi_key> <parenleft> <d> <parenright> : "ⓓ" U24D3 # CIRCLED lowercase D
-#--# <Multi_key> <parenleft> <e> <parenright> : "ⓔ" U24D4 # CIRCLED lowercase E
-#--# <Multi_key> <parenleft> <f> <parenright> : "ⓕ" U24D5 # CIRCLED lowercase F
-#--# <Multi_key> <parenleft> <g> <parenright> : "ⓖ" U24D6 # CIRCLED lowercase G
-#--# <Multi_key> <parenleft> <h> <parenright> : "ⓗ" U24D7 # CIRCLED lowercase H
-#--# <Multi_key> <parenleft> <i> <parenright> : "ⓘ" U24D8 # CIRCLED lowercase I
-#--# <Multi_key> <parenleft> <j> <parenright> : "ⓙ" U24D9 # CIRCLED lowercase J
-#--# <Multi_key> <parenleft> <k> <parenright> : "ⓚ" U24DA # CIRCLED lowercase K
-#--# <Multi_key> <parenleft> <l> <parenright> : "ⓛ" U24DB # CIRCLED lowercase L
-#--# <Multi_key> <parenleft> <m> <parenright> : "ⓜ" U24DC # CIRCLED lowercase M
-#--# <Multi_key> <parenleft> <n> <parenright> : "ⓝ" U24DD # CIRCLED lowercase N
-#--# <Multi_key> <parenleft> <o> <parenright> : "ⓞ" U24DE # CIRCLED lowercase O
-#--# <Multi_key> <parenleft> <p> <parenright> : "ⓟ" U24DF # CIRCLED lowercase P
-#--# <Multi_key> <parenleft> <q> <parenright> : "ⓠ" U24E0 # CIRCLED lowercase Q
-#--# <Multi_key> <parenleft> <r> <parenright> : "ⓡ" U24E1 # CIRCLED lowercase R
-#--# <Multi_key> <parenleft> <s> <parenright> : "ⓢ" U24E2 # CIRCLED lowercase S
-#--# <Multi_key> <parenleft> <t> <parenright> : "ⓣ" U24E3 # CIRCLED lowercase T
-#--# <Multi_key> <parenleft> <u> <parenright> : "ⓤ" U24E4 # CIRCLED lowercase U
-#--# <Multi_key> <parenleft> <v> <parenright> : "ⓥ" U24E5 # CIRCLED lowercase V
-#--# <Multi_key> <parenleft> <w> <parenright> : "ⓦ" U24E6 # CIRCLED lowercase W
-#--# <Multi_key> <parenleft> <x> <parenright> : "ⓧ" U24E7 # CIRCLED lowercase X
-#--# <Multi_key> <parenleft> <y> <parenright> : "ⓨ" U24E8 # CIRCLED lowercase Y
-#--# <Multi_key> <parenleft> <z> <parenright> : "ⓩ" U24E9 # CIRCLED lowercase Z
-#--# <Multi_key> <parenleft> <0> <parenright> : "⓪" U24EA # CIRCLED DIGIT ZERO
-#--# <Multi_key> <parenleft> <KP_0> <parenright> : "⓪" U24EA # CIRCLED DIGIT ZERO
-
 #--# # Supplemental Mathematical Operators
 #--# <dead_belowdot> <plus>    : "⨥" U2A25 # PLUS SIGN with DOT BELOW
 #--# <dead_belowtilde> <plus>   : "⨦" U2A26 # PLUS SIGN with TILDE BELOW
@@ -2623,19 +2684,6 @@
 #-x-# ⊒  +2292  Square Original of or Equal To
 #-x-# ⊓  +2293  Square Cap
 #-x-# ⊔  +2294  Square Cup
-#-x-# ⊕  +2295  Circled Plus
-#-x-# ⊖  +2296  Circled Minus
-#-x-# ⊗  +2297  Circled Times
-#-x-# ⊘  +2298  Circled Division Slash
-#-x-# ⊙  +2299  Circled Dot Operator
-#-x-# ⊚  +229A  Circled Ring Operator
-#-x-# ⊛  +229B  Circled Asterisk Operator
-#-x-# ⊜  +229C  Circled Equals
-#-x-# ⊝  +229D  Circled Dash
-#-x-# ⊞  +229E  Squared Plus
-#-x-# ⊟  +229F  Squared Minus
-#-x-# ⊠  +22A0  Squared Times
-#-x-# ⊡  +22A1  Squared Dot Operator
 #-x-# ⊢  +22A2  Right Tack
 #-x-# ⊣  +22A3  Left Tack
 #-x-# ⊤  +22A4  Down Tack
